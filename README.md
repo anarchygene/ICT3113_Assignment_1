@@ -1,0 +1,101 @@
+# ICT3113 Step 2 — Complaint Classification Baseline
+
+A deliberately straightforward baseline: FastAPI receives one complaint, makes one synchronous Ollama call, stores the result in PostgreSQL, and returns the classification. There is no cache, queue, batching, retry layer, or CSV import.
+
+## API contract
+
+| Method and path | Behaviour |
+|---|---|
+| `POST /tickets` | Classifies one narrative synchronously, persists it, and returns the stored ticket. |
+| `GET /search?q=text&limit=100` | Case-insensitive substring search of stored narratives. |
+| `GET /stats` | Counts stored tickets in all seven categories. |
+| `GET /health` | Lightweight service health check. |
+| `GET /docs` | Interactive OpenAPI documentation. |
+
+Only tickets submitted through `POST /tickets` enter the database. A failed classification is not stored.
+
+## Start from a clean machine
+
+Prerequisites: Git, Docker Engine, and Docker Compose v2. CPU inference is the default; the Compose file does not request a GPU.
+
+```bash
+cp .env.example .env
+docker compose up -d --build
+docker compose exec ollama ollama pull gemma3:1b
+python3 scripts/smoke_test.py
+```
+
+The first classification can take longer while Ollama loads the model. Change `OLLAMA_MODEL` in `.env`, then pull that exact tag and restart the API when testing another candidate:
+
+```bash
+docker compose exec ollama ollama pull <exact-model-tag>
+docker compose up -d --force-recreate api
+```
+
+Record the immutable model identity for the report:
+
+```bash
+docker compose exec ollama ollama list
+docker compose exec ollama ollama show <exact-model-tag>
+```
+
+## Example requests
+
+```bash
+curl -sS -X POST http://localhost:8000/tickets \
+  -H 'Content-Type: application/json' \
+  -d '{"narrative":"A debt collector is calling about an account that is not mine."}'
+
+curl -sS 'http://localhost:8000/search?q=collector'
+curl -sS http://localhost:8000/stats
+```
+
+The seven exact categories are:
+
+1. Credit reporting
+2. Debt collection
+3. Mortgage
+4. Credit card
+5. Bank account or service
+6. Consumer loan
+7. Money transfer or service
+
+## Logs and evidence
+
+Every HTTP request produces a service log entry containing request ID, method, path, status, duration, and client address. Preserve logs for assessed runs:
+
+```bash
+mkdir -p evidence
+docker compose logs --no-color api > "evidence/api-$(date -u +%Y%m%dT%H%M%SZ).log"
+```
+
+JMeter should run on a separate machine and target the host machine's port `8000`. Do not add parallelism, caching, a queue, or retries before measuring the baseline.
+
+## Verification and reset
+
+Run the local category tests in a virtual environment if desired:
+
+```bash
+python3 -m venv .venv
+. .venv/bin/activate
+pip install -r requirements-dev.txt
+pytest -q
+```
+
+Stop without deleting data using `docker compose down`. To deliberately return to an empty database and delete locally downloaded Ollama models, run:
+
+```bash
+docker compose down --volumes
+```
+
+That command is destructive and should not be used until required evidence is saved.
+
+## Design notes for the report
+
+- Classification is one blocking HTTP request from the API to Ollama.
+- `temperature` is fixed at zero and JSON output is requested to reduce output-format variance.
+- Invalid or unavailable model output returns HTTP `502`; the ticket is not stored.
+- PostgreSQL storage begins empty and is populated only through the public endpoint.
+- The model name is saved with every ticket so stored results remain attributable.
+- Database calls are intentionally not optimized. This is the unmodified baseline for later measurement.
+
