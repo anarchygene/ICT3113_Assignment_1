@@ -1,0 +1,24 @@
+{
+  "source": "documents/ict3113_tickets.csv",
+  "rows": "9000-9999",
+  "count": 1000,
+  "words": {
+    "min": 32,
+    "mean": 154.5,
+    "p50": 140,
+    "p90": 278,
+    "p95": 305,
+    "p99": 352,
+    "max": 369
+  },
+  "characters": {
+    "min": 202,
+    "mean": 873.4,
+    "p50": 778,
+    "p90": 1565,
+    "p95": 1759,
+    "p99": 1948,
+    "max": 1998
+  },
+  "tickets_at_max_words": 2
+}
