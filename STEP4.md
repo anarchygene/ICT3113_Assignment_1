@@ -16,7 +16,7 @@ Step 5 must not begin until all of the following are complete:
 
 The commit containing the frozen golden set and completed prediction record must predate the first benchmark run. Record that commit here:
 
-`Freeze commit: TBD BEFORE BENCHMARK`
+`Freeze commit: 3567f8057758a4ed6ebd8bc018c3c707dc3b579e`
 
 ## Exact procedure for the Step 4 owner
 
