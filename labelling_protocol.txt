@@ -1,0 +1,35 @@
+General ruling
+- If there are multiple suitable categories, the theme most frequently mentioned is chosen as the category
+- If there are ties, prioritise from top to bottom of the list
+- If there are no suitable categories or ambiguous narratives, only focus on keywords, and follow the same rules as above as you see fit
+
+Credit card
+- Any case involving a Credit Card
+- Card can be physical or digital, as long a card is involved
+- Any purchase issues
+- Does not involve credit card debt
+
+Credit reporting
+- Any case involving records of your credit payment history (compiled as a report)
+- Lenders use it to evaluate creditworthiness to consider loans or credit approval
+- Affects recording and reporting of credit transaction record
+
+Mortgage
+- Any case involving property
+- Takes priority even if loan, debt, and money is involved
+
+Consumer loan 
+- Any case involving Loans & Loaning Money
+
+Debt collection
+- Any case involving debt and repaying via collection
+- Any case involving a debt collecting company
+- Cases where the case continues even if the debt is settled
+
+Bank account or service
+- Any case involving a Bank or Account
+- Any bank or account counts towards this
+
+Money transfer or service
+- Any case involving Money or Money Services
+- Lowest priority since there are more niche Money cases above
