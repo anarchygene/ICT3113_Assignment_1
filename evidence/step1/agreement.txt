@@ -1,0 +1,22 @@
+Tickets: 160
+Labeller vs reviewer: 146 agree, 14 disagree
+Observed agreement po = 0.9125; chance agreement pe = 0.1599; Cohen's kappa = 0.896
+Caveat: the reviewer saw the first label (review design, not blind double-labelling), which tends to inflate kappa.
+
+Disagreements (row: labeller A / reviewer B -> final):
+  9861: Money transfer or service / Bank account or service -> Money transfer or service
+  9866: Bank account or service / Money transfer or service -> Money transfer or service
+  9880: Bank account or service / Money transfer or service -> Money transfer or service
+  9896: Bank account or service / Money transfer or service -> Money transfer or service
+  9897: Bank account or service / Credit reporting -> Credit reporting
+  9924: Credit card / Money transfer or service -> Credit card
+  9928: Consumer loan / Debt collection -> Debt collection
+  9930: Bank account or service / Money transfer or service -> Money transfer or service
+  9954: Debt collection / Credit reporting -> Debt collection
+  9957: Bank account or service / Money transfer or service -> Bank account or service
+  9965: Debt collection / Credit reporting -> Debt collection
+  9966: Credit card / Money transfer or service -> Credit card
+  9977: Credit reporting / Bank account or service -> Credit reporting
+  9978: Mortgage / Consumer loan -> Mortgage
+
+Raw consumer label vs final golden label: po = 0.7875, kappa = 0.751 (34 of 160 relabelled)

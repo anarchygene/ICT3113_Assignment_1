@@ -1,0 +1,4 @@
+﻿NAME                             ID              SIZE      MODIFIED       
+llama3.1:8b-instruct-q4_K_M      46e0c10c039e    4.9 GB    14 seconds ago    
+qwen3:4b-instruct-2507-q4_K_M    0edcdef34593    2.5 GB    31 minutes ago    
+gemma3:1b-it-q4_K_M              8648f39daa8f    815 MB    47 minutes ago    

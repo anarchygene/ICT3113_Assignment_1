@@ -6,13 +6,13 @@ This document defines the candidate model set, the client acceptance requirement
 
 Step 5 must not begin until all of the following are complete:
 
-- [ ] The golden set contains 150 to 200 tickets and uses only the seven exact category names.
-- [ ] Two independent label sheets, the labelling protocol, disagreement resolutions, and the agreement statistic are retained.
-- [ ] The final golden set is committed.
-- [ ] All three model tags and locally observed digests are recorded below.
-- [ ] The test hardware and software environment is recorded below.
-- [ ] Every numerical prediction in Section 6 is completed.
-- [ ] This prediction record is committed.
+- [x] The golden set contains 150 to 200 tickets and uses only the seven exact category names.
+- [ ] Two independent label sheets, the labelling protocol, disagreement resolutions, and the agreement statistic are retained. *Partly met: tickets were labelled by one member and reviewed by a second (not blind double-labelling); 14 disagreements are recorded with resolutions in the workbook, and Cohen's kappa = 0.896 (`scripts/agreement.py`, `evidence/step1/agreement.txt`).*
+- [x] The final golden set is committed.
+- [x] All three model tags and locally observed digests are recorded below.
+- [x] The test hardware and software environment is recorded below.
+- [x] Every numerical prediction in Section 6 is completed.
+- [x] This prediction record is committed.
 
 The commit containing the frozen golden set and completed prediction record must predate the first benchmark run. Record that commit here:
 
@@ -306,9 +306,9 @@ Do not treat a web-page digest as the assessed digest. Record the identifier pro
 
 | Exact tag | Local Ollama model ID or digest | Pull date | Evidence file |
 |---|---|---|---|
-| `gemma3:1b-it-q4_K_M` | `TBD BEFORE BENCHMARK` | `TBD` | `TBD` |
-| `qwen3:4b-instruct-2507-q4_K_M` | `TBD BEFORE BENCHMARK` | `TBD` | `TBD` |
-| `llama3.1:8b-instruct-q4_K_M` | `TBD BEFORE BENCHMARK` | `TBD` | `TBD` |
+| `gemma3:1b-it-q4_K_M` | ID `8648f39daa8f`; weights `sha256:7cd4618c1faf8b7233c6c906dac1694b6a47684b37b8895d470ac688520b9c01` (999.89M params, Q4_K_M, 815 MB) | 2026-10-07 | `evidence/step4/ollama-list.txt`, `gemma3-1b-it-q4_K_M-show.txt`, `gemma3-1b-it-q4_K_M-modelfile.txt` |
+| `qwen3:4b-instruct-2507-q4_K_M` | ID `0edcdef34593`; weights `sha256:85e4a5b7b8ef0e48af0e8658f5aaab9c2324c76c1641493f4d1e25fce54b18b9` (4.0B params, Q4_K_M, 2.5 GB) | 2026-10-07 | `evidence/step4/ollama-list.txt`, `qwen3-4b-instruct-2507-q4_K_M-show.txt`, `qwen3-4b-instruct-2507-q4_K_M-modelfile.txt` |
+| `llama3.1:8b-instruct-q4_K_M` | ID `46e0c10c039e`; weights `sha256:667b0c1932bc6ffc593ed1d03f895bf2dc8dc6df21db3042284a6f4416b06a29` (8.0B params, Q4_K_M, 4.9 GB) | 2026-10-07 | `evidence/step4/ollama-list.txt`, `llama3-1-8b-instruct-q4_K_M-show.txt`, `llama3-1-8b-instruct-q4_K_M-modelfile.txt` |
 
 ## 3. Workload basis
 
@@ -425,9 +425,9 @@ Record the controlled environment before benchmarking:
 | Service machine OS and version | Windows 11 Home 10.0.26200, 64-bit; containers on WSL2 kernel 6.6.87.2 |
 | Docker Engine and Compose versions | Docker Engine 29.5.3 (Docker Desktop), Docker Compose v5.1.4 |
 | Ollama image/version | `ollama/ollama:0.12.3` (`ollama --version`: 0.12.3), CPU only (`library=cpu`, 7.5 GiB visible), server defaults `OLLAMA_NUM_PARALLEL=1`, `OLLAMA_KEEP_ALIVE=5m`, `OLLAMA_MAX_QUEUE=512` (`evidence/step4/ollama-server-config.txt`) |
-| Load-generator CPU, RAM, and OS | `TBD BEFORE BENCHMARK` |
-| JMeter version and plugins | `TBD BEFORE BENCHMARK` |
-| Network connection between machines | `TBD BEFORE BENCHMARK` |
+| Load-generator CPU, RAM, and OS | Desktop MSI MS-7C91, AMD Ryzen 5 3600 (6 cores / 12 threads), 31.93 GB RAM, Windows 10 Pro 22H2 (10.0.19045), 64-bit (`evidence/step4/load-generator-hardware.txt`) |
+| JMeter version and plugins | Apache JMeter 5.6.3 on Eclipse Temurin OpenJDK 17.0.20.1; no plugins (built-in Open Model Thread Group) (`evidence/step4/jmeter-version.txt`) |
+| Network connection between machines | Same home router (`kenyap`, 192.168.1.0/24). Load generator 192.168.1.147 on wired Ethernet (1 Gbps); service PC 192.168.1.106 on Wi-Fi (Intel BE201, Wi-Fi 7). Not isolated from other household traffic. |
 | Fixed Ollama context size | `num_ctx: 4096` for every request (`app/classifier.py`), `temperature: 0`, `format: json` |
 
 ## 6. Prediction record
