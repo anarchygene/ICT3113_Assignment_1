@@ -9,7 +9,7 @@ Step 5 must not begin until all of the following are complete:
 - [ ] The golden set contains 150 to 200 tickets and uses only the seven exact category names.
 - [ ] Two independent label sheets, the labelling protocol, disagreement resolutions, and the agreement statistic are retained.
 - [ ] The final golden set is committed.
-- [ ] All four model tags and locally observed digests are recorded below.
+- [ ] All three model tags and locally observed digests are recorded below.
 - [ ] The test hardware and software environment is recorded below.
 - [ ] Every numerical prediction in Section 6 is completed.
 - [ ] This prediction record is committed.
@@ -102,16 +102,15 @@ docker compose exec -T ollama ollama --version |
 
 Do not start accuracy or load testing here. Pulling and inspecting model metadata is Step 4; sending test narratives is Step 5.
 
-### Step 6 Pull the four exact model tags
+### Step 6 Pull the three exact model tags
 
 ```powershell
 docker compose exec ollama ollama pull gemma3:1b-it-q4_K_M
-docker compose exec ollama ollama pull phi4-mini:3.8b-q4_K_M
 docker compose exec ollama ollama pull qwen3:4b-instruct-2507-q4_K_M
 docker compose exec ollama ollama pull llama3.1:8b-instruct-q4_K_M
 ```
 
-All four commands must finish successfully. Do not replace a failed model with a different tag without updating the candidate justification and committing that decision before benchmarking.
+All three commands must finish successfully. Do not replace a failed model with a different tag without updating the candidate justification and committing that decision before benchmarking.
 
 ### Step 7 Capture the local IDs, quantization, metadata, and model files
 
@@ -121,7 +120,6 @@ docker compose exec -T ollama ollama list |
 
 $models = @(
   'gemma3:1b-it-q4_K_M',
-  'phi4-mini:3.8b-q4_K_M',
   'qwen3:4b-instruct-2507-q4_K_M',
   'llama3.1:8b-instruct-q4_K_M'
 )
@@ -177,11 +175,11 @@ Select-String -Path .env.example -Pattern 'OLLAMA_MODEL|OLLAMA_TIMEOUT'
 Before freezing Step 4, agree on and record:
 
 - `temperature: 0` and JSON response mode.
-- One fixed context size for all four candidates. `4096` tokens is sufficient for the supplied ticket lengths and avoids comparing unnecessarily different context-memory allocations.
+- One fixed context size for all three candidates. `4096` tokens is sufficient for the supplied ticket lengths and avoids comparing unnecessarily different context-memory allocations.
 - The exact system prompt and request construction already stored in `app/classifier.py`.
 - One Ollama version and one `Q4_K_M` quantization level.
 
-If the team adds an explicit `num_ctx: 4096` option or makes another configuration correction, commit it before the freeze. Do not tune the prompt or inference settings separately for each candidate after viewing results.
+The team added an explicit `num_ctx: 4096` option to `app/classifier.py` before the freeze. Any other configuration correction must also be committed before the freeze. Do not tune the prompt or inference settings separately for each candidate after viewing results.
 
 ### Step 10 Complete the environment table
 
@@ -218,7 +216,7 @@ Do not derive these predictions by running golden tickets. If the team uses exte
 
 ### Step 13 Review the requirements without changing them per model
 
-Review R1-R8 against [`workload/WORKLOAD.md`](workload/WORKLOAD.md). The same thresholds apply to all four candidates. Do not create easier latency or accuracy requirements for a larger or smaller model. If the team decides to change a threshold, document the workload or client reason before seeing benchmark results.
+Review R1-R8 against [`workload/WORKLOAD.md`](workload/WORKLOAD.md). The same thresholds apply to all three candidates. Do not create easier latency or accuracy requirements for a larger or smaller model. If the team decides to change a threshold, document the workload or client reason before seeing benchmark results.
 
 ### Step 14 Perform the independent freeze review
 
@@ -282,11 +280,10 @@ All candidates use an instruction-tuned `Q4_K_M` build. Keeping the quantization
 | Candidate | Exact Ollama tag | Parameter class | Approximate download | Purpose in the comparison | Licence |
 |---|---|---:|---:|---|---|
 | [Gemma 3 1B](https://ollama.com/library/gemma3/tags) | `gemma3:1b-it-q4_K_M` | Small, 1B | 815 MB | Fast, low-resource baseline | [Gemma Terms](https://ai.google.dev/gemma/terms) |
-| [Phi-4 Mini](https://ollama.com/library/phi4-mini/tags) | `phi4-mini:3.8b-q4_K_M` | Medium, 3.8B | 2.5 GB | Medium-size competitor designed for constrained environments | [MIT](https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/main/LICENSE) |
 | [Qwen3 4B Instruct](https://ollama.com/library/qwen3/tags) | `qwen3:4b-instruct-2507-q4_K_M` | Medium, 4B | 2.5 GB | Predicted balance between accuracy and CPU performance | [Apache 2.0](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/main/LICENSE) |
 | [Llama 3.1 8B Instruct](https://ollama.com/library/llama3.1/tags) | `llama3.1:8b-instruct-q4_K_M` | Large, 8B | 4.9 GB | Accuracy ceiling and large-model comparison | [Llama 3.1 Community License](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/blob/main/README.md) |
 
-This set spans three size classes. The two similarly sized medium candidates also allow the team to observe whether model family and instruction tuning affect classification quality when parameter count is approximately controlled.
+This set spans three size classes (1B, 4B, 8B), roughly doubling parameters at each step, so the accuracy-versus-latency trade-off is visible across the range a CPU-only server can plausibly run. Phi-4 Mini 3.8B was considered and dropped before benchmarking to keep one candidate per size class within the available test time; it would have duplicated the 4B class.
 
 ### 2.1 Pin the local model artifacts
 
@@ -294,7 +291,6 @@ Pull each exact tag using the same Ollama installation that will run the assesse
 
 ```bash
 docker compose exec ollama ollama pull gemma3:1b-it-q4_K_M
-docker compose exec ollama ollama pull phi4-mini:3.8b-q4_K_M
 docker compose exec ollama ollama pull qwen3:4b-instruct-2507-q4_K_M
 docker compose exec ollama ollama pull llama3.1:8b-instruct-q4_K_M
 docker compose exec ollama ollama list
@@ -311,7 +307,6 @@ Do not treat a web-page digest as the assessed digest. Record the identifier pro
 | Exact tag | Local Ollama model ID or digest | Pull date | Evidence file |
 |---|---|---|---|
 | `gemma3:1b-it-q4_K_M` | `TBD BEFORE BENCHMARK` | `TBD` | `TBD` |
-| `phi4-mini:3.8b-q4_K_M` | `TBD BEFORE BENCHMARK` | `TBD` | `TBD` |
 | `qwen3:4b-instruct-2507-q4_K_M` | `TBD BEFORE BENCHMARK` | `TBD` | `TBD` |
 | `llama3.1:8b-instruct-q4_K_M` | `TBD BEFORE BENCHMARK` | `TBD` | `TBD` |
 
@@ -325,11 +320,11 @@ The requirements below use the peak-plus-growth-headroom workload from [`workloa
 | Concurrent agent searches through `GET /search` | 316 per hour, or about 5.27 per minute |
 | Total offered mixed load | 421 requests per hour |
 
-The requirement test is an open-loop mixed-load test. The load generator must run on a separate machine from the service, Ollama, and PostgreSQL. Each measured run uses a 5-minute warm-up followed by a 60-minute steady-state measurement window. Warm-up samples are excluded from the reported results.
+The requirement test is an open-loop mixed-load test. The load generator must run on a separate machine from the service, Ollama, and PostgreSQL. Each measured run uses a 2-minute warm-up followed by a 20-minute steady-state measurement window and a 1-minute drain with no new arrivals. Warm-up samples are excluded from the reported results. (Changed from 5 + 60 minutes before the freeze: three runs at three levels for three models would otherwise need more than 30 hours of test time before the submission deadline. At 105 tickets per hour a 20-minute window holds about 35 POST arrivals per run and about 105 across the three runs.)
 
 ## 4. Client acceptance requirements
 
-These requirements are fixed for all four models. They describe the client's required service quality, not what is convenient for an individual model. A candidate that misses a requirement is reported as failing it; the threshold is not relaxed after results are observed.
+These requirements are fixed for all three models. They describe the client's required service quality, not what is convenient for an individual model. A candidate that misses a requirement is reported as failing it; the threshold is not relaxed after results are observed.
 
 ### R1 Sustained ticket throughput
 
@@ -424,16 +419,16 @@ Record the controlled environment before benchmarking:
 
 | Item | Recorded value |
 |---|---|
-| Service machine CPU model | `TBD BEFORE BENCHMARK` |
-| Physical cores and logical processors | `TBD BEFORE BENCHMARK` |
-| Service machine RAM | `TBD BEFORE BENCHMARK` |
-| Service machine OS and version | `TBD BEFORE BENCHMARK` |
-| Docker Engine and Compose versions | `TBD BEFORE BENCHMARK` |
-| Ollama image/version | `TBD BEFORE BENCHMARK` |
+| Service machine CPU model | Intel Core Ultra 7 256V (Lunar Lake), laptop Lenovo 83JT, mains power, Windows power plan Balanced |
+| Physical cores and logical processors | 8 cores (4 performance + 4 low-power efficiency), 8 logical processors; Docker VM sees 8 CPUs |
+| Service machine RAM | 16 GB (15.55 GB usable); Docker Desktop WSL2 VM limited to 7.53 GiB |
+| Service machine OS and version | Windows 11 Home 10.0.26200, 64-bit; containers on WSL2 kernel 6.6.87.2 |
+| Docker Engine and Compose versions | Docker Engine 29.5.3 (Docker Desktop), Docker Compose v5.1.4 |
+| Ollama image/version | `ollama/ollama:0.12.3` (`ollama --version`: 0.12.3), CPU only (`library=cpu`, 7.5 GiB visible), server defaults `OLLAMA_NUM_PARALLEL=1`, `OLLAMA_KEEP_ALIVE=5m`, `OLLAMA_MAX_QUEUE=512` (`evidence/step4/ollama-server-config.txt`) |
 | Load-generator CPU, RAM, and OS | `TBD BEFORE BENCHMARK` |
 | JMeter version and plugins | `TBD BEFORE BENCHMARK` |
 | Network connection between machines | `TBD BEFORE BENCHMARK` |
-| Fixed Ollama context size | `TBD BEFORE BENCHMARK` |
+| Fixed Ollama context size | `num_ctx: 4096` for every request (`app/classifier.py`), `temperature: 0`, `format: json` |
 
 ## 6. Prediction record
 
@@ -445,7 +440,10 @@ Complete this section before the freeze commit. Predictions must be numerical an
 
 Team-approved wording:
 
-`TBD BEFORE BENCHMARK`
+1. **First component to saturate: Ollama CPU inference.** More than 95% of each `POST /tickets` response time will be spent waiting on the Ollama `/api/chat` call. Prompt processing (prefill of roughly 300 input tokens: system prompt plus narrative) will take most of that time, because the JSON answer is only about 12 output tokens. PostgreSQL insert time and API overhead together will stay under 100 ms per request.
+2. **Symptom at saturation:** Ollama processes requests effectively one at a time on 8 CPU threads. Once the arrival rate exceeds about 3,600 / (single-request latency in seconds) tickets per hour, `POST /tickets` latency will grow steadily for as long as the overload lasts (unbounded queue growth, not a plateau). Once a queued request waits more than the API's 300-second Ollama timeout, it will fail with HTTP 502. Errors will appear only after that point; there will be no early connection failures.
+3. **Predicted stress limit (Qwen3 4B):** the maximum sustainable arrival rate is about **700 tickets per hour** (3,600 / 5 s).
+4. **Search is not the bottleneck:** `GET /search` p95 will stay below **0.5 seconds** for every candidate at the 105/h condition. Its latency will rise only when inference saturates all CPU cores, because PostgreSQL competes for the same CPU.
 
 ### 6.2 Per-model predictions
 
@@ -453,10 +451,11 @@ Enter one numerical overall-accuracy prediction and one numerical single-request
 
 | Candidate | Predicted overall accuracy | Predicted warm single-request latency | Predicted R1-R8 outcome | Reason for prediction |
 |---|---:|---:|---|---|
-| Gemma 3 1B | `TBD BEFORE BENCHMARK` | `TBD BEFORE BENCHMARK` | `TBD` | Smallest candidate; expected to be fastest but least accurate |
-| Phi-4 Mini 3.8B | `TBD BEFORE BENCHMARK` | `TBD BEFORE BENCHMARK` | `TBD` | Medium-size model aimed at constrained and latency-sensitive use |
-| Qwen3 4B Instruct | `TBD BEFORE BENCHMARK` | `TBD BEFORE BENCHMARK` | `TBD` | Predicted best accuracy-throughput balance |
-| Llama 3.1 8B Instruct | `TBD BEFORE BENCHMARK` | `TBD BEFORE BENCHMARK` | `TBD` | Largest candidate; expected to be most accurate or close to it, but slowest |
+| Gemma 3 1B | 52% (83/160) | 1.5 s | R1 pass, R2 pass, R3 pass, R4 **fail**, R5 **fail**, R6 **fail**, R7 **fail** (96% conformant), R8 pass | Smallest model. Fastest: about 0.8 GB of weights, prefill of about 300 tokens at about 400 tokens/s on 8 CPU threads. Least able to apply the protocol's priority rules from category names alone, and expected to emit a non-exact category string (for example `Bank account`) on about 4% of tickets. Those become HTTP 502, which also breaks the 1% error budget (R4). |
+| Qwen3 4B Instruct | 74% (118/160) | 5 s | R1 pass, R2 pass, R3 pass, R4 pass, R5 **fail**, R6 **fail**, R7 pass, R8 pass | 2.5 GB of weights; prefill about 80 tokens/s and decode about 17 tokens/s on this CPU. Recent instruction tuning with no thinking tokens gives strong format compliance. Predicted to be the most accurate candidate, but still below 85% because the golden labels follow team-specific priority rules (for example Mortgage over loan or debt, and Money transfer as the lowest priority) that the prompt does not state. |
+| Llama 3.1 8B Instruct | 71% (114/160) | 10 s | R1 pass, R2 pass, R3 pass, R4 pass, R5 **fail**, R6 **fail**, R7 pass, R8 pass | 4.9 GB of weights, about twice Qwen3 4B, so roughly twice the prefill and decode time. At 105/h, utilisation is about 0.3, so p95 (about 22 s, driven by p95-length tickets of about 305 words) remains under 30 s. Predicted slightly *less* accurate than Qwen3 4B despite its size, because it is an older (2024) instruction tune. |
+
+Latency predictions are reasoned estimates, not measurements: no golden or load ticket was sent to any model before the freeze. Per-model throughput was estimated from the parameter count and download size relative to the service CPU (Intel Core Ultra 7 256V: 4 performance cores plus 4 low-power efficiency cores, 8 threads, LPDDR5X memory). Prefill is compute-bound and decode is memory-bandwidth-bound, so time per ticket is expected to scale roughly linearly with model size. The predicted value is the warm p50 of the sequential accuracy run.
 
 ### 6.3 Hardest-category prediction
 
@@ -468,21 +467,27 @@ Enter one numerical overall-accuracy prediction and one numerical single-request
 
 Team-approved prediction and reasoning:
 
-`TBD BEFORE BENCHMARK`
+1. **Money transfer or service will be the hardest category for every candidate** (predicted per-category accuracy: Qwen3 4B 55%, Llama 3.1 8B 50%, Gemma 3 1B 35%). Payment-app and digital-wallet complaints (Cash App, PayPal, Zelle, Apple Cash) look like account problems. The team protocol also makes Money transfer the lowest-priority category, so the golden labels resolve many of these narratives to `Bank account or service` (for example row 9840), and the models cannot know that rule. Expected confusion: mostly between Money transfer and Bank account, in both directions.
+2. **Consumer loan will be second hardest** (Qwen3 4B about 60%). Narratives about repayment difficulty and collection calls will be classified as `Debt collection`, and student or auto loans that damage a credit file as `Credit reporting`.
+3. **Credit card** (only 11 tickets, so one error costs 9 percentage points) will lose tickets to `Credit reporting` and `Debt collection`, because the protocol excludes credit-card debt from this category.
+4. **Credit reporting and Mortgage will be easiest** (≥ 85% for Qwen3 4B and Llama 3.1 8B). Their vocabulary is distinctive (credit bureau names, "inaccurate information", escrow, foreclosure, servicer).
+
+Every candidate is therefore predicted to fail R6, because Money transfer or service falls below 70%.
 
 ## 7. Step 5 measurement levels prepared by Step 4
 
-R1-R8 are accepted or rejected at the peak-plus-headroom condition. Step 5 should additionally measure the lower levels and then perform a stress ramp:
+R1-R8 are accepted or rejected at the peak-plus-headroom condition. Every candidate is load-tested at three levels with three runs each; one candidate (Qwen3 4B) is then stress-tested with a continuous ramp:
 
-| Level | POST tickets/hour | GET searches/hour | Purpose |
-|---|---:|---:|---|
-| Off-peak | 18 | 55 | Low-load reference |
-| Average | 43 | 130 | Typical-load reference |
-| Peak | 81 | 243 | Present-day peak |
-| Peak plus headroom | 105 | 316 | Formal requirement condition |
-| Within-hour burst | 130 | 316 | Short burst measurement |
-| Incident surge | 243 | 316 | Initial stress level |
-| Stress ramp | Increase until a limit is observed | 316 | Determine the system limit |
+| Level | POST tickets/hour | GET searches/hour | Purpose | Runs per candidate |
+|---|---:|---:|---|---:|
+| Average | 43 | 130 | Typical-load reference | 3 |
+| Peak | 81 | 243 | Present-day peak | 3 |
+| Peak plus headroom | 105 | 316 | Formal requirement condition (R1-R4) | 3 |
+| Stress ramp | 60 rising linearly to 1,200 over 40 minutes | 316 | Determine the maximum sustainable arrival rate; passes through the burst (130/h) and incident-surge (243/h) levels | 1 (Qwen3 4B) |
+
+Off-peak (18/h) is not load-tested separately: it is below the average level, and at that rate a 20-minute window would hold only about six tickets. The within-hour burst and incident-surge rates are covered by the stress ramp rather than run as fixed levels, which keeps the schedule within the available test time.
+
+The exact procedure, scripts and metric definitions are in [`step5/README.md`](step5/README.md).
 
 For every measured arrival rate and candidate, retain the raw `.jtl` file and matching service logs. Report p50, p95, and p99 latency, achieved throughput, and error rate. Performance configurations require three runs, with the mean and spread reported.
 

@@ -1,0 +1,46 @@
+﻿Captured: 2026-10-07T22:05:20.5288381+08:00
+
+
+Name                      : Intel(R) Core(TM) Ultra 7 256V
+NumberOfCores             : 8
+NumberOfLogicalProcessors : 8
+MaxClockSpeed             : 2200
+
+
+
+
+
+Manufacturer : LENOVO
+Model        : 83JT
+RAM_GB       : 15.55
+
+
+
+
+
+Caption        : Microsoft Windows 11 Home
+Version        : 10.0.26200
+OSArchitecture : 64-bit
+
+
+
+Docker VM (WSL2) resources:
+NCPU=8 MemTotal=8086843392 Kernel=6.6.87.2-microsoft-standard-WSL2 OS=Docker Desktop
+Network adapters up:
+
+Name                               InterfaceDescription             LinkSpeed
+----                               --------------------             ---------
+Wi-Fi                              Intel(R) Wi-Fi 7 BE201 320MHz    27 Mbps  
+vEthernet (WSL (Hyper-V firewall)) Hyper-V Virtual Ethernet Adapter 10 Gbps  
+
+
+Power plan:
+Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)
+
+
+BatteryStatus            : 2
+EstimatedChargeRemaining : 42
+
+
+
+

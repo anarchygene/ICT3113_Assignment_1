@@ -27,7 +27,7 @@ class OllamaClassifier:
             "model": self.settings.ollama_model,
             "stream": False,
             "format": "json",
-            "options": {"temperature": 0},
+            "options": {"temperature": 0, "num_ctx": 4096},
             "messages": [
                 {"role": "system", "content": SYSTEM_PROMPT},
                 {"role": "user", "content": narrative},
