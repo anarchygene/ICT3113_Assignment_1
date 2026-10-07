@@ -1,4 +1,5 @@
 General ruling
+- Identify based on the problem and customer needs/resolution
 - If there are multiple suitable categories, the theme most frequently mentioned is chosen as the category
 - If there are ties, prioritise from top to bottom of the list
 - If there are no suitable categories or ambiguous narratives, only focus on keywords, and follow the same rules as above as you see fit
