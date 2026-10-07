@@ -1,0 +1,12 @@
+﻿{
+    "total":  12,
+    "counts":  {
+                   "Credit reporting":  9,
+                   "Debt collection":  1,
+                   "Mortgage":  0,
+                   "Credit card":  0,
+                   "Bank account or service":  1,
+                   "Consumer loan":  1,
+                   "Money transfer or service":  0
+               }
+}

@@ -1,0 +1,81 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect,"reqid","row"
+1791390771959,39,GET /search,200,OK,GET search (agents) 2-1,text,true,,247,195,1,1,http://192.168.1.106:8000/search?q=collector,38,0,24,search-66800f35-ab1f-41b4-bd24-6718e7cb9430,null
+1791390797770,33,GET /search,200,OK,GET search (agents) 2-2,text,true,,1542,199,1,1,http://192.168.1.106:8000/search?q=credit+report,33,0,16,search-f0ca123f-bf1d-427b-bc72-5d6209b1e132,null
+1791390805739,1375,POST /tickets,201,Created,POST tickets (intake) 1-1,text,true,,967,886,1,1,http://192.168.1.106:8000/tickets,1374,0,6,post-6a18d754-64c5-4ed6-a3e3-51aa83a6f859,9000
+1791390808569,44,GET /search,200,OK,GET search (agents) 2-3,text,true,,246,194,1,1,http://192.168.1.106:8000/search?q=mortgage,44,0,17,search-7a1285eb-3738-4dec-a395-677c1a81bfa0,null
+1791390840369,1380,POST /tickets,201,Created,POST tickets (intake) 1-2,text,true,,909,828,1,1,http://192.168.1.106:8000/tickets,1380,0,8,post-b40b40bd-7821-4d7f-ad9e-72de4f2e55cc,9001
+1791390864190,1997,POST /tickets,201,Created,POST tickets (intake) 1-3,text,true,,1561,1481,1,1,http://192.168.1.106:8000/tickets,1997,0,4,post-bb9f37ea-6eeb-4688-ad23-02f37eb34e9b,9002
+1791390870692,21,GET /search,200,OK,GET search (agents) 2-4,text,true,,247,195,1,1,http://192.168.1.106:8000/search?q=overdraft,21,0,6,search-a50eaee5-3f9d-44f2-a285-95d9d19ef2b6,null
+1791390892997,41,GET /search,200,OK,GET search (agents) 2-5,text,true,,243,191,1,1,http://192.168.1.106:8000/search?q=Zelle,41,0,10,search-32582b8e-353d-4f75-b888-fbb204a908ab,null
+1791390906768,66,GET /search,200,OK,GET search (agents) 2-6,text,true,,2850,193,1,1,http://192.168.1.106:8000/search?q=dispute,65,0,24,search-f9222915-4830-4bf5-a1a2-91fab00e8956,null
+1791390923239,47,GET /search,200,OK,GET search (agents) 2-7,text,true,,246,194,1,1,http://192.168.1.106:8000/search?q=late+fee,47,0,29,search-a42cebb4-a494-4134-918e-fbc9e417e0d8,null
+1791390938219,19,GET /search,200,OK,GET search (agents) 2-8,text,true,,252,200,1,1,http://192.168.1.106:8000/search?q=identity+theft,18,0,3,search-580250aa-7373-403d-859f-9476df800326,null
+1791390965440,37,GET /search,200,OK,GET search (agents) 2-9,text,true,,244,192,1,1,http://192.168.1.106:8000/search?q=escrow,37,0,17,search-ae265e37-6be6-451f-96ab-2b4880fc80e2,null
+1791390987148,93,GET /search,200,OK,GET search (agents) 2-10,text,true,,251,199,1,1,http://192.168.1.106:8000/search?q=wire+transfer,93,0,26,search-22019570-f5a1-49e2-beb0-c4caa47d5c31,null
+1791391047785,51,GET /search,200,OK,GET search (agents) 2-11,text,true,,1388,192,1,1,http://192.168.1.106:8000/search?q=PayPal,51,0,13,search-6a0fb8c6-f8db-42fe-905c-2ec488ff2a3d,null
+1791391051331,21,GET /search,200,OK,GET search (agents) 2-12,text,true,,246,194,1,1,http://192.168.1.106:8000/search?q=Cash+App,21,0,8,search-8be1b936-63af-4158-9c0c-495bdcae4b54,null
+1791391066631,2534,POST /tickets,502,Bad Gateway,POST tickets (intake) 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[201]]]
+
+/",305,1902,1,1,http://192.168.1.106:8000/tickets,2534,0,7,post-8d6c6a5b-7591-4302-ad3d-902c152e1268,9003
+1791391098829,75,GET /search,200,OK,GET search (agents) 2-13,text,true,,249,197,1,1,http://192.168.1.106:8000/search?q=foreclosure,75,0,24,search-12e71828-5f30-4eab-979f-168622241f7a,null
+1791391102116,61,GET /search,200,OK,GET search (agents) 2-14,text,true,,250,198,1,1,http://192.168.1.106:8000/search?q=student+loan,61,0,26,search-b372fbdd-d1c7-45b3-a5a5-fbc9ace7f7c4,null
+1791391131495,28,GET /search,200,OK,GET search (agents) 2-15,text,true,,248,196,1,1,http://192.168.1.106:8000/search?q=charge+off,28,0,7,search-d631283a-2dbc-4cf9-ac2e-6cdf51b87559,null
+1791391190183,26,GET /search,200,OK,GET search (agents) 2-16,text,true,,2255,191,1,1,http://192.168.1.106:8000/search?q=fraud,25,0,7,search-d8786b0e-5787-4f6b-8d70-b0d440028abb,null
+1791391202405,23,GET /search,200,OK,GET search (agents) 2-17,text,true,,252,200,1,1,http://192.168.1.106:8000/search?q=account+closed,23,0,16,search-78a8e40d-e4d2-46f9-9e05-3009f18003e2,null
+1791391268775,13,GET /search,200,OK,GET search (agents) 2-18,text,true,,251,199,1,1,http://192.168.1.106:8000/search?q=interest+rate,13,0,4,search-b9e799ca-b6e5-4b1c-bcc0-318692ab49dc,null
+1791391285805,36,GET /search,200,OK,GET search (agents) 2-19,text,true,,244,192,1,1,http://192.168.1.106:8000/search?q=refund,36,0,11,search-d65c71ff-f706-475d-bf0c-12dc7caf60ce,null
+1791391286136,62,GET /search,200,OK,GET search (agents) 2-20,text,true,,245,193,1,1,http://192.168.1.106:8000/search?q=Equifax,62,0,13,search-e0a006e6-4a34-4eb4-8636-2d98f55803ce,null
+1791391304399,906,POST /tickets,201,Created,POST tickets (intake) 1-5,text,true,,664,583,1,1,http://192.168.1.106:8000/tickets,906,0,7,post-8415cbab-bffc-49a7-ad16-ce60580ee353,9004
+1791391421267,1969,POST /tickets,201,Created,POST tickets (intake) 1-6,text,true,,972,891,1,1,http://192.168.1.106:8000/tickets,1969,0,28,post-d05e6d61-e9ae-4f65-bac1-c94979ccc3f2,9005
+1791391425988,25,GET /search,200,OK,GET search (agents) 2-21,text,true,,247,195,1,1,http://192.168.1.106:8000/search?q=collector,25,0,14,search-1d78a16e-d309-44a7-a23e-36c758f81e3b,null
+1791391456889,59,GET /search,200,OK,GET search (agents) 2-22,text,true,,1542,199,1,1,http://192.168.1.106:8000/search?q=credit+report,59,0,16,search-e14dd8bf-a23b-4a66-9b26-877daacbbb50,null
+1791391460525,86,GET /search,200,OK,GET search (agents) 2-23,text,true,,246,194,1,1,http://192.168.1.106:8000/search?q=mortgage,86,0,19,search-51ad4836-51d1-4b8d-9a8b-8927e0268f57,null
+1791391468864,17,GET /search,200,OK,GET search (agents) 2-24,text,true,,247,195,1,1,http://192.168.1.106:8000/search?q=overdraft,17,0,8,search-780eed67-01c5-400d-87b2-3eb606ff6fd3,null
+1791391470195,17,GET /search,200,OK,GET search (agents) 2-25,text,true,,243,191,1,1,http://192.168.1.106:8000/search?q=Zelle,17,0,6,search-c6fc2556-564b-4160-881d-fc5397456b71,null
+1791391481516,59,GET /search,200,OK,GET search (agents) 2-26,text,true,,2850,193,1,1,http://192.168.1.106:8000/search?q=dispute,59,0,19,search-82f4948f-8c87-44d4-acd1-b45662763ce8,null
+1791391484067,67,GET /search,200,OK,GET search (agents) 2-27,text,true,,246,194,1,1,http://192.168.1.106:8000/search?q=late+fee,67,0,20,search-f75e1b7f-e2ef-4255-8780-12b6f264f47c,null
+1791391485998,29,GET /search,200,OK,GET search (agents) 2-28,text,true,,252,200,1,1,http://192.168.1.106:8000/search?q=identity+theft,29,0,15,search-6d5d6ed7-1a8e-4692-b78c-8b8bb2090543,null
+1791391496405,390,GET /search,200,OK,GET search (agents) 2-29,text,true,,244,192,1,1,http://192.168.1.106:8000/search?q=escrow,390,0,261,search-da84a6cb-34a9-4313-8cc4-6071547c95fd,null
+1791391509494,89,GET /search,200,OK,GET search (agents) 2-30,text,true,,251,199,1,1,http://192.168.1.106:8000/search?q=wire+transfer,88,0,37,search-1fbe5158-5f20-4c32-95b6-3df2fa8d9a60,null
+1791391527339,79,GET /search,200,OK,GET search (agents) 2-31,text,true,,1388,192,1,1,http://192.168.1.106:8000/search?q=PayPal,78,0,10,search-8c7aa47c-d3ce-43de-b21e-080cfaa71633,null
+1791391553804,32,GET /search,200,OK,GET search (agents) 2-32,text,true,,246,194,1,1,http://192.168.1.106:8000/search?q=Cash+App,32,0,7,search-312b6505-c63b-4159-a810-6c56df9b987d,null
+1791391600576,50,GET /search,200,OK,GET search (agents) 2-33,text,true,,249,197,1,1,http://192.168.1.106:8000/search?q=foreclosure,49,0,29,search-d6008ec4-a973-4eb6-9e08-e4edae3df537,null
+1791391624432,89,GET /search,200,OK,GET search (agents) 2-34,text,true,,250,198,1,1,http://192.168.1.106:8000/search?q=student+loan,89,0,4,search-1edc652e-c654-4994-884a-6e7263e4be90,null
+1791391675026,37,GET /search,200,OK,GET search (agents) 2-35,text,true,,248,196,1,1,http://192.168.1.106:8000/search?q=charge+off,37,0,22,search-9c391713-d804-4355-b7cb-076b1dea733a,null
+1791391678445,2029,POST /tickets,201,Created,POST tickets (intake) 1-7,text,true,,1407,1326,1,1,http://192.168.1.106:8000/tickets,2029,0,34,post-adae53c7-3cb3-4100-9598-09fe4bd94ef6,9006
+1791391718497,43,GET /search,200,OK,GET search (agents) 2-36,text,true,,3021,191,1,1,http://192.168.1.106:8000/search?q=fraud,43,0,20,search-5f281646-59ae-460c-9d74-839f3a822c88,null
+1791391718751,45,GET /search,200,OK,GET search (agents) 2-37,text,true,,252,200,1,1,http://192.168.1.106:8000/search?q=account+closed,45,0,25,search-137dc6fb-d895-483f-845e-a445e9c36156,null
+1791391730576,1420,POST /tickets,201,Created,POST tickets (intake) 1-8,text,true,,791,710,1,1,http://192.168.1.106:8000/tickets,1420,0,26,post-6c86c5e1-24e6-4287-b39c-d1c439a53658,9007
+1791391746428,2012,POST /tickets,201,Created,POST tickets (intake) 1-9,text,true,,1498,1417,1,1,http://192.168.1.106:8000/tickets,2012,0,16,post-6e14bb03-9f71-45dd-9fbb-264b24677755,9008
+1791391809175,82,GET /search,200,OK,GET search (agents) 2-38,text,true,,251,199,1,1,http://192.168.1.106:8000/search?q=interest+rate,82,0,22,search-e4e7bb8a-69ef-41e8-bd02-7fb190107bf1,null
+1791391824617,49,GET /search,200,OK,GET search (agents) 2-39,text,true,,244,192,1,1,http://192.168.1.106:8000/search?q=refund,49,0,9,search-e0925fb0-68da-42f9-a18c-25a5e6036c92,null
+1791391829245,36,GET /search,200,OK,GET search (agents) 2-40,text,true,,245,193,1,1,http://192.168.1.106:8000/search?q=Equifax,35,0,17,search-7beeca7c-4930-478b-a129-36cbb8c5bad1,null
+1791391889694,1831,POST /tickets,502,Bad Gateway,POST tickets (intake) 1-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[201]]]
+
+/",320,1102,1,1,http://192.168.1.106:8000/tickets,1831,0,71,post-fe197486-f4fe-4003-a883-8f2b5f37a8de,9009
+1791391895232,85,GET /search,200,OK,GET search (agents) 2-41,text,true,,247,195,1,1,http://192.168.1.106:8000/search?q=collector,85,0,56,search-188320ab-d895-45df-9aed-c764ef173f7f,null
+1791391896867,2351,POST /tickets,201,Created,POST tickets (intake) 1-11,text,true,,1752,1674,1,1,http://192.168.1.106:8000/tickets,2351,0,35,post-2e755f28-0ded-4088-9364-578e89c316ea,9010
+1791391916391,34,GET /search,200,OK,GET search (agents) 2-42,text,true,,2833,199,1,1,http://192.168.1.106:8000/search?q=credit+report,33,0,17,search-14d0d941-0af6-41e6-9264-348f6c382f14,null
+1791391924667,14,GET /search,200,OK,GET search (agents) 2-43,text,true,,246,194,1,1,http://192.168.1.106:8000/search?q=mortgage,14,0,4,search-ce388268-ba45-4d2c-8ec0-79da9a61777f,null
+1791391940085,62,GET /search,200,OK,GET search (agents) 2-44,text,true,,247,195,1,1,http://192.168.1.106:8000/search?q=overdraft,62,0,36,search-65d39007-3389-4352-ab73-d840a765a4f6,null
+1791391955372,1204,POST /tickets,201,Created,POST tickets (intake) 1-12,text,true,,765,684,1,1,http://192.168.1.106:8000/tickets,1204,0,22,post-df2725a8-937b-4e82-8bc0-93a2374453b7,9011
+1791392017928,75,GET /search,200,OK,GET search (agents) 2-45,text,true,,243,191,1,1,http://192.168.1.106:8000/search?q=Zelle,75,0,65,search-c9ba8691-b8f8-4e2c-bfe2-ac27d795b4e5,null
+1791392018911,1388,POST /tickets,502,Bad Gateway,POST tickets (intake) 1-13,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[201]]]
+
+/",305,837,1,1,http://192.168.1.106:8000/tickets,1388,0,25,post-348f47d9-6042-47e2-b274-d7d2f4659766,9012
+1791392029085,72,GET /search,200,OK,GET search (agents) 2-46,text,true,,4050,193,1,1,http://192.168.1.106:8000/search?q=dispute,72,0,19,search-813e6c73-4ac2-4392-8d28-7291a0148005,null
+1791392042458,75,GET /search,200,OK,GET search (agents) 2-47,text,true,,246,194,1,1,http://192.168.1.106:8000/search?q=late+fee,75,0,36,search-6c5c2a18-00f0-402b-930f-2eb3d7c5f21c,null
+1791392066818,1427,POST /tickets,201,Created,POST tickets (intake) 1-14,text,true,,931,850,1,1,http://192.168.1.106:8000/tickets,1427,0,27,post-a37a14d5-5f82-4998-ba15-0007c63da2a8,9013
+1791392068857,1235,POST /tickets,201,Created,POST tickets (intake) 1-15,text,true,,727,639,1,1,http://192.168.1.106:8000/tickets,1235,0,12,post-325fa2dd-152b-4ad6-a87f-c8953f773cc8,9014

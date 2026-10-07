@@ -1,0 +1,15 @@
+﻿{
+    "level":  "headroom",
+    "finished_local":  "2026-10-08T03:01:59.4409329+08:00",
+    "started_local":  "2026-10-08T02:37:57.6975435+08:00",
+    "measure_min":  20,
+    "service_host":  "192.168.1.106",
+    "drain_min":  1,
+    "search_per_hour":  316,
+    "run":  1,
+    "loadgen_host":  "ITEMERROR-MSI-W",
+    "model_label":  "gemma3-1b",
+    "warmup_min":  2,
+    "port":  8000,
+    "post_per_hour":  105
+}

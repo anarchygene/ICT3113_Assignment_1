@@ -1,0 +1,15 @@
+﻿{
+    "level":  "peak",
+    "finished_local":  "2026-10-08T01:46:50.0481600+08:00",
+    "started_local":  "2026-10-08T01:22:48.2215354+08:00",
+    "measure_min":  20,
+    "service_host":  "192.168.1.106",
+    "drain_min":  1,
+    "search_per_hour":  243,
+    "run":  1,
+    "loadgen_host":  "ITEMERROR-MSI-W",
+    "model_label":  "gemma3-1b",
+    "warmup_min":  2,
+    "port":  8000,
+    "post_per_hour":  81
+}
