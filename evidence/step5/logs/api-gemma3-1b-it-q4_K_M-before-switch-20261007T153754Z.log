@@ -1,0 +1,4 @@
+﻿api-1  | 2026-10-07T15:37:49.752531379Z INFO:     Started server process [1]
+api-1  | 2026-10-07T15:37:49.752570080Z INFO:     Waiting for application startup.
+api-1  | 2026-10-07T15:37:49.773156499Z INFO:     Application startup complete.
+api-1  | 2026-10-07T15:37:49.773669460Z INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)

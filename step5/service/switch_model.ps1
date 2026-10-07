@@ -45,7 +45,11 @@ foreach ($n in $warm) {
   Write-Host "warm-up -> $($r.category) ($($r.model))"
 }
 
-docker compose exec -T db sh -c 'psql -U "$POSTGRES_USER" -d "$POSTGRES_DB" -c "TRUNCATE tickets RESTART IDENTITY;"'
+# Pass psql arguments directly: Windows PowerShell 5.1 mangles nested quotes in native arguments.
+$envFile = Get-Content .env
+$pgUser = ($envFile | Select-String '^POSTGRES_USER=') -replace '^POSTGRES_USER=', ''
+$pgDb = ($envFile | Select-String '^POSTGRES_DB=') -replace '^POSTGRES_DB=', ''
+docker compose exec -T db psql -U $pgUser -d $pgDb -c 'TRUNCATE tickets RESTART IDENTITY'
 if ($LASTEXITCODE -ne 0) { throw 'TRUNCATE failed' }
 $stats = Invoke-RestMethod http://localhost:8000/stats
 if ($stats.total -ne 0) { throw "Database not empty after reset: $($stats.total)" }

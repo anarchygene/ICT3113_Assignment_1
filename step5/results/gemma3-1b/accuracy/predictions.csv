@@ -1,0 +1,161 @@
+row,golden,predicted,correct,http_status,latency_ms,request_id,ticket_id
+9840,Bank account or service,Credit reporting,False,201,981.4,acc-gemma3-1b-9840,1
+9841,Consumer loan,Mortgage,False,201,1102.2,acc-gemma3-1b-9841,2
+9842,Bank account or service,Credit reporting,False,201,960.9,acc-gemma3-1b-9842,3
+9843,Credit reporting,Credit reporting,True,201,2941.1,acc-gemma3-1b-9843,4
+9844,Credit reporting,Credit reporting,True,201,908.5,acc-gemma3-1b-9844,5
+9845,Mortgage,Mortgage,True,201,2792.3,acc-gemma3-1b-9845,6
+9846,Money transfer or service,Consumer loan,False,201,1670.1,acc-gemma3-1b-9846,7
+9847,Credit reporting,Credit reporting,True,201,2219.0,acc-gemma3-1b-9847,8
+9848,Credit reporting,Credit reporting,True,201,961.0,acc-gemma3-1b-9848,9
+9849,Debt collection,(invalid/error),False,502,1044.8,acc-gemma3-1b-9849,
+9850,Consumer loan,(invalid/error),False,502,2787.8,acc-gemma3-1b-9850,
+9851,Bank account or service,Credit reporting,False,201,998.4,acc-gemma3-1b-9851,10
+9852,Credit reporting,Credit reporting,True,201,2827.5,acc-gemma3-1b-9852,11
+9853,Consumer loan,Debt collection,False,201,3104.3,acc-gemma3-1b-9853,12
+9854,Money transfer or service,Credit reporting,False,201,1896.0,acc-gemma3-1b-9854,13
+9855,Money transfer or service,Consumer loan,False,201,1585.5,acc-gemma3-1b-9855,14
+9856,Credit card,Credit reporting,False,201,1584.7,acc-gemma3-1b-9856,15
+9857,Money transfer or service,Consumer loan,False,201,2906.1,acc-gemma3-1b-9857,16
+9858,Credit reporting,Debt collection,False,201,2344.0,acc-gemma3-1b-9858,17
+9859,Credit reporting,Credit reporting,True,201,2201.6,acc-gemma3-1b-9859,18
+9860,Credit card,Bank account or service,False,201,1359.3,acc-gemma3-1b-9860,19
+9861,Money transfer or service,(invalid/error),False,502,2303.0,acc-gemma3-1b-9861,
+9862,Money transfer or service,Mortgage,False,201,1298.5,acc-gemma3-1b-9862,20
+9863,Mortgage,Mortgage,True,201,1482.9,acc-gemma3-1b-9863,21
+9864,Credit reporting,Debt collection,False,201,1516.2,acc-gemma3-1b-9864,22
+9865,Mortgage,Mortgage,True,201,2038.1,acc-gemma3-1b-9865,23
+9866,Money transfer or service,Credit reporting,False,201,1867.6,acc-gemma3-1b-9866,24
+9867,Credit card,Credit reporting,False,201,2825.4,acc-gemma3-1b-9867,25
+9868,Credit reporting,Consumer loan,False,201,3600.1,acc-gemma3-1b-9868,26
+9869,Debt collection,(invalid/error),False,502,2809.1,acc-gemma3-1b-9869,
+9870,Debt collection,Credit reporting,False,201,2013.7,acc-gemma3-1b-9870,27
+9871,Debt collection,Debt collection,True,201,2669.2,acc-gemma3-1b-9871,28
+9872,Money transfer or service,(invalid/error),False,502,1927.1,acc-gemma3-1b-9872,
+9873,Money transfer or service,Credit reporting,False,201,2612.0,acc-gemma3-1b-9873,29
+9874,Money transfer or service,Credit reporting,False,201,2507.2,acc-gemma3-1b-9874,30
+9875,Bank account or service,Debt collection,False,201,1686.9,acc-gemma3-1b-9875,31
+9876,Credit reporting,Credit reporting,True,201,2675.4,acc-gemma3-1b-9876,32
+9877,Consumer loan,(invalid/error),False,502,2618.1,acc-gemma3-1b-9877,
+9878,Consumer loan,Mortgage,False,201,3271.5,acc-gemma3-1b-9878,33
+9879,Bank account or service,Bank account or service,True,201,2233.4,acc-gemma3-1b-9879,34
+9880,Money transfer or service,Bank account or service,False,201,1169.0,acc-gemma3-1b-9880,35
+9881,Money transfer or service,Bank account or service,False,201,4650.3,acc-gemma3-1b-9881,36
+9882,Mortgage,Mortgage,True,201,2403.5,acc-gemma3-1b-9882,37
+9883,Money transfer or service,Credit reporting,False,201,2742.4,acc-gemma3-1b-9883,38
+9884,Bank account or service,Consumer loan,False,201,2431.2,acc-gemma3-1b-9884,39
+9885,Credit reporting,Credit reporting,True,201,1305.7,acc-gemma3-1b-9885,40
+9886,Consumer loan,Consumer loan,True,201,3882.7,acc-gemma3-1b-9886,41
+9887,Bank account or service,Credit reporting,False,201,1657.7,acc-gemma3-1b-9887,42
+9888,Credit card,(invalid/error),False,502,3932.7,acc-gemma3-1b-9888,
+9889,Money transfer or service,Consumer loan,False,201,3199.7,acc-gemma3-1b-9889,43
+9890,Consumer loan,Debt collection,False,201,1401.5,acc-gemma3-1b-9890,44
+9891,Credit card,(invalid/error),False,502,2352.4,acc-gemma3-1b-9891,
+9892,Credit reporting,Credit reporting,True,201,3050.9,acc-gemma3-1b-9892,45
+9893,Bank account or service,Mortgage,False,201,3783.9,acc-gemma3-1b-9893,46
+9894,Credit reporting,Consumer loan,False,201,2125.8,acc-gemma3-1b-9894,47
+9895,Bank account or service,Credit reporting,False,201,1264.1,acc-gemma3-1b-9895,48
+9896,Money transfer or service,(invalid/error),False,502,1731.5,acc-gemma3-1b-9896,
+9897,Credit reporting,Credit reporting,True,201,3113.3,acc-gemma3-1b-9897,49
+9898,Money transfer or service,Consumer loan,False,201,1722.1,acc-gemma3-1b-9898,50
+9899,Money transfer or service,Credit reporting,False,201,1525.5,acc-gemma3-1b-9899,51
+9900,Debt collection,(invalid/error),False,502,1574.6,acc-gemma3-1b-9900,
+9901,Money transfer or service,Consumer loan,False,201,1463.3,acc-gemma3-1b-9901,52
+9902,Money transfer or service,Consumer loan,False,201,1639.7,acc-gemma3-1b-9902,53
+9903,Credit reporting,Credit reporting,True,201,2463.8,acc-gemma3-1b-9903,54
+9904,Debt collection,Debt collection,True,201,1813.6,acc-gemma3-1b-9904,55
+9905,Mortgage,(invalid/error),False,502,2549.6,acc-gemma3-1b-9905,
+9906,Consumer loan,Credit card,False,201,1725.0,acc-gemma3-1b-9906,56
+9907,Debt collection,(invalid/error),False,502,2203.9,acc-gemma3-1b-9907,
+9908,Bank account or service,Credit reporting,False,201,1835.9,acc-gemma3-1b-9908,57
+9909,Credit card,Credit reporting,False,201,2404.7,acc-gemma3-1b-9909,58
+9910,Credit reporting,Credit reporting,True,201,1002.0,acc-gemma3-1b-9910,59
+9911,Money transfer or service,Credit card,False,201,3622.4,acc-gemma3-1b-9911,60
+9912,Credit reporting,Credit reporting,True,201,1036.3,acc-gemma3-1b-9912,61
+9913,Debt collection,(invalid/error),False,502,2411.6,acc-gemma3-1b-9913,
+9914,Bank account or service,Credit reporting,False,201,1117.0,acc-gemma3-1b-9914,62
+9915,Credit card,Credit reporting,False,201,1410.6,acc-gemma3-1b-9915,63
+9916,Bank account or service,Consumer loan,False,201,2167.3,acc-gemma3-1b-9916,64
+9917,Money transfer or service,Consumer loan,False,201,2446.1,acc-gemma3-1b-9917,65
+9918,Mortgage,Credit reporting,False,201,3403.3,acc-gemma3-1b-9918,66
+9919,Consumer loan,(invalid/error),False,502,2214.0,acc-gemma3-1b-9919,
+9920,Bank account or service,(invalid/error),False,502,3935.9,acc-gemma3-1b-9920,
+9921,Credit reporting,Credit reporting,True,201,3199.3,acc-gemma3-1b-9921,67
+9922,Consumer loan,(invalid/error),False,502,3778.8,acc-gemma3-1b-9922,
+9923,Debt collection,(invalid/error),False,502,3310.3,acc-gemma3-1b-9923,
+9924,Credit card,Credit card,True,201,3588.9,acc-gemma3-1b-9924,68
+9925,Bank account or service,Credit reporting,False,201,1719.0,acc-gemma3-1b-9925,69
+9926,Mortgage,Mortgage,True,201,2596.1,acc-gemma3-1b-9926,70
+9927,Mortgage,Mortgage,True,201,2404.7,acc-gemma3-1b-9927,71
+9928,Debt collection,Consumer loan,False,201,4228.6,acc-gemma3-1b-9928,72
+9929,Consumer loan,Consumer loan,True,201,3364.0,acc-gemma3-1b-9929,73
+9930,Money transfer or service,Credit reporting,False,201,2566.1,acc-gemma3-1b-9930,74
+9931,Credit reporting,Credit reporting,True,201,2432.7,acc-gemma3-1b-9931,75
+9932,Consumer loan,Credit card,False,201,1065.8,acc-gemma3-1b-9932,76
+9933,Debt collection,Debt collection,True,201,1872.9,acc-gemma3-1b-9933,77
+9934,Mortgage,Credit reporting,False,201,2755.6,acc-gemma3-1b-9934,78
+9935,Credit reporting,(invalid/error),False,502,1837.6,acc-gemma3-1b-9935,
+9936,Bank account or service,Credit reporting,False,201,2002.3,acc-gemma3-1b-9936,79
+9937,Mortgage,Mortgage,True,201,2701.2,acc-gemma3-1b-9937,80
+9938,Debt collection,Credit reporting,False,201,2824.1,acc-gemma3-1b-9938,81
+9939,Bank account or service,Credit reporting,False,201,3615.3,acc-gemma3-1b-9939,82
+9940,Bank account or service,Credit reporting,False,201,3314.2,acc-gemma3-1b-9940,83
+9941,Credit reporting,Credit reporting,True,201,2692.2,acc-gemma3-1b-9941,84
+9942,Money transfer or service,Consumer loan,False,201,3610.4,acc-gemma3-1b-9942,85
+9943,Bank account or service,Credit reporting,False,201,1356.9,acc-gemma3-1b-9943,86
+9944,Debt collection,Debt collection,True,201,2489.1,acc-gemma3-1b-9944,87
+9945,Consumer loan,Mortgage,False,201,2265.9,acc-gemma3-1b-9945,88
+9946,Credit reporting,Credit reporting,True,201,4143.6,acc-gemma3-1b-9946,89
+9947,Bank account or service,Credit reporting,False,201,4315.4,acc-gemma3-1b-9947,90
+9948,Bank account or service,Credit reporting,False,201,3065.6,acc-gemma3-1b-9948,91
+9949,Bank account or service,(invalid/error),False,502,1708.1,acc-gemma3-1b-9949,
+9950,Credit reporting,Credit reporting,True,201,1471.2,acc-gemma3-1b-9950,92
+9951,Credit reporting,Credit reporting,True,201,2432.5,acc-gemma3-1b-9951,93
+9952,Bank account or service,Money transfer or service,False,201,2259.3,acc-gemma3-1b-9952,94
+9953,Bank account or service,Money transfer or service,False,201,5016.9,acc-gemma3-1b-9953,95
+9954,Debt collection,Credit reporting,False,201,2672.0,acc-gemma3-1b-9954,96
+9955,Bank account or service,Credit reporting,False,201,4459.3,acc-gemma3-1b-9955,97
+9956,Credit reporting,Credit reporting,True,201,3409.1,acc-gemma3-1b-9956,98
+9957,Bank account or service,Bank account or service,True,201,1435.7,acc-gemma3-1b-9957,99
+9958,Credit reporting,Debt collection,False,201,3262.2,acc-gemma3-1b-9958,100
+9959,Bank account or service,Credit reporting,False,201,2780.3,acc-gemma3-1b-9959,101
+9960,Mortgage,Mortgage,True,201,2047.0,acc-gemma3-1b-9960,102
+9961,Mortgage,Mortgage,True,201,1891.8,acc-gemma3-1b-9961,103
+9962,Credit card,(invalid/error),False,502,3684.0,acc-gemma3-1b-9962,
+9963,Money transfer or service,Debt collection,False,201,3444.4,acc-gemma3-1b-9963,104
+9964,Money transfer or service,Consumer loan,False,201,1957.5,acc-gemma3-1b-9964,105
+9965,Debt collection,Credit reporting,False,201,2993.9,acc-gemma3-1b-9965,106
+9966,Credit card,(invalid/error),False,502,1593.1,acc-gemma3-1b-9966,
+9967,Debt collection,Debt collection,True,201,2668.8,acc-gemma3-1b-9967,107
+9968,Debt collection,(invalid/error),False,502,3387.7,acc-gemma3-1b-9968,
+9969,Mortgage,Credit reporting,False,201,2434.7,acc-gemma3-1b-9969,108
+9970,Credit reporting,(invalid/error),False,502,1749.8,acc-gemma3-1b-9970,
+9971,Money transfer or service,Consumer loan,False,201,2825.4,acc-gemma3-1b-9971,109
+9972,Bank account or service,Credit reporting,False,201,1254.1,acc-gemma3-1b-9972,110
+9973,Credit reporting,Credit reporting,True,201,2317.0,acc-gemma3-1b-9973,111
+9974,Money transfer or service,Credit reporting,False,201,3054.6,acc-gemma3-1b-9974,112
+9975,Mortgage,(invalid/error),False,502,2960.0,acc-gemma3-1b-9975,
+9976,Credit reporting,Credit reporting,True,201,2735.2,acc-gemma3-1b-9976,113
+9977,Credit reporting,Credit reporting,True,201,2407.6,acc-gemma3-1b-9977,114
+9978,Mortgage,Credit reporting,False,201,3286.7,acc-gemma3-1b-9978,115
+9979,Credit card,Credit reporting,False,201,3358.3,acc-gemma3-1b-9979,116
+9980,Mortgage,(invalid/error),False,502,4987.8,acc-gemma3-1b-9980,
+9981,Consumer loan,Debt collection,False,201,2680.9,acc-gemma3-1b-9981,117
+9982,Credit reporting,Mortgage,False,201,4584.5,acc-gemma3-1b-9982,118
+9983,Mortgage,Mortgage,True,201,1803.1,acc-gemma3-1b-9983,119
+9984,Consumer loan,Credit card,False,201,2696.9,acc-gemma3-1b-9984,120
+9985,Debt collection,(invalid/error),False,502,2033.9,acc-gemma3-1b-9985,
+9986,Bank account or service,Bank account or service,True,201,2282.1,acc-gemma3-1b-9986,121
+9987,Debt collection,Credit reporting,False,201,2894.8,acc-gemma3-1b-9987,122
+9988,Money transfer or service,Bank account or service,False,201,1329.8,acc-gemma3-1b-9988,123
+9989,Bank account or service,Credit reporting,False,201,1377.9,acc-gemma3-1b-9989,124
+9990,Credit reporting,(invalid/error),False,502,2872.4,acc-gemma3-1b-9990,
+9991,Debt collection,Debt collection,True,201,2030.0,acc-gemma3-1b-9991,125
+9992,Bank account or service,Bank account or service,True,201,2098.4,acc-gemma3-1b-9992,126
+9993,Mortgage,Mortgage,True,201,2727.8,acc-gemma3-1b-9993,127
+9994,Debt collection,Consumer loan,False,201,1923.4,acc-gemma3-1b-9994,128
+9995,Credit reporting,(invalid/error),False,502,2237.8,acc-gemma3-1b-9995,
+9996,Debt collection,(invalid/error),False,502,1759.5,acc-gemma3-1b-9996,
+9997,Debt collection,Debt collection,True,201,1441.5,acc-gemma3-1b-9997,129
+9998,Debt collection,Credit reporting,False,201,2180.5,acc-gemma3-1b-9998,130
+9999,Consumer loan,Bank account or service,False,201,2253.4,acc-gemma3-1b-9999,131

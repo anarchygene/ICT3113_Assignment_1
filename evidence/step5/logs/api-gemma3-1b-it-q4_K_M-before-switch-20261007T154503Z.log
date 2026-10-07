@@ -1,0 +1,1103 @@
+﻿api-1  | 2026-10-07T15:37:59.595112624Z INFO:     Started server process [1]
+api-1  | 2026-10-07T15:37:59.595151942Z INFO:     Waiting for application startup.
+api-1  | 2026-10-07T15:37:59.616034177Z INFO:     Application startup complete.
+api-1  | 2026-10-07T15:37:59.616453377Z INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+api-1  | 2026-10-07T15:38:01.171857993Z INFO:     172.19.0.1:43612 - "GET /health HTTP/1.1" 200 OK
+api-1  | 2026-10-07T15:38:01.171857054Z 2026-10-07 15:38:01,171 INFO complaints.api request_id=1c4944a2-856a-4947-9291-d3f74843ed5d method=GET path=/health status=200 duration_ms=1.28 client=172.19.0.1
+api-1  | 2026-10-07T15:38:01.836704048Z 2026-10-07 15:38:01,834 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:38:01.852463659Z 2026-10-07 15:38:01,852 INFO complaints.api request_id=warmup-20261007T153754Z-9952b975-5c7b-4fec-9dbe-dcddd3e58aa5 method=POST path=/tickets status=201 duration_ms=639.10 client=172.19.0.1
+api-1  | 2026-10-07T15:38:01.852562575Z INFO:     172.19.0.1:43612 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:38:02.380954933Z 2026-10-07 15:38:02,380 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:38:02.388129478Z INFO:     172.19.0.1:43612 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:38:02.387584382Z 2026-10-07 15:38:02,387 INFO complaints.api request_id=warmup-20261007T153754Z-b3043a3e-d2bf-4b08-a93f-2baaf4bbf80a method=POST path=/tickets status=201 duration_ms=518.95 client=172.19.0.1
+api-1  | 2026-10-07T15:38:02.858997503Z 2026-10-07 15:38:02,858 INFO complaints.api request_id=7be27a28-0d9c-48cf-91a7-4af979367368 method=GET path=/stats status=200 duration_ms=4.16 client=172.19.0.1
+api-1  | 2026-10-07T15:38:02.859033143Z INFO:     172.19.0.1:43612 - "GET /stats HTTP/1.1" 200 OK
+api-1  | 2026-10-07T15:38:10.494198200Z 2026-10-07 15:38:10,492 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:38:10.499916149Z 2026-10-07 15:38:10,499 INFO complaints.api request_id=acc-gemma3-1b-9840 method=POST path=/tickets status=201 duration_ms=943.32 client=172.19.0.1
+api-1  | 2026-10-07T15:38:10.499977296Z INFO:     172.19.0.1:51436 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:38:11.592728255Z 2026-10-07 15:38:11,592 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:38:11.606730232Z 2026-10-07 15:38:11,606 INFO complaints.api request_id=acc-gemma3-1b-9841 method=POST path=/tickets status=201 duration_ms=1081.38 client=172.19.0.1
+api-1  | 2026-10-07T15:38:11.606759041Z INFO:     172.19.0.1:51442 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:38:12.549044734Z 2026-10-07 15:38:12,548 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:38:12.567991931Z INFO:     172.19.0.1:51450 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:38:12.568043086Z 2026-10-07 15:38:12,564 INFO complaints.api request_id=acc-gemma3-1b-9842 method=POST path=/tickets status=201 duration_ms=954.05 client=172.19.0.1
+api-1  | 2026-10-07T15:38:15.500748455Z 2026-10-07 15:38:15,500 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:38:15.509100876Z 2026-10-07 15:38:15,508 INFO complaints.api request_id=acc-gemma3-1b-9843 method=POST path=/tickets status=201 duration_ms=2936.59 client=172.19.0.1
+api-1  | 2026-10-07T15:38:15.509184608Z INFO:     172.19.0.1:51452 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:38:16.412908921Z 2026-10-07 15:38:16,412 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:38:16.418012231Z 2026-10-07 15:38:16,417 INFO complaints.api request_id=acc-gemma3-1b-9844 method=POST path=/tickets status=201 duration_ms=904.51 client=172.19.0.1
+api-1  | 2026-10-07T15:38:16.418158243Z INFO:     172.19.0.1:51458 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:38:19.204752233Z 2026-10-07 15:38:19,204 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:38:19.210824494Z INFO:     172.19.0.1:51466 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:38:19.210921022Z 2026-10-07 15:38:19,210 INFO complaints.api request_id=acc-gemma3-1b-9845 method=POST path=/tickets status=201 duration_ms=2788.69 client=172.19.0.1
+api-1  | 2026-10-07T15:38:20.877456937Z 2026-10-07 15:38:20,876 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:38:20.881065448Z 2026-10-07 15:38:20,880 INFO complaints.api request_id=acc-gemma3-1b-9846 method=POST path=/tickets status=201 duration_ms=1666.73 client=172.19.0.1
+api-1  | 2026-10-07T15:38:20.881136679Z INFO:     172.19.0.1:34156 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:38:23.093234817Z 2026-10-07 15:38:23,093 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:38:23.100435132Z 2026-10-07 15:38:23,100 INFO complaints.api request_id=acc-gemma3-1b-9847 method=POST path=/tickets status=201 duration_ms=2215.63 client=172.19.0.1
+api-1  | 2026-10-07T15:38:23.100525746Z INFO:     172.19.0.1:34172 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:38:24.041390088Z 2026-10-07 15:38:24,041 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:38:24.058784528Z 2026-10-07 15:38:24,058 INFO complaints.api request_id=acc-gemma3-1b-9848 method=POST path=/tickets status=201 duration_ms=946.86 client=172.19.0.1
+api-1  | 2026-10-07T15:38:24.059101761Z INFO:     172.19.0.1:34184 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:38:25.100930326Z 2026-10-07 15:38:25,100 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:38:25.102530422Z 2026-10-07 15:38:25,101 ERROR complaints.api classification_failed model=gemma3:1b-it-q4_K_M
+api-1  | 2026-10-07T15:38:25.102536248Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:38:25.102537875Z   File "/app/app/classifier.py", line 45, in classify
+api-1  | 2026-10-07T15:38:25.102539089Z     return Category(category_text)
+api-1  | 2026-10-07T15:38:25.102540029Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:38:25.102541014Z   File "/usr/local/lib/python3.12/enum.py", line 751, in __call__
+api-1  | 2026-10-07T15:38:25.102542116Z     return cls.__new__(cls, value)
+api-1  | 2026-10-07T15:38:25.102542995Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:38:25.102554243Z   File "/usr/local/lib/python3.12/enum.py", line 1170, in __new__
+api-1  | 2026-10-07T15:38:25.102555491Z     raise ve_exc
+api-1  | 2026-10-07T15:38:25.102556443Z ValueError: 'Consumer Loan' is not a valid Category
+api-1  | 2026-10-07T15:38:25.102557418Z 
+api-1  | 2026-10-07T15:38:25.102558390Z The above exception was the direct cause of the following exception:
+api-1  | 2026-10-07T15:38:25.102559476Z 
+api-1  | 2026-10-07T15:38:25.102560452Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:38:25.102561365Z   File "/app/app/main.py", line 69, in create_ticket
+api-1  | 2026-10-07T15:38:25.102562310Z     category = await classifier.classify(narrative)
+api-1  | 2026-10-07T15:38:25.102563267Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:38:25.102564165Z   File "/app/app/classifier.py", line 47, in classify
+api-1  | 2026-10-07T15:38:25.102565101Z     raise ClassificationError(f"Ollama returned an invalid classification: {exc}") from exc
+api-1  | 2026-10-07T15:38:25.102566116Z app.classifier.ClassificationError: Ollama returned an invalid classification: 'Consumer Loan' is not a valid Category
+api-1  | 2026-10-07T15:38:25.102936679Z 2026-10-07 15:38:25,102 INFO complaints.api request_id=acc-gemma3-1b-9849 method=POST path=/tickets status=502 duration_ms=1037.40 client=172.19.0.1
+api-1  | 2026-10-07T15:38:25.103019117Z INFO:     172.19.0.1:34192 - "POST /tickets HTTP/1.1" 502 Bad Gateway
+api-1  | 2026-10-07T15:38:27.886854340Z 2026-10-07 15:38:27,886 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:38:27.891369449Z 2026-10-07 15:38:27,890 ERROR complaints.api classification_failed model=gemma3:1b-it-q4_K_M
+api-1  | 2026-10-07T15:38:27.891392802Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:38:27.891394911Z   File "/app/app/classifier.py", line 45, in classify
+api-1  | 2026-10-07T15:38:27.891410593Z     return Category(category_text)
+api-1  | 2026-10-07T15:38:27.891411753Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:38:27.891412775Z   File "/usr/local/lib/python3.12/enum.py", line 751, in __call__
+api-1  | 2026-10-07T15:38:27.891413804Z     return cls.__new__(cls, value)
+api-1  | 2026-10-07T15:38:27.891414670Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:38:27.891415637Z   File "/usr/local/lib/python3.12/enum.py", line 1170, in __new__
+api-1  | 2026-10-07T15:38:27.891416679Z     raise ve_exc
+api-1  | 2026-10-07T15:38:27.891417615Z ValueError: 'Consumer Loan' is not a valid Category
+api-1  | 2026-10-07T15:38:27.891418558Z 
+api-1  | 2026-10-07T15:38:27.891419598Z The above exception was the direct cause of the following exception:
+api-1  | 2026-10-07T15:38:27.891420993Z 
+api-1  | 2026-10-07T15:38:27.891422156Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:38:27.891423027Z   File "/app/app/main.py", line 69, in create_ticket
+api-1  | 2026-10-07T15:38:27.891423987Z     category = await classifier.classify(narrative)
+api-1  | 2026-10-07T15:38:27.891424918Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:38:27.891437205Z   File "/app/app/classifier.py", line 47, in classify
+api-1  | 2026-10-07T15:38:27.891438563Z     raise ClassificationError(f"Ollama returned an invalid classification: {exc}") from exc
+api-1  | 2026-10-07T15:38:27.891439683Z app.classifier.ClassificationError: Ollama returned an invalid classification: 'Consumer Loan' is not a valid Category
+api-1  | 2026-10-07T15:38:27.891973213Z 2026-10-07 15:38:27,891 INFO complaints.api request_id=acc-gemma3-1b-9850 method=POST path=/tickets status=502 duration_ms=2777.02 client=172.19.0.1
+api-1  | 2026-10-07T15:38:27.892123992Z INFO:     172.19.0.1:34202 - "POST /tickets HTTP/1.1" 502 Bad Gateway
+api-1  | 2026-10-07T15:38:28.883401357Z 2026-10-07 15:38:28,883 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:38:28.890082093Z 2026-10-07 15:38:28,889 INFO complaints.api request_id=acc-gemma3-1b-9851 method=POST path=/tickets status=201 duration_ms=993.14 client=172.19.0.1
+api-1  | 2026-10-07T15:38:28.890113644Z INFO:     172.19.0.1:58992 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:38:31.708761047Z 2026-10-07 15:38:31,708 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:38:31.718741071Z 2026-10-07 15:38:31,718 INFO complaints.api request_id=acc-gemma3-1b-9852 method=POST path=/tickets status=201 duration_ms=2818.76 client=172.19.0.1
+api-1  | 2026-10-07T15:38:31.718841647Z INFO:     172.19.0.1:58996 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:38:34.812928731Z 2026-10-07 15:38:34,812 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:38:34.822523733Z 2026-10-07 15:38:34,822 INFO complaints.api request_id=acc-gemma3-1b-9853 method=POST path=/tickets status=201 duration_ms=3079.82 client=172.19.0.1
+api-1  | 2026-10-07T15:38:34.822755097Z INFO:     172.19.0.1:59004 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:38:36.694624092Z 2026-10-07 15:38:36,694 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:38:36.719111331Z 2026-10-07 15:38:36,718 INFO complaints.api request_id=acc-gemma3-1b-9854 method=POST path=/tickets status=201 duration_ms=1888.36 client=172.19.0.1
+api-1  | 2026-10-07T15:38:36.719244770Z INFO:     172.19.0.1:59016 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:38:38.287811948Z 2026-10-07 15:38:38,287 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:38:38.302739240Z INFO:     172.19.0.1:59024 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:38:38.302795781Z 2026-10-07 15:38:38,302 INFO complaints.api request_id=acc-gemma3-1b-9855 method=POST path=/tickets status=201 duration_ms=1577.60 client=172.19.0.1
+api-1  | 2026-10-07T15:38:39.875639977Z 2026-10-07 15:38:39,875 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:38:39.890259567Z 2026-10-07 15:38:39,890 INFO complaints.api request_id=acc-gemma3-1b-9856 method=POST path=/tickets status=201 duration_ms=1579.17 client=172.19.0.1
+api-1  | 2026-10-07T15:38:39.891144857Z INFO:     172.19.0.1:40498 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:38:42.776396198Z 2026-10-07 15:38:42,775 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:38:42.792751094Z 2026-10-07 15:38:42,792 INFO complaints.api request_id=acc-gemma3-1b-9857 method=POST path=/tickets status=201 duration_ms=2896.44 client=172.19.0.1
+api-1  | 2026-10-07T15:38:42.792864065Z INFO:     172.19.0.1:40512 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:38:45.131659256Z 2026-10-07 15:38:45,131 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:38:45.139323601Z 2026-10-07 15:38:45,139 INFO complaints.api request_id=acc-gemma3-1b-9858 method=POST path=/tickets status=201 duration_ms=2327.97 client=172.19.0.1
+api-1  | 2026-10-07T15:38:45.139441354Z INFO:     172.19.0.1:40528 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:38:47.334620553Z 2026-10-07 15:38:47,334 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:38:47.342769560Z 2026-10-07 15:38:47,342 INFO complaints.api request_id=acc-gemma3-1b-9859 method=POST path=/tickets status=201 duration_ms=2191.76 client=172.19.0.1
+api-1  | 2026-10-07T15:38:47.342884778Z INFO:     172.19.0.1:40540 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:38:48.694771395Z 2026-10-07 15:38:48,694 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:38:48.702362330Z 2026-10-07 15:38:48,702 INFO complaints.api request_id=acc-gemma3-1b-9860 method=POST path=/tickets status=201 duration_ms=1354.68 client=172.19.0.1
+api-1  | 2026-10-07T15:38:48.702435673Z INFO:     172.19.0.1:40550 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:38:51.002404940Z 2026-10-07 15:38:51,002 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:38:51.004434267Z 2026-10-07 15:38:51,003 ERROR complaints.api classification_failed model=gemma3:1b-it-q4_K_M
+api-1  | 2026-10-07T15:38:51.004464968Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:38:51.004469223Z   File "/app/app/classifier.py", line 45, in classify
+api-1  | 2026-10-07T15:38:51.004472687Z     return Category(category_text)
+api-1  | 2026-10-07T15:38:51.004475175Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:38:51.004477299Z   File "/usr/local/lib/python3.12/enum.py", line 751, in __call__
+api-1  | 2026-10-07T15:38:51.004479486Z     return cls.__new__(cls, value)
+api-1  | 2026-10-07T15:38:51.004481474Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:38:51.004483421Z   File "/usr/local/lib/python3.12/enum.py", line 1170, in __new__
+api-1  | 2026-10-07T15:38:51.004485732Z     raise ve_exc
+api-1  | 2026-10-07T15:38:51.004487740Z ValueError: 'Consumer Loan' is not a valid Category
+api-1  | 2026-10-07T15:38:51.004489915Z 
+api-1  | 2026-10-07T15:38:51.004492004Z The above exception was the direct cause of the following exception:
+api-1  | 2026-10-07T15:38:51.004494083Z 
+api-1  | 2026-10-07T15:38:51.004495986Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:38:51.004497864Z   File "/app/app/main.py", line 69, in create_ticket
+api-1  | 2026-10-07T15:38:51.004519029Z     category = await classifier.classify(narrative)
+api-1  | 2026-10-07T15:38:51.004520594Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:38:51.004521837Z   File "/app/app/classifier.py", line 47, in classify
+api-1  | 2026-10-07T15:38:51.004523167Z     raise ClassificationError(f"Ollama returned an invalid classification: {exc}") from exc
+api-1  | 2026-10-07T15:38:51.004524700Z app.classifier.ClassificationError: Ollama returned an invalid classification: 'Consumer Loan' is not a valid Category
+api-1  | 2026-10-07T15:38:51.005328406Z 2026-10-07 15:38:51,005 INFO complaints.api request_id=acc-gemma3-1b-9861 method=POST path=/tickets status=502 duration_ms=2291.87 client=172.19.0.1
+api-1  | 2026-10-07T15:38:51.005351374Z INFO:     172.19.0.1:43754 - "POST /tickets HTTP/1.1" 502 Bad Gateway
+api-1  | 2026-10-07T15:38:52.292262814Z 2026-10-07 15:38:52,291 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:38:52.304262632Z 2026-10-07 15:38:52,302 INFO complaints.api request_id=acc-gemma3-1b-9862 method=POST path=/tickets status=201 duration_ms=1292.61 client=172.19.0.1
+api-1  | 2026-10-07T15:38:52.304298176Z INFO:     172.19.0.1:43760 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:38:53.776137519Z 2026-10-07 15:38:53,775 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:38:53.784968937Z 2026-10-07 15:38:53,784 INFO complaints.api request_id=acc-gemma3-1b-9863 method=POST path=/tickets status=201 duration_ms=1477.86 client=172.19.0.1
+api-1  | 2026-10-07T15:38:53.785037439Z INFO:     172.19.0.1:43768 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:38:55.288484752Z 2026-10-07 15:38:55,288 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:38:55.300651699Z 2026-10-07 15:38:55,300 INFO complaints.api request_id=acc-gemma3-1b-9864 method=POST path=/tickets status=201 duration_ms=1508.67 client=172.19.0.1
+api-1  | 2026-10-07T15:38:55.301056822Z INFO:     172.19.0.1:43780 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:38:57.332528633Z 2026-10-07 15:38:57,332 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:38:57.339889700Z 2026-10-07 15:38:57,339 INFO complaints.api request_id=acc-gemma3-1b-9865 method=POST path=/tickets status=201 duration_ms=2032.39 client=172.19.0.1
+api-1  | 2026-10-07T15:38:57.340010971Z INFO:     172.19.0.1:43790 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:38:59.190697747Z 2026-10-07 15:38:59,190 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:38:59.203975275Z 2026-10-07 15:38:59,203 INFO complaints.api request_id=acc-gemma3-1b-9866 method=POST path=/tickets status=201 duration_ms=1847.33 client=172.19.0.1
+api-1  | 2026-10-07T15:38:59.204133662Z INFO:     172.19.0.1:43798 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:39:02.025196082Z 2026-10-07 15:39:02,025 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:39:02.033598629Z 2026-10-07 15:39:02,033 INFO complaints.api request_id=acc-gemma3-1b-9867 method=POST path=/tickets status=201 duration_ms=2816.86 client=172.19.0.1
+api-1  | 2026-10-07T15:39:02.033924758Z INFO:     172.19.0.1:58920 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:39:05.620750999Z 2026-10-07 15:39:05,620 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:39:05.633751052Z 2026-10-07 15:39:05,633 INFO complaints.api request_id=acc-gemma3-1b-9868 method=POST path=/tickets status=201 duration_ms=3595.20 client=172.19.0.1
+api-1  | 2026-10-07T15:39:05.633839668Z INFO:     172.19.0.1:58934 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:39:08.441578770Z 2026-10-07 15:39:08,441 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:39:08.442831309Z 2026-10-07 15:39:08,442 ERROR complaints.api classification_failed model=gemma3:1b-it-q4_K_M
+api-1  | 2026-10-07T15:39:08.442840056Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:39:08.442842481Z   File "/app/app/classifier.py", line 45, in classify
+api-1  | 2026-10-07T15:39:08.442844244Z     return Category(category_text)
+api-1  | 2026-10-07T15:39:08.442845550Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:39:08.442846893Z   File "/usr/local/lib/python3.12/enum.py", line 751, in __call__
+api-1  | 2026-10-07T15:39:08.442848289Z     return cls.__new__(cls, value)
+api-1  | 2026-10-07T15:39:08.442849422Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:39:08.442850616Z   File "/usr/local/lib/python3.12/enum.py", line 1170, in __new__
+api-1  | 2026-10-07T15:39:08.442851864Z     raise ve_exc
+api-1  | 2026-10-07T15:39:08.442853057Z ValueError: 'Consumer Loan' is not a valid Category
+api-1  | 2026-10-07T15:39:08.442882239Z 
+api-1  | 2026-10-07T15:39:08.442883689Z The above exception was the direct cause of the following exception:
+api-1  | 2026-10-07T15:39:08.442885013Z 
+api-1  | 2026-10-07T15:39:08.442886206Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:39:08.442887397Z   File "/app/app/main.py", line 69, in create_ticket
+api-1  | 2026-10-07T15:39:08.442888712Z     category = await classifier.classify(narrative)
+api-1  | 2026-10-07T15:39:08.442889943Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:39:08.442891120Z   File "/app/app/classifier.py", line 47, in classify
+api-1  | 2026-10-07T15:39:08.442892471Z     raise ClassificationError(f"Ollama returned an invalid classification: {exc}") from exc
+api-1  | 2026-10-07T15:39:08.442893972Z app.classifier.ClassificationError: Ollama returned an invalid classification: 'Consumer Loan' is not a valid Category
+api-1  | 2026-10-07T15:39:08.443201754Z 2026-10-07 15:39:08,443 INFO complaints.api request_id=acc-gemma3-1b-9869 method=POST path=/tickets status=502 duration_ms=2802.26 client=172.19.0.1
+api-1  | 2026-10-07T15:39:08.443329911Z INFO:     172.19.0.1:58938 - "POST /tickets HTTP/1.1" 502 Bad Gateway
+api-1  | 2026-10-07T15:39:10.449559539Z 2026-10-07 15:39:10,449 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:39:10.457046418Z 2026-10-07 15:39:10,456 INFO complaints.api request_id=acc-gemma3-1b-9870 method=POST path=/tickets status=201 duration_ms=1999.55 client=172.19.0.1
+api-1  | 2026-10-07T15:39:10.457434954Z INFO:     172.19.0.1:34436 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:39:13.112916514Z 2026-10-07 15:39:13,112 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:39:13.126327965Z 2026-10-07 15:39:13,126 INFO complaints.api request_id=acc-gemma3-1b-9871 method=POST path=/tickets status=201 duration_ms=2661.84 client=172.19.0.1
+api-1  | 2026-10-07T15:39:13.126450510Z INFO:     172.19.0.1:34446 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:39:15.052556779Z 2026-10-07 15:39:15,052 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:39:15.053910699Z 2026-10-07 15:39:15,053 ERROR complaints.api classification_failed model=gemma3:1b-it-q4_K_M
+api-1  | 2026-10-07T15:39:15.053920003Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:39:15.053922284Z   File "/app/app/classifier.py", line 45, in classify
+api-1  | 2026-10-07T15:39:15.053924036Z     return Category(category_text)
+api-1  | 2026-10-07T15:39:15.053925266Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:39:15.053926488Z   File "/usr/local/lib/python3.12/enum.py", line 751, in __call__
+api-1  | 2026-10-07T15:39:15.053927740Z     return cls.__new__(cls, value)
+api-1  | 2026-10-07T15:39:15.053928981Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:39:15.053930142Z   File "/usr/local/lib/python3.12/enum.py", line 1170, in __new__
+api-1  | 2026-10-07T15:39:15.053931381Z     raise ve_exc
+api-1  | 2026-10-07T15:39:15.053932558Z ValueError: 'Consumer Loan' is not a valid Category
+api-1  | 2026-10-07T15:39:15.053933755Z 
+api-1  | 2026-10-07T15:39:15.053935023Z The above exception was the direct cause of the following exception:
+api-1  | 2026-10-07T15:39:15.053936306Z 
+api-1  | 2026-10-07T15:39:15.053937399Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:39:15.053938427Z   File "/app/app/main.py", line 69, in create_ticket
+api-1  | 2026-10-07T15:39:15.053939563Z     category = await classifier.classify(narrative)
+api-1  | 2026-10-07T15:39:15.053940641Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:39:15.053941719Z   File "/app/app/classifier.py", line 47, in classify
+api-1  | 2026-10-07T15:39:15.053942893Z     raise ClassificationError(f"Ollama returned an invalid classification: {exc}") from exc
+api-1  | 2026-10-07T15:39:15.053944183Z app.classifier.ClassificationError: Ollama returned an invalid classification: 'Consumer Loan' is not a valid Category
+api-1  | 2026-10-07T15:39:15.054372440Z 2026-10-07 15:39:15,054 INFO complaints.api request_id=acc-gemma3-1b-9872 method=POST path=/tickets status=502 duration_ms=1923.14 client=172.19.0.1
+api-1  | 2026-10-07T15:39:15.054474751Z INFO:     172.19.0.1:34458 - "POST /tickets HTTP/1.1" 502 Bad Gateway
+api-1  | 2026-10-07T15:39:17.656381254Z 2026-10-07 15:39:17,656 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:39:17.667133204Z 2026-10-07 15:39:17,666 INFO complaints.api request_id=acc-gemma3-1b-9873 method=POST path=/tickets status=201 duration_ms=2607.37 client=172.19.0.1
+api-1  | 2026-10-07T15:39:17.667759003Z INFO:     172.19.0.1:34460 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:39:20.162537149Z 2026-10-07 15:39:20,162 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:39:20.173254684Z 2026-10-07 15:39:20,173 INFO complaints.api request_id=acc-gemma3-1b-9874 method=POST path=/tickets status=201 duration_ms=2496.78 client=172.19.0.1
+api-1  | 2026-10-07T15:39:20.173355428Z INFO:     172.19.0.1:60256 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:39:21.853748169Z 2026-10-07 15:39:21,853 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:39:21.861477112Z 2026-10-07 15:39:21,861 INFO complaints.api request_id=acc-gemma3-1b-9875 method=POST path=/tickets status=201 duration_ms=1681.20 client=172.19.0.1
+api-1  | 2026-10-07T15:39:21.861595059Z INFO:     172.19.0.1:60266 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:39:24.528744005Z 2026-10-07 15:39:24,528 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:39:24.535061190Z 2026-10-07 15:39:24,534 INFO complaints.api request_id=acc-gemma3-1b-9876 method=POST path=/tickets status=201 duration_ms=2664.82 client=172.19.0.1
+api-1  | 2026-10-07T15:39:24.535275651Z INFO:     172.19.0.1:60272 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:39:27.152201337Z 2026-10-07 15:39:27,151 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:39:27.153320741Z 2026-10-07 15:39:27,152 ERROR complaints.api classification_failed model=gemma3:1b-it-q4_K_M
+api-1  | 2026-10-07T15:39:27.153325856Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:39:27.153328590Z   File "/app/app/classifier.py", line 45, in classify
+api-1  | 2026-10-07T15:39:27.153330706Z     return Category(category_text)
+api-1  | 2026-10-07T15:39:27.153332229Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:39:27.153333701Z   File "/usr/local/lib/python3.12/enum.py", line 751, in __call__
+api-1  | 2026-10-07T15:39:27.153335216Z     return cls.__new__(cls, value)
+api-1  | 2026-10-07T15:39:27.153380950Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:39:27.153386274Z   File "/usr/local/lib/python3.12/enum.py", line 1170, in __new__
+api-1  | 2026-10-07T15:39:27.153388723Z     raise ve_exc
+api-1  | 2026-10-07T15:39:27.153390291Z ValueError: 'Consumer Loan' is not a valid Category
+api-1  | 2026-10-07T15:39:27.153391693Z 
+api-1  | 2026-10-07T15:39:27.153392949Z The above exception was the direct cause of the following exception:
+api-1  | 2026-10-07T15:39:27.153394257Z 
+api-1  | 2026-10-07T15:39:27.153395441Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:39:27.153396585Z   File "/app/app/main.py", line 69, in create_ticket
+api-1  | 2026-10-07T15:39:27.153397939Z     category = await classifier.classify(narrative)
+api-1  | 2026-10-07T15:39:27.153399148Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:39:27.153400272Z   File "/app/app/classifier.py", line 47, in classify
+api-1  | 2026-10-07T15:39:27.153424714Z     raise ClassificationError(f"Ollama returned an invalid classification: {exc}") from exc
+api-1  | 2026-10-07T15:39:27.153426838Z app.classifier.ClassificationError: Ollama returned an invalid classification: 'Consumer Loan' is not a valid Category
+api-1  | 2026-10-07T15:39:27.153927591Z 2026-10-07 15:39:27,153 INFO complaints.api request_id=acc-gemma3-1b-9877 method=POST path=/tickets status=502 duration_ms=2612.07 client=172.19.0.1
+api-1  | 2026-10-07T15:39:27.154042737Z INFO:     172.19.0.1:60274 - "POST /tickets HTTP/1.1" 502 Bad Gateway
+api-1  | 2026-10-07T15:39:30.415440940Z 2026-10-07 15:39:30,415 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:39:30.425768664Z 2026-10-07 15:39:30,425 INFO complaints.api request_id=acc-gemma3-1b-9878 method=POST path=/tickets status=201 duration_ms=3262.21 client=172.19.0.1
+api-1  | 2026-10-07T15:39:30.425869215Z INFO:     172.19.0.1:60286 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:39:32.650786796Z 2026-10-07 15:39:32,650 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:39:32.659251374Z 2026-10-07 15:39:32,658 INFO complaints.api request_id=acc-gemma3-1b-9879 method=POST path=/tickets status=201 duration_ms=2227.00 client=172.19.0.1
+api-1  | 2026-10-07T15:39:32.660632727Z INFO:     172.19.0.1:36496 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:39:33.819640185Z 2026-10-07 15:39:33,818 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:39:33.828811563Z 2026-10-07 15:39:33,828 INFO complaints.api request_id=acc-gemma3-1b-9880 method=POST path=/tickets status=201 duration_ms=1163.68 client=172.19.0.1
+api-1  | 2026-10-07T15:39:33.828855151Z INFO:     172.19.0.1:36498 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:39:38.466452625Z 2026-10-07 15:39:38,466 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:39:38.479695796Z 2026-10-07 15:39:38,479 INFO complaints.api request_id=acc-gemma3-1b-9881 method=POST path=/tickets status=201 duration_ms=4638.80 client=172.19.0.1
+api-1  | 2026-10-07T15:39:38.479785741Z INFO:     172.19.0.1:36514 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:39:40.870972027Z 2026-10-07 15:39:40,870 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:39:40.883588820Z INFO:     172.19.0.1:58822 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:39:40.883592120Z 2026-10-07 15:39:40,883 INFO complaints.api request_id=acc-gemma3-1b-9882 method=POST path=/tickets status=201 duration_ms=2399.72 client=172.19.0.1
+api-1  | 2026-10-07T15:39:43.618186789Z 2026-10-07 15:39:43,614 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:39:43.621021670Z 2026-10-07 15:39:43,620 INFO complaints.api request_id=acc-gemma3-1b-9883 method=POST path=/tickets status=201 duration_ms=2713.23 client=172.19.0.1
+api-1  | 2026-10-07T15:39:43.621077255Z INFO:     172.19.0.1:58830 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:39:46.048602910Z 2026-10-07 15:39:46,048 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:39:46.055712240Z INFO:     172.19.0.1:58842 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:39:46.055749098Z 2026-10-07 15:39:46,055 INFO complaints.api request_id=acc-gemma3-1b-9884 method=POST path=/tickets status=201 duration_ms=2420.70 client=172.19.0.1
+api-1  | 2026-10-07T15:39:47.350384006Z 2026-10-07 15:39:47,350 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:39:47.363524875Z 2026-10-07 15:39:47,363 INFO complaints.api request_id=acc-gemma3-1b-9885 method=POST path=/tickets status=201 duration_ms=1291.46 client=172.19.0.1
+api-1  | 2026-10-07T15:39:47.363560905Z INFO:     172.19.0.1:58858 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:39:51.239318882Z 2026-10-07 15:39:51,239 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:39:51.246311302Z 2026-10-07 15:39:51,246 INFO complaints.api request_id=acc-gemma3-1b-9886 method=POST path=/tickets status=201 duration_ms=3854.90 client=172.19.0.1
+api-1  | 2026-10-07T15:39:51.246739242Z INFO:     172.19.0.1:58862 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:39:52.890669810Z 2026-10-07 15:39:52,890 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:39:52.904664000Z INFO:     172.19.0.1:58918 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:39:52.904720253Z 2026-10-07 15:39:52,904 INFO complaints.api request_id=acc-gemma3-1b-9887 method=POST path=/tickets status=201 duration_ms=1640.39 client=172.19.0.1
+api-1  | 2026-10-07T15:39:56.833677161Z 2026-10-07 15:39:56,833 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:39:56.834843788Z 2026-10-07 15:39:56,834 ERROR complaints.api classification_failed model=gemma3:1b-it-q4_K_M
+api-1  | 2026-10-07T15:39:56.834848224Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:39:56.834849856Z   File "/app/app/classifier.py", line 45, in classify
+api-1  | 2026-10-07T15:39:56.834851628Z     return Category(category_text)
+api-1  | 2026-10-07T15:39:56.834852984Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:39:56.834854440Z   File "/usr/local/lib/python3.12/enum.py", line 751, in __call__
+api-1  | 2026-10-07T15:39:56.834855990Z     return cls.__new__(cls, value)
+api-1  | 2026-10-07T15:39:56.834857351Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:39:56.834858536Z   File "/usr/local/lib/python3.12/enum.py", line 1170, in __new__
+api-1  | 2026-10-07T15:39:56.834859935Z     raise ve_exc
+api-1  | 2026-10-07T15:39:56.834861342Z ValueError: 'Consumer Loan' is not a valid Category
+api-1  | 2026-10-07T15:39:56.834862702Z 
+api-1  | 2026-10-07T15:39:56.834863856Z The above exception was the direct cause of the following exception:
+api-1  | 2026-10-07T15:39:56.834865311Z 
+api-1  | 2026-10-07T15:39:56.834866459Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:39:56.834867814Z   File "/app/app/main.py", line 69, in create_ticket
+api-1  | 2026-10-07T15:39:56.834869121Z     category = await classifier.classify(narrative)
+api-1  | 2026-10-07T15:39:56.834907295Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:39:56.834909471Z   File "/app/app/classifier.py", line 47, in classify
+api-1  | 2026-10-07T15:39:56.834911098Z     raise ClassificationError(f"Ollama returned an invalid classification: {exc}") from exc
+api-1  | 2026-10-07T15:39:56.834912650Z app.classifier.ClassificationError: Ollama returned an invalid classification: 'Consumer Loan' is not a valid Category
+api-1  | 2026-10-07T15:39:56.835360221Z 2026-10-07 15:39:56,835 INFO complaints.api request_id=acc-gemma3-1b-9888 method=POST path=/tickets status=502 duration_ms=3928.27 client=172.19.0.1
+api-1  | 2026-10-07T15:39:56.835464133Z INFO:     172.19.0.1:58930 - "POST /tickets HTTP/1.1" 502 Bad Gateway
+api-1  | 2026-10-07T15:40:00.017664507Z 2026-10-07 15:40:00,017 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:40:00.031197917Z INFO:     172.19.0.1:58932 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:40:00.031237968Z 2026-10-07 15:40:00,030 INFO complaints.api request_id=acc-gemma3-1b-9889 method=POST path=/tickets status=201 duration_ms=3188.28 client=172.19.0.1
+api-1  | 2026-10-07T15:40:01.424230836Z 2026-10-07 15:40:01,418 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:40:01.437073648Z 2026-10-07 15:40:01,436 INFO complaints.api request_id=acc-gemma3-1b-9890 method=POST path=/tickets status=201 duration_ms=1394.77 client=172.19.0.1
+api-1  | 2026-10-07T15:40:01.437131184Z INFO:     172.19.0.1:43590 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:40:03.780596706Z 2026-10-07 15:40:03,780 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:40:03.782158217Z 2026-10-07 15:40:03,781 ERROR complaints.api classification_failed model=gemma3:1b-it-q4_K_M
+api-1  | 2026-10-07T15:40:03.782182084Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:40:03.782184653Z   File "/app/app/classifier.py", line 45, in classify
+api-1  | 2026-10-07T15:40:03.782186131Z     return Category(category_text)
+api-1  | 2026-10-07T15:40:03.782187285Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:40:03.782188485Z   File "/usr/local/lib/python3.12/enum.py", line 751, in __call__
+api-1  | 2026-10-07T15:40:03.782189679Z     return cls.__new__(cls, value)
+api-1  | 2026-10-07T15:40:03.782190827Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:40:03.782191956Z   File "/usr/local/lib/python3.12/enum.py", line 1170, in __new__
+api-1  | 2026-10-07T15:40:03.782193045Z     raise ve_exc
+api-1  | 2026-10-07T15:40:03.782194156Z ValueError: 'Consumer Loan' is not a valid Category
+api-1  | 2026-10-07T15:40:03.782195226Z 
+api-1  | 2026-10-07T15:40:03.782196343Z The above exception was the direct cause of the following exception:
+api-1  | 2026-10-07T15:40:03.782197595Z 
+api-1  | 2026-10-07T15:40:03.782198569Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:40:03.782199581Z   File "/app/app/main.py", line 69, in create_ticket
+api-1  | 2026-10-07T15:40:03.782200678Z     category = await classifier.classify(narrative)
+api-1  | 2026-10-07T15:40:03.782254399Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:40:03.782256592Z   File "/app/app/classifier.py", line 47, in classify
+api-1  | 2026-10-07T15:40:03.782258019Z     raise ClassificationError(f"Ollama returned an invalid classification: {exc}") from exc
+api-1  | 2026-10-07T15:40:03.782259329Z app.classifier.ClassificationError: Ollama returned an invalid classification: 'Consumer Loan' is not a valid Category
+api-1  | 2026-10-07T15:40:03.790277375Z 2026-10-07 15:40:03,789 INFO complaints.api request_id=acc-gemma3-1b-9891 method=POST path=/tickets status=502 duration_ms=2344.31 client=172.19.0.1
+api-1  | 2026-10-07T15:40:03.790429189Z INFO:     172.19.0.1:43606 - "POST /tickets HTTP/1.1" 502 Bad Gateway
+api-1  | 2026-10-07T15:40:06.830862084Z 2026-10-07 15:40:06,830 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:40:06.841480729Z INFO:     172.19.0.1:43614 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:40:06.841166570Z 2026-10-07 15:40:06,840 INFO complaints.api request_id=acc-gemma3-1b-9892 method=POST path=/tickets status=201 duration_ms=3042.39 client=172.19.0.1
+api-1  | 2026-10-07T15:40:10.612993305Z 2026-10-07 15:40:10,612 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:40:10.625807929Z INFO:     172.19.0.1:43620 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:40:10.625853305Z 2026-10-07 15:40:10,625 INFO complaints.api request_id=acc-gemma3-1b-9893 method=POST path=/tickets status=201 duration_ms=3779.51 client=172.19.0.1
+api-1  | 2026-10-07T15:40:12.738354165Z 2026-10-07 15:40:12,738 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:40:12.751850043Z INFO:     172.19.0.1:44562 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:40:12.751857378Z 2026-10-07 15:40:12,751 INFO complaints.api request_id=acc-gemma3-1b-9894 method=POST path=/tickets status=201 duration_ms=2110.05 client=172.19.0.1
+api-1  | 2026-10-07T15:40:13.996770243Z 2026-10-07 15:40:13,996 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:40:14.015873158Z INFO:     172.19.0.1:44566 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:40:14.015941676Z 2026-10-07 15:40:14,012 INFO complaints.api request_id=acc-gemma3-1b-9895 method=POST path=/tickets status=201 duration_ms=1237.90 client=172.19.0.1
+api-1  | 2026-10-07T15:40:15.745432497Z 2026-10-07 15:40:15,745 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:40:15.746897272Z 2026-10-07 15:40:15,746 ERROR complaints.api classification_failed model=gemma3:1b-it-q4_K_M
+api-1  | 2026-10-07T15:40:15.746944516Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:40:15.746949471Z   File "/app/app/classifier.py", line 45, in classify
+api-1  | 2026-10-07T15:40:15.746952530Z     return Category(category_text)
+api-1  | 2026-10-07T15:40:15.746954872Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:40:15.746956854Z   File "/usr/local/lib/python3.12/enum.py", line 751, in __call__
+api-1  | 2026-10-07T15:40:15.746958886Z     return cls.__new__(cls, value)
+api-1  | 2026-10-07T15:40:15.746983224Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:40:15.746985049Z   File "/usr/local/lib/python3.12/enum.py", line 1170, in __new__
+api-1  | 2026-10-07T15:40:15.746986331Z     raise ve_exc
+api-1  | 2026-10-07T15:40:15.746987845Z ValueError: 'Venmo' is not a valid Category
+api-1  | 2026-10-07T15:40:15.746989183Z 
+api-1  | 2026-10-07T15:40:15.746990276Z The above exception was the direct cause of the following exception:
+api-1  | 2026-10-07T15:40:15.746991439Z 
+api-1  | 2026-10-07T15:40:15.746992489Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:40:15.746993615Z   File "/app/app/main.py", line 69, in create_ticket
+api-1  | 2026-10-07T15:40:15.746994898Z     category = await classifier.classify(narrative)
+api-1  | 2026-10-07T15:40:15.746996070Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:40:15.746997155Z   File "/app/app/classifier.py", line 47, in classify
+api-1  | 2026-10-07T15:40:15.746998364Z     raise ClassificationError(f"Ollama returned an invalid classification: {exc}") from exc
+api-1  | 2026-10-07T15:40:15.746999681Z app.classifier.ClassificationError: Ollama returned an invalid classification: 'Venmo' is not a valid Category
+api-1  | 2026-10-07T15:40:15.747438550Z 2026-10-07 15:40:15,747 INFO complaints.api request_id=acc-gemma3-1b-9896 method=POST path=/tickets status=502 duration_ms=1724.79 client=172.19.0.1
+api-1  | 2026-10-07T15:40:15.747579298Z INFO:     172.19.0.1:44580 - "POST /tickets HTTP/1.1" 502 Bad Gateway
+api-1  | 2026-10-07T15:40:18.850843267Z 2026-10-07 15:40:18,850 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:40:18.861186563Z 2026-10-07 15:40:18,860 INFO complaints.api request_id=acc-gemma3-1b-9897 method=POST path=/tickets status=201 duration_ms=3108.66 client=172.19.0.1
+api-1  | 2026-10-07T15:40:18.861223765Z INFO:     172.19.0.1:44596 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:40:20.572678401Z 2026-10-07 15:40:20,572 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:40:20.582266909Z 2026-10-07 15:40:20,582 INFO complaints.api request_id=acc-gemma3-1b-9898 method=POST path=/tickets status=201 duration_ms=1708.00 client=172.19.0.1
+api-1  | 2026-10-07T15:40:20.582303631Z INFO:     172.19.0.1:51660 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:40:22.096709796Z 2026-10-07 15:40:22,096 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:40:22.109200084Z 2026-10-07 15:40:22,108 INFO complaints.api request_id=acc-gemma3-1b-9899 method=POST path=/tickets status=201 duration_ms=1514.79 client=172.19.0.1
+api-1  | 2026-10-07T15:40:22.109331154Z INFO:     172.19.0.1:51662 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:40:23.674529946Z 2026-10-07 15:40:23,674 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:40:23.676018551Z 2026-10-07 15:40:23,675 ERROR complaints.api classification_failed model=gemma3:1b-it-q4_K_M
+api-1  | 2026-10-07T15:40:23.676024507Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:40:23.676049584Z   File "/app/app/classifier.py", line 45, in classify
+api-1  | 2026-10-07T15:40:23.676051625Z     return Category(category_text)
+api-1  | 2026-10-07T15:40:23.676052835Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:40:23.676054020Z   File "/usr/local/lib/python3.12/enum.py", line 751, in __call__
+api-1  | 2026-10-07T15:40:23.676055387Z     return cls.__new__(cls, value)
+api-1  | 2026-10-07T15:40:23.676056478Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:40:23.676057517Z   File "/usr/local/lib/python3.12/enum.py", line 1170, in __new__
+api-1  | 2026-10-07T15:40:23.676058722Z     raise ve_exc
+api-1  | 2026-10-07T15:40:23.676059792Z ValueError: 'Consumer Loan' is not a valid Category
+api-1  | 2026-10-07T15:40:23.676060922Z 
+api-1  | 2026-10-07T15:40:23.676061941Z The above exception was the direct cause of the following exception:
+api-1  | 2026-10-07T15:40:23.676063091Z 
+api-1  | 2026-10-07T15:40:23.676064153Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:40:23.676065207Z   File "/app/app/main.py", line 69, in create_ticket
+api-1  | 2026-10-07T15:40:23.676066418Z     category = await classifier.classify(narrative)
+api-1  | 2026-10-07T15:40:23.676320817Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:40:23.676329118Z   File "/app/app/classifier.py", line 47, in classify
+api-1  | 2026-10-07T15:40:23.676331569Z     raise ClassificationError(f"Ollama returned an invalid classification: {exc}") from exc
+api-1  | 2026-10-07T15:40:23.676333465Z app.classifier.ClassificationError: Ollama returned an invalid classification: 'Consumer Loan' is not a valid Category
+api-1  | 2026-10-07T15:40:23.676358798Z 2026-10-07 15:40:23,676 INFO complaints.api request_id=acc-gemma3-1b-9900 method=POST path=/tickets status=502 duration_ms=1554.02 client=172.19.0.1
+api-1  | 2026-10-07T15:40:23.676404001Z INFO:     172.19.0.1:51664 - "POST /tickets HTTP/1.1" 502 Bad Gateway
+api-1  | 2026-10-07T15:40:25.135194847Z 2026-10-07 15:40:25,134 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:40:25.144635857Z 2026-10-07 15:40:25,144 INFO complaints.api request_id=acc-gemma3-1b-9901 method=POST path=/tickets status=201 duration_ms=1456.84 client=172.19.0.1
+api-1  | 2026-10-07T15:40:25.144675014Z INFO:     172.19.0.1:51674 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:40:26.778147149Z 2026-10-07 15:40:26,777 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:40:26.784277268Z 2026-10-07 15:40:26,784 INFO complaints.api request_id=acc-gemma3-1b-9902 method=POST path=/tickets status=201 duration_ms=1612.97 client=172.19.0.1
+api-1  | 2026-10-07T15:40:26.784376598Z INFO:     172.19.0.1:51678 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:40:29.242414586Z 2026-10-07 15:40:29,242 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:40:29.248653389Z 2026-10-07 15:40:29,248 INFO complaints.api request_id=acc-gemma3-1b-9903 method=POST path=/tickets status=201 duration_ms=2443.67 client=172.19.0.1
+api-1  | 2026-10-07T15:40:29.248794669Z INFO:     172.19.0.1:51680 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:40:31.057014864Z 2026-10-07 15:40:31,056 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:40:31.062604402Z 2026-10-07 15:40:31,062 INFO complaints.api request_id=acc-gemma3-1b-9904 method=POST path=/tickets status=201 duration_ms=1806.02 client=172.19.0.1
+api-1  | 2026-10-07T15:40:31.062693912Z INFO:     172.19.0.1:53560 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:40:33.610038968Z 2026-10-07 15:40:33,609 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:40:33.612070529Z 2026-10-07 15:40:33,611 ERROR complaints.api classification_failed model=gemma3:1b-it-q4_K_M
+api-1  | 2026-10-07T15:40:33.612095014Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:40:33.612097248Z   File "/app/app/classifier.py", line 45, in classify
+api-1  | 2026-10-07T15:40:33.612098885Z     return Category(category_text)
+api-1  | 2026-10-07T15:40:33.612100059Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:40:33.612101268Z   File "/usr/local/lib/python3.12/enum.py", line 751, in __call__
+api-1  | 2026-10-07T15:40:33.612102476Z     return cls.__new__(cls, value)
+api-1  | 2026-10-07T15:40:33.612103525Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:40:33.612104541Z   File "/usr/local/lib/python3.12/enum.py", line 1170, in __new__
+api-1  | 2026-10-07T15:40:33.612105692Z     raise ve_exc
+api-1  | 2026-10-07T15:40:33.612106785Z ValueError: 'Consumer Loan' is not a valid Category
+api-1  | 2026-10-07T15:40:33.612107884Z 
+api-1  | 2026-10-07T15:40:33.612108948Z The above exception was the direct cause of the following exception:
+api-1  | 2026-10-07T15:40:33.612110157Z 
+api-1  | 2026-10-07T15:40:33.612111180Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:40:33.612112277Z   File "/app/app/main.py", line 69, in create_ticket
+api-1  | 2026-10-07T15:40:33.612113455Z     category = await classifier.classify(narrative)
+api-1  | 2026-10-07T15:40:33.612114508Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:40:33.612115528Z   File "/app/app/classifier.py", line 47, in classify
+api-1  | 2026-10-07T15:40:33.612116679Z     raise ClassificationError(f"Ollama returned an invalid classification: {exc}") from exc
+api-1  | 2026-10-07T15:40:33.612199042Z app.classifier.ClassificationError: Ollama returned an invalid classification: 'Consumer Loan' is not a valid Category
+api-1  | 2026-10-07T15:40:33.612955672Z 2026-10-07 15:40:33,612 INFO complaints.api request_id=acc-gemma3-1b-9905 method=POST path=/tickets status=502 duration_ms=2534.39 client=172.19.0.1
+api-1  | 2026-10-07T15:40:33.613141949Z INFO:     172.19.0.1:53576 - "POST /tickets HTTP/1.1" 502 Bad Gateway
+api-1  | 2026-10-07T15:40:35.329306650Z 2026-10-07 15:40:35,329 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:40:35.338257012Z 2026-10-07 15:40:35,338 INFO complaints.api request_id=acc-gemma3-1b-9906 method=POST path=/tickets status=201 duration_ms=1714.38 client=172.19.0.1
+api-1  | 2026-10-07T15:40:35.338399754Z INFO:     172.19.0.1:53588 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:40:37.538972086Z 2026-10-07 15:40:37,538 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:40:37.541818977Z 2026-10-07 15:40:37,541 ERROR complaints.api classification_failed model=gemma3:1b-it-q4_K_M
+api-1  | 2026-10-07T15:40:37.541862853Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:40:37.541865523Z   File "/app/app/classifier.py", line 45, in classify
+api-1  | 2026-10-07T15:40:37.541867403Z     return Category(category_text)
+api-1  | 2026-10-07T15:40:37.541868726Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:40:37.541870050Z   File "/usr/local/lib/python3.12/enum.py", line 751, in __call__
+api-1  | 2026-10-07T15:40:37.541871509Z     return cls.__new__(cls, value)
+api-1  | 2026-10-07T15:40:37.541872947Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:40:37.541874136Z   File "/usr/local/lib/python3.12/enum.py", line 1170, in __new__
+api-1  | 2026-10-07T15:40:37.541875467Z     raise ve_exc
+api-1  | 2026-10-07T15:40:37.541876694Z ValueError: 'Credit Reporting' is not a valid Category
+api-1  | 2026-10-07T15:40:37.541877982Z 
+api-1  | 2026-10-07T15:40:37.541879176Z The above exception was the direct cause of the following exception:
+api-1  | 2026-10-07T15:40:37.541880447Z 
+api-1  | 2026-10-07T15:40:37.541881601Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:40:37.541882785Z   File "/app/app/main.py", line 69, in create_ticket
+api-1  | 2026-10-07T15:40:37.541884084Z     category = await classifier.classify(narrative)
+api-1  | 2026-10-07T15:40:37.541885435Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:40:37.541886564Z   File "/app/app/classifier.py", line 47, in classify
+api-1  | 2026-10-07T15:40:37.541887899Z     raise ClassificationError(f"Ollama returned an invalid classification: {exc}") from exc
+api-1  | 2026-10-07T15:40:37.541889371Z app.classifier.ClassificationError: Ollama returned an invalid classification: 'Credit Reporting' is not a valid Category
+api-1  | 2026-10-07T15:40:37.542440553Z 2026-10-07 15:40:37,542 INFO complaints.api request_id=acc-gemma3-1b-9907 method=POST path=/tickets status=502 duration_ms=2198.43 client=172.19.0.1
+api-1  | 2026-10-07T15:40:37.542584979Z INFO:     172.19.0.1:53604 - "POST /tickets HTTP/1.1" 502 Bad Gateway
+api-1  | 2026-10-07T15:40:39.370705446Z 2026-10-07 15:40:39,370 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:40:39.379565794Z 2026-10-07 15:40:39,379 INFO complaints.api request_id=acc-gemma3-1b-9908 method=POST path=/tickets status=201 duration_ms=1823.62 client=172.19.0.1
+api-1  | 2026-10-07T15:40:39.379618622Z INFO:     172.19.0.1:39166 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:40:41.772051756Z 2026-10-07 15:40:41,770 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:40:41.784504992Z 2026-10-07 15:40:41,784 INFO complaints.api request_id=acc-gemma3-1b-9909 method=POST path=/tickets status=201 duration_ms=2377.11 client=172.19.0.1
+api-1  | 2026-10-07T15:40:41.784585485Z INFO:     172.19.0.1:39172 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:40:42.777690046Z 2026-10-07 15:40:42,776 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:40:42.786549807Z 2026-10-07 15:40:42,786 INFO complaints.api request_id=acc-gemma3-1b-9910 method=POST path=/tickets status=201 duration_ms=978.22 client=172.19.0.1
+api-1  | 2026-10-07T15:40:42.786612919Z INFO:     172.19.0.1:39188 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:40:46.388602499Z 2026-10-07 15:40:46,388 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:40:46.409393859Z 2026-10-07 15:40:46,409 INFO complaints.api request_id=acc-gemma3-1b-9911 method=POST path=/tickets status=201 duration_ms=3617.47 client=172.19.0.1
+api-1  | 2026-10-07T15:40:46.409538339Z INFO:     172.19.0.1:39200 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:40:47.439481561Z 2026-10-07 15:40:47,438 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:40:47.448235251Z 2026-10-07 15:40:47,445 INFO complaints.api request_id=acc-gemma3-1b-9912 method=POST path=/tickets status=201 duration_ms=1031.72 client=172.19.0.1
+api-1  | 2026-10-07T15:40:47.448280287Z INFO:     172.19.0.1:39208 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:40:49.857621839Z 2026-10-07 15:40:49,854 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:40:49.857830076Z INFO:     172.19.0.1:36836 - "POST /tickets HTTP/1.1" 502 Bad Gateway
+api-1  | 2026-10-07T15:40:49.857858795Z 2026-10-07 15:40:49,855 ERROR complaints.api classification_failed model=gemma3:1b-it-q4_K_M
+api-1  | 2026-10-07T15:40:49.857862587Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:40:49.857864023Z   File "/app/app/classifier.py", line 45, in classify
+api-1  | 2026-10-07T15:40:49.857867540Z     return Category(category_text)
+api-1  | 2026-10-07T15:40:49.857868916Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:40:49.857870181Z   File "/usr/local/lib/python3.12/enum.py", line 751, in __call__
+api-1  | 2026-10-07T15:40:49.857871521Z     return cls.__new__(cls, value)
+api-1  | 2026-10-07T15:40:49.857872669Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:40:49.857873833Z   File "/usr/local/lib/python3.12/enum.py", line 1170, in __new__
+api-1  | 2026-10-07T15:40:49.857875077Z     raise ve_exc
+api-1  | 2026-10-07T15:40:49.857876247Z ValueError: 'Consumer Loan' is not a valid Category
+api-1  | 2026-10-07T15:40:49.857877471Z 
+api-1  | 2026-10-07T15:40:49.857878658Z The above exception was the direct cause of the following exception:
+api-1  | 2026-10-07T15:40:49.857893023Z 
+api-1  | 2026-10-07T15:40:49.857895279Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:40:49.857896663Z   File "/app/app/main.py", line 69, in create_ticket
+api-1  | 2026-10-07T15:40:49.857898074Z     category = await classifier.classify(narrative)
+api-1  | 2026-10-07T15:40:49.857899388Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:40:49.857924703Z   File "/app/app/classifier.py", line 47, in classify
+api-1  | 2026-10-07T15:40:49.857926692Z     raise ClassificationError(f"Ollama returned an invalid classification: {exc}") from exc
+api-1  | 2026-10-07T15:40:49.857928468Z app.classifier.ClassificationError: Ollama returned an invalid classification: 'Consumer Loan' is not a valid Category
+api-1  | 2026-10-07T15:40:49.857930104Z 2026-10-07 15:40:49,856 INFO complaints.api request_id=acc-gemma3-1b-9913 method=POST path=/tickets status=502 duration_ms=2402.21 client=172.19.0.1
+api-1  | 2026-10-07T15:40:50.958818043Z 2026-10-07 15:40:50,958 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:40:50.975230966Z INFO:     172.19.0.1:36850 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:40:50.975263879Z 2026-10-07 15:40:50,974 INFO complaints.api request_id=acc-gemma3-1b-9914 method=POST path=/tickets status=201 duration_ms=1107.53 client=172.19.0.1
+api-1  | 2026-10-07T15:40:52.374516932Z 2026-10-07 15:40:52,374 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:40:52.385722231Z INFO:     172.19.0.1:36862 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:40:52.385766510Z 2026-10-07 15:40:52,382 INFO complaints.api request_id=acc-gemma3-1b-9915 method=POST path=/tickets status=201 duration_ms=1391.44 client=172.19.0.1
+api-1  | 2026-10-07T15:40:54.536633032Z 2026-10-07 15:40:54,536 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:40:54.548318095Z 2026-10-07 15:40:54,548 INFO complaints.api request_id=acc-gemma3-1b-9916 method=POST path=/tickets status=201 duration_ms=2156.57 client=172.19.0.1
+api-1  | 2026-10-07T15:40:54.548356859Z INFO:     172.19.0.1:36876 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:40:56.989609979Z 2026-10-07 15:40:56,989 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:40:56.998019134Z 2026-10-07 15:40:56,997 INFO complaints.api request_id=acc-gemma3-1b-9917 method=POST path=/tickets status=201 duration_ms=2439.96 client=172.19.0.1
+api-1  | 2026-10-07T15:40:56.998126299Z INFO:     172.19.0.1:36882 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:41:00.389457295Z 2026-10-07 15:41:00,389 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:41:00.400928557Z 2026-10-07 15:41:00,400 INFO complaints.api request_id=acc-gemma3-1b-9918 method=POST path=/tickets status=201 duration_ms=3391.88 client=172.19.0.1
+api-1  | 2026-10-07T15:41:00.400991436Z INFO:     172.19.0.1:36894 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:41:02.612818131Z 2026-10-07 15:41:02,612 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:41:02.614177668Z 2026-10-07 15:41:02,613 ERROR complaints.api classification_failed model=gemma3:1b-it-q4_K_M
+api-1  | 2026-10-07T15:41:02.614185992Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:41:02.614188781Z   File "/app/app/classifier.py", line 45, in classify
+api-1  | 2026-10-07T15:41:02.614191415Z     return Category(category_text)
+api-1  | 2026-10-07T15:41:02.614193394Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:41:02.614240719Z   File "/usr/local/lib/python3.12/enum.py", line 751, in __call__
+api-1  | 2026-10-07T15:41:02.614242827Z     return cls.__new__(cls, value)
+api-1  | 2026-10-07T15:41:02.614244265Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:41:02.614245609Z   File "/usr/local/lib/python3.12/enum.py", line 1170, in __new__
+api-1  | 2026-10-07T15:41:02.614247079Z     raise ve_exc
+api-1  | 2026-10-07T15:41:02.614248528Z ValueError: 'Loan' is not a valid Category
+api-1  | 2026-10-07T15:41:02.614249949Z 
+api-1  | 2026-10-07T15:41:02.614251590Z The above exception was the direct cause of the following exception:
+api-1  | 2026-10-07T15:41:02.614253311Z 
+api-1  | 2026-10-07T15:41:02.614254864Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:41:02.614256108Z   File "/app/app/main.py", line 69, in create_ticket
+api-1  | 2026-10-07T15:41:02.614257570Z     category = await classifier.classify(narrative)
+api-1  | 2026-10-07T15:41:02.614258949Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:41:02.614260250Z   File "/app/app/classifier.py", line 47, in classify
+api-1  | 2026-10-07T15:41:02.614261848Z     raise ClassificationError(f"Ollama returned an invalid classification: {exc}") from exc
+api-1  | 2026-10-07T15:41:02.614263483Z app.classifier.ClassificationError: Ollama returned an invalid classification: 'Loan' is not a valid Category
+api-1  | 2026-10-07T15:41:02.615104610Z 2026-10-07 15:41:02,614 INFO complaints.api request_id=acc-gemma3-1b-9919 method=POST path=/tickets status=502 duration_ms=2201.46 client=172.19.0.1
+api-1  | 2026-10-07T15:41:02.615180355Z INFO:     172.19.0.1:49408 - "POST /tickets HTTP/1.1" 502 Bad Gateway
+api-1  | 2026-10-07T15:41:06.541218105Z 2026-10-07 15:41:06,541 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:41:06.543016840Z 2026-10-07 15:41:06,541 ERROR complaints.api classification_failed model=gemma3:1b-it-q4_K_M
+api-1  | 2026-10-07T15:41:06.543038324Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:41:06.543040995Z   File "/app/app/classifier.py", line 45, in classify
+api-1  | 2026-10-07T15:41:06.543042603Z     return Category(category_text)
+api-1  | 2026-10-07T15:41:06.543044053Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:41:06.543045241Z   File "/usr/local/lib/python3.12/enum.py", line 751, in __call__
+api-1  | 2026-10-07T15:41:06.543046582Z     return cls.__new__(cls, value)
+api-1  | 2026-10-07T15:41:06.543047696Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:41:06.543048835Z   File "/usr/local/lib/python3.12/enum.py", line 1170, in __new__
+api-1  | 2026-10-07T15:41:06.543050072Z     raise ve_exc
+api-1  | 2026-10-07T15:41:06.543051251Z ValueError: 'Consumer Loan' is not a valid Category
+api-1  | 2026-10-07T15:41:06.543052618Z 
+api-1  | 2026-10-07T15:41:06.543053764Z The above exception was the direct cause of the following exception:
+api-1  | 2026-10-07T15:41:06.543055001Z 
+api-1  | 2026-10-07T15:41:06.543081611Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:41:06.543083681Z   File "/app/app/main.py", line 69, in create_ticket
+api-1  | 2026-10-07T15:41:06.543085041Z     category = await classifier.classify(narrative)
+api-1  | 2026-10-07T15:41:06.543086268Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:41:06.543087448Z   File "/app/app/classifier.py", line 47, in classify
+api-1  | 2026-10-07T15:41:06.543088720Z     raise ClassificationError(f"Ollama returned an invalid classification: {exc}") from exc
+api-1  | 2026-10-07T15:41:06.543090344Z app.classifier.ClassificationError: Ollama returned an invalid classification: 'Consumer Loan' is not a valid Category
+api-1  | 2026-10-07T15:41:06.552291381Z 2026-10-07 15:41:06,552 INFO complaints.api request_id=acc-gemma3-1b-9920 method=POST path=/tickets status=502 duration_ms=3930.50 client=172.19.0.1
+api-1  | 2026-10-07T15:41:06.552423558Z INFO:     172.19.0.1:49412 - "POST /tickets HTTP/1.1" 502 Bad Gateway
+api-1  | 2026-10-07T15:41:09.737801750Z 2026-10-07 15:41:09,737 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:41:09.751832015Z 2026-10-07 15:41:09,751 INFO complaints.api request_id=acc-gemma3-1b-9921 method=POST path=/tickets status=201 duration_ms=3183.54 client=172.19.0.1
+api-1  | 2026-10-07T15:41:09.751966417Z INFO:     172.19.0.1:49428 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:41:13.529288259Z 2026-10-07 15:41:13,529 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:41:13.530673415Z 2026-10-07 15:41:13,530 ERROR complaints.api classification_failed model=gemma3:1b-it-q4_K_M
+api-1  | 2026-10-07T15:41:13.530677890Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:41:13.530679586Z   File "/app/app/classifier.py", line 45, in classify
+api-1  | 2026-10-07T15:41:13.530681252Z     return Category(category_text)
+api-1  | 2026-10-07T15:41:13.530682473Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:41:13.530683750Z   File "/usr/local/lib/python3.12/enum.py", line 751, in __call__
+api-1  | 2026-10-07T15:41:13.530685269Z     return cls.__new__(cls, value)
+api-1  | 2026-10-07T15:41:13.530686600Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:41:13.530687838Z   File "/usr/local/lib/python3.12/enum.py", line 1170, in __new__
+api-1  | 2026-10-07T15:41:13.530689159Z     raise ve_exc
+api-1  | 2026-10-07T15:41:13.530690379Z ValueError: 'Consumer Loan' is not a valid Category
+api-1  | 2026-10-07T15:41:13.530691643Z 
+api-1  | 2026-10-07T15:41:13.530692871Z The above exception was the direct cause of the following exception:
+api-1  | 2026-10-07T15:41:13.530694140Z 
+api-1  | 2026-10-07T15:41:13.530695387Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:41:13.530696607Z   File "/app/app/main.py", line 69, in create_ticket
+api-1  | 2026-10-07T15:41:13.530697933Z     category = await classifier.classify(narrative)
+api-1  | 2026-10-07T15:41:13.530699165Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:41:13.530700279Z   File "/app/app/classifier.py", line 47, in classify
+api-1  | 2026-10-07T15:41:13.530727310Z     raise ClassificationError(f"Ollama returned an invalid classification: {exc}") from exc
+api-1  | 2026-10-07T15:41:13.530729710Z app.classifier.ClassificationError: Ollama returned an invalid classification: 'Consumer Loan' is not a valid Category
+api-1  | 2026-10-07T15:41:13.531135188Z 2026-10-07 15:41:13,531 INFO complaints.api request_id=acc-gemma3-1b-9922 method=POST path=/tickets status=502 duration_ms=3762.48 client=172.19.0.1
+api-1  | 2026-10-07T15:41:13.531310463Z INFO:     172.19.0.1:46922 - "POST /tickets HTTP/1.1" 502 Bad Gateway
+api-1  | 2026-10-07T15:41:16.839369656Z 2026-10-07 15:41:16,839 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:41:16.841396410Z 2026-10-07 15:41:16,840 ERROR complaints.api classification_failed model=gemma3:1b-it-q4_K_M
+api-1  | 2026-10-07T15:41:16.841425196Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:41:16.841428193Z   File "/app/app/classifier.py", line 45, in classify
+api-1  | 2026-10-07T15:41:16.841429992Z     return Category(category_text)
+api-1  | 2026-10-07T15:41:16.841431263Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:41:16.841453193Z   File "/usr/local/lib/python3.12/enum.py", line 751, in __call__
+api-1  | 2026-10-07T15:41:16.841455288Z     return cls.__new__(cls, value)
+api-1  | 2026-10-07T15:41:16.841456634Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:41:16.841457877Z   File "/usr/local/lib/python3.12/enum.py", line 1170, in __new__
+api-1  | 2026-10-07T15:41:16.841459168Z     raise ve_exc
+api-1  | 2026-10-07T15:41:16.841460461Z ValueError: 'Consumer Loan' is not a valid Category
+api-1  | 2026-10-07T15:41:16.841461729Z 
+api-1  | 2026-10-07T15:41:16.841462887Z The above exception was the direct cause of the following exception:
+api-1  | 2026-10-07T15:41:16.841464173Z 
+api-1  | 2026-10-07T15:41:16.841465297Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:41:16.841466449Z   File "/app/app/main.py", line 69, in create_ticket
+api-1  | 2026-10-07T15:41:16.841467745Z     category = await classifier.classify(narrative)
+api-1  | 2026-10-07T15:41:16.841468927Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:41:16.841470054Z   File "/app/app/classifier.py", line 47, in classify
+api-1  | 2026-10-07T15:41:16.841471333Z     raise ClassificationError(f"Ollama returned an invalid classification: {exc}") from exc
+api-1  | 2026-10-07T15:41:16.841472746Z app.classifier.ClassificationError: Ollama returned an invalid classification: 'Consumer Loan' is not a valid Category
+api-1  | 2026-10-07T15:41:16.841746534Z 2026-10-07 15:41:16,841 INFO complaints.api request_id=acc-gemma3-1b-9923 method=POST path=/tickets status=502 duration_ms=3283.65 client=172.19.0.1
+api-1  | 2026-10-07T15:41:16.841846769Z INFO:     172.19.0.1:46926 - "POST /tickets HTTP/1.1" 502 Bad Gateway
+api-1  | 2026-10-07T15:41:20.417397473Z 2026-10-07 15:41:20,417 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:41:20.430965252Z 2026-10-07 15:41:20,430 INFO complaints.api request_id=acc-gemma3-1b-9924 method=POST path=/tickets status=201 duration_ms=3579.74 client=172.19.0.1
+api-1  | 2026-10-07T15:41:20.431082384Z INFO:     172.19.0.1:46932 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:41:22.140999895Z 2026-10-07 15:41:22,139 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:41:22.150613454Z 2026-10-07 15:41:22,150 INFO complaints.api request_id=acc-gemma3-1b-9925 method=POST path=/tickets status=201 duration_ms=1714.55 client=172.19.0.1
+api-1  | 2026-10-07T15:41:22.150706444Z INFO:     172.19.0.1:53856 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:41:24.736825533Z 2026-10-07 15:41:24,736 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:41:24.745126690Z 2026-10-07 15:41:24,744 INFO complaints.api request_id=acc-gemma3-1b-9926 method=POST path=/tickets status=201 duration_ms=2571.66 client=172.19.0.1
+api-1  | 2026-10-07T15:41:24.745123530Z INFO:     172.19.0.1:53872 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:41:27.134926432Z 2026-10-07 15:41:27,134 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:41:27.150158860Z 2026-10-07 15:41:27,146 INFO complaints.api request_id=acc-gemma3-1b-9927 method=POST path=/tickets status=201 duration_ms=2374.14 client=172.19.0.1
+api-1  | 2026-10-07T15:41:27.150207392Z INFO:     172.19.0.1:53876 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:41:31.367330488Z 2026-10-07 15:41:31,367 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:41:31.378852081Z 2026-10-07 15:41:31,378 INFO complaints.api request_id=acc-gemma3-1b-9928 method=POST path=/tickets status=201 duration_ms=4219.75 client=172.19.0.1
+api-1  | 2026-10-07T15:41:31.378891305Z INFO:     172.19.0.1:53884 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:41:34.731085232Z 2026-10-07 15:41:34,730 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:41:34.742434187Z 2026-10-07 15:41:34,742 INFO complaints.api request_id=acc-gemma3-1b-9929 method=POST path=/tickets status=201 duration_ms=3359.04 client=172.19.0.1
+api-1  | 2026-10-07T15:41:34.742502416Z INFO:     172.19.0.1:55534 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:41:37.299127624Z 2026-10-07 15:41:37,298 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:41:37.309814836Z 2026-10-07 15:41:37,309 INFO complaints.api request_id=acc-gemma3-1b-9930 method=POST path=/tickets status=201 duration_ms=2560.85 client=172.19.0.1
+api-1  | 2026-10-07T15:41:37.309897466Z INFO:     172.19.0.1:55544 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:41:39.731352682Z 2026-10-07 15:41:39,731 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:41:39.742730561Z 2026-10-07 15:41:39,742 INFO complaints.api request_id=acc-gemma3-1b-9931 method=POST path=/tickets status=201 duration_ms=2418.80 client=172.19.0.1
+api-1  | 2026-10-07T15:41:39.742815855Z INFO:     172.19.0.1:55546 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:41:40.814122876Z 2026-10-07 15:41:40,800 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:41:40.814184242Z 2026-10-07 15:41:40,808 INFO complaints.api request_id=acc-gemma3-1b-9932 method=POST path=/tickets status=201 duration_ms=1056.47 client=172.19.0.1
+api-1  | 2026-10-07T15:41:40.814212563Z INFO:     172.19.0.1:56840 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:41:42.667454338Z 2026-10-07 15:41:42,667 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:41:42.681861495Z 2026-10-07 15:41:42,681 INFO complaints.api request_id=acc-gemma3-1b-9933 method=POST path=/tickets status=201 duration_ms=1867.94 client=172.19.0.1
+api-1  | 2026-10-07T15:41:42.682057367Z INFO:     172.19.0.1:56842 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:41:45.421539008Z 2026-10-07 15:41:45,421 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:41:45.437597508Z 2026-10-07 15:41:45,437 INFO complaints.api request_id=acc-gemma3-1b-9934 method=POST path=/tickets status=201 duration_ms=2730.65 client=172.19.0.1
+api-1  | 2026-10-07T15:41:45.437682451Z INFO:     172.19.0.1:56850 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:41:47.271591244Z 2026-10-07 15:41:47,271 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:41:47.274833197Z 2026-10-07 15:41:47,273 ERROR complaints.api classification_failed model=gemma3:1b-it-q4_K_M
+api-1  | 2026-10-07T15:41:47.274894414Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:41:47.274898267Z   File "/app/app/classifier.py", line 45, in classify
+api-1  | 2026-10-07T15:41:47.274901088Z     return Category(category_text)
+api-1  | 2026-10-07T15:41:47.274903265Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:41:47.274905330Z   File "/usr/local/lib/python3.12/enum.py", line 751, in __call__
+api-1  | 2026-10-07T15:41:47.274907714Z     return cls.__new__(cls, value)
+api-1  | 2026-10-07T15:41:47.274909628Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:41:47.274911503Z   File "/usr/local/lib/python3.12/enum.py", line 1170, in __new__
+api-1  | 2026-10-07T15:41:47.274913414Z     raise ve_exc
+api-1  | 2026-10-07T15:41:47.274915338Z ValueError: 'Consumer Loan' is not a valid Category
+api-1  | 2026-10-07T15:41:47.274917266Z 
+api-1  | 2026-10-07T15:41:47.274919102Z The above exception was the direct cause of the following exception:
+api-1  | 2026-10-07T15:41:47.274921035Z 
+api-1  | 2026-10-07T15:41:47.274923448Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:41:47.274925396Z   File "/app/app/main.py", line 69, in create_ticket
+api-1  | 2026-10-07T15:41:47.274927666Z     category = await classifier.classify(narrative)
+api-1  | 2026-10-07T15:41:47.274929572Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:41:47.274931400Z   File "/app/app/classifier.py", line 47, in classify
+api-1  | 2026-10-07T15:41:47.274933380Z     raise ClassificationError(f"Ollama returned an invalid classification: {exc}") from exc
+api-1  | 2026-10-07T15:41:47.274935487Z app.classifier.ClassificationError: Ollama returned an invalid classification: 'Consumer Loan' is not a valid Category
+api-1  | 2026-10-07T15:41:47.275278013Z 2026-10-07 15:41:47,275 INFO complaints.api request_id=acc-gemma3-1b-9935 method=POST path=/tickets status=502 duration_ms=1833.33 client=172.19.0.1
+api-1  | 2026-10-07T15:41:47.275436612Z INFO:     172.19.0.1:56862 - "POST /tickets HTTP/1.1" 502 Bad Gateway
+api-1  | 2026-10-07T15:41:49.261601592Z 2026-10-07 15:41:49,261 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:41:49.274733904Z 2026-10-07 15:41:49,274 INFO complaints.api request_id=acc-gemma3-1b-9936 method=POST path=/tickets status=201 duration_ms=1994.70 client=172.19.0.1
+api-1  | 2026-10-07T15:41:49.274823757Z INFO:     172.19.0.1:56864 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:41:51.971321202Z 2026-10-07 15:41:51,971 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:41:51.979598498Z 2026-10-07 15:41:51,979 INFO complaints.api request_id=acc-gemma3-1b-9937 method=POST path=/tickets status=201 duration_ms=2687.33 client=172.19.0.1
+api-1  | 2026-10-07T15:41:51.979641067Z INFO:     172.19.0.1:35976 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:41:54.792054953Z 2026-10-07 15:41:54,790 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:41:54.802122361Z 2026-10-07 15:41:54,801 INFO complaints.api request_id=acc-gemma3-1b-9938 method=POST path=/tickets status=201 duration_ms=2812.53 client=172.19.0.1
+api-1  | 2026-10-07T15:41:54.802160864Z INFO:     172.19.0.1:35982 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:41:58.401860932Z 2026-10-07 15:41:58,401 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:41:58.417324233Z 2026-10-07 15:41:58,416 INFO complaints.api request_id=acc-gemma3-1b-9939 method=POST path=/tickets status=201 duration_ms=3610.44 client=172.19.0.1
+api-1  | 2026-10-07T15:41:58.417524290Z INFO:     172.19.0.1:35988 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:42:01.717730703Z 2026-10-07 15:42:01,717 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:42:01.728748339Z 2026-10-07 15:42:01,728 INFO complaints.api request_id=acc-gemma3-1b-9940 method=POST path=/tickets status=201 duration_ms=3304.52 client=172.19.0.1
+api-1  | 2026-10-07T15:42:01.728835239Z INFO:     172.19.0.1:52114 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:42:04.417198476Z 2026-10-07 15:42:04,416 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:42:04.424817615Z INFO:     172.19.0.1:52120 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:42:04.424829863Z 2026-10-07 15:42:04,424 INFO complaints.api request_id=acc-gemma3-1b-9941 method=POST path=/tickets status=201 duration_ms=2684.02 client=172.19.0.1
+api-1  | 2026-10-07T15:42:08.029054358Z 2026-10-07 15:42:08,028 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:42:08.035053145Z 2026-10-07 15:42:08,034 INFO complaints.api request_id=acc-gemma3-1b-9942 method=POST path=/tickets status=201 duration_ms=3595.81 client=172.19.0.1
+api-1  | 2026-10-07T15:42:08.035132115Z INFO:     172.19.0.1:52134 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:42:09.381174109Z 2026-10-07 15:42:09,380 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:42:09.392575675Z 2026-10-07 15:42:09,392 INFO complaints.api request_id=acc-gemma3-1b-9943 method=POST path=/tickets status=201 duration_ms=1351.18 client=172.19.0.1
+api-1  | 2026-10-07T15:42:09.392645113Z INFO:     172.19.0.1:35448 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:42:11.874101493Z 2026-10-07 15:42:11,873 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:42:11.881684522Z 2026-10-07 15:42:11,881 INFO complaints.api request_id=acc-gemma3-1b-9944 method=POST path=/tickets status=201 duration_ms=2485.11 client=172.19.0.1
+api-1  | 2026-10-07T15:42:11.881950487Z INFO:     172.19.0.1:35458 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:42:14.137169698Z 2026-10-07 15:42:14,136 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:42:14.148080064Z 2026-10-07 15:42:14,147 INFO complaints.api request_id=acc-gemma3-1b-9945 method=POST path=/tickets status=201 duration_ms=2261.20 client=172.19.0.1
+api-1  | 2026-10-07T15:42:14.148727233Z INFO:     172.19.0.1:35460 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:42:18.280845863Z 2026-10-07 15:42:18,280 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:42:18.289271165Z 2026-10-07 15:42:18,289 INFO complaints.api request_id=acc-gemma3-1b-9946 method=POST path=/tickets status=201 duration_ms=4115.46 client=172.19.0.1
+api-1  | 2026-10-07T15:42:18.290149783Z INFO:     172.19.0.1:35468 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:42:22.594668195Z 2026-10-07 15:42:22,594 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:42:22.605036210Z INFO:     172.19.0.1:58552 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:42:22.605092032Z 2026-10-07 15:42:22,604 INFO complaints.api request_id=acc-gemma3-1b-9947 method=POST path=/tickets status=201 duration_ms=4305.29 client=172.19.0.1
+api-1  | 2026-10-07T15:42:25.663269237Z 2026-10-07 15:42:25,662 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:42:25.671002393Z 2026-10-07 15:42:25,670 INFO complaints.api request_id=acc-gemma3-1b-9948 method=POST path=/tickets status=201 duration_ms=3059.90 client=172.19.0.1
+api-1  | 2026-10-07T15:42:25.671825992Z INFO:     172.19.0.1:58556 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:42:27.371056098Z 2026-10-07 15:42:27,370 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:42:27.372782791Z 2026-10-07 15:42:27,371 ERROR complaints.api classification_failed model=gemma3:1b-it-q4_K_M
+api-1  | 2026-10-07T15:42:27.372812873Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:42:27.372816825Z   File "/app/app/classifier.py", line 45, in classify
+api-1  | 2026-10-07T15:42:27.372819663Z     return Category(category_text)
+api-1  | 2026-10-07T15:42:27.372821735Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:42:27.372823690Z   File "/usr/local/lib/python3.12/enum.py", line 751, in __call__
+api-1  | 2026-10-07T15:42:27.372843706Z     return cls.__new__(cls, value)
+api-1  | 2026-10-07T15:42:27.372845558Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:42:27.372846829Z   File "/usr/local/lib/python3.12/enum.py", line 1170, in __new__
+api-1  | 2026-10-07T15:42:27.372848176Z     raise ve_exc
+api-1  | 2026-10-07T15:42:27.372849423Z ValueError: 'Consumer Loan' is not a valid Category
+api-1  | 2026-10-07T15:42:27.372850629Z 
+api-1  | 2026-10-07T15:42:27.372851927Z The above exception was the direct cause of the following exception:
+api-1  | 2026-10-07T15:42:27.372853292Z 
+api-1  | 2026-10-07T15:42:27.372854579Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:42:27.372855705Z   File "/app/app/main.py", line 69, in create_ticket
+api-1  | 2026-10-07T15:42:27.372857050Z     category = await classifier.classify(narrative)
+api-1  | 2026-10-07T15:42:27.372858302Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:42:27.372859452Z   File "/app/app/classifier.py", line 47, in classify
+api-1  | 2026-10-07T15:42:27.372860917Z     raise ClassificationError(f"Ollama returned an invalid classification: {exc}") from exc
+api-1  | 2026-10-07T15:42:27.372862357Z app.classifier.ClassificationError: Ollama returned an invalid classification: 'Consumer Loan' is not a valid Category
+api-1  | 2026-10-07T15:42:27.380378357Z 2026-10-07 15:42:27,380 INFO complaints.api request_id=acc-gemma3-1b-9949 method=POST path=/tickets status=502 duration_ms=1703.06 client=172.19.0.1
+api-1  | 2026-10-07T15:42:27.380595372Z INFO:     172.19.0.1:58564 - "POST /tickets HTTP/1.1" 502 Bad Gateway
+api-1  | 2026-10-07T15:42:28.846329525Z 2026-10-07 15:42:28,844 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:42:28.851775639Z 2026-10-07 15:42:28,851 INFO complaints.api request_id=acc-gemma3-1b-9950 method=POST path=/tickets status=201 duration_ms=1446.58 client=172.19.0.1
+api-1  | 2026-10-07T15:42:28.851914795Z INFO:     172.19.0.1:58576 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:42:31.271258881Z 2026-10-07 15:42:31,271 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:42:31.284825884Z 2026-10-07 15:42:31,284 INFO complaints.api request_id=acc-gemma3-1b-9951 method=POST path=/tickets status=201 duration_ms=2427.13 client=172.19.0.1
+api-1  | 2026-10-07T15:42:31.284870512Z INFO:     172.19.0.1:57900 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:42:33.536311967Z 2026-10-07 15:42:33,534 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:42:33.544351078Z 2026-10-07 15:42:33,544 INFO complaints.api request_id=acc-gemma3-1b-9952 method=POST path=/tickets status=201 duration_ms=2238.86 client=172.19.0.1
+api-1  | 2026-10-07T15:42:33.544388834Z INFO:     172.19.0.1:57906 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:42:38.547427217Z 2026-10-07 15:42:38,547 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:42:38.559906662Z 2026-10-07 15:42:38,559 INFO complaints.api request_id=acc-gemma3-1b-9953 method=POST path=/tickets status=201 duration_ms=5011.43 client=172.19.0.1
+api-1  | 2026-10-07T15:42:38.560047756Z INFO:     172.19.0.1:57916 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:42:41.225424402Z 2026-10-07 15:42:41,225 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:42:41.231650699Z 2026-10-07 15:42:41,231 INFO complaints.api request_id=acc-gemma3-1b-9954 method=POST path=/tickets status=201 duration_ms=2660.60 client=172.19.0.1
+api-1  | 2026-10-07T15:42:41.231723122Z INFO:     172.19.0.1:52746 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:42:45.680234246Z 2026-10-07 15:42:45,679 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:42:45.690612221Z 2026-10-07 15:42:45,690 INFO complaints.api request_id=acc-gemma3-1b-9955 method=POST path=/tickets status=201 duration_ms=4446.29 client=172.19.0.1
+api-1  | 2026-10-07T15:42:45.690632274Z INFO:     172.19.0.1:52760 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:42:49.083848463Z 2026-10-07 15:42:49,083 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:42:49.102779984Z INFO:     172.19.0.1:52774 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:42:49.102873294Z 2026-10-07 15:42:49,102 INFO complaints.api request_id=acc-gemma3-1b-9956 method=POST path=/tickets status=201 duration_ms=3404.21 client=172.19.0.1
+api-1  | 2026-10-07T15:42:50.519919834Z 2026-10-07 15:42:50,519 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:42:50.538774315Z 2026-10-07 15:42:50,538 INFO complaints.api request_id=acc-gemma3-1b-9957 method=POST path=/tickets status=201 duration_ms=1415.00 client=172.19.0.1
+api-1  | 2026-10-07T15:42:50.539000170Z INFO:     172.19.0.1:53452 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:42:53.793552493Z 2026-10-07 15:42:53,793 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:42:53.800500982Z 2026-10-07 15:42:53,800 INFO complaints.api request_id=acc-gemma3-1b-9958 method=POST path=/tickets status=201 duration_ms=3250.64 client=172.19.0.1
+api-1  | 2026-10-07T15:42:53.800660270Z INFO:     172.19.0.1:53462 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:42:56.567388211Z 2026-10-07 15:42:56,567 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:42:56.580838797Z 2026-10-07 15:42:56,580 INFO complaints.api request_id=acc-gemma3-1b-9959 method=POST path=/tickets status=201 duration_ms=2774.99 client=172.19.0.1
+api-1  | 2026-10-07T15:42:56.581029801Z INFO:     172.19.0.1:53470 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:42:58.617746065Z 2026-10-07 15:42:58,617 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:42:58.628284839Z INFO:     172.19.0.1:53482 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:42:58.628328176Z 2026-10-07 15:42:58,627 INFO complaints.api request_id=acc-gemma3-1b-9960 method=POST path=/tickets status=201 duration_ms=2042.65 client=172.19.0.1
+api-1  | 2026-10-07T15:43:00.508629667Z 2026-10-07 15:43:00,506 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:43:00.517182590Z 2026-10-07 15:43:00,517 INFO complaints.api request_id=acc-gemma3-1b-9961 method=POST path=/tickets status=201 duration_ms=1862.38 client=172.19.0.1
+api-1  | 2026-10-07T15:43:00.517258315Z INFO:     172.19.0.1:45858 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:43:04.197926564Z 2026-10-07 15:43:04,197 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:43:04.199265098Z 2026-10-07 15:43:04,198 ERROR complaints.api classification_failed model=gemma3:1b-it-q4_K_M
+api-1  | 2026-10-07T15:43:04.199271662Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:43:04.199274292Z   File "/app/app/classifier.py", line 45, in classify
+api-1  | 2026-10-07T15:43:04.199275935Z     return Category(category_text)
+api-1  | 2026-10-07T15:43:04.199277567Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:43:04.199278758Z   File "/usr/local/lib/python3.12/enum.py", line 751, in __call__
+api-1  | 2026-10-07T15:43:04.199280102Z     return cls.__new__(cls, value)
+api-1  | 2026-10-07T15:43:04.199281225Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:43:04.199282358Z   File "/usr/local/lib/python3.12/enum.py", line 1170, in __new__
+api-1  | 2026-10-07T15:43:04.199283578Z     raise ve_exc
+api-1  | 2026-10-07T15:43:04.199284798Z ValueError: 'Credit Reporting' is not a valid Category
+api-1  | 2026-10-07T15:43:04.199285983Z 
+api-1  | 2026-10-07T15:43:04.199287076Z The above exception was the direct cause of the following exception:
+api-1  | 2026-10-07T15:43:04.199288302Z 
+api-1  | 2026-10-07T15:43:04.199289386Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:43:04.199290471Z   File "/app/app/main.py", line 69, in create_ticket
+api-1  | 2026-10-07T15:43:04.199291705Z     category = await classifier.classify(narrative)
+api-1  | 2026-10-07T15:43:04.199292853Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:43:04.199293972Z   File "/app/app/classifier.py", line 47, in classify
+api-1  | 2026-10-07T15:43:04.199302896Z     raise ClassificationError(f"Ollama returned an invalid classification: {exc}") from exc
+api-1  | 2026-10-07T15:43:04.199305011Z app.classifier.ClassificationError: Ollama returned an invalid classification: 'Credit Reporting' is not a valid Category
+api-1  | 2026-10-07T15:43:04.199814950Z 2026-10-07 15:43:04,199 INFO complaints.api request_id=acc-gemma3-1b-9962 method=POST path=/tickets status=502 duration_ms=3674.38 client=172.19.0.1
+api-1  | 2026-10-07T15:43:04.199895917Z INFO:     172.19.0.1:45864 - "POST /tickets HTTP/1.1" 502 Bad Gateway
+api-1  | 2026-10-07T15:43:07.641723899Z 2026-10-07 15:43:07,641 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:43:07.649014103Z 2026-10-07 15:43:07,648 INFO complaints.api request_id=acc-gemma3-1b-9963 method=POST path=/tickets status=201 duration_ms=3430.59 client=172.19.0.1
+api-1  | 2026-10-07T15:43:07.649071960Z INFO:     172.19.0.1:45878 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:43:09.597724571Z 2026-10-07 15:43:09,597 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:43:09.606979617Z 2026-10-07 15:43:09,606 INFO complaints.api request_id=acc-gemma3-1b-9964 method=POST path=/tickets status=201 duration_ms=1953.19 client=172.19.0.1
+api-1  | 2026-10-07T15:43:09.607041639Z INFO:     172.19.0.1:57072 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:43:12.588668950Z 2026-10-07 15:43:12,585 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:43:12.601394067Z 2026-10-07 15:43:12,601 INFO complaints.api request_id=acc-gemma3-1b-9965 method=POST path=/tickets status=201 duration_ms=2977.18 client=172.19.0.1
+api-1  | 2026-10-07T15:43:12.601446569Z INFO:     172.19.0.1:57084 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:43:14.192722153Z 2026-10-07 15:43:14,192 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:43:14.196641727Z INFO:     172.19.0.1:57094 - "POST /tickets HTTP/1.1" 502 Bad Gateway
+api-1  | 2026-10-07T15:43:14.196685774Z 2026-10-07 15:43:14,193 ERROR complaints.api classification_failed model=gemma3:1b-it-q4_K_M
+api-1  | 2026-10-07T15:43:14.196688482Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:43:14.196689971Z   File "/app/app/classifier.py", line 45, in classify
+api-1  | 2026-10-07T15:43:14.196691504Z     return Category(category_text)
+api-1  | 2026-10-07T15:43:14.196692909Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:43:14.196694373Z   File "/usr/local/lib/python3.12/enum.py", line 751, in __call__
+api-1  | 2026-10-07T15:43:14.196695792Z     return cls.__new__(cls, value)
+api-1  | 2026-10-07T15:43:14.196697096Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:43:14.196698253Z   File "/usr/local/lib/python3.12/enum.py", line 1170, in __new__
+api-1  | 2026-10-07T15:43:14.196699531Z     raise ve_exc
+api-1  | 2026-10-07T15:43:14.196700921Z ValueError: 'Consumer Loan' is not a valid Category
+api-1  | 2026-10-07T15:43:14.196702157Z 
+api-1  | 2026-10-07T15:43:14.196704026Z The above exception was the direct cause of the following exception:
+api-1  | 2026-10-07T15:43:14.196705358Z 
+api-1  | 2026-10-07T15:43:14.196706537Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:43:14.196707713Z   File "/app/app/main.py", line 69, in create_ticket
+api-1  | 2026-10-07T15:43:14.196708998Z     category = await classifier.classify(narrative)
+api-1  | 2026-10-07T15:43:14.196710201Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:43:14.196711342Z   File "/app/app/classifier.py", line 47, in classify
+api-1  | 2026-10-07T15:43:14.196712580Z     raise ClassificationError(f"Ollama returned an invalid classification: {exc}") from exc
+api-1  | 2026-10-07T15:43:14.196714225Z app.classifier.ClassificationError: Ollama returned an invalid classification: 'Consumer Loan' is not a valid Category
+api-1  | 2026-10-07T15:43:14.196715763Z 2026-10-07 15:43:14,194 INFO complaints.api request_id=acc-gemma3-1b-9966 method=POST path=/tickets status=502 duration_ms=1585.98 client=172.19.0.1
+api-1  | 2026-10-07T15:43:16.852037430Z 2026-10-07 15:43:16,851 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:43:16.863753866Z 2026-10-07 15:43:16,863 INFO complaints.api request_id=acc-gemma3-1b-9967 method=POST path=/tickets status=201 duration_ms=2665.00 client=172.19.0.1
+api-1  | 2026-10-07T15:43:16.863853886Z INFO:     172.19.0.1:57106 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:43:20.249201915Z 2026-10-07 15:43:20,249 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:43:20.250671640Z 2026-10-07 15:43:20,250 ERROR complaints.api classification_failed model=gemma3:1b-it-q4_K_M
+api-1  | 2026-10-07T15:43:20.250680720Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:43:20.250683762Z   File "/app/app/classifier.py", line 45, in classify
+api-1  | 2026-10-07T15:43:20.250686186Z     return Category(category_text)
+api-1  | 2026-10-07T15:43:20.250688089Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:43:20.250689672Z   File "/usr/local/lib/python3.12/enum.py", line 751, in __call__
+api-1  | 2026-10-07T15:43:20.250691217Z     return cls.__new__(cls, value)
+api-1  | 2026-10-07T15:43:20.250692430Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:43:20.250693691Z   File "/usr/local/lib/python3.12/enum.py", line 1170, in __new__
+api-1  | 2026-10-07T15:43:20.250694964Z     raise ve_exc
+api-1  | 2026-10-07T15:43:20.250696224Z ValueError: 'Consumer Loan' is not a valid Category
+api-1  | 2026-10-07T15:43:20.250697531Z 
+api-1  | 2026-10-07T15:43:20.250698815Z The above exception was the direct cause of the following exception:
+api-1  | 2026-10-07T15:43:20.250700100Z 
+api-1  | 2026-10-07T15:43:20.250701413Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:43:20.250702566Z   File "/app/app/main.py", line 69, in create_ticket
+api-1  | 2026-10-07T15:43:20.250703869Z     category = await classifier.classify(narrative)
+api-1  | 2026-10-07T15:43:20.250705122Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:43:20.250706774Z   File "/app/app/classifier.py", line 47, in classify
+api-1  | 2026-10-07T15:43:20.250708193Z     raise ClassificationError(f"Ollama returned an invalid classification: {exc}") from exc
+api-1  | 2026-10-07T15:43:20.250709582Z app.classifier.ClassificationError: Ollama returned an invalid classification: 'Consumer Loan' is not a valid Category
+api-1  | 2026-10-07T15:43:20.251287649Z 2026-10-07 15:43:20,251 INFO complaints.api request_id=acc-gemma3-1b-9968 method=POST path=/tickets status=502 duration_ms=3381.67 client=172.19.0.1
+api-1  | 2026-10-07T15:43:20.251824082Z INFO:     172.19.0.1:57116 - "POST /tickets HTTP/1.1" 502 Bad Gateway
+api-1  | 2026-10-07T15:43:22.672500196Z 2026-10-07 15:43:22,672 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:43:22.686645547Z INFO:     172.19.0.1:36998 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:43:22.686707748Z 2026-10-07 15:43:22,686 INFO complaints.api request_id=acc-gemma3-1b-9969 method=POST path=/tickets status=201 duration_ms=2425.44 client=172.19.0.1
+api-1  | 2026-10-07T15:43:24.432849293Z 2026-10-07 15:43:24,432 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:43:24.434027989Z 2026-10-07 15:43:24,433 ERROR complaints.api classification_failed model=gemma3:1b-it-q4_K_M
+api-1  | 2026-10-07T15:43:24.434042943Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:43:24.434045592Z   File "/app/app/classifier.py", line 45, in classify
+api-1  | 2026-10-07T15:43:24.434047421Z     return Category(category_text)
+api-1  | 2026-10-07T15:43:24.434048842Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:43:24.434050228Z   File "/usr/local/lib/python3.12/enum.py", line 751, in __call__
+api-1  | 2026-10-07T15:43:24.434051637Z     return cls.__new__(cls, value)
+api-1  | 2026-10-07T15:43:24.434052899Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:43:24.434054171Z   File "/usr/local/lib/python3.12/enum.py", line 1170, in __new__
+api-1  | 2026-10-07T15:43:24.434055970Z     raise ve_exc
+api-1  | 2026-10-07T15:43:24.434057474Z ValueError: 'Consumer Loan' is not a valid Category
+api-1  | 2026-10-07T15:43:24.434058893Z 
+api-1  | 2026-10-07T15:43:24.434060261Z The above exception was the direct cause of the following exception:
+api-1  | 2026-10-07T15:43:24.434061614Z 
+api-1  | 2026-10-07T15:43:24.434062860Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:43:24.434064052Z   File "/app/app/main.py", line 69, in create_ticket
+api-1  | 2026-10-07T15:43:24.434065421Z     category = await classifier.classify(narrative)
+api-1  | 2026-10-07T15:43:24.434082160Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:43:24.434083593Z   File "/app/app/classifier.py", line 47, in classify
+api-1  | 2026-10-07T15:43:24.434085062Z     raise ClassificationError(f"Ollama returned an invalid classification: {exc}") from exc
+api-1  | 2026-10-07T15:43:24.434086583Z app.classifier.ClassificationError: Ollama returned an invalid classification: 'Consumer Loan' is not a valid Category
+api-1  | 2026-10-07T15:43:24.434565841Z 2026-10-07 15:43:24,434 INFO complaints.api request_id=acc-gemma3-1b-9970 method=POST path=/tickets status=502 duration_ms=1738.74 client=172.19.0.1
+api-1  | 2026-10-07T15:43:24.434715650Z INFO:     172.19.0.1:37010 - "POST /tickets HTTP/1.1" 502 Bad Gateway
+api-1  | 2026-10-07T15:43:27.251081074Z 2026-10-07 15:43:27,250 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:43:27.259963493Z 2026-10-07 15:43:27,259 INFO complaints.api request_id=acc-gemma3-1b-9971 method=POST path=/tickets status=201 duration_ms=2816.34 client=172.19.0.1
+api-1  | 2026-10-07T15:43:27.260221025Z INFO:     172.19.0.1:37018 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:43:28.503798451Z 2026-10-07 15:43:28,503 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:43:28.511135665Z 2026-10-07 15:43:28,510 INFO complaints.api request_id=acc-gemma3-1b-9972 method=POST path=/tickets status=201 duration_ms=1207.30 client=172.19.0.1
+api-1  | 2026-10-07T15:43:28.511238496Z INFO:     172.19.0.1:37028 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:43:30.815701961Z 2026-10-07 15:43:30,815 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:43:30.831753420Z INFO:     172.19.0.1:53592 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:43:30.831915201Z 2026-10-07 15:43:30,831 INFO complaints.api request_id=acc-gemma3-1b-9973 method=POST path=/tickets status=201 duration_ms=2306.94 client=172.19.0.1
+api-1  | 2026-10-07T15:43:33.872142846Z 2026-10-07 15:43:33,871 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:43:33.886812599Z 2026-10-07 15:43:33,886 INFO complaints.api request_id=acc-gemma3-1b-9974 method=POST path=/tickets status=201 duration_ms=3050.22 client=172.19.0.1
+api-1  | 2026-10-07T15:43:33.886848802Z INFO:     172.19.0.1:53608 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:43:36.842844316Z 2026-10-07 15:43:36,840 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:43:36.842903537Z 2026-10-07 15:43:36,841 ERROR complaints.api classification_failed model=gemma3:1b-it-q4_K_M
+api-1  | 2026-10-07T15:43:36.842907244Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:43:36.842908703Z   File "/app/app/classifier.py", line 45, in classify
+api-1  | 2026-10-07T15:43:36.842910151Z     return Category(category_text)
+api-1  | 2026-10-07T15:43:36.842911483Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:43:36.842912641Z   File "/usr/local/lib/python3.12/enum.py", line 751, in __call__
+api-1  | 2026-10-07T15:43:36.842913929Z     return cls.__new__(cls, value)
+api-1  | 2026-10-07T15:43:36.842915037Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:43:36.842916135Z   File "/usr/local/lib/python3.12/enum.py", line 1170, in __new__
+api-1  | 2026-10-07T15:43:36.842917358Z     raise ve_exc
+api-1  | 2026-10-07T15:43:36.842918499Z ValueError: 'Consumer Loan' is not a valid Category
+api-1  | 2026-10-07T15:43:36.842919681Z 
+api-1  | 2026-10-07T15:43:36.842920759Z The above exception was the direct cause of the following exception:
+api-1  | 2026-10-07T15:43:36.842921936Z 
+api-1  | 2026-10-07T15:43:36.842922994Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:43:36.842924120Z   File "/app/app/main.py", line 69, in create_ticket
+api-1  | 2026-10-07T15:43:36.842973931Z     category = await classifier.classify(narrative)
+api-1  | 2026-10-07T15:43:36.842980764Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:43:36.842983663Z   File "/app/app/classifier.py", line 47, in classify
+api-1  | 2026-10-07T15:43:36.842985075Z     raise ClassificationError(f"Ollama returned an invalid classification: {exc}") from exc
+api-1  | 2026-10-07T15:43:36.842986503Z app.classifier.ClassificationError: Ollama returned an invalid classification: 'Consumer Loan' is not a valid Category
+api-1  | 2026-10-07T15:43:36.847182099Z 2026-10-07 15:43:36,846 INFO complaints.api request_id=acc-gemma3-1b-9975 method=POST path=/tickets status=502 duration_ms=2941.36 client=172.19.0.1
+api-1  | 2026-10-07T15:43:36.847241531Z INFO:     172.19.0.1:53618 - "POST /tickets HTTP/1.1" 502 Bad Gateway
+api-1  | 2026-10-07T15:43:39.572793465Z 2026-10-07 15:43:39,572 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:43:39.581037303Z 2026-10-07 15:43:39,580 INFO complaints.api request_id=acc-gemma3-1b-9976 method=POST path=/tickets status=201 duration_ms=2720.90 client=172.19.0.1
+api-1  | 2026-10-07T15:43:39.581087512Z INFO:     172.19.0.1:53628 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:43:41.979528640Z 2026-10-07 15:43:41,979 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:43:41.986833428Z 2026-10-07 15:43:41,985 INFO complaints.api request_id=acc-gemma3-1b-9977 method=POST path=/tickets status=201 duration_ms=2394.35 client=172.19.0.1
+api-1  | 2026-10-07T15:43:41.986908368Z INFO:     172.19.0.1:37928 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:43:45.265380901Z 2026-10-07 15:43:45,265 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:43:45.277269256Z 2026-10-07 15:43:45,277 INFO complaints.api request_id=acc-gemma3-1b-9978 method=POST path=/tickets status=201 duration_ms=3282.46 client=172.19.0.1
+api-1  | 2026-10-07T15:43:45.277370171Z INFO:     172.19.0.1:37934 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:43:48.624424707Z 2026-10-07 15:43:48,623 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:43:48.636184612Z 2026-10-07 15:43:48,635 INFO complaints.api request_id=acc-gemma3-1b-9979 method=POST path=/tickets status=201 duration_ms=3351.24 client=172.19.0.1
+api-1  | 2026-10-07T15:43:48.636234988Z INFO:     172.19.0.1:37936 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:43:53.615509481Z 2026-10-07 15:43:53,615 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:43:53.616899221Z 2026-10-07 15:43:53,616 ERROR complaints.api classification_failed model=gemma3:1b-it-q4_K_M
+api-1  | 2026-10-07T15:43:53.616910522Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:43:53.616914209Z   File "/app/app/classifier.py", line 45, in classify
+api-1  | 2026-10-07T15:43:53.616916681Z     return Category(category_text)
+api-1  | 2026-10-07T15:43:53.616918737Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:43:53.616920886Z   File "/usr/local/lib/python3.12/enum.py", line 751, in __call__
+api-1  | 2026-10-07T15:43:53.616922976Z     return cls.__new__(cls, value)
+api-1  | 2026-10-07T15:43:53.616924832Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:43:53.616926685Z   File "/usr/local/lib/python3.12/enum.py", line 1170, in __new__
+api-1  | 2026-10-07T15:43:53.616928662Z     raise ve_exc
+api-1  | 2026-10-07T15:43:53.616930615Z ValueError: 'Consumer Loan' is not a valid Category
+api-1  | 2026-10-07T15:43:53.616932662Z 
+api-1  | 2026-10-07T15:43:53.616934555Z The above exception was the direct cause of the following exception:
+api-1  | 2026-10-07T15:43:53.616936559Z 
+api-1  | 2026-10-07T15:43:53.616938380Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:43:53.616940333Z   File "/app/app/main.py", line 69, in create_ticket
+api-1  | 2026-10-07T15:43:53.616963572Z     category = await classifier.classify(narrative)
+api-1  | 2026-10-07T15:43:53.616965748Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:43:53.616967024Z   File "/app/app/classifier.py", line 47, in classify
+api-1  | 2026-10-07T15:43:53.616968405Z     raise ClassificationError(f"Ollama returned an invalid classification: {exc}") from exc
+api-1  | 2026-10-07T15:43:53.616969920Z app.classifier.ClassificationError: Ollama returned an invalid classification: 'Consumer Loan' is not a valid Category
+api-1  | 2026-10-07T15:43:53.622247432Z 2026-10-07 15:43:53,621 INFO complaints.api request_id=acc-gemma3-1b-9980 method=POST path=/tickets status=502 duration_ms=4980.29 client=172.19.0.1
+api-1  | 2026-10-07T15:43:53.622299282Z INFO:     172.19.0.1:56594 - "POST /tickets HTTP/1.1" 502 Bad Gateway
+api-1  | 2026-10-07T15:43:56.286264613Z 2026-10-07 15:43:56,286 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:43:56.302581775Z 2026-10-07 15:43:56,302 INFO complaints.api request_id=acc-gemma3-1b-9981 method=POST path=/tickets status=201 duration_ms=2672.62 client=172.19.0.1
+api-1  | 2026-10-07T15:43:56.302976695Z INFO:     172.19.0.1:56604 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:44:00.871809526Z 2026-10-07 15:44:00,871 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:44:00.885924644Z INFO:     172.19.0.1:56616 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:44:00.885999748Z 2026-10-07 15:44:00,885 INFO complaints.api request_id=acc-gemma3-1b-9982 method=POST path=/tickets status=201 duration_ms=4577.06 client=172.19.0.1
+api-1  | 2026-10-07T15:44:02.677949882Z 2026-10-07 15:44:02,677 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:44:02.692035174Z 2026-10-07 15:44:02,691 INFO complaints.api request_id=acc-gemma3-1b-9983 method=POST path=/tickets status=201 duration_ms=1794.17 client=172.19.0.1
+api-1  | 2026-10-07T15:44:02.692076055Z INFO:     172.19.0.1:47366 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:44:05.369535735Z 2026-10-07 15:44:05,369 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:44:05.385594863Z 2026-10-07 15:44:05,385 INFO complaints.api request_id=acc-gemma3-1b-9984 method=POST path=/tickets status=201 duration_ms=2680.57 client=172.19.0.1
+api-1  | 2026-10-07T15:44:05.385751849Z INFO:     172.19.0.1:47380 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:44:07.419346700Z 2026-10-07 15:44:07,419 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:44:07.420878862Z 2026-10-07 15:44:07,420 ERROR complaints.api classification_failed model=gemma3:1b-it-q4_K_M
+api-1  | 2026-10-07T15:44:07.420937038Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:44:07.420941431Z   File "/app/app/classifier.py", line 45, in classify
+api-1  | 2026-10-07T15:44:07.420944035Z     return Category(category_text)
+api-1  | 2026-10-07T15:44:07.420945925Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:44:07.420947393Z   File "/usr/local/lib/python3.12/enum.py", line 751, in __call__
+api-1  | 2026-10-07T15:44:07.420964029Z     return cls.__new__(cls, value)
+api-1  | 2026-10-07T15:44:07.420965595Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:44:07.420966955Z   File "/usr/local/lib/python3.12/enum.py", line 1170, in __new__
+api-1  | 2026-10-07T15:44:07.420968452Z     raise ve_exc
+api-1  | 2026-10-07T15:44:07.420969881Z ValueError: 'Consumer Loan' is not a valid Category
+api-1  | 2026-10-07T15:44:07.420971335Z 
+api-1  | 2026-10-07T15:44:07.420972758Z The above exception was the direct cause of the following exception:
+api-1  | 2026-10-07T15:44:07.420974096Z 
+api-1  | 2026-10-07T15:44:07.420975346Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:44:07.420976615Z   File "/app/app/main.py", line 69, in create_ticket
+api-1  | 2026-10-07T15:44:07.420978118Z     category = await classifier.classify(narrative)
+api-1  | 2026-10-07T15:44:07.420979290Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:44:07.420980971Z   File "/app/app/classifier.py", line 47, in classify
+api-1  | 2026-10-07T15:44:07.420982451Z     raise ClassificationError(f"Ollama returned an invalid classification: {exc}") from exc
+api-1  | 2026-10-07T15:44:07.420983975Z app.classifier.ClassificationError: Ollama returned an invalid classification: 'Consumer Loan' is not a valid Category
+api-1  | 2026-10-07T15:44:07.423308140Z 2026-10-07 15:44:07,422 INFO complaints.api request_id=acc-gemma3-1b-9985 method=POST path=/tickets status=502 duration_ms=2026.94 client=172.19.0.1
+api-1  | 2026-10-07T15:44:07.423410491Z INFO:     172.19.0.1:47392 - "POST /tickets HTTP/1.1" 502 Bad Gateway
+api-1  | 2026-10-07T15:44:09.698813269Z 2026-10-07 15:44:09,697 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:44:09.705275320Z 2026-10-07 15:44:09,704 INFO complaints.api request_id=acc-gemma3-1b-9986 method=POST path=/tickets status=201 duration_ms=2275.04 client=172.19.0.1
+api-1  | 2026-10-07T15:44:09.705533168Z INFO:     172.19.0.1:33310 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:44:12.593072544Z 2026-10-07 15:44:12,590 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:44:12.597880395Z 2026-10-07 15:44:12,597 INFO complaints.api request_id=acc-gemma3-1b-9987 method=POST path=/tickets status=201 duration_ms=2875.96 client=172.19.0.1
+api-1  | 2026-10-07T15:44:12.597936839Z INFO:     172.19.0.1:33320 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:44:13.918845197Z 2026-10-07 15:44:13,918 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:44:13.929700921Z INFO:     172.19.0.1:33326 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:44:13.930698873Z 2026-10-07 15:44:13,929 INFO complaints.api request_id=acc-gemma3-1b-9988 method=POST path=/tickets status=201 duration_ms=1320.81 client=172.19.0.1
+api-1  | 2026-10-07T15:44:15.294198958Z 2026-10-07 15:44:15,293 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:44:15.306425119Z 2026-10-07 15:44:15,305 INFO complaints.api request_id=acc-gemma3-1b-9989 method=POST path=/tickets status=201 duration_ms=1348.44 client=172.19.0.1
+api-1  | 2026-10-07T15:44:15.306715308Z INFO:     172.19.0.1:33330 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:44:18.176302271Z 2026-10-07 15:44:18,176 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:44:18.178274368Z 2026-10-07 15:44:18,177 ERROR complaints.api classification_failed model=gemma3:1b-it-q4_K_M
+api-1  | 2026-10-07T15:44:18.178290972Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:44:18.178294919Z   File "/app/app/classifier.py", line 45, in classify
+api-1  | 2026-10-07T15:44:18.178297384Z     return Category(category_text)
+api-1  | 2026-10-07T15:44:18.178298806Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:44:18.178300163Z   File "/usr/local/lib/python3.12/enum.py", line 751, in __call__
+api-1  | 2026-10-07T15:44:18.178301777Z     return cls.__new__(cls, value)
+api-1  | 2026-10-07T15:44:18.178302909Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:44:18.178304422Z   File "/usr/local/lib/python3.12/enum.py", line 1170, in __new__
+api-1  | 2026-10-07T15:44:18.178305965Z     raise ve_exc
+api-1  | 2026-10-07T15:44:18.178319885Z ValueError: 'Consumer Loan' is not a valid Category
+api-1  | 2026-10-07T15:44:18.178326047Z 
+api-1  | 2026-10-07T15:44:18.178328294Z The above exception was the direct cause of the following exception:
+api-1  | 2026-10-07T15:44:18.178331919Z 
+api-1  | 2026-10-07T15:44:18.178333131Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:44:18.178334394Z   File "/app/app/main.py", line 69, in create_ticket
+api-1  | 2026-10-07T15:44:18.178335911Z     category = await classifier.classify(narrative)
+api-1  | 2026-10-07T15:44:18.178337344Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:44:18.178338568Z   File "/app/app/classifier.py", line 47, in classify
+api-1  | 2026-10-07T15:44:18.178339900Z     raise ClassificationError(f"Ollama returned an invalid classification: {exc}") from exc
+api-1  | 2026-10-07T15:44:18.178341561Z app.classifier.ClassificationError: Ollama returned an invalid classification: 'Consumer Loan' is not a valid Category
+api-1  | 2026-10-07T15:44:18.181694813Z 2026-10-07 15:44:18,181 INFO complaints.api request_id=acc-gemma3-1b-9990 method=POST path=/tickets status=502 duration_ms=2867.65 client=172.19.0.1
+api-1  | 2026-10-07T15:44:18.181758246Z INFO:     172.19.0.1:33342 - "POST /tickets HTTP/1.1" 502 Bad Gateway
+api-1  | 2026-10-07T15:44:20.204540327Z 2026-10-07 15:44:20,204 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:44:20.211825474Z 2026-10-07 15:44:20,211 INFO complaints.api request_id=acc-gemma3-1b-9991 method=POST path=/tickets status=201 duration_ms=2025.73 client=172.19.0.1
+api-1  | 2026-10-07T15:44:20.211926087Z INFO:     172.19.0.1:45258 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:44:22.302154345Z 2026-10-07 15:44:22,301 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:44:22.310642142Z 2026-10-07 15:44:22,310 INFO complaints.api request_id=acc-gemma3-1b-9992 method=POST path=/tickets status=201 duration_ms=2082.07 client=172.19.0.1
+api-1  | 2026-10-07T15:44:22.310697636Z INFO:     172.19.0.1:45260 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:44:25.024181946Z 2026-10-07 15:44:25,023 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:44:25.036534883Z 2026-10-07 15:44:25,036 INFO complaints.api request_id=acc-gemma3-1b-9993 method=POST path=/tickets status=201 duration_ms=2716.22 client=172.19.0.1
+api-1  | 2026-10-07T15:44:25.036720144Z INFO:     172.19.0.1:45272 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:44:26.952095337Z 2026-10-07 15:44:26,951 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:44:26.960839942Z 2026-10-07 15:44:26,960 INFO complaints.api request_id=acc-gemma3-1b-9994 method=POST path=/tickets status=201 duration_ms=1917.79 client=172.19.0.1
+api-1  | 2026-10-07T15:44:26.960893578Z INFO:     172.19.0.1:45284 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:44:29.192876479Z 2026-10-07 15:44:29,192 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:44:29.196780862Z 2026-10-07 15:44:29,196 ERROR complaints.api classification_failed model=gemma3:1b-it-q4_K_M
+api-1  | 2026-10-07T15:44:29.196801455Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:44:29.196804075Z   File "/app/app/classifier.py", line 45, in classify
+api-1  | 2026-10-07T15:44:29.196805750Z     return Category(category_text)
+api-1  | 2026-10-07T15:44:29.196807079Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:44:29.196808480Z   File "/usr/local/lib/python3.12/enum.py", line 751, in __call__
+api-1  | 2026-10-07T15:44:29.196809962Z     return cls.__new__(cls, value)
+api-1  | 2026-10-07T15:44:29.196811230Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:44:29.196812384Z   File "/usr/local/lib/python3.12/enum.py", line 1170, in __new__
+api-1  | 2026-10-07T15:44:29.196813858Z     raise ve_exc
+api-1  | 2026-10-07T15:44:29.196829731Z ValueError: 'Bank Error' is not a valid Category
+api-1  | 2026-10-07T15:44:29.196831290Z 
+api-1  | 2026-10-07T15:44:29.196832973Z The above exception was the direct cause of the following exception:
+api-1  | 2026-10-07T15:44:29.196834586Z 
+api-1  | 2026-10-07T15:44:29.196835910Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:44:29.196837278Z   File "/app/app/main.py", line 69, in create_ticket
+api-1  | 2026-10-07T15:44:29.196838697Z     category = await classifier.classify(narrative)
+api-1  | 2026-10-07T15:44:29.196840075Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:44:29.196841481Z   File "/app/app/classifier.py", line 47, in classify
+api-1  | 2026-10-07T15:44:29.196843084Z     raise ClassificationError(f"Ollama returned an invalid classification: {exc}") from exc
+api-1  | 2026-10-07T15:44:29.196844917Z app.classifier.ClassificationError: Ollama returned an invalid classification: 'Bank Error' is not a valid Category
+api-1  | 2026-10-07T15:44:29.198328735Z 2026-10-07 15:44:29,198 INFO complaints.api request_id=acc-gemma3-1b-9995 method=POST path=/tickets status=502 duration_ms=2209.49 client=172.19.0.1
+api-1  | 2026-10-07T15:44:29.198490773Z INFO:     172.19.0.1:45296 - "POST /tickets HTTP/1.1" 502 Bad Gateway
+api-1  | 2026-10-07T15:44:30.959384746Z INFO:     172.19.0.1:49892 - "POST /tickets HTTP/1.1" 502 Bad Gateway
+api-1  | 2026-10-07T15:44:30.959444019Z 2026-10-07 15:44:30,956 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:44:30.959448569Z 2026-10-07 15:44:30,957 ERROR complaints.api classification_failed model=gemma3:1b-it-q4_K_M
+api-1  | 2026-10-07T15:44:30.959451039Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:44:30.959453173Z   File "/app/app/classifier.py", line 45, in classify
+api-1  | 2026-10-07T15:44:30.959455455Z     return Category(category_text)
+api-1  | 2026-10-07T15:44:30.959457332Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:44:30.959459271Z   File "/usr/local/lib/python3.12/enum.py", line 751, in __call__
+api-1  | 2026-10-07T15:44:30.959461546Z     return cls.__new__(cls, value)
+api-1  | 2026-10-07T15:44:30.959463446Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:44:30.959465295Z   File "/usr/local/lib/python3.12/enum.py", line 1170, in __new__
+api-1  | 2026-10-07T15:44:30.959467264Z     raise ve_exc
+api-1  | 2026-10-07T15:44:30.959469132Z ValueError: 'Consumer Loan' is not a valid Category
+api-1  | 2026-10-07T15:44:30.959471191Z 
+api-1  | 2026-10-07T15:44:30.959472967Z The above exception was the direct cause of the following exception:
+api-1  | 2026-10-07T15:44:30.959475024Z 
+api-1  | 2026-10-07T15:44:30.959476780Z Traceback (most recent call last):
+api-1  | 2026-10-07T15:44:30.959478660Z   File "/app/app/main.py", line 69, in create_ticket
+api-1  | 2026-10-07T15:44:30.959480650Z     category = await classifier.classify(narrative)
+api-1  | 2026-10-07T15:44:30.959482514Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T15:44:30.959484369Z   File "/app/app/classifier.py", line 47, in classify
+api-1  | 2026-10-07T15:44:30.959486408Z     raise ClassificationError(f"Ollama returned an invalid classification: {exc}") from exc
+api-1  | 2026-10-07T15:44:30.959488508Z app.classifier.ClassificationError: Ollama returned an invalid classification: 'Consumer Loan' is not a valid Category
+api-1  | 2026-10-07T15:44:30.959490585Z 2026-10-07 15:44:30,958 INFO complaints.api request_id=acc-gemma3-1b-9996 method=POST path=/tickets status=502 duration_ms=1750.22 client=172.19.0.1
+api-1  | 2026-10-07T15:44:32.384540569Z 2026-10-07 15:44:32,384 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:44:32.399768883Z 2026-10-07 15:44:32,399 INFO complaints.api request_id=acc-gemma3-1b-9997 method=POST path=/tickets status=201 duration_ms=1431.69 client=172.19.0.1
+api-1  | 2026-10-07T15:44:32.400045518Z INFO:     172.19.0.1:49896 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:44:34.573762563Z 2026-10-07 15:44:34,573 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:44:34.580715032Z 2026-10-07 15:44:34,580 INFO complaints.api request_id=acc-gemma3-1b-9998 method=POST path=/tickets status=201 duration_ms=2172.20 client=172.19.0.1
+api-1  | 2026-10-07T15:44:34.581178592Z INFO:     172.19.0.1:49912 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:44:36.826953389Z 2026-10-07 15:44:36,826 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:44:36.834404826Z 2026-10-07 15:44:36,834 INFO complaints.api request_id=acc-gemma3-1b-9999 method=POST path=/tickets status=201 duration_ms=2243.97 client=172.19.0.1
+api-1  | 2026-10-07T15:44:36.834527122Z INFO:     172.19.0.1:49920 - "POST /tickets HTTP/1.1" 201 Created

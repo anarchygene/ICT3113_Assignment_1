@@ -1,0 +1,9 @@
+﻿Deployed: gemma3:1b-it-q4_K_M at 20261007T153754Z (UTC)
+ollama ps:
+NAME                   ID              SIZE      PROCESSOR    CONTEXT    UNTIL              
+gemma3:1b-it-q4_K_M    8648f39daa8f    1.2 GB    100% CPU     4096       4 minutes from now    
+docker compose ps:
+NAME                            IMAGE                      COMMAND                  SERVICE   CREATED         STATUS                 PORTS
+ict3113_assignment_1-api-1      ict3113_assignment_1-api   "uvicorn app.main:ap…"   api       6 seconds ago   Up 4 seconds           0.0.0.0:8000->8000/tcp, [::]:8000->8000/tcp
+ict3113_assignment_1-db-1       postgres:16-alpine         "docker-entrypoint.s…"   db        2 hours ago     Up 2 hours (healthy)   5432/tcp
+ict3113_assignment_1-ollama-1   ollama/ollama:0.12.3       "/bin/ollama serve"      ollama    2 hours ago     Up 2 hours (healthy)   11434/tcp

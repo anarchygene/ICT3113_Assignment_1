@@ -1,0 +1,17 @@
+﻿api-1  | 2026-10-07T14:05:43.687643956Z INFO:     Started server process [1]
+api-1  | 2026-10-07T14:05:43.687685718Z INFO:     Waiting for application startup.
+api-1  | 2026-10-07T14:05:43.721743274Z INFO:     Application startup complete.
+api-1  | 2026-10-07T14:05:43.722379130Z INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+api-1  | 2026-10-07T14:05:46.791072662Z 2026-10-07 14:05:46,790 INFO complaints.api request_id=92f8f08d-d9bd-478c-949b-b061d65efbed method=GET path=/health status=200 duration_ms=1.32 client=172.19.0.1
+api-1  | 2026-10-07T14:05:46.791106924Z INFO:     172.19.0.1:54354 - "GET /health HTTP/1.1" 200 OK
+api-1  | 2026-10-07T14:43:44.983900773Z 2026-10-07 14:43:44,978 INFO complaints.api request_id=a8a302e8-6e18-4ad0-acde-641c46d183ca method=GET path=/health status=200 duration_ms=30.17 client=172.19.0.1
+api-1  | 2026-10-07T14:43:44.987211814Z INFO:     172.19.0.1:53416 - "GET /health HTTP/1.1" 200 OK
+api-1  | 2026-10-07T15:37:18.750679384Z 2026-10-07 15:37:18,750 INFO complaints.api request_id=612b6c44-3c74-4315-bdef-2fd31340a41a method=GET path=/health status=200 duration_ms=2.62 client=172.19.0.1
+api-1  | 2026-10-07T15:37:18.750955873Z INFO:     172.19.0.1:50594 - "GET /health HTTP/1.1" 200 OK
+api-1  | 2026-10-07T15:37:21.989340976Z 2026-10-07 15:37:21,989 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:37:22.045974208Z INFO:     172.19.0.1:50596 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:37:22.045997158Z 2026-10-07 15:37:22,045 INFO complaints.api request_id=5b6195cb-1e85-4b26-8ed8-c76b547f71b1 method=POST path=/tickets status=201 duration_ms=3289.34 client=172.19.0.1
+api-1  | 2026-10-07T15:37:22.068437394Z INFO:     172.19.0.1:50600 - "GET /search?q=debt%20collector HTTP/1.1" 200 OK
+api-1  | 2026-10-07T15:37:22.068439651Z 2026-10-07 15:37:22,068 INFO complaints.api request_id=7c3a96b3-ed98-4db6-a5d4-ce80dc2e023c method=GET path=/search status=200 duration_ms=8.57 client=172.19.0.1
+api-1  | 2026-10-07T15:37:22.082076225Z 2026-10-07 15:37:22,081 INFO complaints.api request_id=26d5a37a-1aa6-4528-9658-4b13309839a0 method=GET path=/stats status=200 duration_ms=7.15 client=172.19.0.1
+api-1  | 2026-10-07T15:37:22.082118737Z INFO:     172.19.0.1:50614 - "GET /stats HTTP/1.1" 200 OK

@@ -1,0 +1,12 @@
+﻿api-1  | 2026-10-07T15:37:31.121767206Z INFO:     Started server process [1]
+api-1  | 2026-10-07T15:37:31.121800560Z INFO:     Waiting for application startup.
+api-1  | 2026-10-07T15:37:31.159819578Z INFO:     Application startup complete.
+api-1  | 2026-10-07T15:37:31.160451797Z INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+api-1  | 2026-10-07T15:37:32.426339281Z INFO:     172.19.0.1:50992 - "GET /health HTTP/1.1" 200 OK
+api-1  | 2026-10-07T15:37:32.426354958Z 2026-10-07 15:37:32,426 INFO complaints.api request_id=a46d845c-e4f8-47c7-a1f6-cb38ef12a20c method=GET path=/health status=200 duration_ms=1.22 client=172.19.0.1
+api-1  | 2026-10-07T15:37:33.259625014Z 2026-10-07 15:37:33,259 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:37:33.283432507Z 2026-10-07 15:37:33,283 INFO complaints.api request_id=warmup-20261007T153725Z-c11ead10-5a37-4685-b646-65719eed447b method=POST path=/tickets status=201 duration_ms=816.85 client=172.19.0.1
+api-1  | 2026-10-07T15:37:33.283691430Z INFO:     172.19.0.1:50992 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:37:33.862673989Z 2026-10-07 15:37:33,862 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T15:37:33.879078463Z INFO:     172.19.0.1:50992 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-07T15:37:33.879117153Z 2026-10-07 15:37:33,878 INFO complaints.api request_id=warmup-20261007T153725Z-6acc7878-87c9-45b4-b2ee-654f7e2afaf6 method=POST path=/tickets status=201 duration_ms=586.88 client=172.19.0.1

@@ -1,0 +1,12 @@
+﻿{
+  "ticket": {
+    "id": 1,
+    "narrative": "A debt collector keeps calling me about a debt I do not recognize.",
+    "category": "Debt collection",
+    "model": "gemma3:1b-it-q4_K_M",
+    "created_at": "2026-10-07T15:37:22.021037Z"
+  },
+  "stats": {
+    "total": 1,
+    "counts": {
+      "Credit reporting": 0,
