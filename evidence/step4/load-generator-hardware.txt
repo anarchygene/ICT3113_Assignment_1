@@ -1,0 +1,36 @@
+﻿Captured: 2026-10-07T23:11:46.6751095+08:00
+
+
+Name                      : AMD Ryzen 5 3600 6-Core Processor              
+NumberOfCores             : 6
+NumberOfLogicalProcessors : 12
+MaxClockSpeed             : 3600
+
+
+
+
+
+Manufacturer : Micro-Star International Co., Ltd.
+Model        : MS-7C91
+RAM_GB       : 31.93
+
+
+
+
+
+Caption        : Microsoft Windows 10 Pro
+Version        : 10.0.19045
+OSArchitecture : 64-bit
+
+
+
+
+Name                       InterfaceDescription                  LinkSpeed
+----                       --------------------                  ---------
+vEthernet (Default Switch) Hyper-V Virtual Ethernet Adapter      10 Gbps  
+Tailscale                  Tailscale Tunnel                      100 Gbps 
+vEthernet (WSL)            Hyper-V Virtual Ethernet Adapter #2   10 Gbps  
+Ethernet                   Realtek PCIe 2.5GbE Family Controller 1 Gbps   
+
+
+Network path to service (192.168.1.106): Ethernet (Realtek PCIe 2.5GbE, 1 Gbps link) from 192.168.1.147 via router 'kenyap'; service PC is on Wi-Fi.
