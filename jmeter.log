@@ -1,0 +1,20 @@
+2026-10-07 23:11:52,664 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2026-10-07 23:11:52,700 INFO o.a.j.JMeter: Loading user properties from: C:\tools\apache-jmeter-5.6.3\bin\user.properties
+2026-10-07 23:11:52,701 INFO o.a.j.JMeter: Loading system properties from: C:\tools\apache-jmeter-5.6.3\bin\system.properties
+2026-10-07 23:11:52,716 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2026-10-07 23:11:52,717 INFO o.a.j.JMeter: Version 5.6.3
+2026-10-07 23:11:52,717 INFO o.a.j.JMeter: java.version=17.0.20.1
+2026-10-07 23:11:52,717 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2026-10-07 23:11:52,717 INFO o.a.j.JMeter: os.name=Windows 10
+2026-10-07 23:11:52,717 INFO o.a.j.JMeter: os.arch=amd64
+2026-10-07 23:11:52,718 INFO o.a.j.JMeter: os.version=10.0
+2026-10-07 23:11:52,718 INFO o.a.j.JMeter: file.encoding=Cp1252
+2026-10-07 23:11:52,718 INFO o.a.j.JMeter: java.awt.headless=null
+2026-10-07 23:11:52,718 INFO o.a.j.JMeter: Max memory     =1073741824
+2026-10-07 23:11:52,718 INFO o.a.j.JMeter: Available Processors =12
+2026-10-07 23:11:52,737 INFO o.a.j.JMeter: Default Locale=English (EN)
+2026-10-07 23:11:52,737 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2026-10-07 23:11:52,737 INFO o.a.j.JMeter: JMeterHome=C:\tools\apache-jmeter-5.6.3
+2026-10-07 23:11:52,737 INFO o.a.j.JMeter: user.dir  =C:\Users\Administrator\Documents\GitHub\ICT3113_Assignment_1
+2026-10-07 23:11:52,738 INFO o.a.j.JMeter: PWD       =C:\Users\Administrator\Documents\GitHub\ICT3113_Assignment_1
+2026-10-07 23:11:52,740 INFO o.a.j.JMeter: IP: 100.111.72.66 Name: ITEMERROR-MSI-WISP FullName: itemerror-msi-wisp.taile944e3.ts.net.
