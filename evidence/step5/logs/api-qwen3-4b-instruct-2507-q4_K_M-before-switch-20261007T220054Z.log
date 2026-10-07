@@ -1,0 +1,30 @@
+﻿api-1  | 2026-10-07T22:00:32.133091685Z INFO:     Started server process [1]
+api-1  | 2026-10-07T22:00:32.133135199Z INFO:     Waiting for application startup.
+api-1  | 2026-10-07T22:00:32.156824459Z INFO:     Application startup complete.
+api-1  | 2026-10-07T22:00:32.157533801Z INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+api-1  | 2026-10-07T22:00:33.452160814Z 2026-10-07 22:00:33,451 INFO complaints.api request_id=fce86b32-ea69-4f00-a563-9d79b3ad4720 method=GET path=/health status=200 duration_ms=0.86 client=172.19.0.1
+api-1  | 2026-10-07T22:00:33.452190084Z INFO:     172.19.0.1:57558 - "GET /health HTTP/1.1" 200 OK
+api-1  | 2026-10-07T22:00:44.489096542Z 2026-10-07 22:00:44,485 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-07T22:00:44.515504096Z 2026-10-07 22:00:44,502 ERROR complaints.api classification_failed model=qwen3:4b-instruct-2507-q4_K_M
+api-1  | 2026-10-07T22:00:44.515561933Z Traceback (most recent call last):
+api-1  | 2026-10-07T22:00:44.515564279Z   File "/app/app/classifier.py", line 45, in classify
+api-1  | 2026-10-07T22:00:44.515565583Z     return Category(category_text)
+api-1  | 2026-10-07T22:00:44.515566744Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T22:00:44.515567798Z   File "/usr/local/lib/python3.12/enum.py", line 751, in __call__
+api-1  | 2026-10-07T22:00:44.515568806Z     return cls.__new__(cls, value)
+api-1  | 2026-10-07T22:00:44.515569621Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T22:00:44.515570452Z   File "/usr/local/lib/python3.12/enum.py", line 1170, in __new__
+api-1  | 2026-10-07T22:00:44.515571341Z     raise ve_exc
+api-1  | 2026-10-07T22:00:44.515572226Z ValueError: 'bank account or service' is not a valid Category
+api-1  | 2026-10-07T22:00:44.515573170Z 
+api-1  | 2026-10-07T22:00:44.515574064Z The above exception was the direct cause of the following exception:
+api-1  | 2026-10-07T22:00:44.515575007Z 
+api-1  | 2026-10-07T22:00:44.515575851Z Traceback (most recent call last):
+api-1  | 2026-10-07T22:00:44.515576697Z   File "/app/app/main.py", line 69, in create_ticket
+api-1  | 2026-10-07T22:00:44.515577613Z     category = await classifier.classify(narrative)
+api-1  | 2026-10-07T22:00:44.515578487Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-07T22:00:44.515579302Z   File "/app/app/classifier.py", line 47, in classify
+api-1  | 2026-10-07T22:00:44.515580242Z     raise ClassificationError(f"Ollama returned an invalid classification: {exc}") from exc
+api-1  | 2026-10-07T22:00:44.515581295Z app.classifier.ClassificationError: Ollama returned an invalid classification: 'bank account or service' is not a valid Category
+api-1  | 2026-10-07T22:00:44.529237389Z 2026-10-07 22:00:44,528 INFO complaints.api request_id=warmup-20261007T220025Z-951129aa-f269-4032-9f32-56b007743144 method=POST path=/tickets status=502 duration_ms=11036.28 client=172.19.0.1
+api-1  | 2026-10-07T22:00:44.531364013Z INFO:     172.19.0.1:57558 - "POST /tickets HTTP/1.1" 502 Bad Gateway

@@ -1,0 +1,161 @@
+row,golden,predicted,correct,http_status,latency_ms,request_id,ticket_id
+9840,Bank account or service,Bank account or service,True,201,2741.9,acc-qwen3-4b-9840,1
+9841,Consumer loan,Consumer loan,True,201,2849.2,acc-qwen3-4b-9841,2
+9842,Bank account or service,Bank account or service,True,201,2762.4,acc-qwen3-4b-9842,3
+9843,Credit reporting,Credit reporting,True,201,13886.9,acc-qwen3-4b-9843,4
+9844,Credit reporting,Credit card,False,201,3023.0,acc-qwen3-4b-9844,5
+9845,Mortgage,Mortgage,True,201,12859.3,acc-qwen3-4b-9845,6
+9846,Money transfer or service,Money transfer or service,True,201,5018.1,acc-qwen3-4b-9846,7
+9847,Credit reporting,Credit card,False,201,9568.8,acc-qwen3-4b-9847,8
+9848,Credit reporting,Credit reporting,True,201,2828.8,acc-qwen3-4b-9848,9
+9849,Debt collection,Consumer loan,False,201,4072.7,acc-qwen3-4b-9849,10
+9850,Consumer loan,Consumer loan,True,201,12286.3,acc-qwen3-4b-9850,11
+9851,Bank account or service,Consumer loan,False,201,3311.1,acc-qwen3-4b-9851,12
+9852,Credit reporting,Consumer loan,False,201,11434.8,acc-qwen3-4b-9852,13
+9853,Consumer loan,Consumer loan,True,201,9376.2,acc-qwen3-4b-9853,14
+9854,Money transfer or service,Money transfer or service,True,201,6105.2,acc-qwen3-4b-9854,15
+9855,Money transfer or service,Money transfer or service,True,201,4806.7,acc-qwen3-4b-9855,16
+9856,Credit card,Credit card,True,201,4177.1,acc-qwen3-4b-9856,17
+9857,Money transfer or service,Bank account or service,False,201,11557.3,acc-qwen3-4b-9857,18
+9858,Credit reporting,Debt collection,False,201,5860.1,acc-qwen3-4b-9858,19
+9859,Credit reporting,Credit reporting,True,201,7381.6,acc-qwen3-4b-9859,20
+9860,Credit card,(invalid/error),False,502,4058.4,acc-qwen3-4b-9860,
+9861,Money transfer or service,Bank account or service,False,201,8061.1,acc-qwen3-4b-9861,21
+9862,Money transfer or service,Money transfer or service,True,201,4071.9,acc-qwen3-4b-9862,22
+9863,Mortgage,Mortgage,True,201,4878.4,acc-qwen3-4b-9863,23
+9864,Credit reporting,Debt collection,False,201,4591.7,acc-qwen3-4b-9864,24
+9865,Mortgage,Mortgage,True,201,6761.3,acc-qwen3-4b-9865,25
+9866,Money transfer or service,Money transfer or service,True,201,4460.4,acc-qwen3-4b-9866,26
+9867,Credit card,Credit card,True,201,10215.6,acc-qwen3-4b-9867,27
+9868,Credit reporting,Credit reporting,True,201,11281.8,acc-qwen3-4b-9868,28
+9869,Debt collection,Consumer loan,False,201,11099.4,acc-qwen3-4b-9869,29
+9870,Debt collection,Debt collection,True,201,6562.5,acc-qwen3-4b-9870,30
+9871,Debt collection,Bank account or service,False,201,9386.1,acc-qwen3-4b-9871,31
+9872,Money transfer or service,Money transfer or service,True,201,4255.0,acc-qwen3-4b-9872,32
+9873,Money transfer or service,Credit card,False,201,8763.4,acc-qwen3-4b-9873,33
+9874,Money transfer or service,Money transfer or service,True,201,8659.3,acc-qwen3-4b-9874,34
+9875,Bank account or service,Debt collection,False,201,4876.0,acc-qwen3-4b-9875,35
+9876,Credit reporting,Debt collection,False,201,8842.7,acc-qwen3-4b-9876,36
+9877,Consumer loan,Consumer loan,True,201,8878.6,acc-qwen3-4b-9877,37
+9878,Consumer loan,Consumer loan,True,201,12762.4,acc-qwen3-4b-9878,38
+9879,Bank account or service,Bank account or service,True,201,7824.6,acc-qwen3-4b-9879,39
+9880,Money transfer or service,Money transfer or service,True,201,3509.7,acc-qwen3-4b-9880,40
+9881,Money transfer or service,Money transfer or service,True,201,7828.8,acc-qwen3-4b-9881,41
+9882,Mortgage,Mortgage,True,201,8716.4,acc-qwen3-4b-9882,42
+9883,Money transfer or service,Money transfer or service,True,201,8941.6,acc-qwen3-4b-9883,43
+9884,Bank account or service,Bank account or service,True,201,9608.4,acc-qwen3-4b-9884,44
+9885,Credit reporting,Credit card,False,201,3626.5,acc-qwen3-4b-9885,45
+9886,Consumer loan,Consumer loan,True,201,12933.0,acc-qwen3-4b-9886,46
+9887,Bank account or service,Credit card,False,201,4992.4,acc-qwen3-4b-9887,47
+9888,Credit card,Credit card,True,201,14802.4,acc-qwen3-4b-9888,48
+9889,Money transfer or service,Bank account or service,False,201,8475.3,acc-qwen3-4b-9889,49
+9890,Consumer loan,Consumer loan,True,201,3178.2,acc-qwen3-4b-9890,50
+9891,Credit card,Credit card,True,201,5592.3,acc-qwen3-4b-9891,51
+9892,Credit reporting,Credit reporting,True,201,6187.8,acc-qwen3-4b-9892,52
+9893,Bank account or service,Bank account or service,True,201,12532.2,acc-qwen3-4b-9893,53
+9894,Credit reporting,Credit card,False,201,6670.0,acc-qwen3-4b-9894,54
+9895,Bank account or service,Bank account or service,True,201,4014.9,acc-qwen3-4b-9895,55
+9896,Money transfer or service,Money transfer or service,True,201,4088.6,acc-qwen3-4b-9896,56
+9897,Credit reporting,Credit reporting,True,201,9067.9,acc-qwen3-4b-9897,57
+9898,Money transfer or service,Money transfer or service,True,201,5311.4,acc-qwen3-4b-9898,58
+9899,Money transfer or service,Money transfer or service,True,201,4648.7,acc-qwen3-4b-9899,59
+9900,Debt collection,Bank account or service,False,201,3908.9,acc-qwen3-4b-9900,60
+9901,Money transfer or service,Money transfer or service,True,201,4898.0,acc-qwen3-4b-9901,61
+9902,Money transfer or service,Money transfer or service,True,201,5105.0,acc-qwen3-4b-9902,62
+9903,Credit reporting,Credit reporting,True,201,7889.0,acc-qwen3-4b-9903,63
+9904,Debt collection,Debt collection,True,201,4536.5,acc-qwen3-4b-9904,64
+9905,Mortgage,Mortgage,True,201,8468.3,acc-qwen3-4b-9905,65
+9906,Consumer loan,Consumer loan,True,201,5321.2,acc-qwen3-4b-9906,66
+9907,Debt collection,Credit card,False,201,7038.6,acc-qwen3-4b-9907,67
+9908,Bank account or service,Bank account or service,True,201,5908.6,acc-qwen3-4b-9908,68
+9909,Credit card,Credit card,True,201,8999.4,acc-qwen3-4b-9909,69
+9910,Credit reporting,Credit reporting,True,201,5660.8,acc-qwen3-4b-9910,70
+9911,Money transfer or service,Money transfer or service,True,201,12031.5,acc-qwen3-4b-9911,71
+9912,Credit reporting,Credit reporting,True,201,2993.6,acc-qwen3-4b-9912,72
+9913,Debt collection,Debt collection,True,201,8707.7,acc-qwen3-4b-9913,73
+9914,Bank account or service,Bank account or service,True,201,3107.1,acc-qwen3-4b-9914,74
+9915,Credit card,Credit card,True,201,4617.3,acc-qwen3-4b-9915,75
+9916,Bank account or service,Bank account or service,True,201,7784.9,acc-qwen3-4b-9916,76
+9917,Money transfer or service,Credit card,False,201,8212.1,acc-qwen3-4b-9917,77
+9918,Mortgage,Mortgage,True,201,12405.7,acc-qwen3-4b-9918,78
+9919,Consumer loan,Consumer loan,True,201,7383.3,acc-qwen3-4b-9919,79
+9920,Bank account or service,Credit card,False,201,14483.7,acc-qwen3-4b-9920,80
+9921,Credit reporting,Credit card,False,201,10370.6,acc-qwen3-4b-9921,81
+9922,Consumer loan,Mortgage,False,201,14015.5,acc-qwen3-4b-9922,82
+9923,Debt collection,Debt collection,True,201,8579.3,acc-qwen3-4b-9923,83
+9924,Credit card,Credit card,True,201,12949.1,acc-qwen3-4b-9924,84
+9925,Bank account or service,Money transfer or service,False,201,5461.7,acc-qwen3-4b-9925,85
+9926,Mortgage,Mortgage,True,201,9944.6,acc-qwen3-4b-9926,86
+9927,Mortgage,Mortgage,True,201,8442.0,acc-qwen3-4b-9927,87
+9928,Debt collection,Consumer loan,False,201,15681.7,acc-qwen3-4b-9928,88
+9929,Consumer loan,Consumer loan,True,201,9923.6,acc-qwen3-4b-9929,89
+9930,Money transfer or service,Bank account or service,False,201,8080.8,acc-qwen3-4b-9930,90
+9931,Credit reporting,Credit card,False,201,8231.7,acc-qwen3-4b-9931,91
+9932,Consumer loan,Consumer loan,True,201,2556.1,acc-qwen3-4b-9932,92
+9933,Debt collection,Debt collection,True,201,6316.5,acc-qwen3-4b-9933,93
+9934,Mortgage,Mortgage,True,201,10275.6,acc-qwen3-4b-9934,94
+9935,Credit reporting,Credit reporting,True,201,4215.9,acc-qwen3-4b-9935,95
+9936,Bank account or service,Credit card,False,201,6784.2,acc-qwen3-4b-9936,96
+9937,Mortgage,Mortgage,True,201,9356.4,acc-qwen3-4b-9937,97
+9938,Debt collection,Debt collection,True,201,10040.1,acc-qwen3-4b-9938,98
+9939,Bank account or service,Bank account or service,True,201,13485.2,acc-qwen3-4b-9939,99
+9940,Bank account or service,Bank account or service,True,201,12807.6,acc-qwen3-4b-9940,100
+9941,Credit reporting,Credit reporting,True,201,9288.9,acc-qwen3-4b-9941,101
+9942,Money transfer or service,Bank account or service,False,201,14001.0,acc-qwen3-4b-9942,102
+9943,Bank account or service,Bank account or service,True,201,3235.2,acc-qwen3-4b-9943,103
+9944,Debt collection,Debt collection,True,201,9022.2,acc-qwen3-4b-9944,104
+9945,Consumer loan,Bank account or service,False,201,8440.7,acc-qwen3-4b-9945,105
+9946,Credit reporting,Credit card,False,201,14043.9,acc-qwen3-4b-9946,106
+9947,Bank account or service,Bank account or service,True,201,12945.1,acc-qwen3-4b-9947,107
+9948,Bank account or service,Bank account or service,True,201,10220.6,acc-qwen3-4b-9948,108
+9949,Bank account or service,Bank account or service,True,201,5420.6,acc-qwen3-4b-9949,109
+9950,Credit reporting,Credit reporting,True,201,4724.5,acc-qwen3-4b-9950,110
+9951,Credit reporting,Consumer loan,False,201,7648.7,acc-qwen3-4b-9951,111
+9952,Bank account or service,Bank account or service,True,201,7916.9,acc-qwen3-4b-9952,112
+9953,Bank account or service,Bank account or service,True,201,13658.2,acc-qwen3-4b-9953,113
+9954,Debt collection,Debt collection,True,201,9775.4,acc-qwen3-4b-9954,114
+9955,Bank account or service,Bank account or service,True,201,16686.6,acc-qwen3-4b-9955,115
+9956,Credit reporting,Credit reporting,True,201,8797.4,acc-qwen3-4b-9956,116
+9957,Bank account or service,Credit card,False,201,3545.0,acc-qwen3-4b-9957,117
+9958,Credit reporting,Debt collection,False,201,11772.4,acc-qwen3-4b-9958,118
+9959,Bank account or service,Credit card,False,201,9343.1,acc-qwen3-4b-9959,119
+9960,Mortgage,Mortgage,True,201,6321.8,acc-qwen3-4b-9960,120
+9961,Mortgage,Mortgage,True,201,4841.9,acc-qwen3-4b-9961,121
+9962,Credit card,Credit card,True,201,13602.8,acc-qwen3-4b-9962,122
+9963,Money transfer or service,Money transfer or service,True,201,11314.8,acc-qwen3-4b-9963,123
+9964,Money transfer or service,Money transfer or service,True,201,5135.5,acc-qwen3-4b-9964,124
+9965,Debt collection,Credit reporting,False,201,10804.0,acc-qwen3-4b-9965,125
+9966,Credit card,Credit card,True,201,4508.9,acc-qwen3-4b-9966,126
+9967,Debt collection,Debt collection,True,201,8742.3,acc-qwen3-4b-9967,127
+9968,Debt collection,Consumer loan,False,201,10920.4,acc-qwen3-4b-9968,128
+9969,Mortgage,Mortgage,True,201,8604.5,acc-qwen3-4b-9969,129
+9970,Credit reporting,Credit reporting,True,201,5414.1,acc-qwen3-4b-9970,130
+9971,Money transfer or service,Credit card,False,201,9812.6,acc-qwen3-4b-9971,131
+9972,Bank account or service,Bank account or service,True,201,3666.7,acc-qwen3-4b-9972,132
+9973,Credit reporting,Credit reporting,True,201,7294.8,acc-qwen3-4b-9973,133
+9974,Money transfer or service,Money transfer or service,True,201,11349.5,acc-qwen3-4b-9974,134
+9975,Mortgage,Mortgage,True,201,9669.2,acc-qwen3-4b-9975,135
+9976,Credit reporting,Credit reporting,True,201,8707.6,acc-qwen3-4b-9976,136
+9977,Credit reporting,Credit card,False,201,4171.0,acc-qwen3-4b-9977,137
+9978,Mortgage,Consumer loan,False,201,9932.7,acc-qwen3-4b-9978,138
+9979,Credit card,Credit card,True,201,9624.2,acc-qwen3-4b-9979,139
+9980,Mortgage,Consumer loan,False,201,16329.1,acc-qwen3-4b-9980,140
+9981,Consumer loan,Consumer loan,True,201,5272.9,acc-qwen3-4b-9981,141
+9982,Credit reporting,Credit card,False,201,14336.0,acc-qwen3-4b-9982,142
+9983,Mortgage,Mortgage,True,201,5033.5,acc-qwen3-4b-9983,143
+9984,Consumer loan,(invalid/error),False,502,8268.5,acc-qwen3-4b-9984,
+9985,Debt collection,Debt collection,True,201,6272.4,acc-qwen3-4b-9985,144
+9986,Bank account or service,(invalid/error),False,502,7089.9,acc-qwen3-4b-9986,
+9987,Debt collection,Debt collection,True,201,9924.9,acc-qwen3-4b-9987,145
+9988,Money transfer or service,Money transfer or service,True,201,4054.1,acc-qwen3-4b-9988,146
+9989,Bank account or service,Bank account or service,True,201,4335.5,acc-qwen3-4b-9989,147
+9990,Credit reporting,Credit reporting,True,201,9553.5,acc-qwen3-4b-9990,148
+9991,Debt collection,Debt collection,True,201,2714.2,acc-qwen3-4b-9991,149
+9992,Bank account or service,Money transfer or service,False,201,3464.8,acc-qwen3-4b-9992,150
+9993,Mortgage,Debt collection,False,201,9963.5,acc-qwen3-4b-9993,151
+9994,Debt collection,Debt collection,True,201,5829.1,acc-qwen3-4b-9994,152
+9995,Credit reporting,Bank account or service,False,201,8434.8,acc-qwen3-4b-9995,153
+9996,Debt collection,Debt collection,True,201,5800.4,acc-qwen3-4b-9996,154
+9997,Debt collection,Debt collection,True,201,4617.5,acc-qwen3-4b-9997,155
+9998,Debt collection,Credit reporting,False,201,7756.6,acc-qwen3-4b-9998,156
+9999,Consumer loan,Consumer loan,True,201,6905.3,acc-qwen3-4b-9999,157

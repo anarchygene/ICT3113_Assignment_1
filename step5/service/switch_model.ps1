@@ -40,9 +40,13 @@ $warm = @(
 )
 foreach ($n in $warm) {
   $body = @{ narrative = $n } | ConvertTo-Json
-  $r = Invoke-RestMethod -Method Post -Uri http://localhost:8000/tickets -ContentType 'application/json' `
-    -Body $body -Headers @{ 'X-Request-ID' = "warmup-$Stamp-$([guid]::NewGuid())" } -TimeoutSec 600
-  Write-Host "warm-up -> $($r.category) ($($r.model))"
+  # The warm-up only needs to load the model; an invalid (502) answer is logged, not fatal.
+  try {
+    $r = Invoke-RestMethod -Method Post -Uri http://localhost:8000/tickets -ContentType 'application/json' `
+      -Body $body -Headers @{ 'X-Request-ID' = "warmup-$Stamp-$([guid]::NewGuid())" } -TimeoutSec 600
+    Write-Host "warm-up -> $($r.category) ($($r.model))"
+  }
+  catch { Write-Host "warm-up -> HTTP error (model loaded; answer rejected): $($_.ErrorDetails.Message)" }
 }
 
 # Pass psql arguments directly: Windows PowerShell 5.1 mangles nested quotes in native arguments.

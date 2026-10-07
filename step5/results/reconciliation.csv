@@ -1,0 +1,10 @@
+model,level,run,jtl_samples,found_in_service_log,missing_from_log,status_mismatches,jtl_successful_posts,stats_total_delta,stats_reconciles
+gemma3-1b,average,1,62,62,0,0,12,12,True
+gemma3-1b,average,2,62,62,0,0,12,12,True
+gemma3-1b,average,3,62,62,0,0,12,12,True
+gemma3-1b,headroom,1,153,153,0,0,32,32,True
+gemma3-1b,headroom,2,153,153,0,0,32,32,True
+gemma3-1b,headroom,3,153,153,0,0,32,32,True
+gemma3-1b,peak,1,118,118,0,0,25,25,True
+gemma3-1b,peak,2,118,118,0,0,25,25,True
+gemma3-1b,peak,3,118,118,0,0,25,25,True

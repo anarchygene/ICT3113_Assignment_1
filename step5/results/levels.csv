@@ -1,0 +1,7 @@
+model,level,endpoint,runs,samples,p50_ms_mean,p50_ms_min,p50_ms_max,p50_ms_sd,p95_ms_mean,p95_ms_min,p95_ms_max,p95_ms_sd,p99_ms_mean,p99_ms_min,p99_ms_max,p99_ms_sd,achieved_per_h_mean,achieved_per_h_min,achieved_per_h_max,achieved_per_h_sd,offered_per_h_mean,offered_per_h_min,offered_per_h_max,offered_per_h_sd,error_pct_mean,error_pct_min,error_pct_max,error_pct_sd,in_flight_at_end_mean,in_flight_at_end_min,in_flight_at_end_max,in_flight_at_end_sd
+gemma3-1b,average,GET /search,3,126,46.3,38,52,7.4,104,78,145,35.9,297,193,390,99.0,126.0,123.0,129.0,3.0,126.0,123.0,129.0,3.0,0.0,0.0,0.0,0.0,0,0,0,0.0
+gemma3-1b,average,POST /tickets,3,38,1877.7,1383,2823,819.0,3632.7,2534,5829,1902.1,3632.7,2534,5829,1902.1,28.0,24.0,33.0,4.6,38.0,36.0,42.0,3.5,23.8,21.43,25.0,2.1,0.3,0,1,0.6
+gemma3-1b,peak,GET /search,3,240,41.7,35,53,9.9,381,89,931,476.6,600.7,184,1411,701.9,240.0,237.0,243.0,3.0,240.0,237.0,243.0,3.0,0.0,0.0,0.0,0.0,0,0,0,0.0
+gemma3-1b,peak,POST /tickets,3,78,1593.3,1363,1740,201.9,6705.7,2692,12995,5515.6,7274,2956,13974,5882.6,66.0,63.0,69.0,3.0,78.0,75.0,81.0,3.0,14.1,12.0,15.38,1.8,0.3,0,1,0.6
+gemma3-1b,headroom,GET /search,3,310,45.3,43,47,2.1,120.3,99,131,18.5,182.3,177,187,5.0,310.0,303.0,315.0,6.2,310.0,303.0,315.0,6.2,0.0,0.0,0.0,0.0,0,0,0,0.0
+gemma3-1b,headroom,POST /tickets,3,103,1546,1535,1557,11.0,3067.3,2672,3273,342.5,3601,2903,4549,851.0,85.0,84.0,87.0,1.7,103.0,99.0,105.0,3.5,16.5,15.15,17.14,1.1,0.3,0,1,0.6

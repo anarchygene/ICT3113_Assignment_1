@@ -1,0 +1,9 @@
+﻿Deployed: qwen3:4b-instruct-2507-q4_K_M at 20261007T222227Z (UTC)
+ollama ps:
+NAME                             ID              SIZE      PROCESSOR    CONTEXT    UNTIL              
+qwen3:4b-instruct-2507-q4_K_M    0edcdef34593    3.7 GB    100% CPU     4096       4 minutes from now    
+docker compose ps:
+NAME                            IMAGE                      COMMAND                  SERVICE   CREATED         STATUS                 PORTS
+ict3113_assignment_1-api-1      ict3113_assignment_1-api   "uvicorn app.main:ap…"   api       7 seconds ago   Up 6 seconds           0.0.0.0:8000->8000/tcp, [::]:8000->8000/tcp
+ict3113_assignment_1-db-1       postgres:16-alpine         "docker-entrypoint.s…"   db        9 hours ago     Up 9 hours (healthy)   5432/tcp
+ict3113_assignment_1-ollama-1   ollama/ollama:0.12.3       "/bin/ollama serve"      ollama    9 hours ago     Up 9 hours (healthy)   11434/tcp
