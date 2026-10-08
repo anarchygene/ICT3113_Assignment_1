@@ -1,0 +1,12 @@
+﻿{
+    "total":  103,
+    "counts":  {
+                   "Credit reporting":  6,
+                   "Debt collection":  7,
+                   "Mortgage":  2,
+                   "Credit card":  12,
+                   "Bank account or service":  41,
+                   "Consumer loan":  14,
+                   "Money transfer or service":  21
+               }
+}

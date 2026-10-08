@@ -1,0 +1,569 @@
+2026-10-08 14:39:16,419 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2026-10-08 14:39:16,434 INFO o.a.j.JMeter: Loading user properties from: C:\tools\apache-jmeter-5.6.3\bin\user.properties
+2026-10-08 14:39:16,435 INFO o.a.j.JMeter: Loading system properties from: C:\tools\apache-jmeter-5.6.3\bin\system.properties
+2026-10-08 14:39:16,435 INFO o.a.j.JMeter: Loading additional properties from: C:\Users\Administrator\Documents\GitHub\ICT3113_Assignment_1\step5\results\llama3.1-8b\headroom\run2\run.properties
+2026-10-08 14:39:16,441 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2026-10-08 14:39:16,441 INFO o.a.j.JMeter: Version 5.6.3
+2026-10-08 14:39:16,441 INFO o.a.j.JMeter: java.version=17.0.20.1
+2026-10-08 14:39:16,441 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2026-10-08 14:39:16,441 INFO o.a.j.JMeter: os.name=Windows 10
+2026-10-08 14:39:16,441 INFO o.a.j.JMeter: os.arch=amd64
+2026-10-08 14:39:16,441 INFO o.a.j.JMeter: os.version=10.0
+2026-10-08 14:39:16,442 INFO o.a.j.JMeter: file.encoding=Cp1252
+2026-10-08 14:39:16,442 INFO o.a.j.JMeter: java.awt.headless=true
+2026-10-08 14:39:16,442 INFO o.a.j.JMeter: Max memory     =1073741824
+2026-10-08 14:39:16,442 INFO o.a.j.JMeter: Available Processors =12
+2026-10-08 14:39:16,450 INFO o.a.j.JMeter: Default Locale=English (EN)
+2026-10-08 14:39:16,450 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2026-10-08 14:39:16,450 INFO o.a.j.JMeter: JMeterHome=C:\tools\apache-jmeter-5.6.3
+2026-10-08 14:39:16,450 INFO o.a.j.JMeter: user.dir  =C:\Users\Administrator\Documents\GitHub\ICT3113_Assignment_1
+2026-10-08 14:39:16,450 INFO o.a.j.JMeter: PWD       =C:\Users\Administrator\Documents\GitHub\ICT3113_Assignment_1
+2026-10-08 14:39:16,451 INFO o.a.j.JMeter: IP: 100.111.72.66 Name: ITEMERROR-MSI-WISP FullName: itemerror-msi-wisp.taile944e3.ts.net.
+2026-10-08 14:39:16,463 INFO o.a.j.s.FileServer: Default base='C:\Users\Administrator\Documents\GitHub\ICT3113_Assignment_1'
+2026-10-08 14:39:16,465 INFO o.a.j.s.FileServer: Set new base='C:\Users\Administrator\Documents\GitHub\ICT3113_Assignment_1\step5\jmeter'
+2026-10-08 14:39:16,620 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2026-10-08 14:39:16,644 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2026-10-08 14:39:16,647 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2026-10-08 14:39:16,649 INFO o.a.j.s.SaveService: Loading file: C:\Users\Administrator\Documents\GitHub\ICT3113_Assignment_1\step5\jmeter\ticket_triage.jmx
+2026-10-08 14:39:16,697 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-10-08 14:39:16,697 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-10-08 14:39:16,697 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-10-08 14:39:16,697 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-10-08 14:39:16,697 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2026-10-08 14:39:16,697 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2026-10-08 14:39:16,715 INFO o.a.j.JMeter: Creating summariser <summary>
+2026-10-08 14:39:16,732 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2026-10-08 14:39:16,733 INFO o.a.j.s.SampleEvent: List of sample_variables: [reqid, row]
+2026-10-08 14:39:16,733 INFO o.a.j.s.SampleEvent: List of sample_variables: [reqid, row]
+2026-10-08 14:39:16,737 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2026-10-08 14:39:16,737 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2026-10-08 14:39:16,799 INFO o.a.j.JMeter: Running test (1791441556799)
+2026-10-08 14:39:16,813 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : POST tickets (intake)
+2026-10-08 14:39:16,813 INFO o.a.j.e.StandardJMeterEngine: Starting 0 threads for group POST tickets (intake).
+2026-10-08 14:39:16,813 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-10-08 14:39:16,813 INFO o.a.j.t.o.OpenModelThreadGroup: Starting OpenModelThreadGroup#1 with schedule rate(105/hour) random_arrivals(22 min) pause(1 min)
+2026-10-08 14:39:16,843 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 2 : GET search (agents)
+2026-10-08 14:39:16,843 INFO o.a.j.e.StandardJMeterEngine: Starting 0 threads for group GET search (agents).
+2026-10-08 14:39:16,843 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-10-08 14:39:16,844 INFO o.a.j.t.o.OpenModelThreadGroup: Starting OpenModelThreadGroup#2 with schedule rate(316/hour) random_arrivals(22 min) pause(1 min)
+2026-10-08 14:39:16,843 INFO o.a.j.t.o.OpenModelThreadGroup: Thread starting init
+2026-10-08 14:39:16,844 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2026-10-08 14:39:16,844 INFO o.a.j.t.o.OpenModelThreadGroup: Thread starting init
+2026-10-08 14:39:16,847 INFO o.a.j.t.o.PoissonArrivalsRamp: Generating 38 events, beginRate = 0.029166666666666667 / sec, endRate = 0.029166666666666667 / sec, duration = 1320.0 sec
+2026-10-08 14:39:16,847 INFO o.a.j.t.o.PoissonArrivalsRamp: Generating 115 events, beginRate = 0.08777777777777777 / sec, endRate = 0.08777777777777777 / sec, duration = 1320.0 sec
+2026-10-08 14:39:23,091 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-1
+2026-10-08 14:39:23,129 INFO o.a.j.s.FileServer: Stored: C:/Users/Administrator/Documents/GitHub/ICT3113_Assignment_1/step5/data/search_terms.csv
+2026-10-08 14:39:23,152 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = ITEMERROR-MSI-WISP
+2026-10-08 14:39:23,157 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2026-10-08 14:39:23,158 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2026-10-08 14:39:23,158 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2026-10-08 14:39:23,158 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2026-10-08 14:39:23,158 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2026-10-08 14:39:23,246 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-1
+2026-10-08 14:39:23,246 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-1
+2026-10-08 14:39:25,312 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-2
+2026-10-08 14:39:25,472 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-2
+2026-10-08 14:39:25,472 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-2
+2026-10-08 14:39:47,857 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-3
+2026-10-08 14:39:47,916 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-3
+2026-10-08 14:39:47,916 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-3
+2026-10-08 14:39:49,048 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-4
+2026-10-08 14:39:49,135 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-4
+2026-10-08 14:39:49,135 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-4
+2026-10-08 14:39:57,015 INFO o.a.j.t.JMeterThread: Thread started: POST tickets (intake) 1-1
+2026-10-08 14:39:57,016 INFO o.a.j.s.FileServer: Stored: C:/Users/Administrator/Documents/GitHub/ICT3113_Assignment_1/step5/data/tickets_load.tsv
+2026-10-08 14:39:59,843 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-5
+2026-10-08 14:39:59,951 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-5
+2026-10-08 14:39:59,951 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-5
+2026-10-08 14:39:59,987 INFO o.a.j.t.JMeterThread: Thread started: POST tickets (intake) 1-2
+2026-10-08 14:40:01,132 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-6
+2026-10-08 14:40:01,413 INFO o.a.j.r.Summariser: summary +      6 in 00:00:45 =    0.1/s Avg:   120 Min:    34 Max:   278 Err:     0 (0.00%) Active: 3 Started: 8 Finished: 5
+2026-10-08 14:40:01,413 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-6
+2026-10-08 14:40:01,413 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-6
+2026-10-08 14:40:03,848 INFO o.a.j.t.JMeterThread: Thread is done: POST tickets (intake) 1-1
+2026-10-08 14:40:03,848 INFO o.a.j.t.JMeterThread: Thread finished: POST tickets (intake) 1-1
+2026-10-08 14:40:10,703 INFO o.a.j.t.JMeterThread: Thread is done: POST tickets (intake) 1-2
+2026-10-08 14:40:10,703 INFO o.a.j.t.JMeterThread: Thread finished: POST tickets (intake) 1-2
+2026-10-08 14:40:21,959 INFO o.a.j.t.JMeterThread: Thread started: POST tickets (intake) 1-3
+2026-10-08 14:40:27,877 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-7
+2026-10-08 14:40:27,936 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-7
+2026-10-08 14:40:27,936 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-7
+2026-10-08 14:40:31,641 INFO o.a.j.t.JMeterThread: Thread started: POST tickets (intake) 1-4
+2026-10-08 14:40:34,090 INFO o.a.j.r.Summariser: summary +      4 in 00:00:33 =    0.1/s Avg:  7432 Min:    58 Max: 12129 Err:     0 (0.00%) Active: 2 Started: 11 Finished: 9
+2026-10-08 14:40:34,090 INFO o.a.j.r.Summariser: summary =     10 in 00:01:17 =    0.1/s Avg:  3045 Min:    34 Max: 12129 Err:     0 (0.00%)
+2026-10-08 14:40:34,091 INFO o.a.j.t.JMeterThread: Thread is done: POST tickets (intake) 1-3
+2026-10-08 14:40:34,091 INFO o.a.j.t.JMeterThread: Thread finished: POST tickets (intake) 1-3
+2026-10-08 14:40:41,223 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-8
+2026-10-08 14:40:41,263 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-8
+2026-10-08 14:40:41,263 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-8
+2026-10-08 14:40:42,469 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-9
+2026-10-08 14:40:42,492 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-9
+2026-10-08 14:40:42,492 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-9
+2026-10-08 14:40:49,527 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-10
+2026-10-08 14:40:49,557 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-10
+2026-10-08 14:40:49,557 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-10
+2026-10-08 14:40:53,205 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-11
+2026-10-08 14:40:53,253 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-11
+2026-10-08 14:40:53,253 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-11
+2026-10-08 14:40:54,334 INFO o.a.j.t.JMeterThread: Thread is done: POST tickets (intake) 1-4
+2026-10-08 14:40:54,334 INFO o.a.j.t.JMeterThread: Thread finished: POST tickets (intake) 1-4
+2026-10-08 14:40:55,466 INFO o.a.j.t.JMeterThread: Thread started: POST tickets (intake) 1-5
+2026-10-08 14:41:01,089 INFO o.a.j.r.Summariser: summary +      6 in 00:00:27 =    0.2/s Avg:  4741 Min:    22 Max: 22691 Err:     0 (0.00%) Active: 1 Started: 16 Finished: 15
+2026-10-08 14:41:01,089 INFO o.a.j.r.Summariser: summary =     16 in 00:01:44 =    0.2/s Avg:  3681 Min:    22 Max: 22691 Err:     0 (0.00%)
+2026-10-08 14:41:01,090 INFO o.a.j.t.JMeterThread: Thread is done: POST tickets (intake) 1-5
+2026-10-08 14:41:01,090 INFO o.a.j.t.JMeterThread: Thread finished: POST tickets (intake) 1-5
+2026-10-08 14:41:01,966 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-12
+2026-10-08 14:41:02,023 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-12
+2026-10-08 14:41:02,023 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-12
+2026-10-08 14:41:05,525 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-13
+2026-10-08 14:41:05,563 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-13
+2026-10-08 14:41:05,564 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-13
+2026-10-08 14:41:14,937 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-14
+2026-10-08 14:41:15,051 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-14
+2026-10-08 14:41:15,051 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-14
+2026-10-08 14:41:24,269 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-15
+2026-10-08 14:41:24,298 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-15
+2026-10-08 14:41:24,298 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-15
+2026-10-08 14:41:24,352 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-16
+2026-10-08 14:41:24,433 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-16
+2026-10-08 14:41:24,433 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-16
+2026-10-08 14:41:24,840 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-17
+2026-10-08 14:41:24,856 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-17
+2026-10-08 14:41:24,856 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-17
+2026-10-08 14:41:38,045 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-18
+2026-10-08 14:41:38,075 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-18
+2026-10-08 14:41:38,075 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-18
+2026-10-08 14:41:38,735 INFO o.a.j.t.JMeterThread: Thread started: POST tickets (intake) 1-6
+2026-10-08 14:41:41,113 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-19
+2026-10-08 14:41:41,160 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-19
+2026-10-08 14:41:41,160 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-19
+2026-10-08 14:41:46,470 INFO o.a.j.t.JMeterThread: Thread is done: POST tickets (intake) 1-6
+2026-10-08 14:41:46,470 INFO o.a.j.t.JMeterThread: Thread finished: POST tickets (intake) 1-6
+2026-10-08 14:41:54,515 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-20
+2026-10-08 14:41:54,586 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-20
+2026-10-08 14:41:54,586 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-20
+2026-10-08 14:42:00,055 INFO o.a.j.t.JMeterThread: Thread started: POST tickets (intake) 1-7
+2026-10-08 14:42:07,802 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-21
+2026-10-08 14:42:07,875 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-21
+2026-10-08 14:42:07,875 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-21
+2026-10-08 14:42:09,491 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-22
+2026-10-08 14:42:09,697 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-22
+2026-10-08 14:42:09,697 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-22
+2026-10-08 14:42:13,005 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-23
+2026-10-08 14:42:13,098 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-23
+2026-10-08 14:42:13,098 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-23
+2026-10-08 14:42:15,667 INFO o.a.j.t.JMeterThread: Thread is done: POST tickets (intake) 1-7
+2026-10-08 14:42:15,667 INFO o.a.j.t.JMeterThread: Thread finished: POST tickets (intake) 1-7
+2026-10-08 14:42:16,499 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-24
+2026-10-08 14:42:16,597 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-24
+2026-10-08 14:42:16,597 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-24
+2026-10-08 14:42:25,672 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-25
+2026-10-08 14:42:25,701 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-25
+2026-10-08 14:42:25,701 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-25
+2026-10-08 14:42:36,714 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-26
+2026-10-08 14:42:36,941 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-26
+2026-10-08 14:42:36,942 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-26
+2026-10-08 14:42:38,027 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-27
+2026-10-08 14:42:38,079 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-27
+2026-10-08 14:42:38,079 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-27
+2026-10-08 14:42:38,943 INFO o.a.j.t.JMeterThread: Thread started: POST tickets (intake) 1-8
+2026-10-08 14:42:45,433 INFO o.a.j.t.JMeterThread: Thread is done: POST tickets (intake) 1-8
+2026-10-08 14:42:45,433 INFO o.a.j.t.JMeterThread: Thread finished: POST tickets (intake) 1-8
+2026-10-08 14:42:54,148 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-28
+2026-10-08 14:42:54,165 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-28
+2026-10-08 14:42:54,166 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-28
+2026-10-08 14:42:57,893 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-29
+2026-10-08 14:42:57,950 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-29
+2026-10-08 14:42:57,950 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-29
+2026-10-08 14:42:58,421 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-30
+2026-10-08 14:42:58,466 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-30
+2026-10-08 14:42:58,466 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-30
+2026-10-08 14:43:48,737 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-31
+2026-10-08 14:43:48,767 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-31
+2026-10-08 14:43:48,767 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-31
+2026-10-08 14:43:59,063 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-32
+2026-10-08 14:43:59,081 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-32
+2026-10-08 14:43:59,081 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-32
+2026-10-08 14:44:02,605 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-33
+2026-10-08 14:44:02,626 INFO o.a.j.r.Summariser: summary +     25 in 00:03:02 =    0.1/s Avg:  1250 Min:    14 Max: 15610 Err:     0 (0.00%) Active: 1 Started: 41 Finished: 40
+2026-10-08 14:44:02,626 INFO o.a.j.r.Summariser: summary =     41 in 00:04:46 =    0.1/s Avg:  2198 Min:    14 Max: 22691 Err:     0 (0.00%)
+2026-10-08 14:44:02,626 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-33
+2026-10-08 14:44:02,626 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-33
+2026-10-08 14:44:14,825 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-34
+2026-10-08 14:44:14,854 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-34
+2026-10-08 14:44:14,854 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-34
+2026-10-08 14:44:17,903 INFO o.a.j.t.JMeterThread: Thread started: POST tickets (intake) 1-9
+2026-10-08 14:44:18,588 INFO o.a.j.t.JMeterThread: Thread started: POST tickets (intake) 1-10
+2026-10-08 14:44:20,880 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-35
+2026-10-08 14:44:20,913 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-35
+2026-10-08 14:44:20,913 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-35
+2026-10-08 14:44:23,802 INFO o.a.j.t.JMeterThread: Thread started: POST tickets (intake) 1-11
+2026-10-08 14:44:30,248 INFO o.a.j.r.Summariser: summary +      3 in 00:00:28 =    0.1/s Avg:  4134 Min:    29 Max: 12342 Err:     0 (0.00%) Active: 3 Started: 46 Finished: 43
+2026-10-08 14:44:30,248 INFO o.a.j.r.Summariser: summary =     44 in 00:05:13 =    0.1/s Avg:  2330 Min:    14 Max: 22691 Err:     0 (0.00%)
+2026-10-08 14:44:30,248 INFO o.a.j.t.JMeterThread: Thread is done: POST tickets (intake) 1-9
+2026-10-08 14:44:30,248 INFO o.a.j.t.JMeterThread: Thread finished: POST tickets (intake) 1-9
+2026-10-08 14:44:39,848 INFO o.a.j.t.JMeterThread: Thread is done: POST tickets (intake) 1-10
+2026-10-08 14:44:39,848 INFO o.a.j.t.JMeterThread: Thread finished: POST tickets (intake) 1-10
+2026-10-08 14:44:43,595 INFO o.a.j.t.JMeterThread: Thread started: POST tickets (intake) 1-12
+2026-10-08 14:44:48,532 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-36
+2026-10-08 14:44:48,613 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-36
+2026-10-08 14:44:48,613 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-36
+2026-10-08 14:44:50,101 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-37
+2026-10-08 14:44:50,125 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-37
+2026-10-08 14:44:50,125 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-37
+2026-10-08 14:44:53,392 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-38
+2026-10-08 14:44:53,461 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-38
+2026-10-08 14:44:53,461 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-38
+2026-10-08 14:44:58,483 INFO o.a.j.t.JMeterThread: Thread is done: POST tickets (intake) 1-11
+2026-10-08 14:44:58,484 INFO o.a.j.t.JMeterThread: Thread finished: POST tickets (intake) 1-11
+2026-10-08 14:45:04,132 INFO o.a.j.r.Summariser: summary +      6 in 00:00:34 =    0.2/s Avg: 12774 Min:    23 Max: 34680 Err:     0 (0.00%) Active: 1 Started: 50 Finished: 49
+2026-10-08 14:45:04,132 INFO o.a.j.r.Summariser: summary =     50 in 00:05:47 =    0.1/s Avg:  3583 Min:    14 Max: 34680 Err:     0 (0.00%)
+2026-10-08 14:45:04,132 INFO o.a.j.t.JMeterThread: Thread is done: POST tickets (intake) 1-12
+2026-10-08 14:45:04,133 INFO o.a.j.t.JMeterThread: Thread finished: POST tickets (intake) 1-12
+2026-10-08 14:45:08,948 INFO o.a.j.t.JMeterThread: Thread started: POST tickets (intake) 1-13
+2026-10-08 14:45:16,270 INFO o.a.j.t.JMeterThread: Thread is done: POST tickets (intake) 1-13
+2026-10-08 14:45:16,270 INFO o.a.j.t.JMeterThread: Thread finished: POST tickets (intake) 1-13
+2026-10-08 14:45:22,771 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-39
+2026-10-08 14:45:22,901 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-39
+2026-10-08 14:45:22,901 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-39
+2026-10-08 14:45:36,890 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-40
+2026-10-08 14:45:36,905 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-40
+2026-10-08 14:45:36,905 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-40
+2026-10-08 14:45:39,906 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-41
+2026-10-08 14:45:39,996 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-41
+2026-10-08 14:45:39,997 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-41
+2026-10-08 14:46:21,119 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-42
+2026-10-08 14:46:21,309 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-42
+2026-10-08 14:46:21,310 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-42
+2026-10-08 14:46:21,457 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-43
+2026-10-08 14:46:21,525 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-43
+2026-10-08 14:46:21,525 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-43
+2026-10-08 14:46:26,960 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-44
+2026-10-08 14:46:26,983 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-44
+2026-10-08 14:46:26,983 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-44
+2026-10-08 14:46:31,860 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-45
+2026-10-08 14:46:31,882 INFO o.a.j.r.Summariser: summary +      8 in 00:01:28 =    0.1/s Avg:   981 Min:    14 Max:  7321 Err:     0 (0.00%) Active: 1 Started: 58 Finished: 57
+2026-10-08 14:46:31,882 INFO o.a.j.r.Summariser: summary =     58 in 00:07:15 =    0.1/s Avg:  3224 Min:    14 Max: 34680 Err:     0 (0.00%)
+2026-10-08 14:46:31,882 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-45
+2026-10-08 14:46:31,882 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-45
+2026-10-08 14:46:33,686 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-46
+2026-10-08 14:46:33,738 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-46
+2026-10-08 14:46:33,738 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-46
+2026-10-08 14:46:56,891 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-47
+2026-10-08 14:46:56,931 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-47
+2026-10-08 14:46:56,931 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-47
+2026-10-08 14:46:58,746 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-48
+2026-10-08 14:46:58,848 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-48
+2026-10-08 14:46:58,848 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-48
+2026-10-08 14:47:01,890 INFO o.a.j.t.JMeterThread: Thread started: POST tickets (intake) 1-14
+2026-10-08 14:47:08,849 INFO o.a.j.t.JMeterThread: Thread is done: POST tickets (intake) 1-14
+2026-10-08 14:47:08,850 INFO o.a.j.t.JMeterThread: Thread finished: POST tickets (intake) 1-14
+2026-10-08 14:47:37,479 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-49
+2026-10-08 14:47:37,501 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-49
+2026-10-08 14:47:37,501 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-49
+2026-10-08 14:47:40,046 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-50
+2026-10-08 14:47:40,061 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-50
+2026-10-08 14:47:40,061 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-50
+2026-10-08 14:47:48,213 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-51
+2026-10-08 14:47:48,261 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-51
+2026-10-08 14:47:48,261 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-51
+2026-10-08 14:47:57,080 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-52
+2026-10-08 14:47:57,094 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-52
+2026-10-08 14:47:57,094 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-52
+2026-10-08 14:47:57,412 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-53
+2026-10-08 14:47:57,444 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-53
+2026-10-08 14:47:57,444 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-53
+2026-10-08 14:48:15,672 INFO o.a.j.t.JMeterThread: Thread started: POST tickets (intake) 1-15
+2026-10-08 14:48:20,901 INFO o.a.j.t.JMeterThread: Thread is done: POST tickets (intake) 1-15
+2026-10-08 14:48:20,901 INFO o.a.j.t.JMeterThread: Thread finished: POST tickets (intake) 1-15
+2026-10-08 14:48:21,071 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-54
+2026-10-08 14:48:21,109 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-54
+2026-10-08 14:48:21,109 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-54
+2026-10-08 14:48:26,877 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-55
+2026-10-08 14:48:26,956 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-55
+2026-10-08 14:48:26,956 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-55
+2026-10-08 14:49:08,503 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-56
+2026-10-08 14:49:09,101 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-56
+2026-10-08 14:49:09,101 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-56
+2026-10-08 14:49:10,857 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-57
+2026-10-08 14:49:10,915 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-57
+2026-10-08 14:49:10,915 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-57
+2026-10-08 14:49:36,469 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-58
+2026-10-08 14:49:36,486 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-58
+2026-10-08 14:49:36,486 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-58
+2026-10-08 14:49:45,036 INFO o.a.j.t.JMeterThread: Thread started: POST tickets (intake) 1-16
+2026-10-08 14:49:46,178 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-59
+2026-10-08 14:49:46,253 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-59
+2026-10-08 14:49:46,253 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-59
+2026-10-08 14:50:04,711 INFO o.a.j.r.Summariser: summary +     17 in 00:03:33 =    0.1/s Avg:  1943 Min:    14 Max: 19674 Err:     0 (0.00%) Active: 1 Started: 75 Finished: 74
+2026-10-08 14:50:04,712 INFO o.a.j.r.Summariser: summary =     75 in 00:10:48 =    0.1/s Avg:  2934 Min:    14 Max: 34680 Err:     0 (0.00%)
+2026-10-08 14:50:04,712 INFO o.a.j.t.JMeterThread: Thread is done: POST tickets (intake) 1-16
+2026-10-08 14:50:04,712 INFO o.a.j.t.JMeterThread: Thread finished: POST tickets (intake) 1-16
+2026-10-08 14:50:12,541 INFO o.a.j.t.JMeterThread: Thread started: POST tickets (intake) 1-17
+2026-10-08 14:50:17,261 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-60
+2026-10-08 14:50:17,281 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-60
+2026-10-08 14:50:17,281 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-60
+2026-10-08 14:50:19,528 INFO o.a.j.t.JMeterThread: Thread is done: POST tickets (intake) 1-17
+2026-10-08 14:50:19,528 INFO o.a.j.t.JMeterThread: Thread finished: POST tickets (intake) 1-17
+2026-10-08 14:50:39,153 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-61
+2026-10-08 14:50:39,172 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-61
+2026-10-08 14:50:39,172 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-61
+2026-10-08 14:50:48,166 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-62
+2026-10-08 14:50:48,400 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-62
+2026-10-08 14:50:48,400 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-62
+2026-10-08 14:50:51,801 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-63
+2026-10-08 14:50:51,843 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-63
+2026-10-08 14:50:51,843 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-63
+2026-10-08 14:51:00,139 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-64
+2026-10-08 14:51:00,165 INFO o.a.j.r.Summariser: summary +      6 in 00:00:55 =    0.1/s Avg:  1220 Min:    17 Max:  6986 Err:     0 (0.00%) Active: 1 Started: 81 Finished: 80
+2026-10-08 14:51:00,165 INFO o.a.j.r.Summariser: summary =     81 in 00:11:43 =    0.1/s Avg:  2807 Min:    14 Max: 34680 Err:     0 (0.00%)
+2026-10-08 14:51:00,165 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-64
+2026-10-08 14:51:00,165 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-64
+2026-10-08 14:51:01,034 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-65
+2026-10-08 14:51:01,088 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-65
+2026-10-08 14:51:01,088 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-65
+2026-10-08 14:51:01,472 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-66
+2026-10-08 14:51:01,609 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-66
+2026-10-08 14:51:01,610 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-66
+2026-10-08 14:51:12,793 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-67
+2026-10-08 14:51:12,840 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-67
+2026-10-08 14:51:12,840 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-67
+2026-10-08 14:51:15,031 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-68
+2026-10-08 14:51:15,155 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-68
+2026-10-08 14:51:15,155 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-68
+2026-10-08 14:51:15,340 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-69
+2026-10-08 14:51:15,425 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-69
+2026-10-08 14:51:15,425 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-69
+2026-10-08 14:51:17,273 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-70
+2026-10-08 14:51:17,560 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-70
+2026-10-08 14:51:17,560 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-70
+2026-10-08 14:51:27,680 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-71
+2026-10-08 14:51:27,730 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-71
+2026-10-08 14:51:27,730 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-71
+2026-10-08 14:51:28,554 INFO o.a.j.t.JMeterThread: Thread started: POST tickets (intake) 1-18
+2026-10-08 14:51:34,265 INFO o.a.j.r.Summariser: summary +      8 in 00:00:34 =    0.2/s Avg:   810 Min:    46 Max:  5709 Err:     0 (0.00%) Active: 1 Started: 89 Finished: 88
+2026-10-08 14:51:34,265 INFO o.a.j.r.Summariser: summary =     89 in 00:12:17 =    0.1/s Avg:  2627 Min:    14 Max: 34680 Err:     0 (0.00%)
+2026-10-08 14:51:34,265 INFO o.a.j.t.JMeterThread: Thread is done: POST tickets (intake) 1-18
+2026-10-08 14:51:34,265 INFO o.a.j.t.JMeterThread: Thread finished: POST tickets (intake) 1-18
+2026-10-08 14:51:38,504 INFO o.a.j.t.JMeterThread: Thread started: POST tickets (intake) 1-19
+2026-10-08 14:51:40,768 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-72
+2026-10-08 14:51:40,826 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-72
+2026-10-08 14:51:40,826 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-72
+2026-10-08 14:51:44,553 INFO o.a.j.t.JMeterThread: Thread is done: POST tickets (intake) 1-19
+2026-10-08 14:51:44,553 INFO o.a.j.t.JMeterThread: Thread finished: POST tickets (intake) 1-19
+2026-10-08 14:51:53,624 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-73
+2026-10-08 14:51:53,638 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-73
+2026-10-08 14:51:53,638 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-73
+2026-10-08 14:51:58,613 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-74
+2026-10-08 14:51:58,625 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-74
+2026-10-08 14:51:58,625 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-74
+2026-10-08 14:52:05,335 INFO o.a.j.t.JMeterThread: Thread started: POST tickets (intake) 1-20
+2026-10-08 14:52:16,475 INFO o.a.j.t.JMeterThread: Thread is done: POST tickets (intake) 1-20
+2026-10-08 14:52:16,476 INFO o.a.j.t.JMeterThread: Thread finished: POST tickets (intake) 1-20
+2026-10-08 14:52:21,133 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-75
+2026-10-08 14:52:21,148 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-75
+2026-10-08 14:52:21,148 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-75
+2026-10-08 14:52:25,078 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-76
+2026-10-08 14:52:25,470 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-76
+2026-10-08 14:52:25,470 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-76
+2026-10-08 14:52:40,480 INFO o.a.j.t.JMeterThread: Thread started: POST tickets (intake) 1-21
+2026-10-08 14:52:46,707 INFO o.a.j.t.JMeterThread: Thread is done: POST tickets (intake) 1-21
+2026-10-08 14:52:46,707 INFO o.a.j.t.JMeterThread: Thread finished: POST tickets (intake) 1-21
+2026-10-08 14:52:50,704 INFO o.a.j.t.JMeterThread: Thread started: POST tickets (intake) 1-22
+2026-10-08 14:53:01,930 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-77
+2026-10-08 14:53:01,957 INFO o.a.j.r.Summariser: summary +      9 in 00:01:28 =    0.1/s Avg:  2657 Min:    11 Max: 11139 Err:     0 (0.00%) Active: 2 Started: 99 Finished: 97
+2026-10-08 14:53:01,958 INFO o.a.j.r.Summariser: summary =     98 in 00:13:45 =    0.1/s Avg:  2630 Min:    11 Max: 34680 Err:     0 (0.00%)
+2026-10-08 14:53:01,958 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-77
+2026-10-08 14:53:01,958 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-77
+2026-10-08 14:53:05,621 INFO o.a.j.t.JMeterThread: Thread is done: POST tickets (intake) 1-22
+2026-10-08 14:53:05,621 INFO o.a.j.t.JMeterThread: Thread finished: POST tickets (intake) 1-22
+2026-10-08 14:53:11,850 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-78
+2026-10-08 14:53:11,876 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-78
+2026-10-08 14:53:11,876 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-78
+2026-10-08 14:53:18,269 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-79
+2026-10-08 14:53:18,298 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-79
+2026-10-08 14:53:18,298 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-79
+2026-10-08 14:53:26,739 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-80
+2026-10-08 14:53:26,782 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-80
+2026-10-08 14:53:26,782 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-80
+2026-10-08 14:53:29,822 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-81
+2026-10-08 14:53:29,929 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-81
+2026-10-08 14:53:29,930 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-81
+2026-10-08 14:53:35,710 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-82
+2026-10-08 14:53:35,830 INFO o.a.j.r.Summariser: summary +      6 in 00:00:34 =    0.2/s Avg:  2539 Min:    25 Max: 14916 Err:     0 (0.00%) Active: 1 Started: 104 Finished: 103
+2026-10-08 14:53:35,830 INFO o.a.j.r.Summariser: summary =    104 in 00:14:19 =    0.1/s Avg:  2625 Min:    11 Max: 34680 Err:     0 (0.00%)
+2026-10-08 14:53:35,830 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-82
+2026-10-08 14:53:35,830 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-82
+2026-10-08 14:53:45,034 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-83
+2026-10-08 14:53:45,052 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-83
+2026-10-08 14:53:45,052 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-83
+2026-10-08 14:53:54,810 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-84
+2026-10-08 14:53:54,903 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-84
+2026-10-08 14:53:54,903 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-84
+2026-10-08 14:54:13,833 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-85
+2026-10-08 14:54:13,857 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-85
+2026-10-08 14:54:13,857 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-85
+2026-10-08 14:54:25,942 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-86
+2026-10-08 14:54:26,015 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-86
+2026-10-08 14:54:26,015 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-86
+2026-10-08 14:54:26,210 INFO o.a.j.t.JMeterThread: Thread started: POST tickets (intake) 1-23
+2026-10-08 14:54:26,300 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-87
+2026-10-08 14:54:26,336 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-87
+2026-10-08 14:54:26,336 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-87
+2026-10-08 14:54:29,721 INFO o.a.j.t.JMeterThread: Thread started: POST tickets (intake) 1-24
+2026-10-08 14:54:32,076 INFO o.a.j.r.Summariser: summary +      6 in 00:00:56 =    0.1/s Avg:  1017 Min:    17 Max:  5864 Err:     0 (0.00%) Active: 2 Started: 111 Finished: 109
+2026-10-08 14:54:32,076 INFO o.a.j.r.Summariser: summary =    110 in 00:15:15 =    0.1/s Avg:  2537 Min:    11 Max: 34680 Err:     0 (0.00%)
+2026-10-08 14:54:32,076 INFO o.a.j.t.JMeterThread: Thread is done: POST tickets (intake) 1-23
+2026-10-08 14:54:32,076 INFO o.a.j.t.JMeterThread: Thread finished: POST tickets (intake) 1-23
+2026-10-08 14:54:38,737 INFO o.a.j.t.JMeterThread: Thread is done: POST tickets (intake) 1-24
+2026-10-08 14:54:38,737 INFO o.a.j.t.JMeterThread: Thread finished: POST tickets (intake) 1-24
+2026-10-08 14:54:40,952 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-88
+2026-10-08 14:54:40,991 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-88
+2026-10-08 14:54:40,991 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-88
+2026-10-08 14:54:56,432 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-89
+2026-10-08 14:54:56,455 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-89
+2026-10-08 14:54:56,455 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-89
+2026-10-08 14:55:09,772 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-90
+2026-10-08 14:55:09,802 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-90
+2026-10-08 14:55:09,802 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-90
+2026-10-08 14:55:10,024 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-91
+2026-10-08 14:55:10,049 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-91
+2026-10-08 14:55:10,049 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-91
+2026-10-08 14:55:21,849 INFO o.a.j.t.JMeterThread: Thread started: POST tickets (intake) 1-25
+2026-10-08 14:55:33,033 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-92
+2026-10-08 14:55:33,106 INFO o.a.j.r.Summariser: summary +      6 in 00:01:01 =    0.1/s Avg:  1533 Min:    21 Max:  9015 Err:     0 (0.00%) Active: 2 Started: 117 Finished: 115
+2026-10-08 14:55:33,106 INFO o.a.j.r.Summariser: summary =    116 in 00:16:16 =    0.1/s Avg:  2485 Min:    11 Max: 34680 Err:     0 (0.00%)
+2026-10-08 14:55:33,106 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-92
+2026-10-08 14:55:33,106 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-92
+2026-10-08 14:55:35,268 INFO o.a.j.t.JMeterThread: Thread is done: POST tickets (intake) 1-25
+2026-10-08 14:55:35,268 INFO o.a.j.t.JMeterThread: Thread finished: POST tickets (intake) 1-25
+2026-10-08 14:55:37,704 INFO o.a.j.t.JMeterThread: Thread started: POST tickets (intake) 1-26
+2026-10-08 14:55:46,578 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-93
+2026-10-08 14:55:46,625 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-93
+2026-10-08 14:55:46,625 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-93
+2026-10-08 14:55:47,246 INFO o.a.j.t.JMeterThread: Thread is done: POST tickets (intake) 1-26
+2026-10-08 14:55:47,246 INFO o.a.j.t.JMeterThread: Thread finished: POST tickets (intake) 1-26
+2026-10-08 14:55:57,193 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-94
+2026-10-08 14:55:57,208 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-94
+2026-10-08 14:55:57,208 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-94
+2026-10-08 14:56:14,544 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-95
+2026-10-08 14:56:14,591 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-95
+2026-10-08 14:56:14,591 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-95
+2026-10-08 14:56:16,378 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-96
+2026-10-08 14:56:16,496 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-96
+2026-10-08 14:56:16,496 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-96
+2026-10-08 14:56:39,926 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-97
+2026-10-08 14:56:39,952 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-97
+2026-10-08 14:56:39,952 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-97
+2026-10-08 14:56:40,447 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-98
+2026-10-08 14:56:40,523 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-98
+2026-10-08 14:56:40,523 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-98
+2026-10-08 14:56:49,642 INFO o.a.j.t.JMeterThread: Thread started: POST tickets (intake) 1-27
+2026-10-08 14:56:55,893 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-99
+2026-10-08 14:56:55,916 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-99
+2026-10-08 14:56:55,916 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-99
+2026-10-08 14:57:00,519 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-100
+2026-10-08 14:57:00,549 INFO o.a.j.r.Summariser: summary +     10 in 00:01:27 =    0.1/s Avg:  2332 Min:    14 Max: 13418 Err:     0 (0.00%) Active: 2 Started: 127 Finished: 125
+2026-10-08 14:57:00,549 INFO o.a.j.r.Summariser: summary =    126 in 00:17:44 =    0.1/s Avg:  2473 Min:    11 Max: 34680 Err:     0 (0.00%)
+2026-10-08 14:57:00,549 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-100
+2026-10-08 14:57:00,549 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-100
+2026-10-08 14:57:05,876 INFO o.a.j.t.JMeterThread: Thread is done: POST tickets (intake) 1-27
+2026-10-08 14:57:05,876 INFO o.a.j.t.JMeterThread: Thread finished: POST tickets (intake) 1-27
+2026-10-08 14:57:06,279 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-101
+2026-10-08 14:57:06,294 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-101
+2026-10-08 14:57:06,294 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-101
+2026-10-08 14:57:44,691 INFO o.a.j.t.JMeterThread: Thread started: POST tickets (intake) 1-28
+2026-10-08 14:57:48,263 INFO o.a.j.t.JMeterThread: Thread is done: POST tickets (intake) 1-28
+2026-10-08 14:57:48,264 INFO o.a.j.t.JMeterThread: Thread finished: POST tickets (intake) 1-28
+2026-10-08 14:58:00,376 INFO o.a.j.t.JMeterThread: Thread started: POST tickets (intake) 1-29
+2026-10-08 14:58:00,968 INFO o.a.j.t.JMeterThread: Thread started: POST tickets (intake) 1-30
+2026-10-08 14:58:06,506 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-102
+2026-10-08 14:58:06,577 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-102
+2026-10-08 14:58:06,577 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-102
+2026-10-08 14:58:08,140 INFO o.a.j.t.JMeterThread: Thread started: POST tickets (intake) 1-31
+2026-10-08 14:58:09,664 INFO o.a.j.t.JMeterThread: Thread is done: POST tickets (intake) 1-29
+2026-10-08 14:58:09,664 INFO o.a.j.t.JMeterThread: Thread finished: POST tickets (intake) 1-29
+2026-10-08 14:58:25,370 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-103
+2026-10-08 14:58:25,400 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-103
+2026-10-08 14:58:25,400 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-103
+2026-10-08 14:58:27,666 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-104
+2026-10-08 14:58:27,708 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-104
+2026-10-08 14:58:27,708 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-104
+2026-10-08 14:58:29,195 INFO o.a.j.t.JMeterThread: Thread is done: POST tickets (intake) 1-30
+2026-10-08 14:58:29,195 INFO o.a.j.t.JMeterThread: Thread finished: POST tickets (intake) 1-30
+2026-10-08 14:58:35,942 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-105
+2026-10-08 14:58:35,984 INFO o.a.j.r.Summariser: summary +      9 in 00:01:35 =    0.1/s Avg:  6389 Min:    12 Max: 28226 Err:     0 (0.00%) Active: 2 Started: 136 Finished: 134
+2026-10-08 14:58:35,984 INFO o.a.j.r.Summariser: summary =    135 in 00:19:19 =    0.1/s Avg:  2734 Min:    11 Max: 34680 Err:     0 (0.00%)
+2026-10-08 14:58:35,984 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-105
+2026-10-08 14:58:35,984 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-105
+2026-10-08 14:58:48,865 INFO o.a.j.t.JMeterThread: Thread is done: POST tickets (intake) 1-31
+2026-10-08 14:58:48,865 INFO o.a.j.t.JMeterThread: Thread finished: POST tickets (intake) 1-31
+2026-10-08 14:58:51,361 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-106
+2026-10-08 14:58:51,462 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-106
+2026-10-08 14:58:51,462 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-106
+2026-10-08 14:59:06,649 INFO o.a.j.t.JMeterThread: Thread started: POST tickets (intake) 1-32
+2026-10-08 14:59:11,784 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-107
+2026-10-08 14:59:11,816 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-107
+2026-10-08 14:59:11,816 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-107
+2026-10-08 14:59:18,870 INFO o.a.j.t.JMeterThread: Thread is done: POST tickets (intake) 1-32
+2026-10-08 14:59:18,870 INFO o.a.j.t.JMeterThread: Thread finished: POST tickets (intake) 1-32
+2026-10-08 14:59:47,851 INFO o.a.j.t.JMeterThread: Thread started: POST tickets (intake) 1-33
+2026-10-08 14:59:52,900 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-108
+2026-10-08 14:59:52,976 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-108
+2026-10-08 14:59:52,976 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-108
+2026-10-08 14:59:56,529 INFO o.a.j.t.JMeterThread: Thread is done: POST tickets (intake) 1-33
+2026-10-08 14:59:56,530 INFO o.a.j.t.JMeterThread: Thread finished: POST tickets (intake) 1-33
+2026-10-08 15:00:09,203 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-109
+2026-10-08 15:00:09,227 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-109
+2026-10-08 15:00:09,227 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-109
+2026-10-08 15:00:10,185 INFO o.a.j.t.JMeterThread: Thread started: POST tickets (intake) 1-34
+2026-10-08 15:00:16,399 INFO o.a.j.t.JMeterThread: Thread is done: POST tickets (intake) 1-34
+2026-10-08 15:00:16,399 INFO o.a.j.t.JMeterThread: Thread finished: POST tickets (intake) 1-34
+2026-10-08 15:00:19,083 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-110
+2026-10-08 15:00:19,169 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-110
+2026-10-08 15:00:19,170 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-110
+2026-10-08 15:00:20,361 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-111
+2026-10-08 15:00:20,395 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-111
+2026-10-08 15:00:20,395 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-111
+2026-10-08 15:00:29,115 INFO o.a.j.t.JMeterThread: Thread started: POST tickets (intake) 1-35
+2026-10-08 15:00:32,643 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-112
+2026-10-08 15:00:32,701 INFO o.a.j.r.Summariser: summary +     11 in 00:01:57 =    0.1/s Avg:  6203 Min:    23 Max: 40724 Err:     0 (0.00%) Active: 2 Started: 147 Finished: 145
+2026-10-08 15:00:32,701 INFO o.a.j.r.Summariser: summary =    146 in 00:21:16 =    0.1/s Avg:  2996 Min:    11 Max: 40724 Err:     0 (0.00%)
+2026-10-08 15:00:32,701 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-112
+2026-10-08 15:00:32,701 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-112
+2026-10-08 15:00:33,733 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-113
+2026-10-08 15:00:33,757 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-113
+2026-10-08 15:00:33,757 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-113
+2026-10-08 15:00:34,515 INFO o.a.j.t.JMeterThread: Thread is done: POST tickets (intake) 1-35
+2026-10-08 15:00:34,515 INFO o.a.j.t.JMeterThread: Thread finished: POST tickets (intake) 1-35
+2026-10-08 15:00:56,170 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-114
+2026-10-08 15:00:56,330 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-114
+2026-10-08 15:00:56,330 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-114
+2026-10-08 15:00:58,094 INFO o.a.j.t.JMeterThread: Thread started: POST tickets (intake) 1-36
+2026-10-08 15:01:00,132 INFO o.a.j.t.JMeterThread: Thread started: POST tickets (intake) 1-37
+2026-10-08 15:01:04,315 INFO o.a.j.r.Summariser: summary +      4 in 00:00:32 =    0.1/s Avg:  2950 Min:    23 Max:  6221 Err:     0 (0.00%) Active: 2 Started: 151 Finished: 149
+2026-10-08 15:01:04,315 INFO o.a.j.r.Summariser: summary =    150 in 00:21:48 =    0.1/s Avg:  2994 Min:    11 Max: 40724 Err:     0 (0.00%)
+2026-10-08 15:01:04,316 INFO o.a.j.t.JMeterThread: Thread is done: POST tickets (intake) 1-36
+2026-10-08 15:01:04,316 INFO o.a.j.t.JMeterThread: Thread finished: POST tickets (intake) 1-36
+2026-10-08 15:01:08,404 INFO o.a.j.t.JMeterThread: Thread started: POST tickets (intake) 1-38
+2026-10-08 15:01:08,404 INFO o.a.j.t.o.EvenArrivalsRamp: Generating 0 events, beginRate = 0.0 / sec, endRate = 0.0 / sec, duration = 60.0 sec
+2026-10-08 15:01:08,404 INFO o.a.j.t.o.OpenModelThreadGroup: There will be no more events, so will wait for 68 sec till the end of the schedule
+2026-10-08 15:01:12,087 INFO o.a.j.t.o.EvenArrivalsRamp: Generating 0 events, beginRate = 0.0 / sec, endRate = 0.0 / sec, duration = 60.0 sec
+2026-10-08 15:01:12,087 INFO o.a.j.t.JMeterThread: Thread started: GET search (agents) 2-115
+2026-10-08 15:01:12,087 INFO o.a.j.t.o.OpenModelThreadGroup: There will be no more events, so will wait for 64 sec till the end of the schedule
+2026-10-08 15:01:12,133 INFO o.a.j.t.JMeterThread: Thread is done: GET search (agents) 2-115
+2026-10-08 15:01:12,133 INFO o.a.j.t.JMeterThread: Thread finished: GET search (agents) 2-115
+2026-10-08 15:01:18,773 INFO o.a.j.t.JMeterThread: Thread is done: POST tickets (intake) 1-37
+2026-10-08 15:01:18,773 INFO o.a.j.t.JMeterThread: Thread finished: POST tickets (intake) 1-37
+2026-10-08 15:01:32,886 INFO o.a.j.r.Summariser: summary +      3 in 00:00:29 =    0.1/s Avg: 14389 Min:    45 Max: 24482 Err:     0 (0.00%) Active: 1 Started: 153 Finished: 152
+2026-10-08 15:01:32,886 INFO o.a.j.r.Summariser: summary =    153 in 00:22:16 =    0.1/s Avg:  3218 Min:    11 Max: 40724 Err:     0 (0.00%)
+2026-10-08 15:01:32,887 INFO o.a.j.t.JMeterThread: Thread is done: POST tickets (intake) 1-38
+2026-10-08 15:01:32,887 INFO o.a.j.t.JMeterThread: Thread finished: POST tickets (intake) 1-38
+2026-10-08 15:02:16,736 INFO o.a.j.t.o.OpenModelThreadGroup: There will be no more events, will shutdown the thread pool
+2026-10-08 15:02:16,736 INFO o.a.j.t.o.OpenModelThreadGroup: There will be no more events, will shutdown the thread pool
+2026-10-08 15:02:16,736 INFO o.a.j.t.o.OpenModelThreadGroup: Thread starting done
+2026-10-08 15:02:16,736 INFO o.a.j.t.o.OpenModelThreadGroup: Thread starting done
+2026-10-08 15:02:16,737 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2026-10-08 15:02:16,737 INFO o.a.j.s.FileServer: Close: C:/Users/Administrator/Documents/GitHub/ICT3113_Assignment_1/step5/data/search_terms.csv
+2026-10-08 15:02:16,737 INFO o.a.j.s.FileServer: Close: C:/Users/Administrator/Documents/GitHub/ICT3113_Assignment_1/step5/data/tickets_load.tsv
+2026-10-08 15:02:16,738 INFO o.a.j.r.Summariser: summary =    153 in 00:23:00 =    0.1/s Avg:  3218 Min:    11 Max: 40724 Err:     0 (0.00%)

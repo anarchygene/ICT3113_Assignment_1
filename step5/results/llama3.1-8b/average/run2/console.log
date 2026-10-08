@@ -1,0 +1,21 @@
+﻿WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+Creating summariser <summary>
+Created the tree successfully using C:\Users\Administrator\Documents\GitHub\ICT3113_Assignment_1\step5\jmeter\ticket_triage.jmx
+Starting standalone test @ 2026 Oct 8 12:09:05 SGT (1791432545957)
+Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
+summary +     32 in 00:11:56 =    0.0/s Avg:  1715 Min:    16 Max: 16483 Err:     0 (0.00%) Active: 1 Started: 32 Finished: 31
+summary +      4 in 00:00:28 =    0.1/s Avg:    26 Min:    11 Max:    42 Err:     0 (0.00%) Active: 1 Started: 36 Finished: 35
+summary =     36 in 00:12:24 =    0.0/s Avg:  1527 Min:    11 Max: 16483 Err:     0 (0.00%)
+summary +      3 in 00:01:31 =    0.0/s Avg:    59 Min:    13 Max:   119 Err:     0 (0.00%) Active: 1 Started: 39 Finished: 38
+summary =     39 in 00:13:55 =    0.0/s Avg:  1414 Min:    11 Max: 16483 Err:     0 (0.00%)
+summary +      3 in 00:01:29 =    0.0/s Avg:  3887 Min:    28 Max: 11571 Err:     0 (0.00%) Active: 1 Started: 42 Finished: 41
+summary =     42 in 00:15:24 =    0.0/s Avg:  1591 Min:    11 Max: 16483 Err:     0 (0.00%)
+summary +     14 in 00:04:30 =    0.1/s Avg:  3632 Min:    12 Max: 18461 Err:     0 (0.00%) Active: 1 Started: 56 Finished: 55
+summary =     56 in 00:19:55 =    0.0/s Avg:  2101 Min:    11 Max: 18461 Err:     0 (0.00%)
+summary +      6 in 00:03:05 =    0.0/s Avg:  4408 Min:    24 Max:  9988 Err:     0 (0.00%) Active: 0 Started: 62 Finished: 62
+summary =     62 in 00:23:00 =    0.0/s Avg:  2324 Min:    11 Max: 18461 Err:     0 (0.00%)
+Tidying up ...    @ 2026 Oct 8 12:32:05 SGT (1791433925969)
+... end of run
