@@ -1,0 +1,6 @@
+﻿/ict3113_assignment_1-api-1 created=2026-10-08T03:40:30.305377254Z started=2026-10-08T03:40:32.095707462Z restarts=0 oomkilled=false status=running
+/ict3113_assignment_1-db-1 created=2026-10-07T13:49:29.835418093Z started=2026-10-07T13:49:30.251890365Z restarts=0 oomkilled=false status=running
+/ict3113_assignment_1-ollama-1 created=2026-10-07T13:49:29.822016837Z started=2026-10-07T13:49:30.254249856Z restarts=0 oomkilled=false status=running
+ict3113_assignment_1-api-1 cpu=0.15% mem=67.56MiB / 7.531GiB
+ict3113_assignment_1-db-1 cpu=0.00% mem=26.91MiB / 7.531GiB
+ict3113_assignment_1-ollama-1 cpu=0.00% mem=135.8MiB / 7.531GiB

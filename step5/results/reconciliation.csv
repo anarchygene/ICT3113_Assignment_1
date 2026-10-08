@@ -8,6 +8,15 @@ gemma3-1b,headroom,3,153,153,0,0,32,32,True
 gemma3-1b,peak,1,118,118,0,0,25,25,True
 gemma3-1b,peak,2,118,118,0,0,25,25,True
 gemma3-1b,peak,3,118,118,0,0,25,25,True
+llama3.1-8b,average,1,62,62,0,0,15,15,True
+llama3.1-8b,average,2,62,62,0,0,15,15,True
+llama3.1-8b,average,3,62,62,0,0,15,15,True
+llama3.1-8b,headroom,1,153,153,0,0,38,38,True
+llama3.1-8b,headroom,2,153,153,0,0,38,38,True
+llama3.1-8b,headroom,3,153,153,0,2,36,38,False
+llama3.1-8b,peak,1,118,118,0,0,29,29,True
+llama3.1-8b,peak,2,118,118,0,0,29,29,True
+llama3.1-8b,peak,3,118,118,0,0,29,29,True
 qwen3-4b,average,1,62,62,0,0,15,15,True
 qwen3-4b,average,2,62,62,0,0,15,15,True
 qwen3-4b,average,3,62,62,0,0,15,15,True
