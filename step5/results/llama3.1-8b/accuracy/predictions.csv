@@ -1,0 +1,161 @@
+row,golden,predicted,correct,http_status,latency_ms,request_id,ticket_id
+9840,Bank account or service,Money transfer or service,False,201,4569.7,acc-llama3.1-8b-9840,1
+9841,Consumer loan,Consumer loan,True,201,6788.1,acc-llama3.1-8b-9841,2
+9842,Bank account or service,Credit reporting,False,201,6243.5,acc-llama3.1-8b-9842,3
+9843,Credit reporting,Credit reporting,True,201,23706.1,acc-llama3.1-8b-9843,4
+9844,Credit reporting,Credit card,False,201,4578.4,acc-llama3.1-8b-9844,5
+9845,Mortgage,Mortgage,True,201,24482.1,acc-llama3.1-8b-9845,6
+9846,Money transfer or service,Money transfer or service,True,201,8454.6,acc-llama3.1-8b-9846,7
+9847,Credit reporting,Credit reporting,True,201,14911.9,acc-llama3.1-8b-9847,8
+9848,Credit reporting,Credit reporting,True,201,4823.9,acc-llama3.1-8b-9848,9
+9849,Debt collection,Debt collection,True,201,6732.0,acc-llama3.1-8b-9849,10
+9850,Consumer loan,Bank account or service,False,201,25893.6,acc-llama3.1-8b-9850,11
+9851,Bank account or service,Debt collection,False,201,5120.0,acc-llama3.1-8b-9851,12
+9852,Credit reporting,Credit card,False,201,20105.7,acc-llama3.1-8b-9852,13
+9853,Consumer loan,(invalid/error),False,502,15755.5,acc-llama3.1-8b-9853,
+9854,Money transfer or service,Money transfer or service,True,201,10443.1,acc-llama3.1-8b-9854,14
+9855,Money transfer or service,Money transfer or service,True,201,8576.7,acc-llama3.1-8b-9855,15
+9856,Credit card,Credit card,True,201,7261.1,acc-llama3.1-8b-9856,16
+9857,Money transfer or service,Money transfer or service,True,201,19886.6,acc-llama3.1-8b-9857,17
+9858,Credit reporting,Debt collection,False,201,10502.6,acc-llama3.1-8b-9858,18
+9859,Credit reporting,Credit reporting,True,201,12283.3,acc-llama3.1-8b-9859,19
+9860,Credit card,Credit card,True,201,6951.1,acc-llama3.1-8b-9860,20
+9861,Money transfer or service,Bank account or service,False,201,13493.9,acc-llama3.1-8b-9861,21
+9862,Money transfer or service,Money transfer or service,True,201,6412.3,acc-llama3.1-8b-9862,22
+9863,Mortgage,Mortgage,True,201,8480.1,acc-llama3.1-8b-9863,23
+9864,Credit reporting,Credit reporting,True,201,7359.9,acc-llama3.1-8b-9864,24
+9865,Mortgage,Mortgage,True,201,10892.0,acc-llama3.1-8b-9865,25
+9866,Money transfer or service,Money transfer or service,True,201,7317.6,acc-llama3.1-8b-9866,26
+9867,Credit card,Credit card,True,201,17012.3,acc-llama3.1-8b-9867,27
+9868,Credit reporting,Credit reporting,True,201,19133.6,acc-llama3.1-8b-9868,28
+9869,Debt collection,Credit card,False,201,16951.6,acc-llama3.1-8b-9869,29
+9870,Debt collection,Bank account or service,False,201,12936.8,acc-llama3.1-8b-9870,30
+9871,Debt collection,Debt collection,True,201,15621.7,acc-llama3.1-8b-9871,31
+9872,Money transfer or service,Money transfer or service,True,201,10105.4,acc-llama3.1-8b-9872,32
+9873,Money transfer or service,Credit card,False,201,16926.3,acc-llama3.1-8b-9873,33
+9874,Money transfer or service,Money transfer or service,True,201,14272.9,acc-llama3.1-8b-9874,34
+9875,Bank account or service,Debt collection,False,201,8487.0,acc-llama3.1-8b-9875,35
+9876,Credit reporting,Debt collection,False,201,15471.5,acc-llama3.1-8b-9876,36
+9877,Consumer loan,Consumer loan,True,201,15465.9,acc-llama3.1-8b-9877,37
+9878,Consumer loan,Consumer loan,True,201,20360.0,acc-llama3.1-8b-9878,38
+9879,Bank account or service,Bank account or service,True,201,12585.2,acc-llama3.1-8b-9879,39
+9880,Money transfer or service,Money transfer or service,True,201,5130.1,acc-llama3.1-8b-9880,40
+9881,Money transfer or service,Money transfer or service,True,201,12549.7,acc-llama3.1-8b-9881,41
+9882,Mortgage,Mortgage,True,201,15147.6,acc-llama3.1-8b-9882,42
+9883,Money transfer or service,Money transfer or service,True,201,16014.0,acc-llama3.1-8b-9883,43
+9884,Bank account or service,Bank account or service,True,201,11926.5,acc-llama3.1-8b-9884,44
+9885,Credit reporting,Debt collection,False,201,5277.8,acc-llama3.1-8b-9885,45
+9886,Consumer loan,Credit reporting,False,201,21997.7,acc-llama3.1-8b-9886,46
+9887,Bank account or service,Credit card,False,201,8624.5,acc-llama3.1-8b-9887,47
+9888,Credit card,Credit card,True,201,25577.5,acc-llama3.1-8b-9888,48
+9889,Money transfer or service,Bank account or service,False,201,14294.3,acc-llama3.1-8b-9889,49
+9890,Consumer loan,Consumer loan,True,201,6486.5,acc-llama3.1-8b-9890,50
+9891,Credit card,Credit card,True,201,9930.9,acc-llama3.1-8b-9891,51
+9892,Credit reporting,Credit reporting,True,201,11127.4,acc-llama3.1-8b-9892,52
+9893,Bank account or service,Bank account or service,True,201,21311.5,acc-llama3.1-8b-9893,53
+9894,Credit reporting,Bank account or service,False,201,11855.7,acc-llama3.1-8b-9894,54
+9895,Bank account or service,Bank account or service,True,201,6173.4,acc-llama3.1-8b-9895,55
+9896,Money transfer or service,Money transfer or service,True,201,7357.3,acc-llama3.1-8b-9896,56
+9897,Credit reporting,Credit reporting,True,201,14306.6,acc-llama3.1-8b-9897,57
+9898,Money transfer or service,Money transfer or service,True,201,9213.9,acc-llama3.1-8b-9898,58
+9899,Money transfer or service,Money transfer or service,True,201,7819.1,acc-llama3.1-8b-9899,59
+9900,Debt collection,Bank account or service,False,201,7154.5,acc-llama3.1-8b-9900,60
+9901,Money transfer or service,Money transfer or service,True,201,8178.5,acc-llama3.1-8b-9901,61
+9902,Money transfer or service,Money transfer or service,True,201,8135.5,acc-llama3.1-8b-9902,62
+9903,Credit reporting,Credit reporting,True,201,13698.3,acc-llama3.1-8b-9903,63
+9904,Debt collection,Debt collection,True,201,7748.2,acc-llama3.1-8b-9904,64
+9905,Mortgage,Mortgage,True,201,14630.5,acc-llama3.1-8b-9905,65
+9906,Consumer loan,Consumer loan,True,201,8698.8,acc-llama3.1-8b-9906,66
+9907,Debt collection,Credit card,False,201,12355.1,acc-llama3.1-8b-9907,67
+9908,Bank account or service,Bank account or service,True,201,10850.7,acc-llama3.1-8b-9908,68
+9909,Credit card,Credit card,True,201,15473.0,acc-llama3.1-8b-9909,69
+9910,Credit reporting,Credit reporting,True,201,4356.4,acc-llama3.1-8b-9910,70
+9911,Money transfer or service,Money transfer or service,True,201,30239.2,acc-llama3.1-8b-9911,71
+9912,Credit reporting,Credit reporting,True,201,6038.2,acc-llama3.1-8b-9912,72
+9913,Debt collection,Debt collection,True,201,16018.0,acc-llama3.1-8b-9913,73
+9914,Bank account or service,Bank account or service,True,201,5654.9,acc-llama3.1-8b-9914,74
+9915,Credit card,Credit card,True,201,7700.1,acc-llama3.1-8b-9915,75
+9916,Bank account or service,Bank account or service,True,201,13768.6,acc-llama3.1-8b-9916,76
+9917,Money transfer or service,Money transfer or service,True,201,15500.0,acc-llama3.1-8b-9917,77
+9918,Mortgage,Mortgage,True,201,23872.0,acc-llama3.1-8b-9918,78
+9919,Consumer loan,Consumer loan,True,201,12928.1,acc-llama3.1-8b-9919,79
+9920,Bank account or service,Credit card,False,201,25621.1,acc-llama3.1-8b-9920,80
+9921,Credit reporting,Credit card,False,201,19641.5,acc-llama3.1-8b-9921,81
+9922,Consumer loan,Mortgage,False,201,25034.0,acc-llama3.1-8b-9922,82
+9923,Debt collection,Debt collection,True,201,13864.2,acc-llama3.1-8b-9923,83
+9924,Credit card,Credit card,True,201,23405.0,acc-llama3.1-8b-9924,84
+9925,Bank account or service,Money transfer or service,False,201,8981.4,acc-llama3.1-8b-9925,85
+9926,Mortgage,Mortgage,True,201,16706.0,acc-llama3.1-8b-9926,86
+9927,Mortgage,Mortgage,True,201,14491.6,acc-llama3.1-8b-9927,87
+9928,Debt collection,Debt collection,True,201,29257.9,acc-llama3.1-8b-9928,88
+9929,Consumer loan,Consumer loan,True,201,18048.4,acc-llama3.1-8b-9929,89
+9930,Money transfer or service,Credit card,False,201,13077.8,acc-llama3.1-8b-9930,90
+9931,Credit reporting,Credit card,False,201,15075.1,acc-llama3.1-8b-9931,91
+9932,Consumer loan,Consumer loan,True,201,5254.1,acc-llama3.1-8b-9932,92
+9933,Debt collection,Debt collection,True,201,10663.0,acc-llama3.1-8b-9933,93
+9934,Mortgage,Mortgage,True,201,19276.1,acc-llama3.1-8b-9934,94
+9935,Credit reporting,Credit reporting,True,201,7564.1,acc-llama3.1-8b-9935,95
+9936,Bank account or service,Bank account or service,True,201,13115.7,acc-llama3.1-8b-9936,96
+9937,Mortgage,Mortgage,True,201,16437.9,acc-llama3.1-8b-9937,97
+9938,Debt collection,Debt collection,True,201,19013.9,acc-llama3.1-8b-9938,98
+9939,Bank account or service,Bank account or service,True,201,23281.7,acc-llama3.1-8b-9939,99
+9940,Bank account or service,Bank account or service,True,201,20587.7,acc-llama3.1-8b-9940,100
+9941,Credit reporting,Credit reporting,True,201,16462.2,acc-llama3.1-8b-9941,101
+9942,Money transfer or service,Money transfer or service,True,201,24246.0,acc-llama3.1-8b-9942,102
+9943,Bank account or service,Bank account or service,True,201,7274.7,acc-llama3.1-8b-9943,103
+9944,Debt collection,Debt collection,True,201,14216.0,acc-llama3.1-8b-9944,104
+9945,Consumer loan,Credit card,False,201,14704.8,acc-llama3.1-8b-9945,105
+9946,Credit reporting,Credit reporting,True,201,25592.4,acc-llama3.1-8b-9946,106
+9947,Bank account or service,Credit card,False,201,22308.7,acc-llama3.1-8b-9947,107
+9948,Bank account or service,Bank account or service,True,201,18876.9,acc-llama3.1-8b-9948,108
+9949,Bank account or service,Bank account or service,True,201,9229.7,acc-llama3.1-8b-9949,109
+9950,Credit reporting,Credit reporting,True,201,7978.4,acc-llama3.1-8b-9950,110
+9951,Credit reporting,Credit card,False,201,13998.6,acc-llama3.1-8b-9951,111
+9952,Bank account or service,Bank account or service,True,201,13585.6,acc-llama3.1-8b-9952,112
+9953,Bank account or service,Bank account or service,True,201,24733.6,acc-llama3.1-8b-9953,113
+9954,Debt collection,Debt collection,True,201,17363.3,acc-llama3.1-8b-9954,114
+9955,Bank account or service,Money transfer or service,False,201,29258.3,acc-llama3.1-8b-9955,115
+9956,Credit reporting,Credit reporting,True,201,16015.9,acc-llama3.1-8b-9956,116
+9957,Bank account or service,Bank account or service,True,201,6400.2,acc-llama3.1-8b-9957,117
+9958,Credit reporting,Credit reporting,True,201,20933.6,acc-llama3.1-8b-9958,118
+9959,Bank account or service,Bank account or service,True,201,17778.1,acc-llama3.1-8b-9959,119
+9960,Mortgage,Mortgage,True,201,10823.6,acc-llama3.1-8b-9960,120
+9961,Mortgage,Mortgage,True,201,8418.8,acc-llama3.1-8b-9961,121
+9962,Credit card,Credit card,True,201,24239.9,acc-llama3.1-8b-9962,122
+9963,Money transfer or service,Money transfer or service,True,201,18350.7,acc-llama3.1-8b-9963,123
+9964,Money transfer or service,Money transfer or service,True,201,9747.5,acc-llama3.1-8b-9964,124
+9965,Debt collection,Debt collection,True,201,19206.3,acc-llama3.1-8b-9965,125
+9966,Credit card,Credit card,True,201,8577.1,acc-llama3.1-8b-9966,126
+9967,Debt collection,Debt collection,True,201,15764.7,acc-llama3.1-8b-9967,127
+9968,Debt collection,Debt collection,True,201,20064.7,acc-llama3.1-8b-9968,128
+9969,Mortgage,Credit card,False,201,16849.6,acc-llama3.1-8b-9969,129
+9970,Credit reporting,Credit reporting,True,201,10087.8,acc-llama3.1-8b-9970,130
+9971,Money transfer or service,Credit card,False,201,17609.1,acc-llama3.1-8b-9971,131
+9972,Bank account or service,Bank account or service,True,201,6421.1,acc-llama3.1-8b-9972,132
+9973,Credit reporting,Credit reporting,True,201,12981.0,acc-llama3.1-8b-9973,133
+9974,Money transfer or service,Money transfer or service,True,201,20993.9,acc-llama3.1-8b-9974,134
+9975,Mortgage,Mortgage,True,201,17534.4,acc-llama3.1-8b-9975,135
+9976,Credit reporting,Credit reporting,True,201,14710.9,acc-llama3.1-8b-9976,136
+9977,Credit reporting,Credit reporting,True,201,7256.6,acc-llama3.1-8b-9977,137
+9978,Mortgage,Credit card,False,201,18441.4,acc-llama3.1-8b-9978,138
+9979,Credit card,Credit card,True,201,17402.8,acc-llama3.1-8b-9979,139
+9980,Mortgage,Consumer loan,False,201,28391.2,acc-llama3.1-8b-9980,140
+9981,Consumer loan,Consumer loan,True,201,9913.5,acc-llama3.1-8b-9981,141
+9982,Credit reporting,Credit reporting,True,201,25940.1,acc-llama3.1-8b-9982,142
+9983,Mortgage,Mortgage,True,201,9006.2,acc-llama3.1-8b-9983,143
+9984,Consumer loan,Consumer loan,True,201,13146.0,acc-llama3.1-8b-9984,144
+9985,Debt collection,Debt collection,True,201,11633.7,acc-llama3.1-8b-9985,145
+9986,Bank account or service,Bank account or service,True,201,12622.3,acc-llama3.1-8b-9986,146
+9987,Debt collection,Debt collection,True,201,17724.8,acc-llama3.1-8b-9987,147
+9988,Money transfer or service,Money transfer or service,True,201,6314.7,acc-llama3.1-8b-9988,148
+9989,Bank account or service,Bank account or service,True,201,7844.2,acc-llama3.1-8b-9989,149
+9990,Credit reporting,Credit reporting,True,201,16022.6,acc-llama3.1-8b-9990,150
+9991,Debt collection,Debt collection,True,201,4536.6,acc-llama3.1-8b-9991,151
+9992,Bank account or service,Money transfer or service,False,201,5670.9,acc-llama3.1-8b-9992,152
+9993,Mortgage,Mortgage,True,201,17851.0,acc-llama3.1-8b-9993,153
+9994,Debt collection,Debt collection,True,201,10828.3,acc-llama3.1-8b-9994,154
+9995,Credit reporting,Bank account or service,False,201,13228.7,acc-llama3.1-8b-9995,155
+9996,Debt collection,Credit reporting,False,201,9857.6,acc-llama3.1-8b-9996,156
+9997,Debt collection,Debt collection,True,201,7883.5,acc-llama3.1-8b-9997,157
+9998,Debt collection,Credit reporting,False,201,14026.6,acc-llama3.1-8b-9998,158
+9999,Consumer loan,Consumer loan,True,201,12680.8,acc-llama3.1-8b-9999,159

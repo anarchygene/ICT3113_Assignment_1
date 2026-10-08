@@ -1,0 +1,515 @@
+﻿api-1  | 2026-10-08T03:02:27.868575985Z INFO:     Started server process [1]
+api-1  | 2026-10-08T03:02:27.868665792Z INFO:     Waiting for application startup.
+api-1  | 2026-10-08T03:02:27.902335665Z INFO:     Application startup complete.
+api-1  | 2026-10-08T03:02:27.903561651Z INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+api-1  | 2026-10-08T03:02:29.102463575Z 2026-10-08 03:02:29,102 INFO complaints.api request_id=e34c2cd4-64e0-4280-a22f-67616cdc793e method=GET path=/health status=200 duration_ms=0.77 client=172.19.0.1
+api-1  | 2026-10-08T03:02:29.102497691Z INFO:     172.19.0.1:44976 - "GET /health HTTP/1.1" 200 OK
+api-1  | 2026-10-08T03:03:07.899177167Z 2026-10-08 03:03:07,888 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:03:08.111241220Z 2026-10-08 03:03:08,110 INFO complaints.api request_id=warmup-20261008T030220Z-3438d4f7-5b93-4b30-90f7-e53772c46cb1 method=POST path=/tickets status=201 duration_ms=38962.75 client=172.19.0.1
+api-1  | 2026-10-08T03:03:08.113112469Z INFO:     172.19.0.1:44976 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:03:10.744628271Z 2026-10-08 03:03:10,744 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:03:10.754347769Z 2026-10-08 03:03:10,754 INFO complaints.api request_id=warmup-20261008T030220Z-740c955c-caaa-4e8a-bfb0-6973e6b2d291 method=POST path=/tickets status=201 duration_ms=2625.50 client=172.19.0.1
+api-1  | 2026-10-08T03:03:10.754395388Z INFO:     172.19.0.1:44976 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:03:11.474106702Z 2026-10-08 03:03:11,473 INFO complaints.api request_id=6a8ef533-7718-4977-8bb5-d376c76ec9d7 method=GET path=/stats status=200 duration_ms=9.02 client=172.19.0.1
+api-1  | 2026-10-08T03:03:11.474139113Z INFO:     172.19.0.1:44976 - "GET /stats HTTP/1.1" 200 OK
+api-1  | 2026-10-08T03:03:24.076432520Z 2026-10-08 03:03:24,076 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:03:24.089136675Z INFO:     172.19.0.1:36430 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:03:24.089164135Z 2026-10-08 03:03:24,088 INFO complaints.api request_id=acc-llama3.1-8b-9840 method=POST path=/tickets status=201 duration_ms=4500.58 client=172.19.0.1
+api-1  | 2026-10-08T03:03:30.869989638Z 2026-10-08 03:03:30,869 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:03:30.877106068Z 2026-10-08 03:03:30,876 INFO complaints.api request_id=acc-llama3.1-8b-9841 method=POST path=/tickets status=201 duration_ms=6774.38 client=172.19.0.1
+api-1  | 2026-10-08T03:03:30.877195958Z INFO:     172.19.0.1:36440 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:03:37.114242405Z 2026-10-08 03:03:37,113 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:03:37.121801583Z 2026-10-08 03:03:37,121 INFO complaints.api request_id=acc-llama3.1-8b-9842 method=POST path=/tickets status=201 duration_ms=6221.14 client=172.19.0.1
+api-1  | 2026-10-08T03:03:37.121845899Z INFO:     172.19.0.1:49744 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:04:00.804900200Z 2026-10-08 03:04:00,804 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:04:00.815702784Z INFO:     172.19.0.1:46148 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:04:00.815807310Z 2026-10-08 03:04:00,815 INFO complaints.api request_id=acc-llama3.1-8b-9843 method=POST path=/tickets status=201 duration_ms=23692.68 client=172.19.0.1
+api-1  | 2026-10-08T03:04:05.386076332Z 2026-10-08 03:04:05,385 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:04:05.394708913Z 2026-10-08 03:04:05,394 INFO complaints.api request_id=acc-llama3.1-8b-9844 method=POST path=/tickets status=201 duration_ms=4554.25 client=172.19.0.1
+api-1  | 2026-10-08T03:04:05.394901783Z INFO:     172.19.0.1:34120 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:04:29.871714687Z 2026-10-08 03:04:29,870 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:04:29.888348880Z 2026-10-08 03:04:29,887 INFO complaints.api request_id=acc-llama3.1-8b-9845 method=POST path=/tickets status=201 duration_ms=24477.41 client=172.19.0.1
+api-1  | 2026-10-08T03:04:29.888397776Z INFO:     172.19.0.1:48812 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:04:38.335751674Z 2026-10-08 03:04:38,335 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:04:38.343835199Z INFO:     172.19.0.1:46502 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:04:38.343855541Z 2026-10-08 03:04:38,343 INFO complaints.api request_id=acc-llama3.1-8b-9846 method=POST path=/tickets status=201 duration_ms=8440.55 client=172.19.0.1
+api-1  | 2026-10-08T03:04:53.249267476Z 2026-10-08 03:04:53,249 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:04:53.256980217Z INFO:     172.19.0.1:57952 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:04:53.257012877Z 2026-10-08 03:04:53,256 INFO complaints.api request_id=acc-llama3.1-8b-9847 method=POST path=/tickets status=201 duration_ms=14906.08 client=172.19.0.1
+api-1  | 2026-10-08T03:04:58.072004245Z 2026-10-08 03:04:58,071 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:04:58.079781041Z 2026-10-08 03:04:58,079 INFO complaints.api request_id=acc-llama3.1-8b-9848 method=POST path=/tickets status=201 duration_ms=4805.22 client=172.19.0.1
+api-1  | 2026-10-08T03:04:58.079827366Z INFO:     172.19.0.1:37862 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:05:04.803995077Z 2026-10-08 03:05:04,803 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:05:04.812731082Z 2026-10-08 03:05:04,812 INFO complaints.api request_id=acc-llama3.1-8b-9849 method=POST path=/tickets status=201 duration_ms=6708.23 client=172.19.0.1
+api-1  | 2026-10-08T03:05:04.812775291Z INFO:     172.19.0.1:41892 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:05:30.693096982Z 2026-10-08 03:05:30,692 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:05:30.706203851Z 2026-10-08 03:05:30,705 INFO complaints.api request_id=acc-llama3.1-8b-9850 method=POST path=/tickets status=201 duration_ms=25878.66 client=172.19.0.1
+api-1  | 2026-10-08T03:05:30.706366224Z INFO:     172.19.0.1:45804 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:05:35.819193983Z 2026-10-08 03:05:35,818 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:05:35.826828656Z 2026-10-08 03:05:35,826 INFO complaints.api request_id=acc-llama3.1-8b-9851 method=POST path=/tickets status=201 duration_ms=5107.40 client=172.19.0.1
+api-1  | 2026-10-08T03:05:35.826942675Z INFO:     172.19.0.1:45692 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:05:55.924895503Z 2026-10-08 03:05:55,924 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:05:55.932612772Z 2026-10-08 03:05:55,932 INFO complaints.api request_id=acc-llama3.1-8b-9852 method=POST path=/tickets status=201 duration_ms=20084.41 client=172.19.0.1
+api-1  | 2026-10-08T03:05:55.932648230Z INFO:     172.19.0.1:54492 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:06:11.666685286Z 2026-10-08 03:06:11,666 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:06:11.686559349Z 2026-10-08 03:06:11,667 ERROR complaints.api classification_failed model=llama3.1:8b-instruct-q4_K_M
+api-1  | 2026-10-08T03:06:11.686609621Z Traceback (most recent call last):
+api-1  | 2026-10-08T03:06:11.686614158Z   File "/app/app/classifier.py", line 45, in classify
+api-1  | 2026-10-08T03:06:11.686617434Z     return Category(category_text)
+api-1  | 2026-10-08T03:06:11.686619960Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-08T03:06:11.686622869Z   File "/usr/local/lib/python3.12/enum.py", line 751, in __call__
+api-1  | 2026-10-08T03:06:11.686625376Z     return cls.__new__(cls, value)
+api-1  | 2026-10-08T03:06:11.686627496Z            ^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-08T03:06:11.686629706Z   File "/usr/local/lib/python3.12/enum.py", line 1170, in __new__
+api-1  | 2026-10-08T03:06:11.686631881Z     raise ve_exc
+api-1  | 2026-10-08T03:06:11.686634190Z ValueError: 'Student loan' is not a valid Category
+api-1  | 2026-10-08T03:06:11.686636339Z 
+api-1  | 2026-10-08T03:06:11.686638621Z The above exception was the direct cause of the following exception:
+api-1  | 2026-10-08T03:06:11.686640797Z 
+api-1  | 2026-10-08T03:06:11.686643016Z Traceback (most recent call last):
+api-1  | 2026-10-08T03:06:11.686646012Z   File "/app/app/main.py", line 69, in create_ticket
+api-1  | 2026-10-08T03:06:11.686649205Z     category = await classifier.classify(narrative)
+api-1  | 2026-10-08T03:06:11.686651609Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+api-1  | 2026-10-08T03:06:11.686653937Z   File "/app/app/classifier.py", line 47, in classify
+api-1  | 2026-10-08T03:06:11.686656557Z     raise ClassificationError(f"Ollama returned an invalid classification: {exc}") from exc
+api-1  | 2026-10-08T03:06:11.686659335Z app.classifier.ClassificationError: Ollama returned an invalid classification: 'Student loan' is not a valid Category
+api-1  | 2026-10-08T03:06:11.688416028Z 2026-10-08 03:06:11,688 INFO complaints.api request_id=acc-llama3.1-8b-9853 method=POST path=/tickets status=502 duration_ms=15750.39 client=172.19.0.1
+api-1  | 2026-10-08T03:06:11.688585518Z INFO:     172.19.0.1:36822 - "POST /tickets HTTP/1.1" 502 Bad Gateway
+api-1  | 2026-10-08T03:06:22.120650058Z 2026-10-08 03:06:22,120 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:06:22.133067487Z 2026-10-08 03:06:22,132 INFO complaints.api request_id=acc-llama3.1-8b-9854 method=POST path=/tickets status=201 duration_ms=10435.90 client=172.19.0.1
+api-1  | 2026-10-08T03:06:22.133145566Z INFO:     172.19.0.1:47508 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:06:30.701391275Z 2026-10-08 03:06:30,701 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:06:30.708388193Z 2026-10-08 03:06:30,708 INFO complaints.api request_id=acc-llama3.1-8b-9855 method=POST path=/tickets status=201 duration_ms=8571.38 client=172.19.0.1
+api-1  | 2026-10-08T03:06:30.708423880Z INFO:     172.19.0.1:56368 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:06:37.962278451Z 2026-10-08 03:06:37,961 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:06:37.970112233Z 2026-10-08 03:06:37,969 INFO complaints.api request_id=acc-llama3.1-8b-9856 method=POST path=/tickets status=201 duration_ms=7232.76 client=172.19.0.1
+api-1  | 2026-10-08T03:06:37.970150925Z INFO:     172.19.0.1:49974 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:06:57.848974613Z 2026-10-08 03:06:57,848 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:06:57.856385587Z 2026-10-08 03:06:57,856 INFO complaints.api request_id=acc-llama3.1-8b-9857 method=POST path=/tickets status=201 duration_ms=19882.82 client=172.19.0.1
+api-1  | 2026-10-08T03:06:57.856546874Z INFO:     172.19.0.1:38152 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:07:08.352043483Z 2026-10-08 03:07:08,351 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:07:08.359843206Z 2026-10-08 03:07:08,359 INFO complaints.api request_id=acc-llama3.1-8b-9858 method=POST path=/tickets status=201 duration_ms=10483.77 client=172.19.0.1
+api-1  | 2026-10-08T03:07:08.359878447Z INFO:     172.19.0.1:46396 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:07:20.634119813Z 2026-10-08 03:07:20,633 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:07:20.643988349Z INFO:     172.19.0.1:55892 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:07:20.644007332Z 2026-10-08 03:07:20,643 INFO complaints.api request_id=acc-llama3.1-8b-9859 method=POST path=/tickets status=201 duration_ms=12278.78 client=172.19.0.1
+api-1  | 2026-10-08T03:07:27.586816761Z 2026-10-08 03:07:27,586 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:07:27.594067053Z 2026-10-08 03:07:27,593 INFO complaints.api request_id=acc-llama3.1-8b-9860 method=POST path=/tickets status=201 duration_ms=6930.46 client=172.19.0.1
+api-1  | 2026-10-08T03:07:27.594103029Z INFO:     172.19.0.1:48542 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:07:41.081514297Z 2026-10-08 03:07:41,081 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:07:41.089052731Z 2026-10-08 03:07:41,088 INFO complaints.api request_id=acc-llama3.1-8b-9861 method=POST path=/tickets status=201 duration_ms=13479.31 client=172.19.0.1
+api-1  | 2026-10-08T03:07:41.089146367Z INFO:     172.19.0.1:46868 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:07:47.494681219Z 2026-10-08 03:07:47,494 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:07:47.501840699Z 2026-10-08 03:07:47,501 INFO complaints.api request_id=acc-llama3.1-8b-9862 method=POST path=/tickets status=201 duration_ms=6407.81 client=172.19.0.1
+api-1  | 2026-10-08T03:07:47.501875187Z INFO:     172.19.0.1:38402 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:07:55.973128768Z 2026-10-08 03:07:55,972 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:07:55.981230147Z INFO:     172.19.0.1:52376 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:07:55.981328237Z 2026-10-08 03:07:55,980 INFO complaints.api request_id=acc-llama3.1-8b-9863 method=POST path=/tickets status=201 duration_ms=8474.60 client=172.19.0.1
+api-1  | 2026-10-08T03:08:03.332323343Z 2026-10-08 03:08:03,332 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:08:03.341160030Z INFO:     172.19.0.1:48380 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:08:03.341222271Z 2026-10-08 03:08:03,340 INFO complaints.api request_id=acc-llama3.1-8b-9864 method=POST path=/tickets status=201 duration_ms=7338.38 client=172.19.0.1
+api-1  | 2026-10-08T03:08:14.225752204Z 2026-10-08 03:08:14,225 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:08:14.234098628Z INFO:     172.19.0.1:48388 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:08:14.234224065Z 2026-10-08 03:08:14,233 INFO complaints.api request_id=acc-llama3.1-8b-9865 method=POST path=/tickets status=201 duration_ms=10879.05 client=172.19.0.1
+api-1  | 2026-10-08T03:08:21.542929110Z 2026-10-08 03:08:21,542 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:08:21.552011117Z 2026-10-08 03:08:21,551 INFO complaints.api request_id=acc-llama3.1-8b-9866 method=POST path=/tickets status=201 duration_ms=7297.26 client=172.19.0.1
+api-1  | 2026-10-08T03:08:21.552058581Z INFO:     172.19.0.1:56170 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:08:38.554539828Z 2026-10-08 03:08:38,554 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:08:38.563884407Z 2026-10-08 03:08:38,563 INFO complaints.api request_id=acc-llama3.1-8b-9867 method=POST path=/tickets status=201 duration_ms=16986.93 client=172.19.0.1
+api-1  | 2026-10-08T03:08:38.563925037Z INFO:     172.19.0.1:56172 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:08:57.687785762Z 2026-10-08 03:08:57,687 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:08:57.696892122Z 2026-10-08 03:08:57,696 INFO complaints.api request_id=acc-llama3.1-8b-9868 method=POST path=/tickets status=201 duration_ms=19121.50 client=172.19.0.1
+api-1  | 2026-10-08T03:08:57.696930833Z INFO:     172.19.0.1:45690 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:09:14.641906137Z 2026-10-08 03:09:14,641 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:09:14.649632747Z INFO:     172.19.0.1:50594 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:09:14.649651068Z 2026-10-08 03:09:14,649 INFO complaints.api request_id=acc-llama3.1-8b-9869 method=POST path=/tickets status=201 duration_ms=16928.07 client=172.19.0.1
+api-1  | 2026-10-08T03:09:27.576954561Z 2026-10-08 03:09:27,576 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:09:27.586450767Z 2026-10-08 03:09:27,586 INFO complaints.api request_id=acc-llama3.1-8b-9870 method=POST path=/tickets status=201 duration_ms=12911.68 client=172.19.0.1
+api-1  | 2026-10-08T03:09:27.586547300Z INFO:     172.19.0.1:37598 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:09:43.200644569Z 2026-10-08 03:09:43,200 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:09:43.209237248Z 2026-10-08 03:09:43,208 INFO complaints.api request_id=acc-llama3.1-8b-9871 method=POST path=/tickets status=201 duration_ms=15599.78 client=172.19.0.1
+api-1  | 2026-10-08T03:09:43.209271668Z INFO:     172.19.0.1:48966 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:09:53.307332353Z 2026-10-08 03:09:53,307 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:09:53.315175239Z 2026-10-08 03:09:53,314 INFO complaints.api request_id=acc-llama3.1-8b-9872 method=POST path=/tickets status=201 duration_ms=10101.47 client=172.19.0.1
+api-1  | 2026-10-08T03:09:53.315452543Z INFO:     172.19.0.1:37978 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:10:10.227482005Z 2026-10-08 03:10:10,226 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:10:10.240111082Z 2026-10-08 03:10:10,239 INFO complaints.api request_id=acc-llama3.1-8b-9873 method=POST path=/tickets status=201 duration_ms=16900.70 client=172.19.0.1
+api-1  | 2026-10-08T03:10:10.240309656Z INFO:     172.19.0.1:45162 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:10:24.506358036Z 2026-10-08 03:10:24,506 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:10:24.514310348Z 2026-10-08 03:10:24,513 INFO complaints.api request_id=acc-llama3.1-8b-9874 method=POST path=/tickets status=201 duration_ms=14264.45 client=172.19.0.1
+api-1  | 2026-10-08T03:10:24.514306639Z INFO:     172.19.0.1:46300 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:10:32.991296258Z 2026-10-08 03:10:32,991 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:10:32.998843900Z INFO:     172.19.0.1:43136 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:10:32.998895468Z 2026-10-08 03:10:32,998 INFO complaints.api request_id=acc-llama3.1-8b-9875 method=POST path=/tickets status=201 duration_ms=8470.15 client=172.19.0.1
+api-1  | 2026-10-08T03:10:48.463086453Z 2026-10-08 03:10:48,462 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:10:48.471741356Z 2026-10-08 03:10:48,471 INFO complaints.api request_id=acc-llama3.1-8b-9876 method=POST path=/tickets status=201 duration_ms=15453.89 client=172.19.0.1
+api-1  | 2026-10-08T03:10:48.471781885Z INFO:     172.19.0.1:43140 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:11:03.929819813Z 2026-10-08 03:11:03,929 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:11:03.938334580Z INFO:     172.19.0.1:55474 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:11:03.938372715Z 2026-10-08 03:11:03,937 INFO complaints.api request_id=acc-llama3.1-8b-9877 method=POST path=/tickets status=201 duration_ms=15452.16 client=172.19.0.1
+api-1  | 2026-10-08T03:11:24.291795778Z 2026-10-08 03:11:24,291 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:11:24.299895872Z 2026-10-08 03:11:24,299 INFO complaints.api request_id=acc-llama3.1-8b-9878 method=POST path=/tickets status=201 duration_ms=20348.64 client=172.19.0.1
+api-1  | 2026-10-08T03:11:24.299892282Z INFO:     172.19.0.1:57424 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:11:36.876336456Z 2026-10-08 03:11:36,876 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:11:36.884325239Z 2026-10-08 03:11:36,884 INFO complaints.api request_id=acc-llama3.1-8b-9879 method=POST path=/tickets status=201 duration_ms=12568.81 client=172.19.0.1
+api-1  | 2026-10-08T03:11:36.884369508Z INFO:     172.19.0.1:59068 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:11:42.007306449Z 2026-10-08 03:11:42,007 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:11:42.014585305Z 2026-10-08 03:11:42,014 INFO complaints.api request_id=acc-llama3.1-8b-9880 method=POST path=/tickets status=201 duration_ms=5105.34 client=172.19.0.1
+api-1  | 2026-10-08T03:11:42.014623054Z INFO:     172.19.0.1:55656 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:11:54.557385164Z 2026-10-08 03:11:54,557 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:11:54.565630758Z 2026-10-08 03:11:54,565 INFO complaints.api request_id=acc-llama3.1-8b-9881 method=POST path=/tickets status=201 duration_ms=12544.58 client=172.19.0.1
+api-1  | 2026-10-08T03:11:54.565677884Z INFO:     172.19.0.1:55662 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:12:09.705171784Z 2026-10-08 03:12:09,704 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:12:09.712984116Z 2026-10-08 03:12:09,712 INFO complaints.api request_id=acc-llama3.1-8b-9882 method=POST path=/tickets status=201 duration_ms=15129.88 client=172.19.0.1
+api-1  | 2026-10-08T03:12:09.713043867Z INFO:     172.19.0.1:55164 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:12:25.719087603Z 2026-10-08 03:12:25,718 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:12:25.726899096Z 2026-10-08 03:12:25,726 INFO complaints.api request_id=acc-llama3.1-8b-9883 method=POST path=/tickets status=201 duration_ms=15990.38 client=172.19.0.1
+api-1  | 2026-10-08T03:12:25.726934659Z INFO:     172.19.0.1:55104 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:12:37.645931155Z 2026-10-08 03:12:37,645 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:12:37.653727008Z 2026-10-08 03:12:37,653 INFO complaints.api request_id=acc-llama3.1-8b-9884 method=POST path=/tickets status=201 duration_ms=11899.88 client=172.19.0.1
+api-1  | 2026-10-08T03:12:37.653906517Z INFO:     172.19.0.1:36998 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:12:42.922935134Z 2026-10-08 03:12:42,922 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:12:42.932049839Z 2026-10-08 03:12:42,931 INFO complaints.api request_id=acc-llama3.1-8b-9885 method=POST path=/tickets status=201 duration_ms=5272.94 client=172.19.0.1
+api-1  | 2026-10-08T03:12:42.932107080Z INFO:     172.19.0.1:43526 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:13:04.918194342Z 2026-10-08 03:13:04,917 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:13:04.929276300Z 2026-10-08 03:13:04,928 INFO complaints.api request_id=acc-llama3.1-8b-9886 method=POST path=/tickets status=201 duration_ms=21971.21 client=172.19.0.1
+api-1  | 2026-10-08T03:13:04.929316384Z INFO:     172.19.0.1:43532 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:13:13.546831413Z 2026-10-08 03:13:13,546 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:13:13.554829382Z INFO:     172.19.0.1:59558 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:13:13.554888145Z 2026-10-08 03:13:13,554 INFO complaints.api request_id=acc-llama3.1-8b-9887 method=POST path=/tickets status=201 duration_ms=8617.83 client=172.19.0.1
+api-1  | 2026-10-08T03:13:39.124279174Z 2026-10-08 03:13:39,124 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:13:39.132243381Z INFO:     172.19.0.1:59562 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:13:39.132312677Z 2026-10-08 03:13:39,131 INFO complaints.api request_id=acc-llama3.1-8b-9888 method=POST path=/tickets status=201 duration_ms=25551.90 client=172.19.0.1
+api-1  | 2026-10-08T03:13:53.420379950Z 2026-10-08 03:13:53,420 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:13:53.427768298Z 2026-10-08 03:13:53,427 INFO complaints.api request_id=acc-llama3.1-8b-9889 method=POST path=/tickets status=201 duration_ms=14272.88 client=172.19.0.1
+api-1  | 2026-10-08T03:13:53.427802119Z INFO:     172.19.0.1:43252 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:13:59.905975255Z 2026-10-08 03:13:59,905 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:13:59.912974851Z INFO:     172.19.0.1:58998 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:13:59.913004174Z 2026-10-08 03:13:59,912 INFO complaints.api request_id=acc-llama3.1-8b-9890 method=POST path=/tickets status=201 duration_ms=6474.71 client=172.19.0.1
+api-1  | 2026-10-08T03:14:09.834530506Z 2026-10-08 03:14:09,834 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:14:09.844585824Z 2026-10-08 03:14:09,844 INFO complaints.api request_id=acc-llama3.1-8b-9891 method=POST path=/tickets status=201 duration_ms=9913.61 client=172.19.0.1
+api-1  | 2026-10-08T03:14:09.844790236Z INFO:     172.19.0.1:38420 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:14:20.963860142Z 2026-10-08 03:14:20,963 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:14:20.973277180Z 2026-10-08 03:14:20,972 INFO complaints.api request_id=acc-llama3.1-8b-9892 method=POST path=/tickets status=201 duration_ms=11112.50 client=172.19.0.1
+api-1  | 2026-10-08T03:14:20.973294686Z INFO:     172.19.0.1:38688 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:14:42.276630959Z 2026-10-08 03:14:42,276 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:14:42.283691360Z INFO:     172.19.0.1:39094 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:14:42.283832127Z 2026-10-08 03:14:42,283 INFO complaints.api request_id=acc-llama3.1-8b-9893 method=POST path=/tickets status=201 duration_ms=21287.87 client=172.19.0.1
+api-1  | 2026-10-08T03:14:54.132190295Z 2026-10-08 03:14:54,131 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:14:54.140300393Z INFO:     172.19.0.1:46694 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:14:54.140464958Z 2026-10-08 03:14:54,139 INFO complaints.api request_id=acc-llama3.1-8b-9894 method=POST path=/tickets status=201 duration_ms=11851.00 client=172.19.0.1
+api-1  | 2026-10-08T03:15:00.304847237Z 2026-10-08 03:15:00,304 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:15:00.312679527Z INFO:     172.19.0.1:55734 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:15:00.312723332Z 2026-10-08 03:15:00,312 INFO complaints.api request_id=acc-llama3.1-8b-9895 method=POST path=/tickets status=201 duration_ms=6168.47 client=172.19.0.1
+api-1  | 2026-10-08T03:15:07.664719362Z 2026-10-08 03:15:07,664 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:15:07.670881701Z 2026-10-08 03:15:07,670 INFO complaints.api request_id=acc-llama3.1-8b-9896 method=POST path=/tickets status=201 duration_ms=7338.19 client=172.19.0.1
+api-1  | 2026-10-08T03:15:07.670920890Z INFO:     172.19.0.1:43192 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:15:21.971070081Z 2026-10-08 03:15:21,970 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:15:21.978418272Z 2026-10-08 03:15:21,978 INFO complaints.api request_id=acc-llama3.1-8b-9897 method=POST path=/tickets status=201 duration_ms=14285.17 client=172.19.0.1
+api-1  | 2026-10-08T03:15:21.978456271Z INFO:     172.19.0.1:58900 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:15:31.182868487Z 2026-10-08 03:15:31,182 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:15:31.191483320Z INFO:     172.19.0.1:54818 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:15:31.191635492Z 2026-10-08 03:15:31,190 INFO complaints.api request_id=acc-llama3.1-8b-9898 method=POST path=/tickets status=201 duration_ms=9208.45 client=172.19.0.1
+api-1  | 2026-10-08T03:15:39.003181339Z 2026-10-08 03:15:39,002 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:15:39.011162496Z 2026-10-08 03:15:39,010 INFO complaints.api request_id=acc-llama3.1-8b-9899 method=POST path=/tickets status=201 duration_ms=7805.81 client=172.19.0.1
+api-1  | 2026-10-08T03:15:39.011162165Z INFO:     172.19.0.1:39244 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:15:46.159113890Z 2026-10-08 03:15:46,158 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:15:46.166712499Z 2026-10-08 03:15:46,166 INFO complaints.api request_id=acc-llama3.1-8b-9900 method=POST path=/tickets status=201 duration_ms=7136.41 client=172.19.0.1
+api-1  | 2026-10-08T03:15:46.166748837Z INFO:     172.19.0.1:35458 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:15:54.338408587Z 2026-10-08 03:15:54,338 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:15:54.345895035Z INFO:     172.19.0.1:42848 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:15:54.345913278Z 2026-10-08 03:15:54,345 INFO complaints.api request_id=acc-llama3.1-8b-9901 method=POST path=/tickets status=201 duration_ms=8174.41 client=172.19.0.1
+api-1  | 2026-10-08T03:16:02.471458587Z 2026-10-08 03:16:02,471 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:16:02.480056423Z 2026-10-08 03:16:02,479 INFO complaints.api request_id=acc-llama3.1-8b-9902 method=POST path=/tickets status=201 duration_ms=8110.04 client=172.19.0.1
+api-1  | 2026-10-08T03:16:02.480149118Z INFO:     172.19.0.1:42968 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:16:16.170326538Z 2026-10-08 03:16:16,170 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:16:16.179517204Z 2026-10-08 03:16:16,179 INFO complaints.api request_id=acc-llama3.1-8b-9903 method=POST path=/tickets status=201 duration_ms=13676.76 client=172.19.0.1
+api-1  | 2026-10-08T03:16:16.179577221Z INFO:     172.19.0.1:42978 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:16:23.920999874Z 2026-10-08 03:16:23,920 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:16:23.928420431Z INFO:     172.19.0.1:42710 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:16:23.928437396Z 2026-10-08 03:16:23,928 INFO complaints.api request_id=acc-llama3.1-8b-9904 method=POST path=/tickets status=201 duration_ms=7743.96 client=172.19.0.1
+api-1  | 2026-10-08T03:16:38.550335741Z 2026-10-08 03:16:38,550 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:16:38.557994307Z 2026-10-08 03:16:38,557 INFO complaints.api request_id=acc-llama3.1-8b-9905 method=POST path=/tickets status=201 duration_ms=14620.40 client=172.19.0.1
+api-1  | 2026-10-08T03:16:38.558244815Z INFO:     172.19.0.1:42726 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:16:47.250297984Z 2026-10-08 03:16:47,250 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:16:47.257574576Z 2026-10-08 03:16:47,257 INFO complaints.api request_id=acc-llama3.1-8b-9906 method=POST path=/tickets status=201 duration_ms=8670.54 client=172.19.0.1
+api-1  | 2026-10-08T03:16:47.257810589Z INFO:     172.19.0.1:36892 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:16:59.601734321Z 2026-10-08 03:16:59,601 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:16:59.611873835Z INFO:     172.19.0.1:56876 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:16:59.611970838Z 2026-10-08 03:16:59,611 INFO complaints.api request_id=acc-llama3.1-8b-9907 method=POST path=/tickets status=201 duration_ms=12335.94 client=172.19.0.1
+api-1  | 2026-10-08T03:17:10.455595845Z 2026-10-08 03:17:10,455 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:17:10.463588478Z 2026-10-08 03:17:10,463 INFO complaints.api request_id=acc-llama3.1-8b-9908 method=POST path=/tickets status=201 duration_ms=10846.13 client=172.19.0.1
+api-1  | 2026-10-08T03:17:10.463624600Z INFO:     172.19.0.1:35550 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:17:25.926522414Z 2026-10-08 03:17:25,926 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:17:25.934860713Z 2026-10-08 03:17:25,934 INFO complaints.api request_id=acc-llama3.1-8b-9909 method=POST path=/tickets status=201 duration_ms=15457.92 client=172.19.0.1
+api-1  | 2026-10-08T03:17:25.934898382Z INFO:     172.19.0.1:48120 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:17:30.283318644Z 2026-10-08 03:17:30,283 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:17:30.291340413Z INFO:     172.19.0.1:53162 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:17:30.291472338Z 2026-10-08 03:17:30,290 INFO complaints.api request_id=acc-llama3.1-8b-9910 method=POST path=/tickets status=201 duration_ms=4334.12 client=172.19.0.1
+api-1  | 2026-10-08T03:18:00.522259712Z 2026-10-08 03:18:00,521 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:18:00.531747983Z 2026-10-08 03:18:00,531 INFO complaints.api request_id=acc-llama3.1-8b-9911 method=POST path=/tickets status=201 duration_ms=30217.23 client=172.19.0.1
+api-1  | 2026-10-08T03:18:00.531875556Z INFO:     172.19.0.1:53166 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:18:06.564029178Z 2026-10-08 03:18:06,563 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:18:06.570846386Z 2026-10-08 03:18:06,570 INFO complaints.api request_id=acc-llama3.1-8b-9912 method=POST path=/tickets status=201 duration_ms=6033.01 client=172.19.0.1
+api-1  | 2026-10-08T03:18:06.570887464Z INFO:     172.19.0.1:49894 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:18:22.576958221Z 2026-10-08 03:18:22,576 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:18:22.589430531Z 2026-10-08 03:18:22,588 INFO complaints.api request_id=acc-llama3.1-8b-9913 method=POST path=/tickets status=201 duration_ms=16013.56 client=172.19.0.1
+api-1  | 2026-10-08T03:18:22.589482818Z INFO:     172.19.0.1:49864 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:18:28.235818583Z 2026-10-08 03:18:28,235 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:18:28.242937925Z INFO:     172.19.0.1:45298 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:18:28.242979337Z 2026-10-08 03:18:28,242 INFO complaints.api request_id=acc-llama3.1-8b-9914 method=POST path=/tickets status=201 duration_ms=5634.60 client=172.19.0.1
+api-1  | 2026-10-08T03:18:35.935302444Z 2026-10-08 03:18:35,935 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:18:35.943656240Z 2026-10-08 03:18:35,943 INFO complaints.api request_id=acc-llama3.1-8b-9915 method=POST path=/tickets status=201 duration_ms=7673.38 client=172.19.0.1
+api-1  | 2026-10-08T03:18:35.943702173Z INFO:     172.19.0.1:43996 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:18:49.705480202Z 2026-10-08 03:18:49,705 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:18:49.713277129Z INFO:     172.19.0.1:44212 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:18:49.713300420Z 2026-10-08 03:18:49,712 INFO complaints.api request_id=acc-llama3.1-8b-9916 method=POST path=/tickets status=201 duration_ms=13743.65 client=172.19.0.1
+api-1  | 2026-10-08T03:19:05.205306908Z 2026-10-08 03:19:05,205 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:19:05.212773331Z 2026-10-08 03:19:05,212 INFO complaints.api request_id=acc-llama3.1-8b-9917 method=POST path=/tickets status=201 duration_ms=15475.69 client=172.19.0.1
+api-1  | 2026-10-08T03:19:05.212829932Z INFO:     172.19.0.1:38830 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:19:29.074267605Z 2026-10-08 03:19:29,073 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:19:29.084863815Z 2026-10-08 03:19:29,084 INFO complaints.api request_id=acc-llama3.1-8b-9918 method=POST path=/tickets status=201 duration_ms=23857.13 client=172.19.0.1
+api-1  | 2026-10-08T03:19:29.084897996Z INFO:     172.19.0.1:37374 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:19:42.004530962Z 2026-10-08 03:19:42,004 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:19:42.013826733Z INFO:     172.19.0.1:34002 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:19:42.013891993Z 2026-10-08 03:19:42,013 INFO complaints.api request_id=acc-llama3.1-8b-9919 method=POST path=/tickets status=201 duration_ms=12904.30 client=172.19.0.1
+api-1  | 2026-10-08T03:20:07.625311604Z 2026-10-08 03:20:07,625 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:20:07.632723107Z 2026-10-08 03:20:07,632 INFO complaints.api request_id=acc-llama3.1-8b-9920 method=POST path=/tickets status=201 duration_ms=25604.70 client=172.19.0.1
+api-1  | 2026-10-08T03:20:07.632810309Z INFO:     172.19.0.1:58246 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:20:27.266327608Z 2026-10-08 03:20:27,266 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:20:27.275973956Z 2026-10-08 03:20:27,275 INFO complaints.api request_id=acc-llama3.1-8b-9921 method=POST path=/tickets status=201 duration_ms=19625.97 client=172.19.0.1
+api-1  | 2026-10-08T03:20:27.276024050Z INFO:     172.19.0.1:35258 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:20:52.304054475Z 2026-10-08 03:20:52,303 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:20:52.312081425Z 2026-10-08 03:20:52,311 INFO complaints.api request_id=acc-llama3.1-8b-9922 method=POST path=/tickets status=201 duration_ms=25011.06 client=172.19.0.1
+api-1  | 2026-10-08T03:20:52.312117888Z INFO:     172.19.0.1:56218 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:21:06.167617653Z 2026-10-08 03:21:06,167 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:21:06.175546724Z 2026-10-08 03:21:06,175 INFO complaints.api request_id=acc-llama3.1-8b-9923 method=POST path=/tickets status=201 duration_ms=13848.43 client=172.19.0.1
+api-1  | 2026-10-08T03:21:06.175623263Z INFO:     172.19.0.1:53738 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:21:29.570148971Z 2026-10-08 03:21:29,569 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:21:29.580162326Z INFO:     172.19.0.1:55068 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:21:29.580206805Z 2026-10-08 03:21:29,579 INFO complaints.api request_id=acc-llama3.1-8b-9924 method=POST path=/tickets status=201 duration_ms=23393.24 client=172.19.0.1
+api-1  | 2026-10-08T03:21:38.553375964Z 2026-10-08 03:21:38,553 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:21:38.562226545Z 2026-10-08 03:21:38,561 INFO complaints.api request_id=acc-llama3.1-8b-9925 method=POST path=/tickets status=201 duration_ms=8976.57 client=172.19.0.1
+api-1  | 2026-10-08T03:21:38.562285312Z INFO:     172.19.0.1:44060 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:21:55.261268131Z 2026-10-08 03:21:55,260 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:21:55.269159318Z 2026-10-08 03:21:55,268 INFO complaints.api request_id=acc-llama3.1-8b-9926 method=POST path=/tickets status=201 duration_ms=16684.75 client=172.19.0.1
+api-1  | 2026-10-08T03:21:55.269419255Z INFO:     172.19.0.1:58780 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:22:09.752225349Z 2026-10-08 03:22:09,751 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:22:09.760347511Z INFO:     172.19.0.1:49144 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:22:09.760373262Z 2026-10-08 03:22:09,759 INFO complaints.api request_id=acc-llama3.1-8b-9927 method=POST path=/tickets status=201 duration_ms=14476.63 client=172.19.0.1
+api-1  | 2026-10-08T03:22:39.009375820Z 2026-10-08 03:22:39,009 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:22:39.018564050Z 2026-10-08 03:22:39,018 INFO complaints.api request_id=acc-llama3.1-8b-9928 method=POST path=/tickets status=201 duration_ms=29246.34 client=172.19.0.1
+api-1  | 2026-10-08T03:22:39.018609238Z INFO:     172.19.0.1:35486 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:22:57.057544478Z 2026-10-08 03:22:57,057 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:22:57.066294182Z 2026-10-08 03:22:57,066 INFO complaints.api request_id=acc-llama3.1-8b-9929 method=POST path=/tickets status=201 duration_ms=18029.97 client=172.19.0.1
+api-1  | 2026-10-08T03:22:57.066458682Z INFO:     172.19.0.1:53622 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:23:10.136754418Z 2026-10-08 03:23:10,136 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:23:10.145577366Z 2026-10-08 03:23:10,145 INFO complaints.api request_id=acc-llama3.1-8b-9930 method=POST path=/tickets status=201 duration_ms=13058.88 client=172.19.0.1
+api-1  | 2026-10-08T03:23:10.145583646Z INFO:     172.19.0.1:47880 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:23:25.212292496Z 2026-10-08 03:23:25,211 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:23:25.221186083Z 2026-10-08 03:23:25,220 INFO complaints.api request_id=acc-llama3.1-8b-9931 method=POST path=/tickets status=201 duration_ms=15067.41 client=172.19.0.1
+api-1  | 2026-10-08T03:23:25.221250899Z INFO:     172.19.0.1:39166 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:23:30.461744771Z 2026-10-08 03:23:30,461 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:23:30.468840819Z 2026-10-08 03:23:30,468 INFO complaints.api request_id=acc-llama3.1-8b-9932 method=POST path=/tickets status=201 duration_ms=5237.30 client=172.19.0.1
+api-1  | 2026-10-08T03:23:30.468891157Z INFO:     172.19.0.1:55032 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:23:41.124884103Z 2026-10-08 03:23:41,124 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:23:41.132680982Z INFO:     172.19.0.1:55038 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:23:41.132699333Z 2026-10-08 03:23:41,132 INFO complaints.api request_id=acc-llama3.1-8b-9933 method=POST path=/tickets status=201 duration_ms=10651.42 client=172.19.0.1
+api-1  | 2026-10-08T03:24:00.402804857Z 2026-10-08 03:24:00,402 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:24:00.412765631Z 2026-10-08 03:24:00,412 INFO complaints.api request_id=acc-llama3.1-8b-9934 method=POST path=/tickets status=201 duration_ms=19249.02 client=172.19.0.1
+api-1  | 2026-10-08T03:24:00.413152510Z INFO:     172.19.0.1:39846 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:24:07.969572011Z 2026-10-08 03:24:07,969 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:24:07.978439389Z 2026-10-08 03:24:07,978 INFO complaints.api request_id=acc-llama3.1-8b-9935 method=POST path=/tickets status=201 duration_ms=7559.34 client=172.19.0.1
+api-1  | 2026-10-08T03:24:07.978474618Z INFO:     172.19.0.1:58592 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:24:21.086021567Z 2026-10-08 03:24:21,085 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:24:21.094880877Z INFO:     172.19.0.1:58110 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:24:21.094921590Z 2026-10-08 03:24:21,094 INFO complaints.api request_id=acc-llama3.1-8b-9936 method=POST path=/tickets status=201 duration_ms=13103.51 client=172.19.0.1
+api-1  | 2026-10-08T03:24:37.526308023Z 2026-10-08 03:24:37,526 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:24:37.532894871Z 2026-10-08 03:24:37,532 INFO complaints.api request_id=acc-llama3.1-8b-9937 method=POST path=/tickets status=201 duration_ms=16434.19 client=172.19.0.1
+api-1  | 2026-10-08T03:24:37.532982683Z INFO:     172.19.0.1:53740 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:24:56.534298630Z 2026-10-08 03:24:56,534 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:24:56.546180108Z 2026-10-08 03:24:56,545 INFO complaints.api request_id=acc-llama3.1-8b-9938 method=POST path=/tickets status=201 duration_ms=18994.11 client=172.19.0.1
+api-1  | 2026-10-08T03:24:56.546390484Z INFO:     172.19.0.1:53744 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:25:19.820408818Z 2026-10-08 03:25:19,820 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:25:19.829161485Z 2026-10-08 03:25:19,828 INFO complaints.api request_id=acc-llama3.1-8b-9939 method=POST path=/tickets status=201 duration_ms=23258.80 client=172.19.0.1
+api-1  | 2026-10-08T03:25:19.829336935Z INFO:     172.19.0.1:47200 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:25:40.406651186Z 2026-10-08 03:25:40,406 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:25:40.416004096Z INFO:     172.19.0.1:57776 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:25:40.416069732Z 2026-10-08 03:25:40,415 INFO complaints.api request_id=acc-llama3.1-8b-9940 method=POST path=/tickets status=201 duration_ms=20567.08 client=172.19.0.1
+api-1  | 2026-10-08T03:25:56.871434108Z 2026-10-08 03:25:56,871 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:25:56.878882082Z 2026-10-08 03:25:56,878 INFO complaints.api request_id=acc-llama3.1-8b-9941 method=POST path=/tickets status=201 duration_ms=16457.84 client=172.19.0.1
+api-1  | 2026-10-08T03:25:56.878917549Z INFO:     172.19.0.1:55302 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:26:21.118417186Z 2026-10-08 03:26:21,118 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:26:21.126756887Z INFO:     172.19.0.1:40990 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:26:21.126804675Z 2026-10-08 03:26:21,126 INFO complaints.api request_id=acc-llama3.1-8b-9942 method=POST path=/tickets status=201 duration_ms=24223.73 client=172.19.0.1
+api-1  | 2026-10-08T03:26:28.391767236Z 2026-10-08 03:26:28,391 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:26:28.400639333Z 2026-10-08 03:26:28,400 INFO complaints.api request_id=acc-llama3.1-8b-9943 method=POST path=/tickets status=201 duration_ms=7270.13 client=172.19.0.1
+api-1  | 2026-10-08T03:26:28.400675596Z INFO:     172.19.0.1:44738 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:26:42.609162835Z 2026-10-08 03:26:42,608 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:26:42.617660280Z INFO:     172.19.0.1:40246 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:26:42.617715314Z 2026-10-08 03:26:42,617 INFO complaints.api request_id=acc-llama3.1-8b-9944 method=POST path=/tickets status=201 duration_ms=14211.86 client=172.19.0.1
+api-1  | 2026-10-08T03:26:57.310404726Z 2026-10-08 03:26:57,310 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:26:57.321190344Z 2026-10-08 03:26:57,320 INFO complaints.api request_id=acc-llama3.1-8b-9945 method=POST path=/tickets status=201 duration_ms=14685.09 client=172.19.0.1
+api-1  | 2026-10-08T03:26:57.321679580Z INFO:     172.19.0.1:49518 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:27:22.903234986Z 2026-10-08 03:27:22,902 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:27:22.915367813Z 2026-10-08 03:27:22,914 INFO complaints.api request_id=acc-llama3.1-8b-9946 method=POST path=/tickets status=201 duration_ms=25579.32 client=172.19.0.1
+api-1  | 2026-10-08T03:27:22.915418944Z INFO:     172.19.0.1:48060 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:27:45.213418265Z 2026-10-08 03:27:45,213 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:27:45.224068594Z 2026-10-08 03:27:45,223 INFO complaints.api request_id=acc-llama3.1-8b-9947 method=POST path=/tickets status=201 duration_ms=22301.67 client=172.19.0.1
+api-1  | 2026-10-08T03:27:45.224124180Z INFO:     172.19.0.1:60156 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:28:04.092224815Z 2026-10-08 03:28:04,091 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:28:04.100110593Z 2026-10-08 03:28:04,099 INFO complaints.api request_id=acc-llama3.1-8b-9948 method=POST path=/tickets status=201 duration_ms=18864.34 client=172.19.0.1
+api-1  | 2026-10-08T03:28:04.100215070Z INFO:     172.19.0.1:38846 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:28:13.322067551Z 2026-10-08 03:28:13,321 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:28:13.330092723Z 2026-10-08 03:28:13,329 INFO complaints.api request_id=acc-llama3.1-8b-9949 method=POST path=/tickets status=201 duration_ms=9224.05 client=172.19.0.1
+api-1  | 2026-10-08T03:28:13.330146727Z INFO:     172.19.0.1:40190 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:28:21.301501681Z 2026-10-08 03:28:21,301 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:28:21.309696895Z INFO:     172.19.0.1:32834 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:28:21.309728828Z 2026-10-08 03:28:21,309 INFO complaints.api request_id=acc-llama3.1-8b-9950 method=POST path=/tickets status=201 duration_ms=7973.46 client=172.19.0.1
+api-1  | 2026-10-08T03:28:35.298232923Z 2026-10-08 03:28:35,297 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:28:35.307780308Z INFO:     172.19.0.1:40334 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:28:35.307933351Z 2026-10-08 03:28:35,307 INFO complaints.api request_id=acc-llama3.1-8b-9951 method=POST path=/tickets status=201 duration_ms=13986.07 client=172.19.0.1
+api-1  | 2026-10-08T03:28:48.886444546Z 2026-10-08 03:28:48,886 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:28:48.894860716Z 2026-10-08 03:28:48,894 INFO complaints.api request_id=acc-llama3.1-8b-9952 method=POST path=/tickets status=201 duration_ms=13571.63 client=172.19.0.1
+api-1  | 2026-10-08T03:28:48.894901938Z INFO:     172.19.0.1:52802 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:29:13.621026827Z 2026-10-08 03:29:13,620 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:29:13.627928181Z 2026-10-08 03:29:13,627 INFO complaints.api request_id=acc-llama3.1-8b-9953 method=POST path=/tickets status=201 duration_ms=24708.58 client=172.19.0.1
+api-1  | 2026-10-08T03:29:13.627967052Z INFO:     172.19.0.1:56532 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:29:30.982241385Z 2026-10-08 03:29:30,981 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:29:30.990742764Z INFO:     172.19.0.1:48212 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:29:30.990768103Z 2026-10-08 03:29:30,990 INFO complaints.api request_id=acc-llama3.1-8b-9954 method=POST path=/tickets status=201 duration_ms=17358.14 client=172.19.0.1
+api-1  | 2026-10-08T03:30:00.241305571Z 2026-10-08 03:30:00,241 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:30:00.249396657Z INFO:     172.19.0.1:44706 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:30:00.249526771Z 2026-10-08 03:30:00,248 INFO complaints.api request_id=acc-llama3.1-8b-9955 method=POST path=/tickets status=201 duration_ms=29246.83 client=172.19.0.1
+api-1  | 2026-10-08T03:30:16.255222490Z 2026-10-08 03:30:16,254 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:30:16.266411651Z 2026-10-08 03:30:16,266 INFO complaints.api request_id=acc-llama3.1-8b-9956 method=POST path=/tickets status=201 duration_ms=15996.37 client=172.19.0.1
+api-1  | 2026-10-08T03:30:16.266497984Z INFO:     172.19.0.1:51062 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:30:22.657789127Z 2026-10-08 03:30:22,657 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:30:22.666632706Z 2026-10-08 03:30:22,666 INFO complaints.api request_id=acc-llama3.1-8b-9957 method=POST path=/tickets status=201 duration_ms=6394.63 client=172.19.0.1
+api-1  | 2026-10-08T03:30:22.666880235Z INFO:     172.19.0.1:38776 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:30:43.590237400Z 2026-10-08 03:30:43,589 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:30:43.600502240Z INFO:     172.19.0.1:38780 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:30:43.600693541Z 2026-10-08 03:30:43,599 INFO complaints.api request_id=acc-llama3.1-8b-9958 method=POST path=/tickets status=201 duration_ms=20916.09 client=172.19.0.1
+api-1  | 2026-10-08T03:31:01.368793650Z 2026-10-08 03:31:01,368 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:31:01.378124429Z 2026-10-08 03:31:01,377 INFO complaints.api request_id=acc-llama3.1-8b-9959 method=POST path=/tickets status=201 duration_ms=17772.83 client=172.19.0.1
+api-1  | 2026-10-08T03:31:01.378161476Z INFO:     172.19.0.1:43714 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:31:12.192974501Z 2026-10-08 03:31:12,192 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:31:12.201980355Z INFO:     172.19.0.1:45912 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:31:12.202023516Z 2026-10-08 03:31:12,201 INFO complaints.api request_id=acc-llama3.1-8b-9960 method=POST path=/tickets status=201 duration_ms=10815.91 client=172.19.0.1
+api-1  | 2026-10-08T03:31:20.609693001Z 2026-10-08 03:31:20,609 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:31:20.621964155Z INFO:     172.19.0.1:60706 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:31:20.621996180Z 2026-10-08 03:31:20,621 INFO complaints.api request_id=acc-llama3.1-8b-9961 method=POST path=/tickets status=201 duration_ms=8400.73 client=172.19.0.1
+api-1  | 2026-10-08T03:31:44.852493451Z 2026-10-08 03:31:44,852 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:31:44.861228898Z INFO:     172.19.0.1:34822 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:31:44.861252322Z 2026-10-08 03:31:44,860 INFO complaints.api request_id=acc-llama3.1-8b-9962 method=POST path=/tickets status=201 duration_ms=24225.72 client=172.19.0.1
+api-1  | 2026-10-08T03:32:03.203065574Z 2026-10-08 03:32:03,202 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:32:03.211857245Z 2026-10-08 03:32:03,211 INFO complaints.api request_id=acc-llama3.1-8b-9963 method=POST path=/tickets status=201 duration_ms=18325.62 client=172.19.0.1
+api-1  | 2026-10-08T03:32:03.211932139Z INFO:     172.19.0.1:45156 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:32:12.950115964Z 2026-10-08 03:32:12,949 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:32:12.960432607Z INFO:     172.19.0.1:47832 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:32:12.960544815Z 2026-10-08 03:32:12,959 INFO complaints.api request_id=acc-llama3.1-8b-9964 method=POST path=/tickets status=201 duration_ms=9722.15 client=172.19.0.1
+api-1  | 2026-10-08T03:32:32.157712702Z 2026-10-08 03:32:32,157 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:32:32.166024917Z 2026-10-08 03:32:32,165 INFO complaints.api request_id=acc-llama3.1-8b-9965 method=POST path=/tickets status=201 duration_ms=19196.68 client=172.19.0.1
+api-1  | 2026-10-08T03:32:32.166076498Z INFO:     172.19.0.1:37982 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:32:40.735850712Z 2026-10-08 03:32:40,735 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:32:40.744190732Z 2026-10-08 03:32:40,743 INFO complaints.api request_id=acc-llama3.1-8b-9966 method=POST path=/tickets status=201 duration_ms=8556.45 client=172.19.0.1
+api-1  | 2026-10-08T03:32:40.744343257Z INFO:     172.19.0.1:58364 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:32:56.500197482Z 2026-10-08 03:32:56,499 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:32:56.508619290Z 2026-10-08 03:32:56,508 INFO complaints.api request_id=acc-llama3.1-8b-9967 method=POST path=/tickets status=201 duration_ms=15751.40 client=172.19.0.1
+api-1  | 2026-10-08T03:32:56.508669236Z INFO:     172.19.0.1:37914 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:33:16.564604530Z 2026-10-08 03:33:16,564 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:33:16.574278813Z 2026-10-08 03:33:16,573 INFO complaints.api request_id=acc-llama3.1-8b-9968 method=POST path=/tickets status=201 duration_ms=20036.69 client=172.19.0.1
+api-1  | 2026-10-08T03:33:16.574658182Z INFO:     172.19.0.1:46504 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:33:33.413644078Z 2026-10-08 03:33:33,413 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:33:33.423429001Z INFO:     172.19.0.1:46160 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:33:33.423445790Z 2026-10-08 03:33:33,423 INFO complaints.api request_id=acc-llama3.1-8b-9969 method=POST path=/tickets status=201 duration_ms=16835.83 client=172.19.0.1
+api-1  | 2026-10-08T03:33:43.502887584Z 2026-10-08 03:33:43,502 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:33:43.512070666Z INFO:     172.19.0.1:37356 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:33:43.512103884Z 2026-10-08 03:33:43,511 INFO complaints.api request_id=acc-llama3.1-8b-9970 method=POST path=/tickets status=201 duration_ms=10074.29 client=172.19.0.1
+api-1  | 2026-10-08T03:34:01.111156404Z 2026-10-08 03:34:01,110 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:34:01.120903490Z INFO:     172.19.0.1:53742 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:34:01.121004527Z 2026-10-08 03:34:01,120 INFO complaints.api request_id=acc-llama3.1-8b-9971 method=POST path=/tickets status=201 duration_ms=17586.89 client=172.19.0.1
+api-1  | 2026-10-08T03:34:07.534520639Z 2026-10-08 03:34:07,534 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:34:07.542709867Z INFO:     172.19.0.1:35898 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:34:07.542741837Z 2026-10-08 03:34:07,542 INFO complaints.api request_id=acc-llama3.1-8b-9972 method=POST path=/tickets status=201 duration_ms=6406.00 client=172.19.0.1
+api-1  | 2026-10-08T03:34:20.513567888Z 2026-10-08 03:34:20,513 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:34:20.524153875Z 2026-10-08 03:34:20,523 INFO complaints.api request_id=acc-llama3.1-8b-9973 method=POST path=/tickets status=201 duration_ms=12957.12 client=172.19.0.1
+api-1  | 2026-10-08T03:34:20.524354237Z INFO:     172.19.0.1:57006 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:34:41.509283996Z 2026-10-08 03:34:41,508 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:34:41.517690608Z 2026-10-08 03:34:41,517 INFO complaints.api request_id=acc-llama3.1-8b-9974 method=POST path=/tickets status=201 duration_ms=20981.75 client=172.19.0.1
+api-1  | 2026-10-08T03:34:41.517726043Z INFO:     172.19.0.1:54486 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:34:59.044556792Z 2026-10-08 03:34:59,044 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:34:59.051978262Z INFO:     172.19.0.1:41476 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:34:59.052079399Z 2026-10-08 03:34:59,051 INFO complaints.api request_id=acc-llama3.1-8b-9975 method=POST path=/tickets status=201 duration_ms=17516.36 client=172.19.0.1
+api-1  | 2026-10-08T03:35:13.754853821Z 2026-10-08 03:35:13,754 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:35:13.763812602Z 2026-10-08 03:35:13,763 INFO complaints.api request_id=acc-llama3.1-8b-9976 method=POST path=/tickets status=201 duration_ms=14693.83 client=172.19.0.1
+api-1  | 2026-10-08T03:35:13.763875538Z INFO:     172.19.0.1:55418 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:35:21.012460981Z 2026-10-08 03:35:21,012 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:35:21.021105720Z 2026-10-08 03:35:21,020 INFO complaints.api request_id=acc-llama3.1-8b-9977 method=POST path=/tickets status=201 duration_ms=7236.28 client=172.19.0.1
+api-1  | 2026-10-08T03:35:21.021206887Z INFO:     172.19.0.1:46208 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:35:39.452971709Z 2026-10-08 03:35:39,452 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:35:39.461718271Z 2026-10-08 03:35:39,461 INFO complaints.api request_id=acc-llama3.1-8b-9978 method=POST path=/tickets status=201 duration_ms=18436.61 client=172.19.0.1
+api-1  | 2026-10-08T03:35:39.461827145Z INFO:     172.19.0.1:36672 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:35:56.856696426Z 2026-10-08 03:35:56,856 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:35:56.864876948Z 2026-10-08 03:35:56,864 INFO complaints.api request_id=acc-llama3.1-8b-9979 method=POST path=/tickets status=201 duration_ms=17379.24 client=172.19.0.1
+api-1  | 2026-10-08T03:35:56.864914586Z INFO:     172.19.0.1:36068 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:36:25.247624134Z 2026-10-08 03:36:25,247 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:36:25.257896275Z 2026-10-08 03:36:25,257 INFO complaints.api request_id=acc-llama3.1-8b-9980 method=POST path=/tickets status=201 duration_ms=28371.58 client=172.19.0.1
+api-1  | 2026-10-08T03:36:25.257947248Z INFO:     172.19.0.1:44542 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:36:35.160466601Z 2026-10-08 03:36:35,160 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:36:35.169554382Z 2026-10-08 03:36:35,169 INFO complaints.api request_id=acc-llama3.1-8b-9981 method=POST path=/tickets status=201 duration_ms=9899.42 client=172.19.0.1
+api-1  | 2026-10-08T03:36:35.169683802Z INFO:     172.19.0.1:60264 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:37:01.102139677Z 2026-10-08 03:37:01,101 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:37:01.109956268Z 2026-10-08 03:37:01,109 INFO complaints.api request_id=acc-llama3.1-8b-9982 method=POST path=/tickets status=201 duration_ms=25936.26 client=172.19.0.1
+api-1  | 2026-10-08T03:37:01.110101610Z INFO:     172.19.0.1:57114 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:37:10.109572612Z 2026-10-08 03:37:10,109 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:37:10.116985331Z INFO:     172.19.0.1:43194 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:37:10.117017669Z 2026-10-08 03:37:10,116 INFO complaints.api request_id=acc-llama3.1-8b-9983 method=POST path=/tickets status=201 duration_ms=9001.99 client=172.19.0.1
+api-1  | 2026-10-08T03:37:23.255331203Z 2026-10-08 03:37:23,255 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:37:23.263901959Z INFO:     172.19.0.1:37272 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:37:23.264068466Z 2026-10-08 03:37:23,263 INFO complaints.api request_id=acc-llama3.1-8b-9984 method=POST path=/tickets status=201 duration_ms=13141.30 client=172.19.0.1
+api-1  | 2026-10-08T03:37:34.885762622Z 2026-10-08 03:37:34,885 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:37:34.896066372Z INFO:     172.19.0.1:48980 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:37:34.896114711Z 2026-10-08 03:37:34,895 INFO complaints.api request_id=acc-llama3.1-8b-9985 method=POST path=/tickets status=201 duration_ms=11621.24 client=172.19.0.1
+api-1  | 2026-10-08T03:37:47.509871706Z 2026-10-08 03:37:47,509 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:37:47.519585775Z INFO:     172.19.0.1:36902 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:37:47.519645958Z 2026-10-08 03:37:47,519 INFO complaints.api request_id=acc-llama3.1-8b-9986 method=POST path=/tickets status=201 duration_ms=12617.83 client=172.19.0.1
+api-1  | 2026-10-08T03:38:05.236535455Z 2026-10-08 03:38:05,235 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:38:05.244243200Z 2026-10-08 03:38:05,244 INFO complaints.api request_id=acc-llama3.1-8b-9987 method=POST path=/tickets status=201 duration_ms=17708.23 client=172.19.0.1
+api-1  | 2026-10-08T03:38:05.244284529Z INFO:     172.19.0.1:32978 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:38:11.549042467Z 2026-10-08 03:38:11,548 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:38:11.558613721Z 2026-10-08 03:38:11,558 INFO complaints.api request_id=acc-llama3.1-8b-9988 method=POST path=/tickets status=201 duration_ms=6309.03 client=172.19.0.1
+api-1  | 2026-10-08T03:38:11.559025371Z INFO:     172.19.0.1:33650 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:38:19.396194222Z 2026-10-08 03:38:19,395 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:38:19.404344280Z 2026-10-08 03:38:19,404 INFO complaints.api request_id=acc-llama3.1-8b-9989 method=POST path=/tickets status=201 duration_ms=7833.51 client=172.19.0.1
+api-1  | 2026-10-08T03:38:19.404447182Z INFO:     172.19.0.1:33666 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:38:35.415826847Z 2026-10-08 03:38:35,415 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:38:35.425648384Z 2026-10-08 03:38:35,425 INFO complaints.api request_id=acc-llama3.1-8b-9990 method=POST path=/tickets status=201 duration_ms=16006.13 client=172.19.0.1
+api-1  | 2026-10-08T03:38:35.425644510Z INFO:     172.19.0.1:37826 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:38:39.956178384Z 2026-10-08 03:38:39,955 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:38:39.963079037Z INFO:     172.19.0.1:47966 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:38:39.963190567Z 2026-10-08 03:38:39,962 INFO complaints.api request_id=acc-llama3.1-8b-9991 method=POST path=/tickets status=201 duration_ms=4526.04 client=172.19.0.1
+api-1  | 2026-10-08T03:38:45.625719229Z 2026-10-08 03:38:45,625 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:38:45.634104969Z 2026-10-08 03:38:45,633 INFO complaints.api request_id=acc-llama3.1-8b-9992 method=POST path=/tickets status=201 duration_ms=5647.30 client=172.19.0.1
+api-1  | 2026-10-08T03:38:45.634089801Z INFO:     172.19.0.1:47982 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:39:03.474675885Z 2026-10-08 03:39:03,474 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:39:03.484513885Z 2026-10-08 03:39:03,483 INFO complaints.api request_id=acc-llama3.1-8b-9993 method=POST path=/tickets status=201 duration_ms=17831.31 client=172.19.0.1
+api-1  | 2026-10-08T03:39:03.484515002Z INFO:     172.19.0.1:36250 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:39:14.307060788Z 2026-10-08 03:39:14,306 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:39:14.314901336Z INFO:     172.19.0.1:51090 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:39:14.314968534Z 2026-10-08 03:39:14,314 INFO complaints.api request_id=acc-llama3.1-8b-9994 method=POST path=/tickets status=201 duration_ms=10823.54 client=172.19.0.1
+api-1  | 2026-10-08T03:39:27.534813275Z 2026-10-08 03:39:27,534 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:39:27.542999071Z INFO:     172.19.0.1:59522 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:39:27.543049003Z 2026-10-08 03:39:27,542 INFO complaints.api request_id=acc-llama3.1-8b-9995 method=POST path=/tickets status=201 duration_ms=13224.56 client=172.19.0.1
+api-1  | 2026-10-08T03:39:37.390994802Z 2026-10-08 03:39:37,390 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:39:37.401040707Z 2026-10-08 03:39:37,400 INFO complaints.api request_id=acc-llama3.1-8b-9996 method=POST path=/tickets status=201 duration_ms=9831.00 client=172.19.0.1
+api-1  | 2026-10-08T03:39:37.401076026Z INFO:     172.19.0.1:52652 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:39:45.275296397Z 2026-10-08 03:39:45,274 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:39:45.285487121Z 2026-10-08 03:39:45,285 INFO complaints.api request_id=acc-llama3.1-8b-9997 method=POST path=/tickets status=201 duration_ms=7877.83 client=172.19.0.1
+api-1  | 2026-10-08T03:39:45.285641921Z INFO:     172.19.0.1:45032 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:39:59.302507952Z 2026-10-08 03:39:59,302 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:39:59.310684998Z 2026-10-08 03:39:59,310 INFO complaints.api request_id=acc-llama3.1-8b-9998 method=POST path=/tickets status=201 duration_ms=14007.79 client=172.19.0.1
+api-1  | 2026-10-08T03:39:59.310783233Z INFO:     172.19.0.1:38252 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:40:11.984018131Z 2026-10-08 03:40:11,983 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-10-08T03:40:11.992106730Z INFO:     172.19.0.1:40658 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-10-08T03:40:11.992143323Z 2026-10-08 03:40:11,991 INFO complaints.api request_id=acc-llama3.1-8b-9999 method=POST path=/tickets status=201 duration_ms=12656.98 client=172.19.0.1
