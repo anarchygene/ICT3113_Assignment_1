@@ -1,0 +1,17 @@
+﻿{
+    "finished_local":  "2026-10-08T10:59:10.1513948+08:00",
+    "post_per_hour_start":  60,
+    "started_local":  "2026-10-08T10:15:08.3666237+08:00",
+    "level":  "stress_60-1200ph_40min",
+    "measure_min":  40,
+    "run":  1,
+    "drain_min":  1,
+    "search_per_hour":  316,
+    "model_label":  "qwen3-4b",
+    "loadgen_host":  "ITEMERROR-MSI-W",
+    "ramp_min":  40,
+    "warmup_min":  2,
+    "post_per_hour_end":  1200,
+    "port":  8000,
+    "service_host":  "192.168.1.106"
+}
