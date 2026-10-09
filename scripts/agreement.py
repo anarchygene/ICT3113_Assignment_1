@@ -48,8 +48,24 @@ def main() -> int:
     ]
     lines += [f"  {r[0]}: {x} / {y} -> {f}" for r, x, y, f in zip(rows, a, b, final) if x != y]
     po2, _, k2 = kappa(source, final)
+    n = len(rows)
+    first_changed = sum(s != x for s, x in zip(source, a))
+    final_changed = sum(s != f for s, f in zip(source, final))
     lines += ["", f"Raw consumer label vs final golden label: po = {po2:.4f}, kappa = {k2:.3f} "
-                  f"({sum(s != f for s, f in zip(source, final))} of {len(rows)} relabelled)"]
+                  f"({final_changed} of {n} relabelled)"]
+    lines += [
+        "",
+        "Relabelling by stage (consumer label = source):",
+        f"  First check (labeller A) changed {first_changed} of {n} ({100 * first_changed / n:.2f}%); "
+        f"{n - first_changed} ({100 * (n - first_changed) / n:.2f}%) kept",
+        f"  Final golden label differs from source on {final_changed} of {n} ({100 * final_changed / n:.2f}%)",
+        f"  Resolution reverted {sum(s != x and s == f for s, x, f in zip(source, a, final))} first-check changes "
+        f"and added {sum(s == x and s != f for s, x, f in zip(source, a, final))} new ones",
+        "",
+        f"  {'Label':<27}{'Source':>7}{'First check':>13}{'Final':>7}",
+    ]
+    cs, ca, cf = Counter(source), Counter(a), Counter(final)
+    lines += [f"  {c:<27}{cs[c]:>7}{ca[c]:>13}{cf[c]:>7}" for c in CATEGORIES]
     out = Path("evidence/step1/agreement.txt")
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text("\n".join(lines) + "\n", encoding="utf-8")

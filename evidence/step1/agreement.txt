@@ -20,3 +20,17 @@ Disagreements (row: labeller A / reviewer B -> final):
   9978: Mortgage / Consumer loan -> Mortgage
 
 Raw consumer label vs final golden label: po = 0.7875, kappa = 0.751 (34 of 160 relabelled)
+
+Relabelling by stage (consumer label = source):
+  First check (labeller A) changed 33 of 160 (20.62%); 127 (79.38%) kept
+  Final golden label differs from source on 34 of 160 (21.25%)
+  Resolution reverted 2 first-check changes and added 3 new ones
+
+  Label                       Source  First check  Final
+  Credit reporting                18           32     33
+  Debt collection                 30           23     24
+  Mortgage                        22           18     18
+  Credit card                     20           11     11
+  Bank account or service         27           35     30
+  Consumer loan                   18           17     16
+  Money transfer or service       25           24     28
