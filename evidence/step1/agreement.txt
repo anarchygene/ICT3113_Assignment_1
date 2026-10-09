@@ -1,9 +1,28 @@
-Tickets: 160
-Labeller vs reviewer: 146 agree, 14 disagree
-Observed agreement po = 0.9125; chance agreement pe = 0.1599; Cohen's kappa = 0.896
-Caveat: the reviewer saw the first label (review design, not blind double-labelling), which tends to inflate kappa.
+Golden set: 160 tickets, rows 9840-9999 (the last 160 of the team's rows)
+Source: "ICT3113 Golden Set P1-9.xlsx", sheet "Final Golden Set"
+Original = the label the consumer selected in the dataset (source_label).
 
-Disagreements (row: labeller A / reviewer B -> final):
+Relabelling against the original label
+  First check changed 33 (20.62%); 127 (79.38%) kept the original
+  Final golden label differs from the original on 34 (21.25%)
+  Resolving disagreements reverted 2 first-check changes and added 3 new ones
+
+Inter-annotator agreement (first check vs review)
+  146 agree (91.25%), 14 disagree (8.75%)
+  Observed agreement po = 0.9125; chance agreement pe = 0.1599; Cohen's kappa = 0.896
+  Caveat: the reviewer saw the first label (review design, not blind double-labelling), which tends to inflate kappa.
+
+Label counts
+  Label                       Original  First check  Final
+  Credit card                       20           11     11
+  Credit reporting                  18           32     33
+  Mortgage                          22           18     18
+  Consumer loan                     18           17     16
+  Debt collection                   30           23     24
+  Bank account or service           27           35     30
+  Money transfer or service         25           24     28
+
+Disagreements and resolutions (row: first check / review -> final):
   9861: Money transfer or service / Bank account or service -> Money transfer or service
   9866: Bank account or service / Money transfer or service -> Money transfer or service
   9880: Bank account or service / Money transfer or service -> Money transfer or service
@@ -19,18 +38,4 @@ Disagreements (row: labeller A / reviewer B -> final):
   9977: Credit reporting / Bank account or service -> Credit reporting
   9978: Mortgage / Consumer loan -> Mortgage
 
-Raw consumer label vs final golden label: po = 0.7875, kappa = 0.751 (34 of 160 relabelled)
-
-Relabelling by stage (consumer label = source):
-  First check (labeller A) changed 33 of 160 (20.62%); 127 (79.38%) kept
-  Final golden label differs from source on 34 of 160 (21.25%)
-  Resolution reverted 2 first-check changes and added 3 new ones
-
-  Label                       Source  First check  Final
-  Credit reporting                18           32     33
-  Debt collection                 30           23     24
-  Mortgage                        22           18     18
-  Credit card                     20           11     11
-  Bank account or service         27           35     30
-  Consumer loan                   18           17     16
-  Money transfer or service       25           24     28
+Original label vs final golden label: po = 0.7875, kappa = 0.751
