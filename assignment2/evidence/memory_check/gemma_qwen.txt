@@ -1,0 +1,18 @@
+# Pair gemma_qwen: A=gemma3:1b-it-q4_K_M  B=qwen3:4b-instruct-2507-q4_K_M   (2026-11-18T15:09:49Z)
+# Docker VM: cpus=8 mem=8086839296
+{"call": 1, "model": "gemma3:1b-it-q4_K_M", "wall_s": 8.9, "load_s": 2.23, "answer": "{\"category\": \"Debit Card\"}", "loaded": [{"name": "gemma3:1b-it-q4_K_M", "size_gb": 1.21, "ctx": 4096}]}
+{"call": 2, "model": "gemma3:1b-it-q4_K_M", "wall_s": 1.98, "load_s": 0.2, "answer": "{ \"category\": \"Debt collection\"}", "loaded": [{"name": "gemma3:1b-it-q4_K_M", "size_gb": 1.21, "ctx": 4096}]}
+{"call": 3, "model": "qwen3:4b-instruct-2507-q4_K_M", "wall_s": 12.51, "load_s": 6.4, "answer": "{\"category\": \"Mortgage\"}", "loaded": [{"name": "qwen3:4b-instruct-2507-q4_K_M", "size_gb": 3.71, "ctx": 4096}, {"name": "gemma3:1b-it-q4_K_M", "size_gb": 1.21, "ctx": 4096}]}
+{"call": 4, "model": "qwen3:4b-instruct-2507-q4_K_M", "wall_s": 2.83, "load_s": 0.25, "answer": "{\"category\": \"Bank account or service\"}", "loaded": [{"name": "qwen3:4b-instruct-2507-q4_K_M", "size_gb": 3.71, "ctx": 4096}, {"name": "gemma3:1b-it-q4_K_M", "size_gb": 1.21, "ctx": 4096}]}
+{"call": 5, "model": "gemma3:1b-it-q4_K_M", "wall_s": 3.36, "load_s": 0.46, "answer": "{ \"category\": \"Credit reporting\"}", "loaded": [{"name": "gemma3:1b-it-q4_K_M", "size_gb": 1.21, "ctx": 4096}, {"name": "qwen3:4b-instruct-2507-q4_K_M", "size_gb": 3.71, "ctx": 4096}]}
+{"call": 6, "model": "qwen3:4b-instruct-2507-q4_K_M", "wall_s": 7.84, "load_s": 0.1, "answer": "{\"category\": \"credit card\"}", "loaded": [{"name": "qwen3:4b-instruct-2507-q4_K_M", "size_gb": 3.71, "ctx": 4096}, {"name": "gemma3:1b-it-q4_K_M", "size_gb": 1.21, "ctx": 4096}]}
+{"call": 7, "model": "gemma3:1b-it-q4_K_M", "wall_s": 1.76, "load_s": 0.33, "answer": "{\"category\": \"Credit reporting\"}", "loaded": [{"name": "gemma3:1b-it-q4_K_M", "size_gb": 1.21, "ctx": 4096}, {"name": "qwen3:4b-instruct-2507-q4_K_M", "size_gb": 3.71, "ctx": 4096}]}
+{"call": 8, "model": "qwen3:4b-instruct-2507-q4_K_M", "wall_s": 2.09, "load_s": 0.08, "answer": "{\"category\": \"Bank account or service\"}", "loaded": [{"name": "qwen3:4b-instruct-2507-q4_K_M", "size_gb": 3.71, "ctx": 4096}, {"name": "gemma3:1b-it-q4_K_M", "size_gb": 1.21, "ctx": 4096}]}
+# ollama ps after the sequence:
+NAME                             ID              SIZE      PROCESSOR    CONTEXT    UNTIL              
+qwen3:4b-instruct-2507-q4_K_M    0edcdef34593    3.7 GB    100% CPU     4096       4 minutes from now    
+gemma3:1b-it-q4_K_M              8648f39daa8f    1.2 GB    100% CPU     4096       4 minutes from now    
+# container memory:
+ict3113_assignment_1-api-1 17.3MiB / 7.531GiB
+ict3113_assignment_1-db-1 21.26MiB / 7.531GiB
+ict3113_assignment_1-ollama-1 5.18GiB / 7.531GiB
