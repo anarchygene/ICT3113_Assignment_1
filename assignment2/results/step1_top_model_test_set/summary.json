@@ -1,0 +1,56 @@
+{
+  "label": "a2-test-llama3.1-8b",
+  "model": "llama3.1:8b-instruct-q4_K_M",
+  "base_url": "http://localhost:8000",
+  "started_utc": "2026-11-18T14:02:59.011260+00:00",
+  "finished_utc": "2026-11-18T14:43:15.211570+00:00",
+  "n": 80,
+  "correct": 61,
+  "overall_accuracy_pct": 76.2,
+  "output_conformance_pct": 100.0,
+  "per_category": {
+    "Credit reporting": {
+      "n": 19,
+      "correct": 14,
+      "accuracy_pct": 73.7
+    },
+    "Debt collection": {
+      "n": 11,
+      "correct": 7,
+      "accuracy_pct": 63.6
+    },
+    "Mortgage": {
+      "n": 7,
+      "correct": 5,
+      "accuracy_pct": 71.4
+    },
+    "Credit card": {
+      "n": 6,
+      "correct": 6,
+      "accuracy_pct": 100.0
+    },
+    "Bank account or service": {
+      "n": 14,
+      "correct": 10,
+      "accuracy_pct": 71.4
+    },
+    "Consumer loan": {
+      "n": 8,
+      "correct": 5,
+      "accuracy_pct": 62.5
+    },
+    "Money transfer or service": {
+      "n": 15,
+      "correct": 14,
+      "accuracy_pct": 93.3
+    }
+  },
+  "single_request_latency_ms": {
+    "n": 80,
+    "mean": 30198.9,
+    "p50": 25165.1,
+    "p95": 67340.4,
+    "p99": 108354.7,
+    "max": 108354.7
+  }
+}

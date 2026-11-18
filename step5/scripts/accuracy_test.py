@@ -69,14 +69,16 @@ def main() -> int:
     ap.add_argument("--label", required=True, help="short model label, e.g. qwen3-4b")
     ap.add_argument("--model", required=True, help="exact Ollama tag the service must report")
     ap.add_argument("--base-url", default="http://localhost:8000")
+    ap.add_argument("--golden", default=str(GOLDEN), help="CSV with row,label,narrative (default: full golden set)")
+    ap.add_argument("--out", default=None, help="output folder (default: step5/results/<label>/accuracy)")
     args = ap.parse_args()
 
-    out = ROOT / "step5" / "results" / args.label / "accuracy"
+    out = Path(args.out) if args.out else ROOT / "step5" / "results" / args.label / "accuracy"
     if (out / "predictions.csv").exists():
         raise SystemExit(f"{out} already has results; move them aside to re-run.")
     out.mkdir(parents=True, exist_ok=True)
 
-    with GOLDEN.open(encoding="utf-8", newline="") as f:
+    with Path(args.golden).open(encoding="utf-8", newline="") as f:
         golden = list(csv.DictReader(f))
 
     started_utc = datetime.now(timezone.utc).isoformat()
@@ -148,7 +150,7 @@ def main() -> int:
     lines = [
         f"# Accuracy: {args.model}",
         "",
-        f"Overall: **{correct}/{n} = {summary['overall_accuracy_pct']}%** (R5 needs >= 136/160)  ",
+        f"Overall: **{correct}/{n} = {summary['overall_accuracy_pct']}%**  ",
         f"Output conformance: {conforming}/{n} = {summary['output_conformance_pct']}% (R7 needs >= 99.0%)  ",
         "Sequential single-request latency (ms): "
         + ", ".join(f"{k} {v}" for k, v in summary["single_request_latency_ms"].items()),

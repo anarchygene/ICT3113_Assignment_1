@@ -2,8 +2,16 @@
 
 Source: Assignment 1 Llama prediction records, even dataset rows only.
 
-**Reuse verification: pending confirmation from the Lenovo owner.**
-Confirm unchanged model digest, prompt, Ollama version and machine.
+**Reuse verified on the Lenovo service PC (18 Nov 2026).** Model ID `46e0c10c039e` unchanged
+(`ollama list`); no change to `app/`, `compose.yaml`, `Dockerfile` or `requirements.txt` since the
+Assignment 1 freeze commit `3567f80` (prompt and request options identical); Ollama 0.12.3; same
+machine with the same Docker limits (8 CPUs, 7.53 GiB).
+
+**Re-run check.** Llama was also re-run on all 80 test tickets through `POST /tickets`
+(`assignment2/results/step1_top_model_test_set/`). It returned 61/80 with **the same answer as
+Assignment 1 on every one of the 80 tickets**, so the limits below are reproduced, not only reused.
+The narratives were taken from `assignment2/data/test_set.csv` (the frozen Assignment 1 text);
+the Excel sheet has collapsed double spaces in 26 narratives, so it is not used as model input.
 
 | Category | Correct | Wrong | Accuracy | Minimum accuracy | Minimum correct |
 |---|---:|---:|---:|---:|---:|
