@@ -22,9 +22,10 @@ class OllamaClassifier:
     def __init__(self, settings: Settings):
         self.settings = settings
 
-    async def classify(self, narrative: str) -> Category:
+    async def classify(self, narrative: str, model: str | None = None) -> Category:
+        # The request is the Assignment 1 request; only the model name can vary (A2 cascade).
         payload = {
-            "model": self.settings.ollama_model,
+            "model": model or self.settings.ollama_model,
             "stream": False,
             "format": "json",
             "options": {"temperature": 0, "num_ctx": 4096},

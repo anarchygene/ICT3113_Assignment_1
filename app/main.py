@@ -7,6 +7,7 @@ from fastapi import Depends, FastAPI, HTTPException, Query, Request
 from sqlalchemy import func, select
 from sqlalchemy.orm import Session
 
+from app.cascade import Triage
 from app.categories import CATEGORY_VALUES, Category
 from app.classifier import ClassificationError, OllamaClassifier
 from app.config import get_settings
@@ -21,6 +22,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger("complaints.api")
 classifier = OllamaClassifier(settings)
+triage = Triage(settings, classifier)
 
 
 @asynccontextmanager
@@ -35,6 +37,7 @@ app = FastAPI(title="Complaint Classification Baseline", version="1.0.0", lifesp
 @app.middleware("http")
 async def request_logger(request: Request, call_next):
     request_id = request.headers.get("X-Request-ID", str(uuid.uuid4()))
+    request.state.request_id = request_id
     started = time.perf_counter()
     status_code = 500
     try:
@@ -61,20 +64,22 @@ def health() -> dict[str, str]:
 
 
 @app.post("/tickets", response_model=TicketResponse, status_code=201)
-async def create_ticket(payload: TicketCreate, db: Session = Depends(get_db)) -> Ticket:
+async def create_ticket(payload: TicketCreate, request: Request, db: Session = Depends(get_db)) -> Ticket:
     narrative = payload.narrative.strip()
     if not narrative:
         raise HTTPException(status_code=422, detail="Narrative must not be blank")
+    request_id = getattr(request.state, "request_id", "unknown")
     try:
-        category = await classifier.classify(narrative)
+        # Single model (Assignment 1) or cascade (Assignment 2); triage logs one line per ticket.
+        category = await triage.classify(narrative, request_id)
     except ClassificationError as exc:
-        logger.exception("classification_failed model=%s", settings.ollama_model)
         raise HTTPException(status_code=502, detail=str(exc)) from exc
 
     ticket = Ticket(
         narrative=narrative,
         category=category.value,
-        model=settings.ollama_model,
+        # Fixed per configuration, so a caller cannot tell which cascade model answered.
+        model=triage.model_label,
     )
     db.add(ticket)
     db.commit()
