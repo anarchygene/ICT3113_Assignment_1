@@ -1,0 +1,2 @@
+NCPU=22 MemTotal=16562675712 Server=29.5.2
+Intel(R) Core(TM) Ultra 7 155H
