@@ -28,6 +28,10 @@ services:
 
   ollama:
     image: ollama/ollama:0.12.3
+    environment:
+      # Assignment 2: keep idle models loaded for 30 min (default 5 min), held constant for every
+      # configuration, so both cascade models stay resident during a run (assignment2/STEP2.md §1, §8).
+      OLLAMA_KEEP_ALIVE: 30m
     volumes:
       - ollama_data:/root/.ollama
     healthcheck:

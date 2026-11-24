@@ -14,7 +14,7 @@ Due **Fri 27 Nov, 23:59**. Brief references are to *ICT3113 Assignment 2*, Steps
   The Excel sheets collapsed double spaces in 26 narratives.
 - **Nothing about the machine or Ollama changes between configurations.** That means:
   - same Lenovo, Docker at 8 CPUs / 7.53 GiB, Ollama 0.12.3, same model IDs;
-  - `OLLAMA_NUM_PARALLEL=1`, context 4096, same keep-alive;
+  - `OLLAMA_NUM_PARALLEL=1`, context 4096, `OLLAMA_KEEP_ALIVE=30m` (set in `compose.yaml`; the one change from A1);
   - plugged in, same power plan (Balanced in A1), same network as A1, no other heavy apps, Windows updates paused.
   
   If anything does change, write it down and re-run the configurations it affects.
@@ -30,22 +30,19 @@ Due **Fri 27 Nov, 23:59**. Brief references are to *ICT3113 Assignment 2*, Steps
 
 ## 1. Ye Kai: close the rule (before the freeze)
 
-- [ ] Confirm setting B in `STEP2.md` §4b: Credit card + Credit reporting (recommended), or Credit card + Consumer loan.
-      Whichever you pick, `PREDICTIONS.md` must match.
-- [ ] Add the brief's "slip-through" check to `STEP2.md` §4b: how often a wrong Qwen answer is accepted because Qwen
-      predicted a category that isn't escalated. Tuning-set figures:
-      - **A:** 14 of 63 accepted answers are wrong (49/63 right).
-      - **B, with Credit card + Credit reporting:** 13 of 55 are wrong (42/55 right).
+- [ ] Confirm setting B = Credit card + Credit reporting (`STEP2.md` §4b). `STEP2.md` and `PREDICTIONS.md` already use it.
+      If you disagree, say so before the freeze: both files would need changing.
+- [ ] Read `STEP2.md` as a reviewer: is the rule clear enough for another team to implement from it?
+      (The slip-through check is already in §4b.)
 - [ ] Once the freeze is in, start slide 2: a diagram of the cascade, the rule in full, the two settings, and why this
       rule. Everything is in `STEP2.md`; the slide must not say anything the file doesn't.
 
 ## 2. Youxiong: predictions, workload list, speed analysis
 
 Before the freeze:
-- [ ] `PREDICTIONS.md` lists **two** cascade settings (A and B), not three, matching `STEP2.md`.
-- [ ] Load predictions are restated at the **Assignment 2 test rate** (one ticket every 2×S seconds), not A1's
-      105 tickets/h. S isn't measured yet, so predict it, or predict relative to Llama alone.
-- [ ] The required prediction points are specific enough to be shown wrong:
+- [ ] Review Eugene's revision of `PREDICTIONS.md` (24 Nov): two cascade settings, B = Credit card + Credit reporting,
+      load predictions at the A2 rate with S ≈ 13 s. Change any number you disagree with **before** the freeze.
+- [ ] Check the required prediction points are specific enough to be shown wrong:
       - the fastest configuration that passes;
       - for each cascade setting, escalation fraction, accuracy and median latency;
       - the categories expected to lose the most.
@@ -79,6 +76,8 @@ Before the freeze (doesn't count as a benchmark):
       - `docker compose logs api` shows one `triage {...}` line per ticket, with `request_id` matching `X-Request-ID`;
       - the response `model` field is the same for escalated and non-escalated tickets;
       - `cascade_warmup.py` prints `READY`.
+- [ ] Apply the keep-alive change: `docker compose up -d ollama` (recreates Ollama with `OLLAMA_KEEP_ALIVE=30m` from
+      `compose.yaml`). Save the server-config line from `docker compose logs ollama`; it must show `OLLAMA_KEEP_ALIVE:30m0s`.
 - [ ] Record versions, model IDs, Ollama server settings and the Docker limits once (brief Step 4, Set-up). Re-check
       them before each configuration.
 
@@ -102,9 +101,10 @@ Every run (brief Step 4, "Each run"):
 - [ ] **Cascade runs:** run `docker compose exec -T api python - < assignment2/scripts/cascade_warmup.py`, save the output,
       and start only on `READY`. Save `ollama ps` showing both models.
 - [ ] `/stats` before → JMeter run → let it drain → `/stats` after. Save the API log, Ollama log, `.jtl` and env dump.
-- [ ] Check the Ollama log for **model loads during the run**. If Llama was unloaded (keep-alive 5 min) and reloaded,
-      that escalation measures loading, not the cascade. Report it and say so. (The keep-alive question is with the
-      lecturer; until answered, nothing changes.)
+- [ ] Check the Ollama log for **model loads during the run**. With keep-alive at 30 min there should be none after the
+      warm-up. If one appears, that escalation measures loading, not the cascade: report it and say so.
+      If the lecturer rejects the 30-minute keep-alive before the speed runs, set it back to 5 min for **every**
+      configuration and rely on this check.
 
 What gets speed-tested (only after Justin's accuracy results):
 - [ ] **Always:** Llama alone, cascade A and cascade B, 3 runs each, even if the cascade fails accuracy (mark it so).
@@ -136,7 +136,8 @@ What gets speed-tested (only after Justin's accuracy results):
 
 ## 5. Eugene: rule owner
 
-- [ ] Send the lecturer the keep-alive question (`STEP2.md` §8) and share the answer with Alfred.
+- [ ] Email the lecturer that keep-alive is set to 30 min for all configurations (`STEP2.md` §8), and pass any reply
+      to Alfred before the speed runs.
 - [ ] Do the freeze commit once Ye Kai and Youxiong are done.
 - [ ] Fix code problems Alfred finds **before** the freeze. After any benchmark has run, a code change means noting it
       and re-running the configurations it touches.

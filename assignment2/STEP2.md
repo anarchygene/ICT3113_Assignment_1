@@ -4,7 +4,7 @@
 same commit as `PREDICTIONS.md`, before any Assignment 2 benchmark (including the cascade accuracy test).
 After that commit it is not edited; anything learned later goes in the results write-up.
 
-Open decisions are marked **DECISION** and must be closed before the freeze.
+Items still open before the freeze are listed in §8.
 
 Inputs: `STEP2_DESIGN_INPUTS.md` (memory check and tuning-set analysis), `assignment2/data/tuning_set.csv`
 (odd rows), and the Assignment 1 per-ticket answers in `step5/results/<model>/accuracy/predictions.csv`.
@@ -19,9 +19,9 @@ Llama alone (Step 1), which sets the limits.
 | Large model (final on escalation) | Llama 3.1 8B Instruct, `llama3.1:8b-instruct-q4_K_M`, ID `46e0c10c039e` |
 | Rule type | Category-based (brief, example method 1), plus "escalate if the small model's output is invalid" |
 | Setting A | Escalate when Qwen predicts **Credit card** |
-| Setting B | **DECISION** (see §4b): escalate when Qwen predicts **Credit card** or **Credit reporting** (recommended), or **Credit card** or **Consumer loan** (current draft in `PREDICTIONS.md`) |
+| Setting B | Escalate when Qwen predicts **Credit card** or **Credit reporting** (§4b) |
 | Prompt and request | Unchanged from Assignment 1 for both models (`app/classifier.py`: same system prompt, `format: json`, `temperature: 0`, `num_ctx: 4096`) |
-| Ollama settings | Unchanged from Assignment 1 and identical for every configuration (`OLLAMA_NUM_PARALLEL=1`, `OLLAMA_CONTEXT_LENGTH=4096`, Ollama 0.12.3). See §8 for the open keep-alive question. |
+| Ollama settings | Identical for every Assignment 2 configuration: `OLLAMA_NUM_PARALLEL=1`, `OLLAMA_CONTEXT_LENGTH=4096`, Ollama 0.12.3, as in Assignment 1. **One change from Assignment 1:** `OLLAMA_KEEP_ALIVE=30m` (was the 5 min default), set in `compose.yaml`, so both cascade models stay resident during a run (§8). |
 
 ## 2. The rule
 
@@ -30,7 +30,7 @@ ticket is sent to Llama and Llama's answer is final.
 
 ```
 ESCALATE_ON (setting A) = {"Credit card"}
-ESCALATE_ON (setting B) = {"Credit card", "Credit reporting"}      # DECISION, see §4b
+ESCALATE_ON (setting B) = {"Credit card", "Credit reporting"}
 
 def triage(narrative):
     small = classify(QWEN, narrative)          # Assignment 1 request, unchanged
@@ -95,7 +95,7 @@ that one-ticket gain is the only evidence for any second category.
 Correct counts per true category, 80 tuning tickets. "Est. latency" = Qwen p50 + escalated fraction × Llama p50,
 using Assignment 1 sequential medians (Qwen 7.9 s, Llama 13.2 s). It ignores queueing and the memory slowdown in §5.
 
-| True category (n) | Qwen alone | A: Credit card | B (recommended): + Credit reporting | B (draft): + Consumer loan | Llama alone |
+| True category (n) | Qwen alone | A: Credit card | B: + Credit reporting | Not tested: + Consumer loan | Llama alone |
 |---|---:|---:|---:|---:|---:|
 | Credit reporting (14) | 7 | 9 | 9 | 9 | 9 |
 | Debt collection (13) | 8 | 8 | **9** | **9** | 11 |
@@ -122,9 +122,20 @@ Reading the table:
   Consumer loan has one extra cost on the tuning set: Llama returns an invalid answer on row 9853, which Qwen had
   right, so under the Consumer-loan list that ticket would become a 502.
 
-**DECISION:** confirm setting B. If the team switches B to Credit card + Credit reporting, update `PREDICTIONS.md`
-§0–§3 to match before the freeze. A third setting (the draft's C, adding Bank account) is not tested: the brief asks
-for two settings, and on the tuning set C escalates 55% and is predicted to be no faster than Llama alone.
+**Decision: setting B = Credit card + Credit reporting.** Credit card + Consumer loan (the earlier draft of
+`PREDICTIONS.md`) is not tested. A third setting (Credit card + Consumer loan + Bank account) is not tested either:
+the brief asks for two settings, and on the tuning set it escalates 55% and is predicted to be no faster than Llama alone.
+
+**Wrong answers that slip through** (brief, example method 1): tuning tickets where Qwen's answer is accepted
+because its predicted category is not escalated, but the answer is wrong.
+
+| Setting | Accepted (not escalated) | Accepted and wrong | Accuracy of accepted answers |
+|---|---:|---:|---:|
+| A | 63 | 14 | 49/63 = 77.8% |
+| B | 55 | 13 | 42/55 = 76.4% |
+
+Most of these are true Debt-collection, Money-transfer and Bank tickets that Qwen labels as another non-escalated
+category. A category-based rule cannot catch them without escalating categories where Qwen is usually right.
 
 ## 5. Memory check (brief: both models must be resident)
 
@@ -151,7 +162,7 @@ The cascade lives inside `POST /tickets`. The endpoint still accepts one ticket 
 |---|---|
 | Switch | `CASCADE_ENABLED=false` reproduces Assignment 1 exactly (one model, `OLLAMA_MODEL`). This is how the single-model configurations run. |
 | Models | `CASCADE_SMALL_MODEL=qwen3:4b-instruct-2507-q4_K_M`, `CASCADE_LARGE_MODEL=llama3.1:8b-instruct-q4_K_M` |
-| Setting | `CASCADE_ESCALATE_ON` = comma-separated category names: `Credit card` for A; the confirmed B list for B. Changing setting is an `.env` change plus an API restart; no code change between settings. |
+| Setting | `CASCADE_ESCALATE_ON` = comma-separated category names: `Credit card` for A; the confirmed B list for B. Changing setting is an `.env` change plus `docker compose up -d --force-recreate api` (`restart` does not re-read `.env`); no code change between settings. |
 | Request to each model | The Assignment 1 request with only the model name changed |
 | Hiding the answering model | In cascade mode the response's and database's `model` field is one fixed label for every ticket (default `cascade:<small>><large>`, or `CASCADE_LABEL`), so the caller cannot tell which model answered |
 | Per-ticket log line | One line per `POST /tickets`, in both modes: `triage {"request_id", "mode", "small_model", "small_answer", "small_ms", "escalated", "reason", "final_model", "large_ms", "category", "outcome"}`. `reason` is `accept`, `category` or `invalid` in cascade mode and `single` otherwise. `small_answer` is the category or `invalid`. `outcome` is `error` when the final model's answer is invalid (HTTP 502). `request_id` is the JMeter `X-Request-ID`. |
@@ -173,20 +184,26 @@ The single-model runs use the normal Assignment 1 warm-up.
 
 ## 8. Open items before the freeze
 
-1. **DECISION, setting B** (§4b): Credit card + Credit reporting (recommended), or Credit card + Consumer loan.
-   Then align `PREDICTIONS.md`.
-2. **Keep-alive.** Ollama unloads a model after 5 minutes unused (`OLLAMA_KEEP_ALIVE=5m`, the Assignment 1 setting).
-   At the Step 4 arrival rate (one ticket every 2×S seconds; roughly every 26 s if S is about 13 s) and 21% escalation,
-   Llama is called only about every 2 minutes. That leaves a real chance of a gap over 5 minutes in some runs, after
-   which the next escalation pays a full Llama load (30 s in the memory check). The brief calls that a loading
-   result, not a cascade result. Options:
-   - ask the lecturer whether a longer `OLLAMA_KEEP_ALIVE`, set once and held constant for every Assignment 2
-     configuration, is in scope (it affects scheduling, not thread count, parallelism or context length); or
-   - keep 5m and check every cascade run's Ollama log for load events, reporting any as such.
-3. **Arrival rate in `PREDICTIONS.md`.** Its "p50 under load" column is predicted at the Assignment 1 headroom load
-   (105 tickets/h plus searches). The Step 4 speed test uses the brief's rate, one ticket every 2×S seconds, and
-   POSTs only. Restate the load predictions for that rate before the freeze.
-4. **Code done, unit tests pass** (§6; `pytest -q`, Ollama faked). Still to do on the Lenovo: rebuild the API image,
-   run a few tuning tickets with `CASCADE_ENABLED=false` and confirm the same answers as Assignment 1, then a few with
-   the cascade on and check the `triage` log lines and the warm-up script.
-5. **Freeze commit:** `STEP2.md` and `PREDICTIONS.md` together, before the cascade accuracy test and before any speed run.
+1. **Setting B sign-off.** B = Credit card + Credit reporting (§4b). Ye Kai to confirm. `PREDICTIONS.md` already matches.
+2. **Keep-alive: decided, 30 minutes.** Ollama unloads a model after it has been idle for its keep-alive time
+   (5 min by default, as in Assignment 1). In the cascade, Llama is only called for escalated tickets. At the Step 4 rate
+   (one ticket every 2×S seconds; about every 26 s if S ≈ 13 s) and about 21% escalation, Llama is called about every
+   2 minutes on average. With random arrivals there is roughly a 40% chance per setting-A run of a gap over 5 minutes,
+   after which the next escalation pays a full Llama reload (30 s in the memory check). The brief treats that as
+   "a loading result", not a cascade result. So:
+   - `OLLAMA_KEEP_ALIVE=30m` is set in `compose.yaml`, once, for **every** Assignment 2 configuration, before any speed run.
+   - It is not one of the settings the brief fixes (thread count, parallelism, context length). It is recorded with the
+     other Ollama settings and held constant.
+   - It only stops Ollama unloading an idle model. It does not change the models' answers, so the Assignment 1 accuracy
+     reuse still holds. It does not favour any configuration: single models call their model on every ticket, and every
+     run starts with an Ollama restart.
+   - It is stated on slide 3 as a change from Assignment 1. The lecturer has been told by email; if they object before
+     the speed runs, it reverts to 5 min and every cascade run's Ollama log is checked for reloads instead.
+   - Evidence to capture on the Lenovo: the Ollama server-config log line showing `OLLAMA_KEEP_ALIVE:30m0s`
+     (Assignment 1 showed `5m0s`, `evidence/step4/ollama-server-config.txt`).
+3. **Code check on the Lenovo** (`TEAM_CHECKLIST.md` §3). Unit tests pass (§6; `pytest -q`, Ollama faked). Still to do:
+   - rebuild the API image;
+   - with `CASCADE_ENABLED=false`, run a few tuning tickets and confirm the same answers as Assignment 1;
+   - with the cascade on, check the `triage` log lines and the warm-up script.
+4. **Freeze commit:** remove the DRAFT lines from this file and `PREDICTIONS.md`, and commit both together, before the
+   cascade accuracy test and before any speed run.
