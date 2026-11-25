@@ -6,9 +6,11 @@ sent through POST /tickets:
   docker compose exec -T api python - < assignment2/scripts/cascade_warmup.py
 
 Sends one fixed synthetic ticket directly to each model through Ollama, using the service's exact
-request (same prompt, JSON mode, temperature 0, num_ctx 4096), in the order small, large, small,
-large. The first switch can reload a model (seen in the memory check); doing it here keeps that
-reload out of the measured run. Prints one JSON line per call, then `ollama ps` as JSON.
+request (same prompt, JSON mode, temperature 0, num_ctx 4096), in the order large, small, large,
+small. The large model goes first because loading it second can evict the small model (Lenovo
+pre-flight, 25 Nov: Gemma -> Llama), which would make the small model's next call a reload. Any
+such reload happens here, not in the measured run. Prints one JSON line per call, then `ollama ps`
+as JSON.
 
 Exit code 0 = ready: both models listed and the last two calls loaded in under 1 s.
 Exit code 1 = do not start the run.
@@ -56,7 +58,7 @@ def main() -> int:
         return 1
     small, large, base = settings.cascade_small_model, settings.cascade_large_model, settings.ollama_base_url
     with httpx.Client(timeout=600) as client:
-        calls = [chat(client, base, model, text) for model, text in zip([small, large, small, large], TICKETS)]
+        calls = [chat(client, base, model, text) for model, text in zip([large, small, large, small], TICKETS)]
         for call in calls:
             print(json.dumps(call), flush=True)
         loaded = {m["name"] for m in client.get(f"{base}/api/ps").json().get("models", [])}
