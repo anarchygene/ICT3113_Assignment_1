@@ -30,8 +30,8 @@ Due **Fri 27 Nov, 23:59**. Brief references are to *ICT3113 Assignment 2*, Steps
 
 ## 1. Ye Kai: close the rule (before the freeze)
 
-- [ ] Confirm setting B = Credit card + Credit reporting (`STEP2.md` §4b). `STEP2.md` and `PREDICTIONS.md` already use it.
-      If you disagree, say so before the freeze: both files would need changing.
+- [x] Close the rule after the Lenovo pre-flight (25 Nov): pair changed to Gemma → Llama, A = accept Mortgage + Debt
+      collection, B = accept Mortgage (`STEP2.md` §4). `STEP2.md` and `PREDICTIONS.md` rewritten to match; team to confirm.
 - [ ] Read `STEP2.md` as a reviewer: is the rule clear enough for another team to implement from it?
       (The slip-through check is already in §4b.)
 - [ ] Once the freeze is in, start slide 2: a diagram of the cascade, the rule in full, the two settings, and why this
@@ -40,7 +40,7 @@ Due **Fri 27 Nov, 23:59**. Brief references are to *ICT3113 Assignment 2*, Steps
 ## 2. Youxiong: predictions, workload list, speed analysis
 
 Before the freeze:
-- [ ] Review Eugene's revision of `PREDICTIONS.md` (24 Nov): two cascade settings, B = Credit card + Credit reporting,
+- [ ] Review the 25 Nov revision of `PREDICTIONS.md`: Gemma → Llama, A = accept Mortgage + Debt collection, B = accept Mortgage,
       load predictions at the A2 rate with S ≈ 13 s. Change any number you disagree with **before** the freeze.
 - [ ] Check the required prediction points are specific enough to be shown wrong:
       - the fastest configuration that passes;
@@ -117,7 +117,7 @@ What gets speed-tested (only after Justin's accuracy results):
 - [ ] Single models may reuse A1 records (unchanged digest, prompt, Ollama, machine), even rows only, **saying so on
       slide 4**. Llama is already re-run (`assignment2/results/step1_top_model_test_set/`). Qwen and Gemma: score the
       even rows of their A1 `predictions.csv`.
-- [ ] Cascade A and B go through `POST /tickets` with `accuracy_test.py --model "cascade:qwen3:4b-instruct-2507-q4_K_M>llama3.1:8b-instruct-q4_K_M"`.
+- [ ] Cascade A and B go through `POST /tickets` with `accuracy_test.py --model "cascade:gemma3:1b-it-q4_K_M>llama3.1:8b-instruct-q4_K_M"`.
       The script stops if the service's model label doesn't match. Use a distinct `--label` per setting so request IDs
       (`acc-<label>-<row>`) are unique, and save the API log right after each run.
 - [ ] For each configuration, report:
