@@ -17,7 +17,7 @@ Raw output and `ollama ps`: `assignment2/evidence/memory_check/*.txt`.
 | Gemma 3 1B + Llama 3.1 8B | yes (1.2 + 5.6 GB) | no (load 0.1–0.3 s) | 6.60 / 7.53 GiB | Llama 4.0 s → 16.6 / 15.2 s; Gemma 1.7 s → 6.5 / 6.3 s |
 | Gemma 3 1B + Qwen3 4B | yes (1.2 + 3.7 GB) | no (load 0.1–0.5 s) | 5.18 / 7.53 GiB | Gemma 2.0 s → 3.4 / 1.8 s; Qwen 2.8 s → 7.8 / 2.1 s |
 
-- **All three pairs pass the brief's check**: both models stay listed and neither reloads. Ollama memory-maps model files, so the combined "size" can exceed the VM's RAM.
+- ~~**All three pairs pass the brief's check**~~ **CORRECTED 25 Nov:** Qwen + Llama does **not** fit. The Lenovo pre-flight found Ollama evicting one model on every switch and the kernel's out-of-memory killer stopping the Llama runner (`oom_kill 5`), while `ollama ps` still listed both. This check looked only at `ollama ps` and `load_duration`, so it missed that. Gemma + Llama and Gemma + Qwen were re-checked with eviction and out-of-memory counters and do fit. Evidence: `evidence/preflight_lenovo/PREFLIGHT.md`.
 - **Caution for the two pairs with Llama:** they run at 88–92% of the VM's memory, and calls slow down 4–10× once the models alternate, even though nothing reloads. The likely cause is model pages being pushed out of memory and re-read from disk. The pair with headroom (Gemma + Qwen) barely slows. This is 8 short calls per pair, so treat it as a lead, not a measurement; the speed test will show whether it holds under load.
 - Back-to-back calls are fast partly because Ollama reuses the cached system prompt, so they understate normal latency. Compare pairs with each other, not with the Assignment 1 latencies.
 

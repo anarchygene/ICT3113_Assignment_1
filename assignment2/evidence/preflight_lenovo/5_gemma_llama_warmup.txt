@@ -1,0 +1,6 @@
+{"model": "gemma3:1b-it-q4_K_M", "wall_s": 4.01, "load_s": 1.45}
+{"model": "llama3.1:8b-instruct-q4_K_M", "wall_s": 12.93, "load_s": 7.01}
+{"model": "gemma3:1b-it-q4_K_M", "wall_s": 3.71, "load_s": 1.55}
+{"model": "llama3.1:8b-instruct-q4_K_M", "wall_s": 2.86, "load_s": 0.09}
+{"ollama_ps": ["gemma3:1b-it-q4_K_M", "llama3.1:8b-instruct-q4_K_M"]}
+NOT READY: do not start the run

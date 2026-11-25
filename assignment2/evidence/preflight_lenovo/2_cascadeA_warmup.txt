@@ -1,0 +1,6 @@
+{"model": "qwen3:4b-instruct-2507-q4_K_M", "wall_s": 45.75, "load_s": 4.93}
+{"model": "llama3.1:8b-instruct-q4_K_M", "wall_s": 19.31, "load_s": 10.14}
+{"model": "qwen3:4b-instruct-2507-q4_K_M", "wall_s": 20.8, "load_s": 14.8}
+{"model": "llama3.1:8b-instruct-q4_K_M", "wall_s": 20.68, "load_s": 12.22}
+{"ollama_ps": ["llama3.1:8b-instruct-q4_K_M"]}
+NOT READY: do not start the run

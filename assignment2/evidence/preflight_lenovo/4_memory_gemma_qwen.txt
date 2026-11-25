@@ -1,0 +1,17 @@
+# gemma_qwen: A=gemma3:1b-it-q4_K_M B=qwen3:4b-instruct-2507-q4_K_M, start 2026-11-25T08:35:58Z
+{"call": 1, "model": "gemma3:1b-it-q4_K_M", "wall_s": 5.87, "load_s": 1.55, "answer": "{\"category\": \"Debit Card\"}", "loaded": [{"name": "gemma3:1b-it-q4_K_M", "size_gb": 1.21, "ctx": 4096}]}
+{"call": 2, "model": "gemma3:1b-it-q4_K_M", "wall_s": 4.42, "load_s": 0.19, "answer": "{ \"category\": \"Debt collection\"}", "loaded": [{"name": "gemma3:1b-it-q4_K_M", "size_gb": 1.21, "ctx": 4096}]}
+{"call": 3, "model": "qwen3:4b-instruct-2507-q4_K_M", "wall_s": 8.58, "load_s": 4.03, "answer": "{\"category\": \"Mortgage\"}", "loaded": [{"name": "qwen3:4b-instruct-2507-q4_K_M", "size_gb": 3.71, "ctx": 4096}, {"name": "gemma3:1b-it-q4_K_M", "size_gb": 1.21, "ctx": 4096}]}
+{"call": 4, "model": "qwen3:4b-instruct-2507-q4_K_M", "wall_s": 2.7, "load_s": 0.1, "answer": "{\"category\": \"Bank account or service\"}", "loaded": [{"name": "qwen3:4b-instruct-2507-q4_K_M", "size_gb": 3.71, "ctx": 4096}, {"name": "gemma3:1b-it-q4_K_M", "size_gb": 1.21, "ctx": 4096}]}
+{"call": 5, "model": "gemma3:1b-it-q4_K_M", "wall_s": 4.66, "load_s": 0.3, "answer": "{ \"category\": \"Credit reporting\"}", "loaded": [{"name": "qwen3:4b-instruct-2507-q4_K_M", "size_gb": 3.71, "ctx": 4096}, {"name": "gemma3:1b-it-q4_K_M", "size_gb": 1.21, "ctx": 4096}]}
+{"call": 6, "model": "qwen3:4b-instruct-2507-q4_K_M", "wall_s": 2.56, "load_s": 0.06, "answer": "{\"category\": \"credit card\"}", "loaded": [{"name": "qwen3:4b-instruct-2507-q4_K_M", "size_gb": 3.71, "ctx": 4096}, {"name": "gemma3:1b-it-q4_K_M", "size_gb": 1.21, "ctx": 4096}]}
+{"call": 7, "model": "gemma3:1b-it-q4_K_M", "wall_s": 2.5, "load_s": 0.21, "answer": "{\"category\": \"Credit reporting\"}", "loaded": [{"name": "gemma3:1b-it-q4_K_M", "size_gb": 1.21, "ctx": 4096}, {"name": "qwen3:4b-instruct-2507-q4_K_M", "size_gb": 3.71, "ctx": 4096}]}
+{"call": 8, "model": "qwen3:4b-instruct-2507-q4_K_M", "wall_s": 2.65, "load_s": 0.09, "answer": "{\"category\": \"Bank account or service\"}", "loaded": [{"name": "qwen3:4b-instruct-2507-q4_K_M", "size_gb": 3.71, "ctx": 4096}, {"name": "gemma3:1b-it-q4_K_M", "size_gb": 1.21, "ctx": 4096}]}
+# ollama ps:
+NAME                             ID              SIZE      PROCESSOR    CONTEXT    UNTIL               
+qwen3:4b-instruct-2507-q4_K_M    0edcdef34593    3.7 GB    100% CPU     4096       29 minutes from now    
+gemma3:1b-it-q4_K_M              8648f39daa8f    1.2 GB    100% CPU     4096       29 minutes from now    
+# evictions since start: 0
+# runner killed since start: 0
+# VM oom_kill before=5 after=5
+ict3113_assignment_1-ollama-1 5.08GiB / 7.531GiB

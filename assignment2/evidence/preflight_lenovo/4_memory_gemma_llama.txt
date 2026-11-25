@@ -1,0 +1,17 @@
+# gemma_llama: A=gemma3:1b-it-q4_K_M B=llama3.1:8b-instruct-q4_K_M, start 2026-11-25T08:35:03Z
+{"call": 1, "model": "gemma3:1b-it-q4_K_M", "wall_s": 5.42, "load_s": 1.89, "answer": "{\"category\": \"Debit Card\"}", "loaded": [{"name": "gemma3:1b-it-q4_K_M", "size_gb": 1.21, "ctx": 4096}]}
+{"call": 2, "model": "gemma3:1b-it-q4_K_M", "wall_s": 3.67, "load_s": 0.2, "answer": "{ \"category\": \"Debt collection\"}", "loaded": [{"name": "gemma3:1b-it-q4_K_M", "size_gb": 1.21, "ctx": 4096}]}
+{"call": 3, "model": "llama3.1:8b-instruct-q4_K_M", "wall_s": 17.6, "load_s": 8.96, "answer": "{\"category\": \"Mortgage\"}", "loaded": [{"name": "llama3.1:8b-instruct-q4_K_M", "size_gb": 5.62, "ctx": 4096}]}
+{"call": 4, "model": "llama3.1:8b-instruct-q4_K_M", "wall_s": 2.84, "load_s": 0.08, "answer": "{\"category\": \"Money transfer or service\"}", "loaded": [{"name": "llama3.1:8b-instruct-q4_K_M", "size_gb": 5.62, "ctx": 4096}]}
+{"call": 5, "model": "gemma3:1b-it-q4_K_M", "wall_s": 6.88, "load_s": 1.93, "answer": "{ \"category\": \"Credit reporting\"}", "loaded": [{"name": "gemma3:1b-it-q4_K_M", "size_gb": 1.21, "ctx": 4096}, {"name": "llama3.1:8b-instruct-q4_K_M", "size_gb": 5.62, "ctx": 4096}]}
+{"call": 6, "model": "llama3.1:8b-instruct-q4_K_M", "wall_s": 2.92, "load_s": 0.1, "answer": "{\"category\": \"Credit card\"}", "loaded": [{"name": "llama3.1:8b-instruct-q4_K_M", "size_gb": 5.62, "ctx": 4096}, {"name": "gemma3:1b-it-q4_K_M", "size_gb": 1.21, "ctx": 4096}]}
+{"call": 7, "model": "gemma3:1b-it-q4_K_M", "wall_s": 2.7, "load_s": 0.21, "answer": "{\"category\": \"Credit reporting\"}", "loaded": [{"name": "gemma3:1b-it-q4_K_M", "size_gb": 1.21, "ctx": 4096}, {"name": "llama3.1:8b-instruct-q4_K_M", "size_gb": 5.62, "ctx": 4096}]}
+{"call": 8, "model": "llama3.1:8b-instruct-q4_K_M", "wall_s": 3.2, "load_s": 0.08, "answer": "{\"category\": \"Bank account or service\"}", "loaded": [{"name": "llama3.1:8b-instruct-q4_K_M", "size_gb": 5.62, "ctx": 4096}, {"name": "gemma3:1b-it-q4_K_M", "size_gb": 1.21, "ctx": 4096}]}
+# ollama ps:
+NAME                           ID              SIZE      PROCESSOR    CONTEXT    UNTIL               
+llama3.1:8b-instruct-q4_K_M    46e0c10c039e    5.6 GB    100% CPU     4096       29 minutes from now    
+gemma3:1b-it-q4_K_M            8648f39daa8f    1.2 GB    100% CPU     4096       29 minutes from now    
+# evictions since start: 1
+# runner killed since start: 0
+# VM oom_kill before=5 after=5
+ict3113_assignment_1-ollama-1 6.53GiB / 7.531GiB

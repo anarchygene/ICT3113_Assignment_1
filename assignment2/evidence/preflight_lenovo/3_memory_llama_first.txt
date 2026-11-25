@@ -1,0 +1,12 @@
+# Llama loaded first, then Qwen (A=Llama, B=Qwen), 2026-11-25T08:29:16Z
+{"call": 1, "model": "llama3.1:8b-instruct-q4_K_M", "wall_s": 12.03, "load_s": 5.49, "answer": "{\"category\": \"Bank account or service\"}", "loaded": [{"name": "llama3.1:8b-instruct-q4_K_M", "size_gb": 5.62, "ctx": 4096}]}
+{"call": 2, "model": "llama3.1:8b-instruct-q4_K_M", "wall_s": 2.84, "load_s": 0.07, "answer": "{\"category\": \"Debt collection\"}", "loaded": [{"name": "llama3.1:8b-instruct-q4_K_M", "size_gb": 5.62, "ctx": 4096}]}
+{"call": 3, "model": "qwen3:4b-instruct-2507-q4_K_M", "wall_s": 18.05, "load_s": 3.58, "answer": "{\"category\": \"Mortgage\"}", "loaded": [{"name": "qwen3:4b-instruct-2507-q4_K_M", "size_gb": 3.71, "ctx": 4096}, {"name": "llama3.1:8b-instruct-q4_K_M", "size_gb": 5.62, "ctx": 4096}]}
+{"call": 4, "model": "qwen3:4b-instruct-2507-q4_K_M", "wall_s": 9.25, "load_s": 0.87, "answer": "{\"category\": \"Bank account or service\"}", "loaded": [{"name": "qwen3:4b-instruct-2507-q4_K_M", "size_gb": 3.71, "ctx": 4096}, {"name": "llama3.1:8b-instruct-q4_K_M", "size_gb": 5.62, "ctx": 4096}]}
+{"call": 5, "model": "llama3.1:8b-instruct-q4_K_M", "wall_s": 16.83, "load_s": 9.23, "answer": "{\"category\": \"Credit reporting\"}", "loaded": [{"name": "llama3.1:8b-instruct-q4_K_M", "size_gb": 5.62, "ctx": 4096}]}
+# ollama ps:
+NAME                             ID              SIZE      PROCESSOR    CONTEXT    UNTIL               
+qwen3:4b-instruct-2507-q4_K_M    0edcdef34593    3.7 GB    100% CPU     4096       27 minutes from now    
+llama3.1:8b-instruct-q4_K_M      46e0c10c039e    5.6 GB    100% CPU     4096       26 minutes from now    
+# evictions logged since restart: 3
+ict3113_assignment_1-ollama-1 558.6MiB / 7.531GiB
