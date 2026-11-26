@@ -1,0 +1,1 @@
+/stats total before=94 after=97 (expect +3: the 502 is not stored)
