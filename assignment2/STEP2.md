@@ -1,15 +1,19 @@
 # Step 2: Cascade design and escalation rule
 
-**DRAFT for team review.** This file is the written escalation rule required by the brief. It is frozen in the
-same commit as `PREDICTIONS.md`, before any Assignment 2 benchmark (including the cascade accuracy test).
-After that commit it is not edited; anything learned later goes in the results write-up.
+**Frozen.** This file is the written escalation rule required by the brief. It was committed together with
+`PREDICTIONS.md`, before any Assignment 2 benchmark (including the cascade accuracy test). It is not edited after
+that commit; anything learned later goes in the results write-up.
+
+> **Change from Assignment 1, approved by the lecturer: `OLLAMA_KEEP_ALIVE=30m`** (was the 5 min default), for
+> **every** Assignment 2 configuration. The lecturer approved it by email and asked us to highlight it.
+> Details in §8.
 
 **Revision (25 Nov, before the freeze): the pair is now Gemma → Llama.** The earlier draft used Qwen → Llama.
 The Lenovo pre-flight (`evidence/preflight_lenovo/PREFLIGHT.md`) showed that Qwen and Llama cannot both stay loaded
 in the 7.53 GiB Docker VM, and the brief says a cascade is only tested with both models resident. The Qwen → Llama
 draft is in the history (commit `e07eac8`).
 
-Items still open before the freeze are listed in §8.
+The items that were open before the freeze, and how each was closed, are listed in §8.
 
 Inputs: `STEP2_DESIGN_INPUTS.md` (tuning-set analysis), `evidence/preflight_lenovo/` (memory check on the test
 machine), `assignment2/data/tuning_set.csv` (odd rows), and the Assignment 1 per-ticket answers and latencies in
@@ -26,7 +30,7 @@ The only test-set result anyone has seen is Llama alone (Step 1), which sets the
 | Setting A | Accept Gemma's answer when it predicts **Mortgage** or **Debt collection**; escalate everything else |
 | Setting B | Accept Gemma's answer only when it predicts **Mortgage**; escalate everything else |
 | Prompt and request | Unchanged from Assignment 1 for both models (`app/classifier.py`: same system prompt, `format: json`, `temperature: 0`, `num_ctx: 4096`) |
-| Ollama settings | Identical for every Assignment 2 configuration: `OLLAMA_NUM_PARALLEL=1`, `OLLAMA_CONTEXT_LENGTH=4096`, Ollama 0.12.3, as in Assignment 1. **One change from Assignment 1:** `OLLAMA_KEEP_ALIVE=30m` (was the 5 min default), set in `compose.yaml`, so both cascade models stay resident during a run (§8). |
+| Ollama settings | Identical for every Assignment 2 configuration: `OLLAMA_NUM_PARALLEL=1`, `OLLAMA_CONTEXT_LENGTH=4096`, Ollama 0.12.3, as in Assignment 1. **One change from Assignment 1, approved by the lecturer:** `OLLAMA_KEEP_ALIVE=30m` (was the 5 min default), set in `compose.yaml`, so both cascade models stay resident during a run (§8). |
 
 ## 2. The rule
 
@@ -202,11 +206,11 @@ Before each cascade run (after the Ollama restart that every run starts with):
 
 The single-model runs use the normal Assignment 1 warm-up.
 
-## 8. Open items before the freeze
+## 8. Items closed at the freeze
 
-1. **Pair and settings sign-off.** Gemma → Llama, A = accept Mortgage + Debt collection, B = accept Mortgage (§4).
-   Proposed by Ye Kai on 25 Nov from Alfred's pre-flight; team to confirm.
-2. **Keep-alive: decided, 30 minutes.** Ollama unloads a model after it has been idle for its keep-alive time
+1. **Pair and settings: confirmed.** Gemma → Llama, A = accept Mortgage + Debt collection, B = accept Mortgage (§4).
+   Proposed by Ye Kai on 25 Nov from Alfred's pre-flight, confirmed by the team before the freeze.
+2. **Keep-alive: 30 minutes, approved by the lecturer.** Ollama unloads a model after it has been idle for its keep-alive time
    (5 min by default, as in Assignment 1). With Gemma → Llama, both models are called on most tickets, so an idle gap
    over 5 minutes is less likely than with the earlier Qwen → Llama design. The setting is kept for every configuration
    anyway, so all configurations are run the same way:
@@ -216,10 +220,12 @@ The single-model runs use the normal Assignment 1 warm-up.
    - It only stops Ollama unloading an idle model. It does not change the models' answers, so the Assignment 1 accuracy
      reuse still holds. It does not favour any configuration: single models call their model on every ticket, and every
      run starts with an Ollama restart.
-   - It is stated on slide 3 as a change from Assignment 1. The lecturer has been told by email; if they object before
-     the speed runs, it reverts to 5 min and every cascade run's Ollama log is checked for reloads instead.
+   - **Approved by the lecturer.** Eugene asked by email; the lecturer replied "Yes please do and please highlight
+     this." As asked, it is highlighted at the top of this file and on slide 3 as a change from Assignment 1.
+     Every cascade run's Ollama log is still checked for model loads during the run (`TEAM_CHECKLIST.md` §3).
    - Evidence: `OLLAMA_KEEP_ALIVE:30m0s` in the Ollama server-config log on the Lenovo (`evidence/preflight_lenovo/`).
-3. **Warm-up re-check on the Lenovo.** `cascade_warmup.py` now loads Llama first. Alfred to run it once with
-   Gemma → Llama, setting A, and confirm `READY` with no evictions or killed runners.
-4. **Freeze commit:** remove the DRAFT lines from this file and `PREDICTIONS.md`, and commit both together, before the
-   cascade accuracy test and before any speed run.
+3. **Warm-up re-check on the Lenovo: done (26 Nov).** With `cascade_warmup.py` loading Llama first, Gemma → Llama
+   printed `READY`, and both settings gave the rule's answers (A 5/5, B 4/4, including the HTTP 502 path), with
+   0 evictions and 0 killed runners for the whole session (`evidence/preflight_lenovo_v2/PREFLIGHT.md`).
+4. **Freeze commit:** the DRAFT lines were removed from this file and `PREDICTIONS.md`, and both were committed
+   together, before the cascade accuracy test and before any speed run.

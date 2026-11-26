@@ -1,6 +1,7 @@
 # Assignment 2 predictions (frozen before any Assignment 2 benchmark)
 
-**DRAFT for team review. Once committed, this file is not edited; later analysis goes in a separate file.**
+**Frozen.** Committed together with `STEP2.md`, before any Assignment 2 benchmark. This file is not edited after that
+commit; later analysis goes in a separate file.
 
 Revision (25 Nov, before the freeze): the cascade is now **Gemma 3 1B → Llama 3.1 8B**. The earlier Qwen → Llama
 design cannot be tested, because the two models do not both stay loaded on the Lenovo (`STEP2.md` §5,

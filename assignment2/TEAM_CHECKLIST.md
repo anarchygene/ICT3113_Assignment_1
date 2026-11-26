@@ -14,7 +14,7 @@ Due **Fri 27 Nov, 23:59**. Brief references are to *ICT3113 Assignment 2*, Steps
   The Excel sheets collapsed double spaces in 26 narratives.
 - **Nothing about the machine or Ollama changes between configurations.** That means:
   - same Lenovo, Docker at 8 CPUs / 7.53 GiB, Ollama 0.12.3, same model IDs;
-  - `OLLAMA_NUM_PARALLEL=1`, context 4096, `OLLAMA_KEEP_ALIVE=30m` (set in `compose.yaml`; the one change from A1);
+  - `OLLAMA_NUM_PARALLEL=1`, context 4096, `OLLAMA_KEEP_ALIVE=30m` (set in `compose.yaml`; the one change from A1, approved by the lecturer, highlighted on slide 3);
   - plugged in, same power plan (Balanced in A1), same network as A1, no other heavy apps, Windows updates paused.
   
   If anything does change, write it down and re-run the configurations it affects.
@@ -103,8 +103,7 @@ Every run (brief Step 4, "Each run"):
 - [ ] `/stats` before → JMeter run → let it drain → `/stats` after. Save the API log, Ollama log, `.jtl` and env dump.
 - [ ] Check the Ollama log for **model loads during the run**. With keep-alive at 30 min there should be none after the
       warm-up. If one appears, that escalation measures loading, not the cascade: report it and say so.
-      If the lecturer rejects the 30-minute keep-alive before the speed runs, set it back to 5 min for **every**
-      configuration and rely on this check.
+      (The lecturer approved the 30-minute keep-alive; keep it for **every** configuration and state it on slide 3.)
 
 What gets speed-tested (only after Justin's accuracy results):
 - [ ] **Always:** Llama alone, cascade A and cascade B, 3 runs each, even if the cascade fails accuracy (mark it so).
@@ -136,8 +135,8 @@ What gets speed-tested (only after Justin's accuracy results):
 
 ## 5. Eugene: rule owner
 
-- [ ] Email the lecturer that keep-alive is set to 30 min for all configurations (`STEP2.md` §8), and pass any reply
-      to Alfred before the speed runs.
-- [ ] Do the freeze commit once Ye Kai and Youxiong are done.
+- [x] Email the lecturer that keep-alive is set to 30 min for all configurations (`STEP2.md` §8). Approved:
+      "Yes please do and please highlight this." **Slide 3 must highlight it** as the one change from Assignment 1.
+- [x] Do the freeze commit once Ye Kai and Youxiong are done.
 - [ ] Fix code problems Alfred finds **before** the freeze. After any benchmark has run, a code change means noting it
       and re-running the configurations it touches.
