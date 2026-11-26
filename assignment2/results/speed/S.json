@@ -1,0 +1,25 @@
+{
+  "measured_utc": "2026-11-26T12:00:58Z",
+  "rows": [
+    9094,
+    9108,
+    9246
+  ],
+  "timings_s": [
+    12.61,
+    10.51,
+    11.05
+  ],
+  "S_s": 11.05,
+  "interval_s": 22.1,
+  "rate_per_min": 2.7149,
+  "rate_per_hour": 162.9,
+  "run_min": 11.05,
+  "response_timeout_s": 300.0,
+  "pause_min": 6.0,
+  "expected_tickets_per_run": 30.0,
+  "client_peak_per_hour": {
+    "A1 peak": 81,
+    "A1 peak + 30% headroom": 105
+  }
+}

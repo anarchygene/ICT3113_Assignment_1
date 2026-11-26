@@ -169,7 +169,27 @@ def measure_s() -> int:
     return 0
 
 
-def run(config: str, n: int) -> int:
+def wait_for_jmeter(since: str, expected: int) -> None:
+    """Return when the JMeter run is over on the service side: the arrival period has certainly ended
+    (first completed JMeter POST + run length) and no JMeter POST has completed for 240 s. A request is
+    logged when it finishes, whether it succeeded or failed. JMeter's own schedule then still has its
+    drain pause (timeout + 1 min) left, so nothing is cut off. `expected` is only for the progress line
+    (JMeter sends floor(rate x run length) arrivals); the .jtl and /stats reconciliation confirm the count."""
+    run_s = json.loads((OUT / "S.json").read_text(encoding="utf-8"))["run_min"] * 60
+    seen, first, last_change = 0, None, time.time()
+    while True:
+        log = sh("docker", "compose", "logs", "--no-color", "--since", since, "api", check=False)
+        n = len(re.findall(r"request_id=post-\S+ method=POST path=/tickets ", log))
+        if n != seen:
+            seen, last_change = n, time.time()
+            first = first or last_change
+            print(f"  {now()}  JMeter POSTs completed: {n} (about {expected} expected)", flush=True)
+        if first and time.time() >= first + run_s and time.time() - last_change >= 240:
+            return
+        time.sleep(10)
+
+
+def run(config: str, n: int, expected: int = 0) -> int:
     if config not in CONFIGS:
         raise SystemExit(f"config must be one of {list(CONFIGS)}")
     d = OUT / config / f"run{n}"
@@ -192,8 +212,12 @@ def run(config: str, n: int) -> int:
     (d / "stats_before.json").write_text(json.dumps({"total": before, "utc": ready}), encoding="utf-8")
     print(ps.strip())
     print(f"\n*** READY {config} run {n} at {ready}  (/stats total {before}) ***")
-    print("Start JMeter on the load-generator PC now. Press ENTER here after JMeter has finished.\a", flush=True)
-    input()
+    if expected:
+        print(f"Start JMeter on the load-generator PC now. Finishing automatically once {expected} JMeter POSTs are logged.", flush=True)
+        wait_for_jmeter(ready, expected)
+    else:
+        print("Start JMeter on the load-generator PC now. Press ENTER here after JMeter has finished.\a", flush=True)
+        input()
     after = stats_total()
     done = now()
     (d / "stats_after.json").write_text(json.dumps({"total": after, "utc": done, "delta": after - before}), encoding="utf-8")
@@ -214,4 +238,12 @@ if __name__ == "__main__":
         raise SystemExit(measure_s())
     if sys.argv[1:2] == ["run"] and len(sys.argv) == 4:
         raise SystemExit(run(sys.argv[2], int(sys.argv[3])))
+    if sys.argv[1:2] == ["series"] and len(sys.argv) == 3:
+        # Runs 1-3 back to back (skipping finished ones); each finishes once the expected number of
+        # JMeter POSTs (S.json) have completed in the API log.
+        exp = round(json.loads((OUT / "S.json").read_text(encoding="utf-8"))["expected_tickets_per_run"])
+        for i in (1, 2, 3):
+            if not (OUT / sys.argv[2] / f"run{i}" / "stats_after.json").exists():
+                run(sys.argv[2], i, exp)
+        raise SystemExit(0)
     raise SystemExit(__doc__)
