@@ -3,6 +3,22 @@
 What to watch for, by person, once the cascade code and `STEP2.md` are on `Assignment2`.
 Due **Fri 27 Nov, 23:59**. Brief references are to *ICT3113 Assignment 2*, Steps 1–4.
 
+**Status (26 Nov, after freeze):**
+
+| Configuration | Correct / 80 | Meets all limits? |
+|---|---:|---|
+| Llama (Step 1 run) | 61 (76.25%) | Yes |
+| Qwen (A1 even rows) | 56 (70.00%) | No: Credit reporting 10/19 < 12; Credit card 5/6 < 6 |
+| Gemma (A1 even rows) | 20 (25.00%) | No: all seven category limits fail |
+| Cascade A (replay estimate) | 55 (68.75%) | Estimated no: Credit reporting 11/19 < 12; Consumer loan 3/8 < 4 |
+| Cascade B (replay estimate) | 58 (72.50%) | Estimated yes |
+
+Cascade estimates apply the frozen rules to saved Gemma and Llama answers: A escalates 68/80 (85%);
+B escalates 74/80 (92.5%). Sources: A1 `step5/results/{gemma3-1b,qwen3-4b}/accuracy/predictions.csv`
+and `assignment2/results/step1_top_model_test_set/predictions.csv`.
+These are not live cascade measurements. Alfred must run A/B accuracy on the Lenovo and save predictions and API logs;
+Justin analyses the files. Then Alfred speed-tests Llama, A and B, three runs each, even if a cascade fails accuracy.
+
 ## 0. Rules that apply to everyone
 
 - **Freeze before measuring.** `STEP2.md` and `PREDICTIONS.md` are committed **together**, with the DRAFT lines removed,
@@ -113,7 +129,7 @@ What gets speed-tested (only after Justin's accuracy results):
 ## 4. Justin: accuracy tests (after the freeze)
 
 - [ ] Run each configuration **once** on the 80 test rows. Never re-run to get a better number.
-- [ ] Single models may reuse A1 records (unchanged digest, prompt, Ollama, machine), even rows only, **saying so on
+- [x] Single models may reuse A1 records (unchanged digest, prompt, Ollama, machine), even rows only, **saying so on
       slide 4**. Llama is already re-run (`assignment2/results/step1_top_model_test_set/`). Qwen and Gemma: score the
       even rows of their A1 `predictions.csv`.
 - [ ] Cascade A and B go through `POST /tickets` with `accuracy_test.py --model "cascade:gemma3:1b-it-q4_K_M>llama3.1:8b-instruct-q4_K_M"`.
