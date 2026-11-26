@@ -1,0 +1,3 @@
+warm-up row 9716: HTTP 201 Consumer loan 25.8 s (discarded)
+warm-up row 9438: HTTP 201 Credit reporting 10.8 s (discarded)
+warm-up row 9775: HTTP 201 Credit reporting 14.9 s (discarded)
