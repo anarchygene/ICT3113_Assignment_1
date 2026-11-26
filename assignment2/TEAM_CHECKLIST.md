@@ -46,10 +46,10 @@ Before the freeze:
       - the fastest configuration that passes;
       - for each cascade setting, escalation fraction, accuracy and median latency;
       - the categories expected to lose the most.
-- [ ] Speed-test workload: a fixed, ordered list of rows from **9000–9839 only** (never golden rows), with some typical
+- [x] Speed-test workload: a fixed, ordered list of rows from **9000–9839 only** (never golden rows), with some typical
       and some long tickets. Include enough for the longest run (about 30 per run plus spare). Commit it as a file
-      before the first run; it's a required supporting file.
-- [ ] Three fixed warm-up tickets: not golden rows and not in the workload list. Use the same three for every run.
+      before the first run; it's a required supporting file. Done: `workload/speed_tickets.tsv` (60 rows).
+- [x] Three fixed warm-up tickets: not golden rows and not in the workload list. Use the same three for every run. Done: `workload/warmup_tickets.tsv`.
 
 After the runs (brief Step 4, "Report, per run"):
 - [ ] For each run, report:
