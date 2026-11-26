@@ -1,0 +1,107 @@
+[  1/80] row 9840 201    5.6s  'Bank account or service' -> 'Money transfer or service'
+[  2/80] row 9842 201    5.8s  'Bank account or service' -> 'Credit reporting'
+[  3/80] row 9844 201    5.8s  'Credit reporting' -> 'Credit card'
+[  4/80] row 9846 201   10.2s  'Money transfer or service' -> 'Money transfer or service'
+[  5/80] row 9848 201    5.8s  'Credit reporting' -> 'Credit reporting'
+[  6/80] row 9850 201   26.3s  'Consumer loan' -> 'Bank account or service'
+[  7/80] row 9852 201   24.5s  'Credit reporting' -> 'Credit card'
+[  8/80] row 9854 201   12.3s  'Money transfer or service' -> 'Money transfer or service'
+[  9/80] row 9856 201    8.8s  'Credit card' -> 'Credit card'
+[ 10/80] row 9858 201   12.5s  'Credit reporting' -> 'Debt collection'
+[ 11/80] row 9860 201    8.0s  'Credit card' -> 'Credit card'
+[ 12/80] row 9862 201    1.4s  'Money transfer or service' -> 'Mortgage'
+[ 13/80] row 9864 201    8.7s  'Credit reporting' -> 'Credit reporting'
+[ 14/80] row 9866 201    9.1s  'Money transfer or service' -> 'Money transfer or service'
+[ 15/80] row 9868 201   22.7s  'Credit reporting' -> 'Credit reporting'
+[ 16/80] row 9870 201   12.2s  'Debt collection' -> 'Bank account or service'
+[ 17/80] row 9872 201    8.7s  'Money transfer or service' -> 'Money transfer or service'
+[ 18/80] row 9874 201   16.6s  'Money transfer or service' -> 'Money transfer or service'
+[ 19/80] row 9876 201   17.9s  'Credit reporting' -> 'Debt collection'
+[ 20/80] row 9878 201    3.6s  'Consumer loan' -> 'Mortgage'
+[ 21/80] row 9880 201    6.3s  'Money transfer or service' -> 'Money transfer or service'
+[ 22/80] row 9882 201    2.5s  'Mortgage' -> 'Mortgage'
+[ 23/80] row 9884 201   13.3s  'Bank account or service' -> 'Bank account or service'
+[ 24/80] row 9886 201   26.0s  'Consumer loan' -> 'Credit reporting'
+[ 25/80] row 9888 201   29.1s  'Credit card' -> 'Credit card'
+[ 26/80] row 9890 201    7.4s  'Consumer loan' -> 'Consumer loan'
+[ 27/80] row 9892 201   12.1s  'Credit reporting' -> 'Credit reporting'
+[ 28/80] row 9894 201   14.2s  'Credit reporting' -> 'Bank account or service'
+[ 29/80] row 9896 201    7.9s  'Money transfer or service' -> 'Money transfer or service'
+[ 30/80] row 9898 201   11.1s  'Money transfer or service' -> 'Money transfer or service'
+[ 31/80] row 9900 201    8.2s  'Debt collection' -> 'Bank account or service'
+[ 32/80] row 9902 201   10.3s  'Money transfer or service' -> 'Money transfer or service'
+[ 33/80] row 9904 201    9.6s  'Debt collection' -> 'Debt collection'
+[ 34/80] row 9906 201   10.7s  'Consumer loan' -> 'Consumer loan'
+[ 35/80] row 9908 201   13.4s  'Bank account or service' -> 'Bank account or service'
+[ 36/80] row 9910 201    5.2s  'Credit reporting' -> 'Credit reporting'
+[ 37/80] row 9912 201    5.8s  'Credit reporting' -> 'Credit reporting'
+[ 38/80] row 9914 201    5.9s  'Bank account or service' -> 'Bank account or service'
+[ 39/80] row 9916 201   15.6s  'Bank account or service' -> 'Bank account or service'
+[ 40/80] row 9918 201   26.2s  'Mortgage' -> 'Mortgage'
+[ 41/80] row 9920 201   30.0s  'Bank account or service' -> 'Credit card'
+[ 42/80] row 9922 201   28.2s  'Consumer loan' -> 'Mortgage'
+[ 43/80] row 9924 201   27.2s  'Credit card' -> 'Credit card'
+[ 44/80] row 9926 201    2.6s  'Mortgage' -> 'Mortgage'
+[ 45/80] row 9928 201   36.0s  'Debt collection' -> 'Debt collection'
+[ 46/80] row 9930 201   15.9s  'Money transfer or service' -> 'Credit card'
+[ 47/80] row 9932 201    5.5s  'Consumer loan' -> 'Consumer loan'
+[ 48/80] row 9934 201   20.6s  'Mortgage' -> 'Mortgage'
+[ 49/80] row 9936 201   18.1s  'Bank account or service' -> 'Bank account or service'
+[ 50/80] row 9938 201   19.9s  'Debt collection' -> 'Debt collection'
+[ 51/80] row 9940 201   22.6s  'Bank account or service' -> 'Bank account or service'
+[ 52/80] row 9942 201   26.3s  'Money transfer or service' -> 'Money transfer or service'
+[ 53/80] row 9944 201   16.2s  'Debt collection' -> 'Debt collection'
+[ 54/80] row 9946 201   27.1s  'Credit reporting' -> 'Credit reporting'
+[ 55/80] row 9948 201   21.2s  'Bank account or service' -> 'Bank account or service'
+[ 56/80] row 9950 201    8.7s  'Credit reporting' -> 'Credit reporting'
+[ 57/80] row 9952 201   15.1s  'Bank account or service' -> 'Bank account or service'
+[ 58/80] row 9954 201   19.1s  'Debt collection' -> 'Debt collection'
+[ 59/80] row 9956 201   17.5s  'Credit reporting' -> 'Credit reporting'
+[ 60/80] row 9958 201   23.0s  'Credit reporting' -> 'Credit reporting'
+[ 61/80] row 9960 201    1.9s  'Mortgage' -> 'Mortgage'
+[ 62/80] row 9962 201   26.2s  'Credit card' -> 'Credit card'
+[ 63/80] row 9964 201   11.2s  'Money transfer or service' -> 'Money transfer or service'
+[ 64/80] row 9966 201    9.8s  'Credit card' -> 'Credit card'
+[ 65/80] row 9968 201   21.9s  'Debt collection' -> 'Debt collection'
+[ 66/80] row 9970 201   11.1s  'Credit reporting' -> 'Credit reporting'
+[ 67/80] row 9972 201    7.7s  'Bank account or service' -> 'Bank account or service'
+[ 68/80] row 9974 201   22.7s  'Money transfer or service' -> 'Money transfer or service'
+[ 69/80] row 9976 201   17.1s  'Credit reporting' -> 'Credit reporting'
+[ 70/80] row 9978 201   19.9s  'Mortgage' -> 'Credit card'
+[ 71/80] row 9980 201   31.3s  'Mortgage' -> 'Consumer loan'
+[ 72/80] row 9982 201    4.5s  'Credit reporting' -> 'Mortgage'
+[ 73/80] row 9984 201   14.8s  'Consumer loan' -> 'Consumer loan'
+[ 74/80] row 9986 201   13.6s  'Bank account or service' -> 'Bank account or service'
+[ 75/80] row 9988 201    7.4s  'Money transfer or service' -> 'Money transfer or service'
+[ 76/80] row 9990 201   18.5s  'Credit reporting' -> 'Credit reporting'
+[ 77/80] row 9992 201    6.3s  'Bank account or service' -> 'Money transfer or service'
+[ 78/80] row 9994 201   11.3s  'Debt collection' -> 'Debt collection'
+[ 79/80] row 9996 201   10.8s  'Debt collection' -> 'Credit reporting'
+[ 80/80] row 9998 201   15.1s  'Debt collection' -> 'Credit reporting'
+# Accuracy: cascade:gemma3:1b-it-q4_K_M>llama3.1:8b-instruct-q4_K_M
+
+Overall: **58/80 = 72.5%**  
+Output conformance: 80/80 = 100.0% (R7 needs >= 99.0%)  
+Sequential single-request latency (ms): n 80, mean 14390.4, p50 12273.9, p95 28173.8, p99 36030.2, max 36030.2
+
+| Category | n | Correct | Accuracy | R6 (>= 70%) |
+|---|---:|---:|---:|---|
+| Credit reporting | 19 | 13 | 68.4% | FAIL |
+| Debt collection | 11 | 7 | 63.6% | FAIL |
+| Mortgage | 7 | 5 | 71.4% | pass |
+| Credit card | 6 | 6 | 100.0% | pass |
+| Bank account or service | 14 | 10 | 71.4% | pass |
+| Consumer loan | 8 | 4 | 50.0% | FAIL |
+| Money transfer or service | 15 | 13 | 86.7% | pass |
+
+## Confusion matrix (rows = golden, columns = predicted)
+
+| golden \ predicted | CR | DC | Mtg | CC | Bank | Loan | MT | Invalid |
+|---|---|---|---|---|---|---|---|---|
+| CR | 13 | 2 | 1 | 2 | 1 | 0 | 0 | 0 |
+| DC | 2 | 7 | 0 | 0 | 2 | 0 | 0 | 0 |
+| Mtg | 0 | 0 | 5 | 1 | 0 | 1 | 0 | 0 |
+| CC | 0 | 0 | 0 | 6 | 0 | 0 | 0 | 0 |
+| Bank | 1 | 0 | 0 | 1 | 10 | 0 | 2 | 0 |
+| Loan | 1 | 0 | 2 | 0 | 1 | 4 | 0 | 0 |
+| MT | 0 | 0 | 1 | 1 | 0 | 0 | 13 | 0 |
