@@ -14,7 +14,7 @@
 #>
 param(
   [Parameter(Mandatory)] [string]$ServiceHost,
-  [Parameter(Mandatory)] [ValidateSet('llama', 'qwen', 'gemma', 'cascadeA', 'cascadeB')] [string]$Config,
+  [Parameter(Mandatory)] [ValidateSet('llama', 'qwen', 'gemma', 'cascadeA', 'cascadeB', 'cascadeA_lock', 'cascadeB_lock')] [string]$Config,
   [int[]]$Runs = @(1, 2, 3),
   [int]$Port = 8000,
   # GET /search traffic per hour during the run. 0 = none. Must be the same for every configuration.

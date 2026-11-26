@@ -192,3 +192,50 @@ def test_endpoint_returns_fixed_label_and_502(monkeypatch, caplog):
         ("esc-1", True, "ok"),
         ("err-1", True, "error"),
     ]
+
+
+class SlowCountingClassifier(FakeClassifier):
+    """Like FakeClassifier, but each call takes a moment and the peak number of calls in flight is recorded."""
+
+    def __init__(self, answers: dict[str, str]):
+        super().__init__(answers)
+        self.in_flight = 0
+        self.peak = 0
+
+    async def classify(self, narrative: str, model: str | None = None) -> Category:
+        self.in_flight += 1
+        self.peak = max(self.peak, self.in_flight)
+        try:
+            await asyncio.sleep(0.02)
+            return await super().classify(narrative, model)
+        finally:
+            self.in_flight -= 1
+
+
+def _two_tickets_at_once(triage: Triage) -> None:
+    async def both():
+        await asyncio.gather(triage.classify("a", "req-a"), triage.classify("b", "req-b"))
+
+    asyncio.run(both())
+
+
+@pytest.mark.parametrize("serialize, expected_peak", [(False, 2), (True, 1)])
+def test_serialize_limits_concurrent_ollama_calls(serialize, expected_peak):
+    fake = SlowCountingClassifier({SMALL: "Credit card", LARGE: "Mortgage"})  # every ticket escalates
+    triage = Triage(settings(cascade_serialize=serialize), fake)
+    _two_tickets_at_once(triage)
+    assert len(fake.calls) == 4  # 2 tickets x (small + large)
+    assert fake.peak == expected_peak
+
+
+def test_serialize_logs_lock_wait(caplog):
+    triage = Triage(settings(cascade_serialize=True), FakeClassifier({SMALL: "Credit card", LARGE: "Mortgage"}))
+    _, record, _ = run(triage, caplog)
+    assert record["serialized"] is True
+    assert record["small_wait_ms"] is not None and record["large_wait_ms"] is not None
+
+
+def test_serialize_off_by_default(caplog):
+    triage = Triage(settings(), FakeClassifier({SMALL: "Mortgage", LARGE: "Mortgage"}))
+    _, record, _ = run(triage, caplog)
+    assert record["serialized"] is False and record["small_wait_ms"] is None

@@ -22,6 +22,10 @@ class Settings(BaseSettings):
     # Model label returned and stored for every ticket in cascade mode, so callers cannot tell
     # which model answered. Empty = "cascade:<small>><large>".
     cascade_label: str = ""
+    # Post-freeze addition (A2 speed tests, 26 Nov): when true, the cascade makes at most one Ollama call
+    # at a time across all requests, so Gemma and Llama never run concurrently on the CPU.
+    # false = the frozen STEP2.md behaviour.
+    cascade_serialize: bool = False
 
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")
 
