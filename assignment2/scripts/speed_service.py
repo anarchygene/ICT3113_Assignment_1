@@ -8,7 +8,8 @@
       Writes assignment2/results/speed/S.json and S.md with S, rate, run length, timeout and pause.
 
   python assignment2/scripts/speed_service.py run <config> <run>
-      config: llama | qwen | gemma | cascadeA | cascadeB (settings from STEP2.md §6). For each run:
+      config: llama | qwen | gemma | cascadeA | cascadeB (STEP2.md §6), or cascadeA_lock | cascadeB_lock
+      (post-freeze: same settings with CASCADE_SERIALIZE=true). For each run:
         1. set .env for the config, recreate the api container, save the env dump;
         2. restart Ollama (clears its prompt cache; no model loaded) and wait until it is up;
         3. send the 3 fixed warm-up tickets through POST /tickets, one at a time (timings discarded);
@@ -41,9 +42,12 @@ CONFIGS = {  # .env values per configuration (STEP2.md §6)
     "llama": {"CASCADE_ENABLED": "false", "OLLAMA_MODEL": LLAMA},
     "qwen": {"CASCADE_ENABLED": "false", "OLLAMA_MODEL": QWEN},
     "gemma": {"CASCADE_ENABLED": "false", "OLLAMA_MODEL": GEMMA},
-    "cascadeA": {"CASCADE_ENABLED": "true", "CASCADE_SMALL_MODEL": GEMMA, "CASCADE_LARGE_MODEL": LLAMA, "CASCADE_ESCALATE_ON": ESC_A},
-    "cascadeB": {"CASCADE_ENABLED": "true", "CASCADE_SMALL_MODEL": GEMMA, "CASCADE_LARGE_MODEL": LLAMA, "CASCADE_ESCALATE_ON": ESC_A + ",Debt collection"},
+    "cascadeA": {"CASCADE_ENABLED": "true", "CASCADE_SMALL_MODEL": GEMMA, "CASCADE_LARGE_MODEL": LLAMA, "CASCADE_ESCALATE_ON": ESC_A, "CASCADE_SERIALIZE": "false"},
+    "cascadeB": {"CASCADE_ENABLED": "true", "CASCADE_SMALL_MODEL": GEMMA, "CASCADE_LARGE_MODEL": LLAMA, "CASCADE_ESCALATE_ON": ESC_A + ",Debt collection", "CASCADE_SERIALIZE": "false"},
 }
+# Post-freeze variant (26 Nov): same rule and settings, but at most one Ollama call at a time (CASCADE_SERIALIZE).
+CONFIGS["cascadeA_lock"] = CONFIGS["cascadeA"] | {"CASCADE_SERIALIZE": "true"}
+CONFIGS["cascadeB_lock"] = CONFIGS["cascadeB"] | {"CASCADE_SERIALIZE": "true"}
 S_ROWS = [9094, 9108, 9246]
 
 

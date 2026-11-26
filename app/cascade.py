@@ -10,7 +10,11 @@ Cascade rule:
 
 Every ticket produces one log line, `triage {json}`, recording which model answered and whether
 it escalated, so the escalation fraction can be derived from the service log.
+
+CASCADE_SERIALIZE=true (post-freeze variant, 26 Nov) adds one lock around every Ollama call, so at most one
+model runs at a time; the rule itself is unchanged.
 """
+import asyncio
 import json
 import logging
 import time
@@ -41,22 +45,39 @@ class TriageRecord:
     large_ms: float | None = None
     category: str | None = None
     outcome: str = "ok"  # "ok" or "error" (final model invalid -> HTTP 502)
+    # Only with CASCADE_SERIALIZE=true: time spent waiting for the one-call-at-a-time lock (not in *_ms).
+    serialized: bool = False
+    small_wait_ms: float | None = None
+    large_wait_ms: float | None = None
 
 
-async def _timed(classifier: Classifier, narrative: str, model: str) -> tuple[Category | None, float, Exception | None]:
+async def _timed(
+    classifier: Classifier, narrative: str, model: str, lock: asyncio.Lock | None = None
+) -> tuple[Category | None, float, Exception | None, float | None]:
+    """Classify with one model. Returns (category, model ms, error, lock-wait ms or None without a lock)."""
+    waited = None
+    if lock is not None:
+        queued = time.perf_counter()
+        await lock.acquire()
+        waited = round((time.perf_counter() - queued) * 1000, 1)
     started = time.perf_counter()
     try:
         category = await classifier.classify(narrative, model)
         error = None
     except ClassificationError as exc:
         category, error = None, exc
-    return category, round((time.perf_counter() - started) * 1000, 1), error
+    finally:
+        if lock is not None:
+            lock.release()
+    return category, round((time.perf_counter() - started) * 1000, 1), error, waited
 
 
 class Triage:
     def __init__(self, settings: Settings, classifier: Classifier):
         self.settings = settings
         self.classifier = classifier
+        # One Ollama call at a time across all requests (post-freeze variant); None = frozen behaviour.
+        self.lock = asyncio.Lock() if settings.cascade_enabled and settings.cascade_serialize else None
 
     @property
     def model_label(self) -> str:
@@ -76,15 +97,15 @@ class Triage:
 
     async def _single(self, narrative: str, request_id: str) -> tuple[TriageRecord, Exception | None]:
         model = self.settings.ollama_model
-        category, ms, error = await _timed(self.classifier, narrative, model)
+        category, ms, error, _ = await _timed(self.classifier, narrative, model)
         record = TriageRecord(request_id=request_id, mode="single", final_model=model, large_ms=ms)
         return self._finish(record, category, error)
 
     async def _cascade(self, narrative: str, request_id: str) -> tuple[TriageRecord, Exception | None]:
         small, large = self.settings.cascade_small_model, self.settings.cascade_large_model
-        record = TriageRecord(request_id=request_id, mode="cascade", small_model=small)
+        record = TriageRecord(request_id=request_id, mode="cascade", small_model=small, serialized=self.lock is not None)
 
-        category, record.small_ms, error = await _timed(self.classifier, narrative, small)
+        category, record.small_ms, error, record.small_wait_ms = await _timed(self.classifier, narrative, small, self.lock)
         if error is not None:
             logger.warning("small_model_invalid request_id=%s model=%s error=%s", request_id, small, error)
             record.small_answer, record.escalated, record.reason = "invalid", True, "invalid"
@@ -98,7 +119,7 @@ class Triage:
             return record, None
 
         record.final_model = large
-        category, record.large_ms, error = await _timed(self.classifier, narrative, large)
+        category, record.large_ms, error, record.large_wait_ms = await _timed(self.classifier, narrative, large, self.lock)
         return self._finish(record, category, error)
 
     @staticmethod
