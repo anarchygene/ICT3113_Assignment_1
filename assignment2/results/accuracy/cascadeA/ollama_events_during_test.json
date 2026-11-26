@@ -1,0 +1,10 @@
+{
+  "model_loads": 0,
+  "evictions": 0,
+  "runner_killed": 0,
+  "window": [
+    "2026-11-26T11:16:36Z",
+    "2026-11-26T11:38:43Z"
+  ],
+  "accuracy_test_exit": 0
+}

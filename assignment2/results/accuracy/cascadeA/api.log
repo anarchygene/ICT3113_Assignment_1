@@ -1,0 +1,410 @@
+api-1  | 2026-11-26T11:15:28.397733183Z INFO:     Started server process [1]
+api-1  | 2026-11-26T11:15:28.397769780Z INFO:     Waiting for application startup.
+api-1  | 2026-11-26T11:15:28.417740908Z INFO:     Application startup complete.
+api-1  | 2026-11-26T11:15:28.418392682Z INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+api-1  | 2026-11-26T11:15:29.828235251Z 2026-11-26 11:15:29,828 INFO complaints.api request_id=9304ee80-8e27-4243-897b-ceb42e486d58 method=GET path=/health status=200 duration_ms=0.92 client=172.19.0.1
+api-1  | 2026-11-26T11:15:29.828262584Z INFO:     172.19.0.1:44540 - "GET /health HTTP/1.1" 200 OK
+api-1  | 2026-11-26T11:15:31.319484400Z 2026-11-26 11:15:31,319 INFO complaints.api request_id=c0de3d17-bc48-42ea-943a-6eaa92ef114a method=GET path=/health status=200 duration_ms=0.72 client=172.19.0.1
+api-1  | 2026-11-26T11:15:31.319520124Z INFO:     172.19.0.1:44550 - "GET /health HTTP/1.1" 200 OK
+api-1  | 2026-11-26T11:16:38.068835457Z 2026-11-26 11:16:38,066 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:16:42.579633619Z 2026-11-26 11:16:42,579 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:16:42.581533867Z 2026-11-26 11:16:42,581 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9840", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Credit reporting", "small_ms": 1575.2, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 4503.5, "category": "Money transfer or service", "outcome": "ok"}
+api-1  | 2026-11-26T11:16:42.729529772Z 2026-11-26 11:16:42,728 INFO complaints.api request_id=acc-a2-cascadeA-9840 method=POST path=/tickets status=201 duration_ms=6295.01 client=172.19.0.1
+api-1  | 2026-11-26T11:16:42.730591193Z INFO:     172.19.0.1:51696 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:16:44.711865239Z 2026-11-26 11:16:44,711 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:16:50.235704382Z 2026-11-26 11:16:50,235 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:16:50.236703162Z 2026-11-26 11:16:50,236 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9842", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Credit reporting", "small_ms": 1963.0, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 5523.5, "category": "Credit reporting", "outcome": "ok"}
+api-1  | 2026-11-26T11:16:50.244083198Z 2026-11-26 11:16:50,243 INFO complaints.api request_id=acc-a2-cascadeA-9842 method=POST path=/tickets status=201 duration_ms=7495.42 client=172.19.0.1
+api-1  | 2026-11-26T11:16:50.244129948Z INFO:     172.19.0.1:46274 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:16:51.356867818Z 2026-11-26 11:16:51,353 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:17:15.609832289Z 2026-11-26 11:17:15,609 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:17:15.610695321Z 2026-11-26 11:17:15,610 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9844", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Credit reporting", "small_ms": 1095.0, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 24257.8, "category": "Credit card", "outcome": "ok"}
+api-1  | 2026-11-26T11:17:15.619342780Z 2026-11-26 11:17:15,619 INFO complaints.api request_id=acc-a2-cascadeA-9844 method=POST path=/tickets status=201 duration_ms=25362.44 client=172.19.0.1
+api-1  | 2026-11-26T11:17:15.619407212Z INFO:     172.19.0.1:46278 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:17:40.064712294Z 2026-11-26 11:17:40,061 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:18:33.069286045Z 2026-11-26 11:18:33,069 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:18:33.070355522Z 2026-11-26 11:18:33,070 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9846", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Consumer loan", "small_ms": 24448.4, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 53001.8, "category": "Money transfer or service", "outcome": "ok"}
+api-1  | 2026-11-26T11:18:33.086578507Z 2026-11-26 11:18:33,086 INFO complaints.api request_id=acc-a2-cascadeA-9846 method=POST path=/tickets status=201 duration_ms=77467.44 client=172.19.0.1
+api-1  | 2026-11-26T11:18:33.086975823Z INFO:     172.19.0.1:59798 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:18:54.487552305Z 2026-11-26 11:18:54,486 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:19:30.127744569Z 2026-11-26 11:19:30,127 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:19:30.128739541Z 2026-11-26 11:19:30,128 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9848", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Credit reporting", "small_ms": 21391.5, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 35644.2, "category": "Credit reporting", "outcome": "ok"}
+api-1  | 2026-11-26T11:19:30.144946715Z 2026-11-26 11:19:30,143 INFO complaints.api request_id=acc-a2-cascadeA-9848 method=POST path=/tickets status=201 duration_ms=57053.06 client=172.19.0.1
+api-1  | 2026-11-26T11:19:30.144946673Z INFO:     172.19.0.1:43802 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:19:42.321575469Z 2026-11-26 11:19:42,321 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:19:42.325940923Z 2026-11-26 11:19:42,322 WARNING complaints.triage small_model_invalid request_id=acc-a2-cascadeA-9850 model=gemma3:1b-it-q4_K_M error=Ollama returned an invalid classification: 'Consumer Loan' is not a valid Category
+api-1  | 2026-11-26T11:20:04.538283903Z 2026-11-26 11:20:04,537 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:20:04.539544429Z 2026-11-26 11:20:04,539 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9850", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "invalid", "small_ms": 12175.3, "escalated": true, "reason": "invalid", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 22218.6, "category": "Bank account or service", "outcome": "ok"}
+api-1  | 2026-11-26T11:20:04.546929107Z 2026-11-26 11:20:04,546 INFO complaints.api request_id=acc-a2-cascadeA-9850 method=POST path=/tickets status=201 duration_ms=34402.48 client=172.19.0.1
+api-1  | 2026-11-26T11:20:04.547010126Z INFO:     172.19.0.1:40590 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:20:07.826366930Z 2026-11-26 11:20:07,826 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:20:27.370552157Z 2026-11-26 11:20:27,370 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:20:27.371713542Z 2026-11-26 11:20:27,371 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9852", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Credit reporting", "small_ms": 3257.5, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 19544.0, "category": "Credit card", "outcome": "ok"}
+api-1  | 2026-11-26T11:20:27.378431150Z 2026-11-26 11:20:27,378 INFO complaints.api request_id=acc-a2-cascadeA-9852 method=POST path=/tickets status=201 duration_ms=22809.68 client=172.19.0.1
+api-1  | 2026-11-26T11:20:27.378479948Z INFO:     172.19.0.1:39514 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:20:29.182069972Z 2026-11-26 11:20:29,181 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:20:40.588124293Z 2026-11-26 11:20:40,587 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:20:40.589184577Z 2026-11-26 11:20:40,589 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9854", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Credit reporting", "small_ms": 1790.6, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 11408.7, "category": "Money transfer or service", "outcome": "ok"}
+api-1  | 2026-11-26T11:20:40.596169293Z 2026-11-26 11:20:40,595 INFO complaints.api request_id=acc-a2-cascadeA-9854 method=POST path=/tickets status=201 duration_ms=13207.20 client=172.19.0.1
+api-1  | 2026-11-26T11:20:40.596211992Z INFO:     172.19.0.1:36652 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:20:42.081161778Z 2026-11-26 11:20:42,080 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:20:48.912765972Z 2026-11-26 11:20:48,912 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:20:48.913856595Z 2026-11-26 11:20:48,913 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9856", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Credit reporting", "small_ms": 1464.9, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 6830.8, "category": "Credit card", "outcome": "ok"}
+api-1  | 2026-11-26T11:20:48.922780654Z 2026-11-26 11:20:48,922 INFO complaints.api request_id=acc-a2-cascadeA-9856 method=POST path=/tickets status=201 duration_ms=8305.63 client=172.19.0.1
+api-1  | 2026-11-26T11:20:48.922831228Z INFO:     172.19.0.1:37744 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:20:50.737300701Z 2026-11-26 11:20:50,737 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:20:50.738246330Z 2026-11-26 11:20:50,738 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9858", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Debt collection", "small_ms": 1790.6, "escalated": false, "reason": "accept", "final_model": "gemma3:1b-it-q4_K_M", "large_ms": null, "category": "Debt collection", "outcome": "ok"}
+api-1  | 2026-11-26T11:20:50.749432093Z 2026-11-26 11:20:50,749 INFO complaints.api request_id=acc-a2-cascadeA-9858 method=POST path=/tickets status=201 duration_ms=1803.03 client=172.19.0.1
+api-1  | 2026-11-26T11:20:50.749464751Z INFO:     172.19.0.1:59696 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:20:52.085077794Z 2026-11-26 11:20:52,084 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:20:59.433902926Z 2026-11-26 11:20:59,433 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:20:59.434922998Z 2026-11-26 11:20:59,434 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9860", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Bank account or service", "small_ms": 1323.4, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 7348.9, "category": "Credit card", "outcome": "ok"}
+api-1  | 2026-11-26T11:20:59.441437891Z INFO:     172.19.0.1:59700 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:20:59.441486821Z 2026-11-26 11:20:59,441 INFO complaints.api request_id=acc-a2-cascadeA-9860 method=POST path=/tickets status=201 duration_ms=8679.72 client=172.19.0.1
+api-1  | 2026-11-26T11:21:00.912031510Z 2026-11-26 11:21:00,909 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:21:00.912130215Z 2026-11-26 11:21:00,910 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9862", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Mortgage", "small_ms": 1441.8, "escalated": false, "reason": "accept", "final_model": "gemma3:1b-it-q4_K_M", "large_ms": null, "category": "Mortgage", "outcome": "ok"}
+api-1  | 2026-11-26T11:21:00.925271741Z 2026-11-26 11:21:00,925 INFO complaints.api request_id=acc-a2-cascadeA-9862 method=POST path=/tickets status=201 duration_ms=1457.63 client=172.19.0.1
+api-1  | 2026-11-26T11:21:00.925340946Z INFO:     172.19.0.1:37538 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:21:02.327078230Z 2026-11-26 11:21:02,325 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:21:02.327108004Z 2026-11-26 11:21:02,326 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9864", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Debt collection", "small_ms": 1387.9, "escalated": false, "reason": "accept", "final_model": "gemma3:1b-it-q4_K_M", "large_ms": null, "category": "Debt collection", "outcome": "ok"}
+api-1  | 2026-11-26T11:21:02.337966190Z 2026-11-26 11:21:02,337 INFO complaints.api request_id=acc-a2-cascadeA-9864 method=POST path=/tickets status=201 duration_ms=1401.59 client=172.19.0.1
+api-1  | 2026-11-26T11:21:02.338031878Z INFO:     172.19.0.1:37542 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:21:03.769514647Z 2026-11-26 11:21:03,769 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:21:10.707446420Z 2026-11-26 11:21:10,707 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:21:10.708574809Z 2026-11-26 11:21:10,708 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9866", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Credit reporting", "small_ms": 1425.6, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 6940.4, "category": "Money transfer or service", "outcome": "ok"}
+api-1  | 2026-11-26T11:21:10.717221135Z 2026-11-26 11:21:10,716 INFO complaints.api request_id=acc-a2-cascadeA-9866 method=POST path=/tickets status=201 duration_ms=8375.56 client=172.19.0.1
+api-1  | 2026-11-26T11:21:10.717279752Z INFO:     172.19.0.1:37550 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:21:13.682109117Z 2026-11-26 11:21:13,677 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:21:31.873251353Z 2026-11-26 11:21:31,872 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:21:31.874149055Z 2026-11-26 11:21:31,873 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9868", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Consumer loan", "small_ms": 2942.0, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 18194.9, "category": "Credit reporting", "outcome": "ok"}
+api-1  | 2026-11-26T11:21:31.882101014Z 2026-11-26 11:21:31,881 INFO complaints.api request_id=acc-a2-cascadeA-9868 method=POST path=/tickets status=201 duration_ms=21146.21 client=172.19.0.1
+api-1  | 2026-11-26T11:21:31.882131368Z INFO:     172.19.0.1:36434 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:21:33.837709275Z 2026-11-26 11:21:33,837 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:21:43.733499980Z 2026-11-26 11:21:43,733 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:21:43.734392330Z 2026-11-26 11:21:43,734 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9870", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Credit reporting", "small_ms": 1950.7, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 9898.5, "category": "Bank account or service", "outcome": "ok"}
+api-1  | 2026-11-26T11:21:43.741997774Z 2026-11-26 11:21:43,741 INFO complaints.api request_id=acc-a2-cascadeA-9870 method=POST path=/tickets status=201 duration_ms=11857.62 client=172.19.0.1
+api-1  | 2026-11-26T11:21:43.742037816Z INFO:     172.19.0.1:36930 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:21:45.424704327Z 2026-11-26 11:21:45,424 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:21:45.427313474Z 2026-11-26 11:21:45,425 WARNING complaints.triage small_model_invalid request_id=acc-a2-cascadeA-9872 model=gemma3:1b-it-q4_K_M error=Ollama returned an invalid classification: 'Consumer Loan' is not a valid Category
+api-1  | 2026-11-26T11:21:52.212461167Z 2026-11-26 11:21:52,212 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:21:52.213367066Z 2026-11-26 11:21:52,213 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9872", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "invalid", "small_ms": 1656.2, "escalated": true, "reason": "invalid", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 6787.5, "category": "Money transfer or service", "outcome": "ok"}
+api-1  | 2026-11-26T11:21:52.222476838Z 2026-11-26 11:21:52,222 INFO complaints.api request_id=acc-a2-cascadeA-9872 method=POST path=/tickets status=201 duration_ms=8453.77 client=172.19.0.1
+api-1  | 2026-11-26T11:21:52.222531543Z INFO:     172.19.0.1:49478 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:21:54.519391506Z 2026-11-26 11:21:54,513 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:22:08.047038362Z 2026-11-26 11:22:08,046 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:22:08.047990810Z 2026-11-26 11:22:08,047 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9874", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Credit reporting", "small_ms": 2285.7, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 13536.0, "category": "Money transfer or service", "outcome": "ok"}
+api-1  | 2026-11-26T11:22:08.054991398Z 2026-11-26 11:22:08,054 INFO complaints.api request_id=acc-a2-cascadeA-9874 method=POST path=/tickets status=201 duration_ms=15829.63 client=172.19.0.1
+api-1  | 2026-11-26T11:22:08.055185523Z INFO:     172.19.0.1:49488 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:22:10.654725864Z 2026-11-26 11:22:10,654 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:22:25.000418503Z 2026-11-26 11:22:25,000 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:22:25.001569016Z 2026-11-26 11:22:25,001 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9876", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Credit reporting", "small_ms": 2594.4, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 14345.9, "category": "Debt collection", "outcome": "ok"}
+api-1  | 2026-11-26T11:22:25.014471144Z 2026-11-26 11:22:25,014 INFO complaints.api request_id=acc-a2-cascadeA-9876 method=POST path=/tickets status=201 duration_ms=16954.09 client=172.19.0.1
+api-1  | 2026-11-26T11:22:25.014700887Z INFO:     172.19.0.1:39246 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:22:28.250124839Z 2026-11-26 11:22:28,249 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:22:28.251762190Z 2026-11-26 11:22:28,251 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9878", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Mortgage", "small_ms": 3221.2, "escalated": false, "reason": "accept", "final_model": "gemma3:1b-it-q4_K_M", "large_ms": null, "category": "Mortgage", "outcome": "ok"}
+api-1  | 2026-11-26T11:22:28.263213533Z 2026-11-26 11:22:28,262 INFO complaints.api request_id=acc-a2-cascadeA-9878 method=POST path=/tickets status=201 duration_ms=3233.63 client=172.19.0.1
+api-1  | 2026-11-26T11:22:28.263198748Z INFO:     172.19.0.1:53964 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:22:29.598083735Z 2026-11-26 11:22:29,597 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:22:34.379870361Z 2026-11-26 11:22:34,379 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:22:34.381252987Z 2026-11-26 11:22:34,380 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9880", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Bank account or service", "small_ms": 1314.0, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 4785.1, "category": "Money transfer or service", "outcome": "ok"}
+api-1  | 2026-11-26T11:22:34.388707405Z 2026-11-26 11:22:34,388 INFO complaints.api request_id=acc-a2-cascadeA-9880 method=POST path=/tickets status=201 duration_ms=6108.02 client=172.19.0.1
+api-1  | 2026-11-26T11:22:34.388744826Z INFO:     172.19.0.1:53974 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:22:36.717865157Z 2026-11-26 11:22:36,715 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:22:36.717932886Z 2026-11-26 11:22:36,716 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9882", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Mortgage", "small_ms": 2320.4, "escalated": false, "reason": "accept", "final_model": "gemma3:1b-it-q4_K_M", "large_ms": null, "category": "Mortgage", "outcome": "ok"}
+api-1  | 2026-11-26T11:22:36.733456278Z INFO:     172.19.0.1:40642 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:22:36.733502066Z 2026-11-26 11:22:36,730 INFO complaints.api request_id=acc-a2-cascadeA-9882 method=POST path=/tickets status=201 duration_ms=2336.02 client=172.19.0.1
+api-1  | 2026-11-26T11:22:38.921555550Z 2026-11-26 11:22:38,921 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:22:50.009567934Z 2026-11-26 11:22:50,009 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:22:50.010590404Z 2026-11-26 11:22:50,010 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9884", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Consumer loan", "small_ms": 2184.9, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 11088.0, "category": "Bank account or service", "outcome": "ok"}
+api-1  | 2026-11-26T11:22:50.017431066Z 2026-11-26 11:22:50,017 INFO complaints.api request_id=acc-a2-cascadeA-9884 method=POST path=/tickets status=201 duration_ms=13280.44 client=172.19.0.1
+api-1  | 2026-11-26T11:22:50.017492644Z INFO:     172.19.0.1:40648 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:22:53.410734354Z 2026-11-26 11:22:53,410 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:23:14.266065700Z 2026-11-26 11:23:14,265 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:23:14.266979757Z 2026-11-26 11:23:14,266 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9886", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Consumer loan", "small_ms": 3388.0, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 20857.4, "category": "Credit reporting", "outcome": "ok"}
+api-1  | 2026-11-26T11:23:14.275335681Z 2026-11-26 11:23:14,275 INFO complaints.api request_id=acc-a2-cascadeA-9886 method=POST path=/tickets status=201 duration_ms=24254.55 client=172.19.0.1
+api-1  | 2026-11-26T11:23:14.275405613Z INFO:     172.19.0.1:42064 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:23:18.109014217Z 2026-11-26 11:23:18,108 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:23:18.110201303Z 2026-11-26 11:23:18,110 WARNING complaints.triage small_model_invalid request_id=acc-a2-cascadeA-9888 model=gemma3:1b-it-q4_K_M error=Ollama returned an invalid classification: 'Consumer Loan' is not a valid Category
+api-1  | 2026-11-26T11:23:42.944115589Z 2026-11-26 11:23:42,943 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:23:42.945105191Z 2026-11-26 11:23:42,944 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9888", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "invalid", "small_ms": 3827.6, "escalated": true, "reason": "invalid", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 24837.3, "category": "Credit card", "outcome": "ok"}
+api-1  | 2026-11-26T11:23:42.953179025Z 2026-11-26 11:23:42,952 INFO complaints.api request_id=acc-a2-cascadeA-9888 method=POST path=/tickets status=201 duration_ms=28674.04 client=172.19.0.1
+api-1  | 2026-11-26T11:23:42.953508107Z INFO:     172.19.0.1:43530 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:23:44.862255038Z 2026-11-26 11:23:44,861 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:23:44.863649135Z 2026-11-26 11:23:44,863 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9890", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Debt collection", "small_ms": 1903.4, "escalated": false, "reason": "accept", "final_model": "gemma3:1b-it-q4_K_M", "large_ms": null, "category": "Debt collection", "outcome": "ok"}
+api-1  | 2026-11-26T11:23:44.880434074Z 2026-11-26 11:23:44,877 INFO complaints.api request_id=acc-a2-cascadeA-9890 method=POST path=/tickets status=201 duration_ms=1918.85 client=172.19.0.1
+api-1  | 2026-11-26T11:23:44.880501553Z INFO:     172.19.0.1:36556 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:23:46.702719864Z 2026-11-26 11:23:46,702 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:23:56.222146051Z 2026-11-26 11:23:56,221 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:23:56.223074282Z 2026-11-26 11:23:56,222 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9892", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Credit reporting", "small_ms": 1798.1, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 9518.5, "category": "Credit reporting", "outcome": "ok"}
+api-1  | 2026-11-26T11:23:56.230255046Z INFO:     172.19.0.1:36568 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:23:56.230280584Z 2026-11-26 11:23:56,229 INFO complaints.api request_id=acc-a2-cascadeA-9892 method=POST path=/tickets status=201 duration_ms=11325.40 client=172.19.0.1
+api-1  | 2026-11-26T11:23:58.366348775Z 2026-11-26 11:23:58,366 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:24:09.854446236Z 2026-11-26 11:24:09,854 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:24:09.855515893Z 2026-11-26 11:24:09,855 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9894", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Consumer loan", "small_ms": 2121.2, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 11490.0, "category": "Bank account or service", "outcome": "ok"}
+api-1  | 2026-11-26T11:24:09.862473278Z INFO:     172.19.0.1:45008 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:24:09.862515297Z 2026-11-26 11:24:09,862 INFO complaints.api request_id=acc-a2-cascadeA-9894 method=POST path=/tickets status=201 duration_ms=13619.26 client=172.19.0.1
+api-1  | 2026-11-26T11:24:11.186402937Z 2026-11-26 11:24:11,185 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:24:11.186712700Z 2026-11-26 11:24:11,186 WARNING complaints.triage small_model_invalid request_id=acc-a2-cascadeA-9896 model=gemma3:1b-it-q4_K_M error=Ollama returned an invalid classification: 'Venmo' is not a valid Category
+api-1  | 2026-11-26T11:24:17.876485966Z 2026-11-26 11:24:17,876 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:24:17.877278826Z 2026-11-26 11:24:17,877 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9896", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "invalid", "small_ms": 1309.4, "escalated": true, "reason": "invalid", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 6690.3, "category": "Money transfer or service", "outcome": "ok"}
+api-1  | 2026-11-26T11:24:17.884298196Z 2026-11-26 11:24:17,884 INFO complaints.api request_id=acc-a2-cascadeA-9896 method=POST path=/tickets status=201 duration_ms=8008.10 client=172.19.0.1
+api-1  | 2026-11-26T11:24:17.884405162Z INFO:     172.19.0.1:33804 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:24:19.651725838Z 2026-11-26 11:24:19,651 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:24:28.379048480Z 2026-11-26 11:24:28,378 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:24:28.380612257Z 2026-11-26 11:24:28,380 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9898", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Consumer loan", "small_ms": 1752.1, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 8727.9, "category": "Money transfer or service", "outcome": "ok"}
+api-1  | 2026-11-26T11:24:28.389712199Z 2026-11-26 11:24:28,389 INFO complaints.api request_id=acc-a2-cascadeA-9898 method=POST path=/tickets status=201 duration_ms=10490.26 client=172.19.0.1
+api-1  | 2026-11-26T11:24:28.389794003Z INFO:     172.19.0.1:41794 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:24:29.914809099Z 2026-11-26 11:24:29,914 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:24:29.915829463Z 2026-11-26 11:24:29,915 WARNING complaints.triage small_model_invalid request_id=acc-a2-cascadeA-9900 model=gemma3:1b-it-q4_K_M error=Ollama returned an invalid classification: 'Consumer Loan' is not a valid Category
+api-1  | 2026-11-26T11:24:36.235662707Z 2026-11-26 11:24:36,235 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:24:36.236795536Z 2026-11-26 11:24:36,236 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9900", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "invalid", "small_ms": 1502.1, "escalated": true, "reason": "invalid", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 6325.1, "category": "Bank account or service", "outcome": "ok"}
+api-1  | 2026-11-26T11:24:36.251399743Z 2026-11-26 11:24:36,251 INFO complaints.api request_id=acc-a2-cascadeA-9900 method=POST path=/tickets status=201 duration_ms=7843.34 client=172.19.0.1
+api-1  | 2026-11-26T11:24:36.251613050Z INFO:     172.19.0.1:59642 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:24:38.099497343Z 2026-11-26 11:24:38,099 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:24:45.823852311Z 2026-11-26 11:24:45,823 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:24:45.824984304Z 2026-11-26 11:24:45,824 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9902", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Consumer loan", "small_ms": 1823.6, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 7724.5, "category": "Money transfer or service", "outcome": "ok"}
+api-1  | 2026-11-26T11:24:45.833561634Z INFO:     172.19.0.1:58818 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:24:45.833604846Z 2026-11-26 11:24:45,833 INFO complaints.api request_id=acc-a2-cascadeA-9902 method=POST path=/tickets status=201 duration_ms=9557.45 client=172.19.0.1
+api-1  | 2026-11-26T11:24:47.439624302Z 2026-11-26 11:24:47,439 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:24:47.440339321Z 2026-11-26 11:24:47,440 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9904", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Debt collection", "small_ms": 1600.2, "escalated": false, "reason": "accept", "final_model": "gemma3:1b-it-q4_K_M", "large_ms": null, "category": "Debt collection", "outcome": "ok"}
+api-1  | 2026-11-26T11:24:47.451091257Z 2026-11-26 11:24:47,450 INFO complaints.api request_id=acc-a2-cascadeA-9904 method=POST path=/tickets status=201 duration_ms=1612.00 client=172.19.0.1
+api-1  | 2026-11-26T11:24:47.451242578Z INFO:     172.19.0.1:44486 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:24:49.071968712Z 2026-11-26 11:24:49,071 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:24:57.984449790Z 2026-11-26 11:24:57,984 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:24:57.985467971Z 2026-11-26 11:24:57,985 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9906", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Credit card", "small_ms": 1610.6, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 8912.4, "category": "Consumer loan", "outcome": "ok"}
+api-1  | 2026-11-26T11:24:57.994244277Z 2026-11-26 11:24:57,993 INFO complaints.api request_id=acc-a2-cascadeA-9906 method=POST path=/tickets status=201 duration_ms=10532.81 client=172.19.0.1
+api-1  | 2026-11-26T11:24:57.994380853Z INFO:     172.19.0.1:44496 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:24:59.885255818Z 2026-11-26 11:24:59,885 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:25:09.573578679Z 2026-11-26 11:25:09,573 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:25:09.574542712Z 2026-11-26 11:25:09,574 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9908", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Credit reporting", "small_ms": 1879.1, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 9689.0, "category": "Bank account or service", "outcome": "ok"}
+api-1  | 2026-11-26T11:25:09.579848431Z INFO:     172.19.0.1:56098 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:25:09.579872787Z 2026-11-26 11:25:09,579 INFO complaints.api request_id=acc-a2-cascadeA-9908 method=POST path=/tickets status=201 duration_ms=11574.73 client=172.19.0.1
+api-1  | 2026-11-26T11:25:10.606013306Z 2026-11-26 11:25:10,600 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:25:14.413093310Z 2026-11-26 11:25:14,412 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:25:14.413993898Z 2026-11-26 11:25:14,413 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9910", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Credit reporting", "small_ms": 1000.8, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 3812.0, "category": "Credit reporting", "outcome": "ok"}
+api-1  | 2026-11-26T11:25:14.421503634Z 2026-11-26 11:25:14,421 INFO complaints.api request_id=acc-a2-cascadeA-9910 method=POST path=/tickets status=201 duration_ms=4821.17 client=172.19.0.1
+api-1  | 2026-11-26T11:25:14.421698437Z INFO:     172.19.0.1:47470 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:25:15.458942921Z 2026-11-26 11:25:15,458 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:25:20.089333167Z 2026-11-26 11:25:20,088 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:25:20.090453716Z 2026-11-26 11:25:20,090 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9912", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Credit reporting", "small_ms": 1031.5, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 4630.4, "category": "Credit reporting", "outcome": "ok"}
+api-1  | 2026-11-26T11:25:20.096422082Z INFO:     172.19.0.1:53696 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:25:20.096437858Z 2026-11-26 11:25:20,096 INFO complaints.api request_id=acc-a2-cascadeA-9912 method=POST path=/tickets status=201 duration_ms=5668.94 client=172.19.0.1
+api-1  | 2026-11-26T11:25:21.343726167Z 2026-11-26 11:25:21,343 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:25:25.887971618Z 2026-11-26 11:25:25,887 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:25:25.889048241Z 2026-11-26 11:25:25,888 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9914", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Credit reporting", "small_ms": 1222.6, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 4544.3, "category": "Bank account or service", "outcome": "ok"}
+api-1  | 2026-11-26T11:25:25.895022280Z INFO:     172.19.0.1:53702 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:25:25.895051555Z 2026-11-26 11:25:25,894 INFO complaints.api request_id=acc-a2-cascadeA-9914 method=POST path=/tickets status=201 duration_ms=5774.24 client=172.19.0.1
+api-1  | 2026-11-26T11:25:28.345397777Z 2026-11-26 11:25:28,345 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:25:45.194501609Z 2026-11-26 11:25:45,194 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:25:45.195627336Z 2026-11-26 11:25:45,195 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9916", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Consumer loan", "small_ms": 2426.3, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 16851.3, "category": "Bank account or service", "outcome": "ok"}
+api-1  | 2026-11-26T11:25:45.201767448Z 2026-11-26 11:25:45,201 INFO complaints.api request_id=acc-a2-cascadeA-9916 method=POST path=/tickets status=201 duration_ms=19285.01 client=172.19.0.1
+api-1  | 2026-11-26T11:25:45.201959553Z INFO:     172.19.0.1:40426 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:25:50.103818624Z 2026-11-26 11:25:50,100 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:26:23.658858053Z 2026-11-26 11:26:23,658 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:26:23.659690013Z 2026-11-26 11:26:23,659 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9918", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Credit reporting", "small_ms": 4893.9, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 33560.5, "category": "Mortgage", "outcome": "ok"}
+api-1  | 2026-11-26T11:26:23.666142566Z 2026-11-26 11:26:23,665 INFO complaints.api request_id=acc-a2-cascadeA-9918 method=POST path=/tickets status=201 duration_ms=38461.80 client=172.19.0.1
+api-1  | 2026-11-26T11:26:23.666235430Z INFO:     172.19.0.1:36844 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:26:37.986647149Z 2026-11-26 11:26:37,984 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:26:37.987719058Z 2026-11-26 11:26:37,987 WARNING complaints.triage small_model_invalid request_id=acc-a2-cascadeA-9920 model=gemma3:1b-it-q4_K_M error=Ollama returned an invalid classification: 'Consumer Loan' is not a valid Category
+api-1  | 2026-11-26T11:27:12.279520893Z 2026-11-26 11:27:12,279 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:27:12.280547449Z 2026-11-26 11:27:12,280 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9920", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "invalid", "small_ms": 14305.0, "escalated": true, "reason": "invalid", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 34294.4, "category": "Credit card", "outcome": "ok"}
+api-1  | 2026-11-26T11:27:12.287997862Z 2026-11-26 11:27:12,287 INFO complaints.api request_id=acc-a2-cascadeA-9920 method=POST path=/tickets status=201 duration_ms=48608.15 client=172.19.0.1
+api-1  | 2026-11-26T11:27:12.288064782Z INFO:     172.19.0.1:47830 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:27:15.974261258Z 2026-11-26 11:27:15,973 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:27:15.975084598Z 2026-11-26 11:27:15,974 WARNING complaints.triage small_model_invalid request_id=acc-a2-cascadeA-9922 model=gemma3:1b-it-q4_K_M error=Ollama returned an invalid classification: 'Consumer Loan' is not a valid Category
+api-1  | 2026-11-26T11:27:39.225550329Z 2026-11-26 11:27:39,225 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:27:39.226519614Z 2026-11-26 11:27:39,226 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9922", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "invalid", "small_ms": 3672.7, "escalated": true, "reason": "invalid", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 23253.8, "category": "Mortgage", "outcome": "ok"}
+api-1  | 2026-11-26T11:27:39.233683700Z INFO:     172.19.0.1:56500 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:27:39.233947067Z 2026-11-26 11:27:39,233 INFO complaints.api request_id=acc-a2-cascadeA-9922 method=POST path=/tickets status=201 duration_ms=26935.30 client=172.19.0.1
+api-1  | 2026-11-26T11:27:43.750733338Z 2026-11-26 11:27:43,750 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:28:07.348689219Z 2026-11-26 11:28:07,348 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:28:07.349617538Z 2026-11-26 11:28:07,349 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9924", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Credit card", "small_ms": 4497.4, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 23599.5, "category": "Credit card", "outcome": "ok"}
+api-1  | 2026-11-26T11:28:07.355254883Z 2026-11-26 11:28:07,355 INFO complaints.api request_id=acc-a2-cascadeA-9924 method=POST path=/tickets status=201 duration_ms=28104.95 client=172.19.0.1
+api-1  | 2026-11-26T11:28:07.355315463Z INFO:     172.19.0.1:43584 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:28:10.592516548Z 2026-11-26 11:28:10,592 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:28:10.593419684Z 2026-11-26 11:28:10,593 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9926", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Mortgage", "small_ms": 3218.3, "escalated": false, "reason": "accept", "final_model": "gemma3:1b-it-q4_K_M", "large_ms": null, "category": "Mortgage", "outcome": "ok"}
+api-1  | 2026-11-26T11:28:10.598854592Z 2026-11-26 11:28:10,598 INFO complaints.api request_id=acc-a2-cascadeA-9926 method=POST path=/tickets status=201 duration_ms=3226.59 client=172.19.0.1
+api-1  | 2026-11-26T11:28:10.599042526Z INFO:     172.19.0.1:49836 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:28:15.197329976Z 2026-11-26 11:28:15,196 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:28:44.353405474Z 2026-11-26 11:28:44,353 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:28:44.354262664Z 2026-11-26 11:28:44,353 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9928", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Consumer loan", "small_ms": 4585.6, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 29157.7, "category": "Debt collection", "outcome": "ok"}
+api-1  | 2026-11-26T11:28:44.360571146Z 2026-11-26 11:28:44,360 INFO complaints.api request_id=acc-a2-cascadeA-9928 method=POST path=/tickets status=201 duration_ms=33750.43 client=172.19.0.1
+api-1  | 2026-11-26T11:28:44.360656738Z INFO:     172.19.0.1:49850 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:28:47.801173471Z 2026-11-26 11:28:47,798 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:29:01.047824807Z 2026-11-26 11:29:01,047 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:29:01.049184524Z 2026-11-26 11:29:01,048 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9930", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Credit reporting", "small_ms": 3434.0, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 13249.6, "category": "Credit card", "outcome": "ok"}
+api-1  | 2026-11-26T11:29:01.055974001Z 2026-11-26 11:29:01,055 INFO complaints.api request_id=acc-a2-cascadeA-9930 method=POST path=/tickets status=201 duration_ms=16691.23 client=172.19.0.1
+api-1  | 2026-11-26T11:29:01.056062643Z INFO:     172.19.0.1:35308 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:29:02.344299755Z 2026-11-26 11:29:02,344 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:29:07.074972957Z 2026-11-26 11:29:07,074 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:29:07.075729376Z 2026-11-26 11:29:07,075 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9932", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Credit card", "small_ms": 1278.8, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 4732.2, "category": "Consumer loan", "outcome": "ok"}
+api-1  | 2026-11-26T11:29:07.080921294Z 2026-11-26 11:29:07,080 INFO complaints.api request_id=acc-a2-cascadeA-9932 method=POST path=/tickets status=201 duration_ms=6017.07 client=172.19.0.1
+api-1  | 2026-11-26T11:29:07.080953158Z INFO:     172.19.0.1:33662 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:29:10.380184838Z 2026-11-26 11:29:10,379 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:29:28.698179221Z 2026-11-26 11:29:28,697 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:29:28.699236847Z 2026-11-26 11:29:28,699 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9934", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Credit reporting", "small_ms": 3272.6, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 18317.9, "category": "Mortgage", "outcome": "ok"}
+api-1  | 2026-11-26T11:29:28.706448274Z INFO:     172.19.0.1:43708 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:29:28.706446574Z 2026-11-26 11:29:28,706 INFO complaints.api request_id=acc-a2-cascadeA-9934 method=POST path=/tickets status=201 duration_ms=21599.90 client=172.19.0.1
+api-1  | 2026-11-26T11:29:30.903997930Z 2026-11-26 11:29:30,903 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:29:43.183189576Z 2026-11-26 11:29:43,182 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:29:43.184144362Z 2026-11-26 11:29:43,183 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9936", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Credit reporting", "small_ms": 2188.6, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 12281.4, "category": "Bank account or service", "outcome": "ok"}
+api-1  | 2026-11-26T11:29:43.191303920Z 2026-11-26 11:29:43,191 INFO complaints.api request_id=acc-a2-cascadeA-9936 method=POST path=/tickets status=201 duration_ms=14479.26 client=172.19.0.1
+api-1  | 2026-11-26T11:29:43.191336356Z INFO:     172.19.0.1:41858 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:29:46.197357702Z 2026-11-26 11:29:46,197 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:30:03.807495774Z 2026-11-26 11:30:03,807 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:30:03.809112910Z 2026-11-26 11:30:03,808 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9938", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Credit reporting", "small_ms": 2975.3, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 17610.6, "category": "Debt collection", "outcome": "ok"}
+api-1  | 2026-11-26T11:30:03.818246259Z 2026-11-26 11:30:03,817 INFO complaints.api request_id=acc-a2-cascadeA-9938 method=POST path=/tickets status=201 duration_ms=20598.51 client=172.19.0.1
+api-1  | 2026-11-26T11:30:03.818510683Z INFO:     172.19.0.1:51474 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:30:07.278598988Z 2026-11-26 11:30:07,278 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:30:27.381641499Z 2026-11-26 11:30:27,381 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:30:27.382771833Z 2026-11-26 11:30:27,382 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9940", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Credit reporting", "small_ms": 3438.3, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 20103.3, "category": "Bank account or service", "outcome": "ok"}
+api-1  | 2026-11-26T11:30:27.394342464Z INFO:     172.19.0.1:54990 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:30:27.394401634Z 2026-11-26 11:30:27,393 INFO complaints.api request_id=acc-a2-cascadeA-9940 method=POST path=/tickets status=201 duration_ms=23555.62 client=172.19.0.1
+api-1  | 2026-11-26T11:30:31.469264514Z 2026-11-26 11:30:31,469 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:30:55.688066546Z 2026-11-26 11:30:55,687 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:30:55.689056151Z 2026-11-26 11:30:55,688 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9942", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Consumer loan", "small_ms": 4066.2, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 24220.4, "category": "Money transfer or service", "outcome": "ok"}
+api-1  | 2026-11-26T11:30:55.695719658Z 2026-11-26 11:30:55,695 INFO complaints.api request_id=acc-a2-cascadeA-9942 method=POST path=/tickets status=201 duration_ms=28294.90 client=172.19.0.1
+api-1  | 2026-11-26T11:30:55.695793923Z INFO:     172.19.0.1:40582 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:30:59.129704008Z 2026-11-26 11:30:59,129 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:30:59.137266616Z 2026-11-26 11:30:59,136 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9944", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Debt collection", "small_ms": 3426.7, "escalated": false, "reason": "accept", "final_model": "gemma3:1b-it-q4_K_M", "large_ms": null, "category": "Debt collection", "outcome": "ok"}
+api-1  | 2026-11-26T11:30:59.149233647Z 2026-11-26 11:30:59,148 INFO complaints.api request_id=acc-a2-cascadeA-9944 method=POST path=/tickets status=201 duration_ms=3439.77 client=172.19.0.1
+api-1  | 2026-11-26T11:30:59.149524466Z INFO:     172.19.0.1:38884 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:31:09.550153541Z 2026-11-26 11:31:09,549 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:31:41.694853094Z 2026-11-26 11:31:41,694 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:31:41.696818772Z 2026-11-26 11:31:41,696 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9946", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Credit reporting", "small_ms": 10394.7, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 32148.0, "category": "Credit reporting", "outcome": "ok"}
+api-1  | 2026-11-26T11:31:41.710067628Z 2026-11-26 11:31:41,709 INFO complaints.api request_id=acc-a2-cascadeA-9946 method=POST path=/tickets status=201 duration_ms=42556.97 client=172.19.0.1
+api-1  | 2026-11-26T11:31:41.710227028Z INFO:     172.19.0.1:38900 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:31:45.610995576Z 2026-11-26 11:31:45,607 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:32:04.019328765Z 2026-11-26 11:32:04,018 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:32:04.020278095Z 2026-11-26 11:32:04,020 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9948", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Credit reporting", "small_ms": 3879.4, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 18411.2, "category": "Bank account or service", "outcome": "ok"}
+api-1  | 2026-11-26T11:32:04.029438523Z 2026-11-26 11:32:04,028 INFO complaints.api request_id=acc-a2-cascadeA-9948 method=POST path=/tickets status=201 duration_ms=22302.03 client=172.19.0.1
+api-1  | 2026-11-26T11:32:04.029659202Z INFO:     172.19.0.1:51282 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:32:08.434975850Z 2026-11-26 11:32:08,434 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:32:26.708716809Z 2026-11-26 11:32:26,708 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:32:26.709542300Z 2026-11-26 11:32:26,709 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9950", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Credit reporting", "small_ms": 4389.8, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 18273.5, "category": "Credit reporting", "outcome": "ok"}
+api-1  | 2026-11-26T11:32:26.728683559Z 2026-11-26 11:32:26,728 INFO complaints.api request_id=acc-a2-cascadeA-9950 method=POST path=/tickets status=201 duration_ms=22684.47 client=172.19.0.1
+api-1  | 2026-11-26T11:32:26.728698098Z INFO:     172.19.0.1:39450 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:32:30.218733896Z 2026-11-26 11:32:30,218 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:32:45.147534486Z 2026-11-26 11:32:45,147 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:32:45.149284495Z 2026-11-26 11:32:45,148 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9952", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Money transfer or service", "small_ms": 3475.7, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 14930.7, "category": "Bank account or service", "outcome": "ok"}
+api-1  | 2026-11-26T11:32:45.157333915Z 2026-11-26 11:32:45,157 INFO complaints.api request_id=acc-a2-cascadeA-9952 method=POST path=/tickets status=201 duration_ms=18417.02 client=172.19.0.1
+api-1  | 2026-11-26T11:32:45.157608540Z INFO:     172.19.0.1:41202 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:32:48.726120949Z 2026-11-26 11:32:48,725 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:33:07.805323828Z 2026-11-26 11:33:07,804 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:33:07.806586491Z 2026-11-26 11:33:07,806 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9954", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Credit reporting", "small_ms": 3562.0, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 19082.8, "category": "Debt collection", "outcome": "ok"}
+api-1  | 2026-11-26T11:33:07.824842217Z INFO:     172.19.0.1:55370 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:33:07.824933428Z 2026-11-26 11:33:07,824 INFO complaints.api request_id=acc-a2-cascadeA-9954 method=POST path=/tickets status=201 duration_ms=22663.68 client=172.19.0.1
+api-1  | 2026-11-26T11:33:10.898806856Z 2026-11-26 11:33:10,898 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:33:29.302654740Z 2026-11-26 11:33:29,302 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:33:29.303929683Z 2026-11-26 11:33:29,303 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9956", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Credit reporting", "small_ms": 3063.1, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 18404.1, "category": "Credit reporting", "outcome": "ok"}
+api-1  | 2026-11-26T11:33:29.311840964Z INFO:     172.19.0.1:43880 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:33:29.311878822Z 2026-11-26 11:33:29,311 INFO complaints.api request_id=acc-a2-cascadeA-9956 method=POST path=/tickets status=201 duration_ms=21476.68 client=172.19.0.1
+api-1  | 2026-11-26T11:33:36.904354104Z 2026-11-26 11:33:36,904 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:33:36.906762876Z 2026-11-26 11:33:36,906 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9958", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Debt collection", "small_ms": 7590.5, "escalated": false, "reason": "accept", "final_model": "gemma3:1b-it-q4_K_M", "large_ms": null, "category": "Debt collection", "outcome": "ok"}
+api-1  | 2026-11-26T11:33:36.924351379Z 2026-11-26 11:33:36,923 INFO complaints.api request_id=acc-a2-cascadeA-9958 method=POST path=/tickets status=201 duration_ms=7609.13 client=172.19.0.1
+api-1  | 2026-11-26T11:33:36.924952575Z INFO:     172.19.0.1:57338 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:33:40.149846596Z 2026-11-26 11:33:40,149 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:33:40.150478381Z 2026-11-26 11:33:40,150 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9960", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Mortgage", "small_ms": 3209.3, "escalated": false, "reason": "accept", "final_model": "gemma3:1b-it-q4_K_M", "large_ms": null, "category": "Mortgage", "outcome": "ok"}
+api-1  | 2026-11-26T11:33:40.157908983Z 2026-11-26 11:33:40,157 INFO complaints.api request_id=acc-a2-cascadeA-9960 method=POST path=/tickets status=201 duration_ms=3217.64 client=172.19.0.1
+api-1  | 2026-11-26T11:33:40.158161917Z INFO:     172.19.0.1:52530 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:33:43.991846002Z 2026-11-26 11:33:43,991 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:33:43.992611802Z 2026-11-26 11:33:43,992 WARNING complaints.triage small_model_invalid request_id=acc-a2-cascadeA-9962 model=gemma3:1b-it-q4_K_M error=Ollama returned an invalid classification: 'Credit Reporting' is not a valid Category
+api-1  | 2026-11-26T11:34:08.922917347Z 2026-11-26 11:34:08,922 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:34:08.923867215Z 2026-11-26 11:34:08,923 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9962", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "invalid", "small_ms": 3817.0, "escalated": true, "reason": "invalid", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 24934.8, "category": "Credit card", "outcome": "ok"}
+api-1  | 2026-11-26T11:34:08.931256964Z 2026-11-26 11:34:08,930 INFO complaints.api request_id=acc-a2-cascadeA-9962 method=POST path=/tickets status=201 duration_ms=28765.66 client=172.19.0.1
+api-1  | 2026-11-26T11:34:08.931333819Z INFO:     172.19.0.1:52532 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:34:10.876559121Z 2026-11-26 11:34:10,876 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:34:20.255631118Z 2026-11-26 11:34:20,255 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:34:20.256450865Z 2026-11-26 11:34:20,256 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9964", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Consumer loan", "small_ms": 1933.4, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 9379.0, "category": "Money transfer or service", "outcome": "ok"}
+api-1  | 2026-11-26T11:34:20.264721352Z 2026-11-26 11:34:20,264 INFO complaints.api request_id=acc-a2-cascadeA-9964 method=POST path=/tickets status=201 duration_ms=11321.74 client=172.19.0.1
+api-1  | 2026-11-26T11:34:20.264750381Z INFO:     172.19.0.1:40544 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:34:21.991509800Z 2026-11-26 11:34:21,988 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:34:21.991541096Z 2026-11-26 11:34:21,990 WARNING complaints.triage small_model_invalid request_id=acc-a2-cascadeA-9966 model=gemma3:1b-it-q4_K_M error=Ollama returned an invalid classification: 'Consumer Loan' is not a valid Category
+api-1  | 2026-11-26T11:34:30.345073482Z 2026-11-26 11:34:30,344 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:34:30.346033183Z 2026-11-26 11:34:30,345 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9966", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "invalid", "small_ms": 1693.2, "escalated": true, "reason": "invalid", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 8355.6, "category": "Credit card", "outcome": "ok"}
+api-1  | 2026-11-26T11:34:30.353124172Z 2026-11-26 11:34:30,352 INFO complaints.api request_id=acc-a2-cascadeA-9966 method=POST path=/tickets status=201 duration_ms=10059.12 client=172.19.0.1
+api-1  | 2026-11-26T11:34:30.353238662Z INFO:     172.19.0.1:44726 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:34:33.660360423Z 2026-11-26 11:34:33,660 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:34:33.661222393Z 2026-11-26 11:34:33,661 WARNING complaints.triage small_model_invalid request_id=acc-a2-cascadeA-9968 model=gemma3:1b-it-q4_K_M error=Ollama returned an invalid classification: 'Consumer Loan' is not a valid Category
+api-1  | 2026-11-26T11:34:53.596655934Z 2026-11-26 11:34:53,596 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:34:53.597660292Z 2026-11-26 11:34:53,597 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9968", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "invalid", "small_ms": 3283.8, "escalated": true, "reason": "invalid", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 19940.0, "category": "Debt collection", "outcome": "ok"}
+api-1  | 2026-11-26T11:34:53.606186814Z INFO:     172.19.0.1:46392 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:34:53.606258569Z 2026-11-26 11:34:53,605 INFO complaints.api request_id=acc-a2-cascadeA-9968 method=POST path=/tickets status=201 duration_ms=23235.48 client=172.19.0.1
+api-1  | 2026-11-26T11:34:55.676575525Z 2026-11-26 11:34:55,676 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:34:55.677716006Z 2026-11-26 11:34:55,677 WARNING complaints.triage small_model_invalid request_id=acc-a2-cascadeA-9970 model=gemma3:1b-it-q4_K_M error=Ollama returned an invalid classification: 'Consumer Loan' is not a valid Category
+api-1  | 2026-11-26T11:35:06.100891772Z 2026-11-26 11:35:06,100 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:35:06.101759802Z 2026-11-26 11:35:06,101 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9970", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "invalid", "small_ms": 2063.7, "escalated": true, "reason": "invalid", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 10425.9, "category": "Credit reporting", "outcome": "ok"}
+api-1  | 2026-11-26T11:35:06.108208855Z 2026-11-26 11:35:06,107 INFO complaints.api request_id=acc-a2-cascadeA-9970 method=POST path=/tickets status=201 duration_ms=12497.11 client=172.19.0.1
+api-1  | 2026-11-26T11:35:06.108240268Z INFO:     172.19.0.1:57114 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:35:07.471028932Z 2026-11-26 11:35:07,470 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:35:14.544597810Z 2026-11-26 11:35:14,544 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:35:14.545555133Z 2026-11-26 11:35:14,545 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9972", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Credit reporting", "small_ms": 1340.9, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 7073.2, "category": "Bank account or service", "outcome": "ok"}
+api-1  | 2026-11-26T11:35:14.551843272Z 2026-11-26 11:35:14,551 INFO complaints.api request_id=acc-a2-cascadeA-9972 method=POST path=/tickets status=201 duration_ms=8422.83 client=172.19.0.1
+api-1  | 2026-11-26T11:35:14.552017872Z INFO:     172.19.0.1:51308 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:35:17.897949918Z 2026-11-26 11:35:17,896 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:35:38.941584869Z 2026-11-26 11:35:38,941 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:35:38.942650854Z 2026-11-26 11:35:38,942 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9974", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Credit reporting", "small_ms": 3337.3, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 21047.9, "category": "Money transfer or service", "outcome": "ok"}
+api-1  | 2026-11-26T11:35:38.950356098Z 2026-11-26 11:35:38,950 INFO complaints.api request_id=acc-a2-cascadeA-9974 method=POST path=/tickets status=201 duration_ms=24394.43 client=172.19.0.1
+api-1  | 2026-11-26T11:35:38.950503136Z INFO:     172.19.0.1:32778 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:35:41.989342359Z 2026-11-26 11:35:41,989 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:35:56.816061735Z 2026-11-26 11:35:56,815 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:35:56.817438091Z 2026-11-26 11:35:56,816 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9976", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Credit reporting", "small_ms": 3021.3, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 14826.8, "category": "Credit reporting", "outcome": "ok"}
+api-1  | 2026-11-26T11:35:56.827485973Z INFO:     172.19.0.1:41816 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:35:56.827543574Z 2026-11-26 11:35:56,826 INFO complaints.api request_id=acc-a2-cascadeA-9976 method=POST path=/tickets status=201 duration_ms=17860.44 client=172.19.0.1
+api-1  | 2026-11-26T11:36:00.240990780Z 2026-11-26 11:36:00,239 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:36:18.043905597Z 2026-11-26 11:36:18,043 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:36:18.044812173Z 2026-11-26 11:36:18,044 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9978", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Credit reporting", "small_ms": 3390.2, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 17807.0, "category": "Credit card", "outcome": "ok"}
+api-1  | 2026-11-26T11:36:18.051234947Z 2026-11-26 11:36:18,050 INFO complaints.api request_id=acc-a2-cascadeA-9978 method=POST path=/tickets status=201 duration_ms=21206.34 client=172.19.0.1
+api-1  | 2026-11-26T11:36:18.051365856Z INFO:     172.19.0.1:57698 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:36:22.780915882Z 2026-11-26 11:36:22,780 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:36:22.781775830Z 2026-11-26 11:36:22,781 WARNING complaints.triage small_model_invalid request_id=acc-a2-cascadeA-9980 model=gemma3:1b-it-q4_K_M error=Ollama returned an invalid classification: 'Consumer Loan' is not a valid Category
+api-1  | 2026-11-26T11:36:51.701899942Z 2026-11-26 11:36:51,701 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:36:51.703203594Z 2026-11-26 11:36:51,702 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9980", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "invalid", "small_ms": 4724.2, "escalated": true, "reason": "invalid", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 28923.0, "category": "Consumer loan", "outcome": "ok"}
+api-1  | 2026-11-26T11:36:51.711377198Z 2026-11-26 11:36:51,710 INFO complaints.api request_id=acc-a2-cascadeA-9980 method=POST path=/tickets status=201 duration_ms=33656.47 client=172.19.0.1
+api-1  | 2026-11-26T11:36:51.711506234Z INFO:     172.19.0.1:58758 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:36:56.623492492Z 2026-11-26 11:36:56,623 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:36:56.624435113Z 2026-11-26 11:36:56,624 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9982", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Mortgage", "small_ms": 4893.0, "escalated": false, "reason": "accept", "final_model": "gemma3:1b-it-q4_K_M", "large_ms": null, "category": "Mortgage", "outcome": "ok"}
+api-1  | 2026-11-26T11:36:56.634308496Z 2026-11-26 11:36:56,634 INFO complaints.api request_id=acc-a2-cascadeA-9982 method=POST path=/tickets status=201 duration_ms=4904.90 client=172.19.0.1
+api-1  | 2026-11-26T11:36:56.634433382Z INFO:     172.19.0.1:59994 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:36:59.360546036Z 2026-11-26 11:36:59,360 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:37:13.711975676Z 2026-11-26 11:37:13,711 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:37:13.713187636Z 2026-11-26 11:37:13,712 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9984", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Credit card", "small_ms": 2705.8, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 14354.8, "category": "Consumer loan", "outcome": "ok"}
+api-1  | 2026-11-26T11:37:13.721650436Z 2026-11-26 11:37:13,721 INFO complaints.api request_id=acc-a2-cascadeA-9984 method=POST path=/tickets status=201 duration_ms=17071.64 client=172.19.0.1
+api-1  | 2026-11-26T11:37:13.721699825Z INFO:     172.19.0.1:42314 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:37:15.962671634Z 2026-11-26 11:37:15,962 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:37:28.777477663Z 2026-11-26 11:37:28,777 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:37:28.778399805Z 2026-11-26 11:37:28,778 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9986", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Bank account or service", "small_ms": 2233.8, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 12814.7, "category": "Bank account or service", "outcome": "ok"}
+api-1  | 2026-11-26T11:37:28.786993427Z 2026-11-26 11:37:28,786 INFO complaints.api request_id=acc-a2-cascadeA-9986 method=POST path=/tickets status=201 duration_ms=15058.34 client=172.19.0.1
+api-1  | 2026-11-26T11:37:28.787102243Z INFO:     172.19.0.1:41022 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:37:30.337075203Z 2026-11-26 11:37:30,336 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:37:36.415312931Z 2026-11-26 11:37:36,415 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:37:36.416474068Z 2026-11-26 11:37:36,416 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9988", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Bank account or service", "small_ms": 1542.3, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 6081.2, "category": "Money transfer or service", "outcome": "ok"}
+api-1  | 2026-11-26T11:37:36.425218790Z 2026-11-26 11:37:36,424 INFO complaints.api request_id=acc-a2-cascadeA-9988 method=POST path=/tickets status=201 duration_ms=7633.51 client=172.19.0.1
+api-1  | 2026-11-26T11:37:36.425290539Z INFO:     172.19.0.1:36106 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:37:39.633563444Z 2026-11-26 11:37:39,633 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:37:39.634404479Z 2026-11-26 11:37:39,634 WARNING complaints.triage small_model_invalid request_id=acc-a2-cascadeA-9990 model=gemma3:1b-it-q4_K_M error=Ollama returned an invalid classification: 'Consumer Loan' is not a valid Category
+api-1  | 2026-11-26T11:37:55.871098758Z 2026-11-26 11:37:55,870 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:37:55.872151695Z 2026-11-26 11:37:55,871 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9990", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "invalid", "small_ms": 3181.6, "escalated": true, "reason": "invalid", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 16237.4, "category": "Credit reporting", "outcome": "ok"}
+api-1  | 2026-11-26T11:37:55.880939984Z 2026-11-26 11:37:55,880 INFO complaints.api request_id=acc-a2-cascadeA-9990 method=POST path=/tickets status=201 duration_ms=19430.90 client=172.19.0.1
+api-1  | 2026-11-26T11:37:55.880989753Z INFO:     172.19.0.1:60544 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:37:57.321329093Z 2026-11-26 11:37:57,321 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:38:03.271113430Z 2026-11-26 11:38:03,270 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:38:03.271919691Z 2026-11-26 11:38:03,271 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9992", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Bank account or service", "small_ms": 1412.8, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 5949.4, "category": "Money transfer or service", "outcome": "ok"}
+api-1  | 2026-11-26T11:38:03.279454376Z INFO:     172.19.0.1:35760 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:38:03.279626449Z 2026-11-26 11:38:03,278 INFO complaints.api request_id=acc-a2-cascadeA-9992 method=POST path=/tickets status=201 duration_ms=7372.86 client=172.19.0.1
+api-1  | 2026-11-26T11:38:05.265990592Z 2026-11-26 11:38:05,265 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:38:14.939941481Z 2026-11-26 11:38:14,939 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:38:14.941032048Z 2026-11-26 11:38:14,940 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9994", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Consumer loan", "small_ms": 1966.9, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 9673.9, "category": "Debt collection", "outcome": "ok"}
+api-1  | 2026-11-26T11:38:14.948562694Z 2026-11-26 11:38:14,948 INFO complaints.api request_id=acc-a2-cascadeA-9994 method=POST path=/tickets status=201 duration_ms=11650.62 client=172.19.0.1
+api-1  | 2026-11-26T11:38:14.948741388Z INFO:     172.19.0.1:44366 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:38:16.842035981Z 2026-11-26 11:38:16,841 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:38:16.842654306Z 2026-11-26 11:38:16,842 WARNING complaints.triage small_model_invalid request_id=acc-a2-cascadeA-9996 model=gemma3:1b-it-q4_K_M error=Ollama returned an invalid classification: 'Consumer Loan' is not a valid Category
+api-1  | 2026-11-26T11:38:27.093389809Z 2026-11-26 11:38:27,093 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:38:27.094334343Z 2026-11-26 11:38:27,094 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9996", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "invalid", "small_ms": 1866.1, "escalated": true, "reason": "invalid", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 10251.5, "category": "Credit reporting", "outcome": "ok"}
+api-1  | 2026-11-26T11:38:27.110180016Z 2026-11-26 11:38:27,109 INFO complaints.api request_id=acc-a2-cascadeA-9996 method=POST path=/tickets status=201 duration_ms=12136.58 client=172.19.0.1
+api-1  | 2026-11-26T11:38:27.110432305Z INFO:     172.19.0.1:52756 - "POST /tickets HTTP/1.1" 201 Created
+api-1  | 2026-11-26T11:38:29.718049895Z 2026-11-26 11:38:29,717 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:38:43.092803502Z 2026-11-26 11:38:43,092 INFO httpx HTTP Request: POST http://ollama:11434/api/chat "HTTP/1.1 200 OK"
+api-1  | 2026-11-26T11:38:43.093739404Z 2026-11-26 11:38:43,093 INFO complaints.triage triage {"request_id": "acc-a2-cascadeA-9998", "mode": "cascade", "small_model": "gemma3:1b-it-q4_K_M", "small_answer": "Credit reporting", "small_ms": 2595.1, "escalated": true, "reason": "category", "final_model": "llama3.1:8b-instruct-q4_K_M", "large_ms": 13377.0, "category": "Credit reporting", "outcome": "ok"}
+api-1  | 2026-11-26T11:38:43.102895718Z 2026-11-26 11:38:43,102 INFO complaints.api request_id=acc-a2-cascadeA-9998 method=POST path=/tickets status=201 duration_ms=15983.37 client=172.19.0.1
+api-1  | 2026-11-26T11:38:43.103293141Z INFO:     172.19.0.1:49356 - "POST /tickets HTTP/1.1" 201 Created

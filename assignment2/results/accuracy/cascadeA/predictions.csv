@@ -1,0 +1,81 @@
+row,golden,predicted,correct,http_status,latency_ms,request_id,ticket_id
+9840,Bank account or service,Money transfer or service,False,201,6391.1,acc-a2-cascadeA-9840,101
+9842,Bank account or service,Credit reporting,False,201,7511.4,acc-a2-cascadeA-9842,102
+9844,Credit reporting,Credit card,False,201,25374.8,acc-a2-cascadeA-9844,103
+9846,Money transfer or service,Money transfer or service,True,201,77466.4,acc-a2-cascadeA-9846,104
+9848,Credit reporting,Credit reporting,True,201,57060.2,acc-a2-cascadeA-9848,105
+9850,Consumer loan,Bank account or service,False,201,34402.3,acc-a2-cascadeA-9850,106
+9852,Credit reporting,Credit card,False,201,22828.9,acc-a2-cascadeA-9852,107
+9854,Money transfer or service,Money transfer or service,True,201,13219.7,acc-a2-cascadeA-9854,108
+9856,Credit card,Credit card,True,201,8325.3,acc-a2-cascadeA-9856,109
+9858,Credit reporting,Debt collection,False,201,1828.9,acc-a2-cascadeA-9858,110
+9860,Credit card,Credit card,True,201,8688.4,acc-a2-cascadeA-9860,111
+9862,Money transfer or service,Mortgage,False,201,1486.2,acc-a2-cascadeA-9862,112
+9864,Credit reporting,Debt collection,False,201,1409.9,acc-a2-cascadeA-9864,113
+9866,Money transfer or service,Money transfer or service,True,201,8380.9,acc-a2-cascadeA-9866,114
+9868,Credit reporting,Credit reporting,True,201,21162.2,acc-a2-cascadeA-9868,115
+9870,Debt collection,Bank account or service,False,201,11861.8,acc-a2-cascadeA-9870,116
+9872,Money transfer or service,Money transfer or service,True,201,8479.5,acc-a2-cascadeA-9872,117
+9874,Money transfer or service,Money transfer or service,True,201,15833.5,acc-a2-cascadeA-9874,118
+9876,Credit reporting,Debt collection,False,201,16958.0,acc-a2-cascadeA-9876,119
+9878,Consumer loan,Mortgage,False,201,3247.5,acc-a2-cascadeA-9878,120
+9880,Money transfer or service,Money transfer or service,True,201,6128.4,acc-a2-cascadeA-9880,121
+9882,Mortgage,Mortgage,True,201,2342.9,acc-a2-cascadeA-9882,122
+9884,Bank account or service,Bank account or service,True,201,13284.8,acc-a2-cascadeA-9884,123
+9886,Consumer loan,Credit reporting,False,201,24258.5,acc-a2-cascadeA-9886,124
+9888,Credit card,Credit card,True,201,28677.6,acc-a2-cascadeA-9888,125
+9890,Consumer loan,Debt collection,False,201,1925.9,acc-a2-cascadeA-9890,126
+9892,Credit reporting,Credit reporting,True,201,11349.3,acc-a2-cascadeA-9892,127
+9894,Credit reporting,Bank account or service,False,201,13633.1,acc-a2-cascadeA-9894,128
+9896,Money transfer or service,Money transfer or service,True,201,8020.9,acc-a2-cascadeA-9896,129
+9898,Money transfer or service,Money transfer or service,True,201,10504.8,acc-a2-cascadeA-9898,130
+9900,Debt collection,Bank account or service,False,201,7864.9,acc-a2-cascadeA-9900,131
+9902,Money transfer or service,Money transfer or service,True,201,9581.2,acc-a2-cascadeA-9902,132
+9904,Debt collection,Debt collection,True,201,1616.9,acc-a2-cascadeA-9904,133
+9906,Consumer loan,Consumer loan,True,201,10542.7,acc-a2-cascadeA-9906,134
+9908,Bank account or service,Bank account or service,True,201,11584.5,acc-a2-cascadeA-9908,135
+9910,Credit reporting,Credit reporting,True,201,4842.0,acc-a2-cascadeA-9910,136
+9912,Credit reporting,Credit reporting,True,201,5674.0,acc-a2-cascadeA-9912,137
+9914,Bank account or service,Bank account or service,True,201,5797.8,acc-a2-cascadeA-9914,138
+9916,Bank account or service,Bank account or service,True,201,19306.9,acc-a2-cascadeA-9916,139
+9918,Mortgage,Mortgage,True,201,38463.7,acc-a2-cascadeA-9918,140
+9920,Bank account or service,Credit card,False,201,48622.9,acc-a2-cascadeA-9920,141
+9922,Consumer loan,Mortgage,False,201,26946.6,acc-a2-cascadeA-9922,142
+9924,Credit card,Credit card,True,201,28120.6,acc-a2-cascadeA-9924,143
+9926,Mortgage,Mortgage,True,201,3243.5,acc-a2-cascadeA-9926,144
+9928,Debt collection,Debt collection,True,201,33761.2,acc-a2-cascadeA-9928,145
+9930,Money transfer or service,Credit card,False,201,16694.0,acc-a2-cascadeA-9930,146
+9932,Consumer loan,Consumer loan,True,201,6026.6,acc-a2-cascadeA-9932,147
+9934,Mortgage,Mortgage,True,201,21624.8,acc-a2-cascadeA-9934,148
+9936,Bank account or service,Bank account or service,True,201,14485.1,acc-a2-cascadeA-9936,149
+9938,Debt collection,Debt collection,True,201,20626.0,acc-a2-cascadeA-9938,150
+9940,Bank account or service,Bank account or service,True,201,23576.8,acc-a2-cascadeA-9940,151
+9942,Money transfer or service,Money transfer or service,True,201,28300.1,acc-a2-cascadeA-9942,152
+9944,Debt collection,Debt collection,True,201,3455.3,acc-a2-cascadeA-9944,153
+9946,Credit reporting,Credit reporting,True,201,42561.1,acc-a2-cascadeA-9946,154
+9948,Bank account or service,Bank account or service,True,201,22317.4,acc-a2-cascadeA-9948,155
+9950,Credit reporting,Credit reporting,True,201,22698.5,acc-a2-cascadeA-9950,156
+9952,Bank account or service,Bank account or service,True,201,18429.4,acc-a2-cascadeA-9952,157
+9954,Debt collection,Debt collection,True,201,22669.0,acc-a2-cascadeA-9954,158
+9956,Credit reporting,Credit reporting,True,201,21483.4,acc-a2-cascadeA-9956,159
+9958,Credit reporting,Debt collection,False,201,7616.6,acc-a2-cascadeA-9958,160
+9960,Mortgage,Mortgage,True,201,3231.2,acc-a2-cascadeA-9960,161
+9962,Credit card,Credit card,True,201,28774.5,acc-a2-cascadeA-9962,162
+9964,Money transfer or service,Money transfer or service,True,201,11331.5,acc-a2-cascadeA-9964,163
+9966,Credit card,Credit card,True,201,10087.9,acc-a2-cascadeA-9966,164
+9968,Debt collection,Debt collection,True,201,23253.6,acc-a2-cascadeA-9968,165
+9970,Credit reporting,Credit reporting,True,201,12502.6,acc-a2-cascadeA-9970,166
+9972,Bank account or service,Bank account or service,True,201,8442.6,acc-a2-cascadeA-9972,167
+9974,Money transfer or service,Money transfer or service,True,201,24398.6,acc-a2-cascadeA-9974,168
+9976,Credit reporting,Credit reporting,True,201,17875.8,acc-a2-cascadeA-9976,169
+9978,Mortgage,Credit card,False,201,21224.6,acc-a2-cascadeA-9978,170
+9980,Mortgage,Consumer loan,False,201,33659.3,acc-a2-cascadeA-9980,171
+9982,Credit reporting,Mortgage,False,201,4921.4,acc-a2-cascadeA-9982,172
+9984,Consumer loan,Consumer loan,True,201,17089.5,acc-a2-cascadeA-9984,173
+9986,Bank account or service,Bank account or service,True,201,15063.5,acc-a2-cascadeA-9986,174
+9988,Money transfer or service,Money transfer or service,True,201,7640.1,acc-a2-cascadeA-9988,175
+9990,Credit reporting,Credit reporting,True,201,19454.3,acc-a2-cascadeA-9990,176
+9992,Bank account or service,Money transfer or service,False,201,7397.5,acc-a2-cascadeA-9992,177
+9994,Debt collection,Debt collection,True,201,11670.4,acc-a2-cascadeA-9994,178
+9996,Debt collection,Credit reporting,False,201,12160.6,acc-a2-cascadeA-9996,179
+9998,Debt collection,Credit reporting,False,201,15993.1,acc-a2-cascadeA-9998,180
