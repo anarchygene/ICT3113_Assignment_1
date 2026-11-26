@@ -1,0 +1,15 @@
+# 2026-11-26T13:29:21Z  CASCADE_LARGE_MODEL=llama3.1:8b-instruct-q4_K_M CASCADE_SMALL_MODEL=gemma3:1b-it-q4_K_M 
+{"model": "llama3.1:8b-instruct-q4_K_M", "wall_s": 2.71, "load_s": 0.05}
+{"model": "gemma3:1b-it-q4_K_M", "wall_s": 0.75, "load_s": 0.13}
+{"model": "llama3.1:8b-instruct-q4_K_M", "wall_s": 2.14, "load_s": 0.07}
+{"model": "gemma3:1b-it-q4_K_M", "wall_s": 0.8, "load_s": 0.09}
+{"ollama_ps": ["gemma3:1b-it-q4_K_M", "llama3.1:8b-instruct-q4_K_M"]}
+READY: both models resident
+{"phase": "sequential-1", "large": {"model": "llama3.1", "wall_s": 3.19, "load_s": 0.04}, "small": {"model": "gemma3", "wall_s": 1.24, "load_s": 0.1}, "total_s": 4.43, "major_page_faults": 1007}
+{"phase": "sequential-2", "large": {"model": "llama3.1", "wall_s": 3.43, "load_s": 0.05}, "small": {"model": "gemma3", "wall_s": 0.74, "load_s": 0.09}, "total_s": 4.17, "major_page_faults": 180}
+{"phase": "concurrent-1", "small": {"model": "gemma3", "wall_s": 62.83, "load_s": 0.16}, "large": {"model": "llama3.1", "wall_s": 63.39, "load_s": 0.06}, "total_s": 63.39, "major_page_faults": 332}
+{"phase": "concurrent-2", "small": {"model": "gemma3", "wall_s": 63.68, "load_s": 0.14}, "large": {"model": "llama3.1", "wall_s": 70.01, "load_s": 0.06}, "total_s": 70.01, "major_page_faults": 73}
+# evictions/kills: 1
+NAME                           ID              SIZE      PROCESSOR    CONTEXT    UNTIL               
+llama3.1:8b-instruct-q4_K_M    46e0c10c039e    5.6 GB    100% CPU     4096       29 minutes from now    
+gemma3:1b-it-q4_K_M            8648f39daa8f    1.2 GB    100% CPU     4096       29 minutes from now    
