@@ -1,0 +1,10 @@
+{
+  "model_loads": 0,
+  "evictions": 0,
+  "runner_killed": 0,
+  "window": [
+    "2026-11-26T13:35:31Z",
+    "2026-11-26T14:00:41Z"
+  ],
+  "stats_delta": 23
+}
