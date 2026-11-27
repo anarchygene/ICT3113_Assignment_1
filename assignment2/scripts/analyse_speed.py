@@ -110,7 +110,7 @@ def main() -> int:
         "| Config | Run | Sent | Completed | Errored | Unfinished (later 201 on server) | p50 s | Max s | Throughput /s | Error % | Escalated | /stats Lenovo vs service 201 | Loads/evict/kill in run |",
         "|---|---:|---:|---:|---:|---|---:|---:|---:|---:|---|---|---|",
     ]
-    summary = []
+    summary, per_config = [], {}
     for config in [c for c in ORDER if (SPEED / c).is_dir()]:
         runs = []
         for d in sorted((SPEED / config).glob("run[0-9]*")):
@@ -136,6 +136,17 @@ def main() -> int:
                 f"| {config} | {len(runs)} | {', '.join(f'{p:.1f}' for p in p50s)} | {statistics.mean(p50s):.1f} | "
                 f"{min(p50s):.1f}-{max(p50s):.1f} | {statistics.stdev(p50s):.1f} | " if len(p50s) > 1 else f"| {config} | {len(runs)} | {p50s} | | | | "
             )
+            per_config[config] = {
+                "runs": len(runs), "p50_per_run_s": p50s, "p50_mean_s": round(statistics.mean(p50s), 2),
+                "p50_min_s": min(p50s), "p50_max_s": max(p50s), "p50_sd_s": round(statistics.stdev(p50s), 2) if len(p50s) > 1 else None,
+                "p95_pooled_s": round(pct(pooled, 95) / 1000, 2), "p95_n": len(pooled), "sent": sent,
+                "completed": sum(r["completed"] for r in runs), "errored": sum(r["errored"] for r in runs),
+                "unfinished": sum(r["unfinished"] for r in runs),
+                "throughput_per_run": [r["throughput_per_s"] for r in runs], "error_rate_per_run": [r["error_rate_pct"] for r in runs],
+                "escalated": sum(r["escalated"] for r in esc) if esc else None,
+                "escalated_of": sum(r["triage_lines"] for r in esc) if esc else None,
+                "esc_small_timeout": sum(r["esc_small_timeout"] for r in esc) if esc else None,
+            }
             summary[-1] += (
                 f"{pct(pooled, 95) / 1000:.1f} (n = {len(pooled)} of {sent} sent) | "
                 f"{sum(r['completed'] for r in runs)}/{sent} | "
@@ -159,6 +170,7 @@ def main() -> int:
         "fraction, comparable with the accuracy test (85% A, 92.5% B).",
     ]
     (SPEED / "summary.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    (SPEED / "summary.json").write_text(json.dumps({"S": S, "configs": per_config}, indent=2), encoding="utf-8")
     with open(SPEED / "runs.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=list(rows[0]))
         w.writeheader()

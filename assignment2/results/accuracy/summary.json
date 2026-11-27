@@ -1,0 +1,490 @@
+{
+  "floor_overall": 53,
+  "floor": {
+    "Credit reporting": 12,
+    "Debt collection": 6,
+    "Mortgage": 4,
+    "Credit card": 6,
+    "Bank account or service": 8,
+    "Consumer loan": 4,
+    "Money transfer or service": 12
+  },
+  "n": {
+    "Bank account or service": 14,
+    "Credit reporting": 19,
+    "Money transfer or service": 15,
+    "Consumer loan": 8,
+    "Credit card": 6,
+    "Debt collection": 11,
+    "Mortgage": 7
+  },
+  "configs": {
+    "Llama alone": {
+      "correct": 61,
+      "per_category": {
+        "Credit reporting": 14,
+        "Debt collection": 7,
+        "Mortgage": 5,
+        "Credit card": 6,
+        "Bank account or service": 10,
+        "Consumer loan": 5,
+        "Money transfer or service": 14
+      },
+      "fails": [],
+      "invalid": 0,
+      "confusion": {
+        "Credit reporting": {
+          "Credit reporting": 14,
+          "Debt collection": 2,
+          "Mortgage": 0,
+          "Credit card": 2,
+          "Bank account or service": 1,
+          "Consumer loan": 0,
+          "Money transfer or service": 0,
+          "(invalid/error)": 0
+        },
+        "Debt collection": {
+          "Credit reporting": 2,
+          "Debt collection": 7,
+          "Mortgage": 0,
+          "Credit card": 0,
+          "Bank account or service": 2,
+          "Consumer loan": 0,
+          "Money transfer or service": 0,
+          "(invalid/error)": 0
+        },
+        "Mortgage": {
+          "Credit reporting": 0,
+          "Debt collection": 0,
+          "Mortgage": 5,
+          "Credit card": 1,
+          "Bank account or service": 0,
+          "Consumer loan": 1,
+          "Money transfer or service": 0,
+          "(invalid/error)": 0
+        },
+        "Credit card": {
+          "Credit reporting": 0,
+          "Debt collection": 0,
+          "Mortgage": 0,
+          "Credit card": 6,
+          "Bank account or service": 0,
+          "Consumer loan": 0,
+          "Money transfer or service": 0,
+          "(invalid/error)": 0
+        },
+        "Bank account or service": {
+          "Credit reporting": 1,
+          "Debt collection": 0,
+          "Mortgage": 0,
+          "Credit card": 1,
+          "Bank account or service": 10,
+          "Consumer loan": 0,
+          "Money transfer or service": 2,
+          "(invalid/error)": 0
+        },
+        "Consumer loan": {
+          "Credit reporting": 1,
+          "Debt collection": 0,
+          "Mortgage": 1,
+          "Credit card": 0,
+          "Bank account or service": 1,
+          "Consumer loan": 5,
+          "Money transfer or service": 0,
+          "(invalid/error)": 0
+        },
+        "Money transfer or service": {
+          "Credit reporting": 0,
+          "Debt collection": 0,
+          "Mortgage": 0,
+          "Credit card": 1,
+          "Bank account or service": 0,
+          "Consumer loan": 0,
+          "Money transfer or service": 14,
+          "(invalid/error)": 0
+        }
+      }
+    },
+    "Qwen alone": {
+      "correct": 56,
+      "per_category": {
+        "Credit reporting": 10,
+        "Debt collection": 7,
+        "Mortgage": 5,
+        "Credit card": 5,
+        "Bank account or service": 10,
+        "Consumer loan": 6,
+        "Money transfer or service": 13
+      },
+      "fails": [
+        "CR",
+        "CC"
+      ],
+      "invalid": 3,
+      "confusion": {
+        "Credit reporting": {
+          "Credit reporting": 10,
+          "Debt collection": 4,
+          "Mortgage": 0,
+          "Credit card": 4,
+          "Bank account or service": 0,
+          "Consumer loan": 1,
+          "Money transfer or service": 0,
+          "(invalid/error)": 0
+        },
+        "Debt collection": {
+          "Credit reporting": 1,
+          "Debt collection": 7,
+          "Mortgage": 0,
+          "Credit card": 0,
+          "Bank account or service": 1,
+          "Consumer loan": 2,
+          "Money transfer or service": 0,
+          "(invalid/error)": 0
+        },
+        "Mortgage": {
+          "Credit reporting": 0,
+          "Debt collection": 0,
+          "Mortgage": 5,
+          "Credit card": 0,
+          "Bank account or service": 0,
+          "Consumer loan": 2,
+          "Money transfer or service": 0,
+          "(invalid/error)": 0
+        },
+        "Credit card": {
+          "Credit reporting": 0,
+          "Debt collection": 0,
+          "Mortgage": 0,
+          "Credit card": 5,
+          "Bank account or service": 0,
+          "Consumer loan": 0,
+          "Money transfer or service": 0,
+          "(invalid/error)": 1
+        },
+        "Bank account or service": {
+          "Credit reporting": 0,
+          "Debt collection": 0,
+          "Mortgage": 0,
+          "Credit card": 2,
+          "Bank account or service": 10,
+          "Consumer loan": 0,
+          "Money transfer or service": 1,
+          "(invalid/error)": 1
+        },
+        "Consumer loan": {
+          "Credit reporting": 0,
+          "Debt collection": 0,
+          "Mortgage": 1,
+          "Credit card": 0,
+          "Bank account or service": 0,
+          "Consumer loan": 6,
+          "Money transfer or service": 0,
+          "(invalid/error)": 1
+        },
+        "Money transfer or service": {
+          "Credit reporting": 0,
+          "Debt collection": 0,
+          "Mortgage": 0,
+          "Credit card": 0,
+          "Bank account or service": 2,
+          "Consumer loan": 0,
+          "Money transfer or service": 13,
+          "(invalid/error)": 0
+        }
+      }
+    },
+    "Gemma alone": {
+      "correct": 20,
+      "per_category": {
+        "Credit reporting": 11,
+        "Debt collection": 2,
+        "Mortgage": 3,
+        "Credit card": 1,
+        "Bank account or service": 2,
+        "Consumer loan": 1,
+        "Money transfer or service": 0
+      },
+      "fails": [
+        "CR",
+        "DC",
+        "Mtg",
+        "CC",
+        "Bank",
+        "Loan",
+        "MT",
+        "overall"
+      ],
+      "invalid": 14,
+      "confusion": {
+        "Credit reporting": {
+          "Credit reporting": 11,
+          "Debt collection": 3,
+          "Mortgage": 1,
+          "Credit card": 0,
+          "Bank account or service": 0,
+          "Consumer loan": 2,
+          "Money transfer or service": 0,
+          "(invalid/error)": 2
+        },
+        "Debt collection": {
+          "Credit reporting": 4,
+          "Debt collection": 2,
+          "Mortgage": 0,
+          "Credit card": 0,
+          "Bank account or service": 0,
+          "Consumer loan": 2,
+          "Money transfer or service": 0,
+          "(invalid/error)": 3
+        },
+        "Mortgage": {
+          "Credit reporting": 3,
+          "Debt collection": 0,
+          "Mortgage": 3,
+          "Credit card": 0,
+          "Bank account or service": 0,
+          "Consumer loan": 0,
+          "Money transfer or service": 0,
+          "(invalid/error)": 1
+        },
+        "Credit card": {
+          "Credit reporting": 1,
+          "Debt collection": 0,
+          "Mortgage": 0,
+          "Credit card": 1,
+          "Bank account or service": 1,
+          "Consumer loan": 0,
+          "Money transfer or service": 0,
+          "(invalid/error)": 3
+        },
+        "Bank account or service": {
+          "Credit reporting": 8,
+          "Debt collection": 0,
+          "Mortgage": 0,
+          "Credit card": 0,
+          "Bank account or service": 2,
+          "Consumer loan": 2,
+          "Money transfer or service": 1,
+          "(invalid/error)": 1
+        },
+        "Consumer loan": {
+          "Credit reporting": 0,
+          "Debt collection": 1,
+          "Mortgage": 1,
+          "Credit card": 3,
+          "Bank account or service": 0,
+          "Consumer loan": 1,
+          "Money transfer or service": 0,
+          "(invalid/error)": 2
+        },
+        "Money transfer or service": {
+          "Credit reporting": 5,
+          "Debt collection": 0,
+          "Mortgage": 1,
+          "Credit card": 0,
+          "Bank account or service": 2,
+          "Consumer loan": 5,
+          "Money transfer or service": 0,
+          "(invalid/error)": 2
+        }
+      }
+    },
+    "Cascade A": {
+      "correct": 55,
+      "per_category": {
+        "Credit reporting": 11,
+        "Debt collection": 7,
+        "Mortgage": 5,
+        "Credit card": 6,
+        "Bank account or service": 10,
+        "Consumer loan": 3,
+        "Money transfer or service": 13
+      },
+      "fails": [
+        "CR",
+        "Loan"
+      ],
+      "invalid": 0,
+      "confusion": {
+        "Credit reporting": {
+          "Credit reporting": 11,
+          "Debt collection": 4,
+          "Mortgage": 1,
+          "Credit card": 2,
+          "Bank account or service": 1,
+          "Consumer loan": 0,
+          "Money transfer or service": 0,
+          "(invalid/error)": 0
+        },
+        "Debt collection": {
+          "Credit reporting": 2,
+          "Debt collection": 7,
+          "Mortgage": 0,
+          "Credit card": 0,
+          "Bank account or service": 2,
+          "Consumer loan": 0,
+          "Money transfer or service": 0,
+          "(invalid/error)": 0
+        },
+        "Mortgage": {
+          "Credit reporting": 0,
+          "Debt collection": 0,
+          "Mortgage": 5,
+          "Credit card": 1,
+          "Bank account or service": 0,
+          "Consumer loan": 1,
+          "Money transfer or service": 0,
+          "(invalid/error)": 0
+        },
+        "Credit card": {
+          "Credit reporting": 0,
+          "Debt collection": 0,
+          "Mortgage": 0,
+          "Credit card": 6,
+          "Bank account or service": 0,
+          "Consumer loan": 0,
+          "Money transfer or service": 0,
+          "(invalid/error)": 0
+        },
+        "Bank account or service": {
+          "Credit reporting": 1,
+          "Debt collection": 0,
+          "Mortgage": 0,
+          "Credit card": 1,
+          "Bank account or service": 10,
+          "Consumer loan": 0,
+          "Money transfer or service": 2,
+          "(invalid/error)": 0
+        },
+        "Consumer loan": {
+          "Credit reporting": 1,
+          "Debt collection": 1,
+          "Mortgage": 2,
+          "Credit card": 0,
+          "Bank account or service": 1,
+          "Consumer loan": 3,
+          "Money transfer or service": 0,
+          "(invalid/error)": 0
+        },
+        "Money transfer or service": {
+          "Credit reporting": 0,
+          "Debt collection": 0,
+          "Mortgage": 1,
+          "Credit card": 1,
+          "Bank account or service": 0,
+          "Consumer loan": 0,
+          "Money transfer or service": 13,
+          "(invalid/error)": 0
+        }
+      },
+      "escalated": 68,
+      "esc_invalid": 14,
+      "esc_category": 54,
+      "esc_correct": 50,
+      "acc_n": 12,
+      "acc_correct": 5,
+      "accepted_wrong_true_categories": {
+        "Credit reporting": 4,
+        "Money transfer or service": 1,
+        "Consumer loan": 2
+      }
+    },
+    "Cascade B": {
+      "correct": 58,
+      "per_category": {
+        "Credit reporting": 13,
+        "Debt collection": 7,
+        "Mortgage": 5,
+        "Credit card": 6,
+        "Bank account or service": 10,
+        "Consumer loan": 4,
+        "Money transfer or service": 13
+      },
+      "fails": [],
+      "invalid": 0,
+      "confusion": {
+        "Credit reporting": {
+          "Credit reporting": 13,
+          "Debt collection": 2,
+          "Mortgage": 1,
+          "Credit card": 2,
+          "Bank account or service": 1,
+          "Consumer loan": 0,
+          "Money transfer or service": 0,
+          "(invalid/error)": 0
+        },
+        "Debt collection": {
+          "Credit reporting": 2,
+          "Debt collection": 7,
+          "Mortgage": 0,
+          "Credit card": 0,
+          "Bank account or service": 2,
+          "Consumer loan": 0,
+          "Money transfer or service": 0,
+          "(invalid/error)": 0
+        },
+        "Mortgage": {
+          "Credit reporting": 0,
+          "Debt collection": 0,
+          "Mortgage": 5,
+          "Credit card": 1,
+          "Bank account or service": 0,
+          "Consumer loan": 1,
+          "Money transfer or service": 0,
+          "(invalid/error)": 0
+        },
+        "Credit card": {
+          "Credit reporting": 0,
+          "Debt collection": 0,
+          "Mortgage": 0,
+          "Credit card": 6,
+          "Bank account or service": 0,
+          "Consumer loan": 0,
+          "Money transfer or service": 0,
+          "(invalid/error)": 0
+        },
+        "Bank account or service": {
+          "Credit reporting": 1,
+          "Debt collection": 0,
+          "Mortgage": 0,
+          "Credit card": 1,
+          "Bank account or service": 10,
+          "Consumer loan": 0,
+          "Money transfer or service": 2,
+          "(invalid/error)": 0
+        },
+        "Consumer loan": {
+          "Credit reporting": 1,
+          "Debt collection": 0,
+          "Mortgage": 2,
+          "Credit card": 0,
+          "Bank account or service": 1,
+          "Consumer loan": 4,
+          "Money transfer or service": 0,
+          "(invalid/error)": 0
+        },
+        "Money transfer or service": {
+          "Credit reporting": 0,
+          "Debt collection": 0,
+          "Mortgage": 1,
+          "Credit card": 1,
+          "Bank account or service": 0,
+          "Consumer loan": 0,
+          "Money transfer or service": 13,
+          "(invalid/error)": 0
+        }
+      },
+      "escalated": 74,
+      "esc_invalid": 14,
+      "esc_category": 60,
+      "esc_correct": 55,
+      "acc_n": 6,
+      "acc_correct": 3,
+      "accepted_wrong_true_categories": {
+        "Money transfer or service": 1,
+        "Consumer loan": 1,
+        "Credit reporting": 1
+      }
+    }
+  }
+}
