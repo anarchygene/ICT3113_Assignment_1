@@ -15,6 +15,12 @@ S = 11.05 s (rows 9094, 9108, 9246: 12.61, 10.51, 11.05 s). Rate: one ticket eve
 | cascadeB | 1 | 29 | 5 | 0 | 24 (16) | 203.17 | 280.09 | 0.0135 | 82.8 | 28/29 (19 Gemma timeouts, 7 category, 2 invalid) | 21 vs 21 | 0/0/0 |
 | cascadeB | 2 | 29 | 5 | 0 | 24 (16) | 158.98 | 259.73 | 0.0172 | 82.8 | 28/29 (17 Gemma timeouts, 9 category, 2 invalid) | 21 vs 21 | 0/0/0 |
 | cascadeB | 3 | 29 | 5 | 0 | 24 (16) | 188.84 | 264.33 | 0.0163 | 82.8 | 28/29 (18 Gemma timeouts, 8 category, 2 invalid) | 21 vs 21 | 0/0/0 |
+| cascadeA_lock | 1 | 29 | 29 | 0 | 0 (0) | 21.59 | 70.09 | 0.0426 | 0.0 | 27/29 (0 Gemma timeouts, 21 category, 6 invalid) | 29 vs 29 | 0/0/0 |
+| cascadeA_lock | 2 | 29 | 29 | 0 | 0 (0) | 14.79 | 38.17 | 0.0429 | 0.0 | 27/29 (0 Gemma timeouts, 21 category, 6 invalid) | 29 vs 29 | 0/0/0 |
+| cascadeA_lock | 3 | 29 | 29 | 0 | 0 (0) | 12.47 | 34.73 | 0.0441 | 0.0 | 27/29 (0 Gemma timeouts, 21 category, 6 invalid) | 29 vs 29 | 0/0/0 |
+| cascadeB_lock | 1 | 29 | 29 | 0 | 0 (0) | 20.47 | 42.81 | 0.0426 | 0.0 | 27/29 (0 Gemma timeouts, 21 category, 6 invalid) | 29 vs 29 | 0/0/0 |
+| cascadeB_lock | 2 | 29 | 29 | 0 | 0 (0) | 15.22 | 36.83 | 0.0429 | 0.0 | 27/29 (0 Gemma timeouts, 21 category, 6 invalid) | 29 vs 29 | 0/0/0 |
+| cascadeB_lock | 3 | 29 | 29 | 0 | 0 (0) | 12.95 | 33.92 | 0.0441 | 0.0 | 27/29 (0 Gemma timeouts, 21 category, 6 invalid) | 29 vs 29 | 0/0/0 |
 
 ## Per configuration (p50 from completed samples; p95 pooled over all completed samples of the runs)
 
@@ -23,6 +29,8 @@ S = 11.05 s (rows 9094, 9108, 9246: 12.61, 10.51, 11.05 s). Rate: one ticket eve
 | llama | 3 | 23.8, 14.0, 11.8 | 16.6 | 11.8-23.8 | 6.4 | 60.1 (n = 87 of 87 sent) | 87/87 | n/a |
 | cascadeA | 3 | 183.2, 152.9, 183.0 | 173.0 | 152.9-183.2 | 17.4 | 266.0 (n = 15 of 87 sent) | 15/87 | 84/87 (96.6%); excluding Gemma timeouts 30/33 |
 | cascadeB | 3 | 203.2, 159.0, 188.8 | 183.7 | 159.0-203.2 | 22.5 | 280.1 (n = 15 of 87 sent) | 15/87 | 84/87 (96.6%); excluding Gemma timeouts 30/33 |
+| cascadeA_lock | 3 | 21.6, 14.8, 12.5 | 16.3 | 12.5-21.6 | 4.7 | 34.7 (n = 87 of 87 sent) | 87/87 | 81/87 (93.1%); excluding Gemma timeouts 81/87 |
+| cascadeB_lock | 3 | 20.5, 15.2, 12.9 | 16.2 | 12.9-20.5 | 3.9 | 33.5 (n = 87 of 87 sent) | 87/87 | 81/87 (93.1%); excluding Gemma timeouts 81/87 |
 
 Notes: completed = HTTP 201 within JMeter's 300 s timeout. Unfinished = JMeter gave up at 300 s; the number in
 brackets is how many of those the service still finished later with 201 (a cascade request can take up to
