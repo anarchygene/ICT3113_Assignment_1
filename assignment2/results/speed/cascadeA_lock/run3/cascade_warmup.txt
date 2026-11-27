@@ -1,0 +1,6 @@
+{"model": "llama3.1:8b-instruct-q4_K_M", "wall_s": 2.38, "load_s": 0.04}
+{"model": "gemma3:1b-it-q4_K_M", "wall_s": 0.79, "load_s": 0.15}
+{"model": "llama3.1:8b-instruct-q4_K_M", "wall_s": 2.35, "load_s": 0.08}
+{"model": "gemma3:1b-it-q4_K_M", "wall_s": 0.89, "load_s": 0.17}
+{"ollama_ps": ["gemma3:1b-it-q4_K_M", "llama3.1:8b-instruct-q4_K_M"]}
+READY: both models resident
