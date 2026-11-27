@@ -1,0 +1,2 @@
+row 9871: HTTP 201 Debt collection            total   5.2 s | gemma 2.4 s (waited 2.7 s) | accepted serialized=True
+row 9911: HTTP 201 Money transfer or service  total  26.0 s | gemma 2.7 s (waited 0.0 s) | llama 20.8 s (waited 2.4 s) serialized=True
