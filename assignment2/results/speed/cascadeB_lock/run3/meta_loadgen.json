@@ -1,0 +1,19 @@
+﻿{
+    "config":  "cascadeB_lock",
+    "run":  3,
+    "loadgen_host":  "ITEMERROR-MSI-W",
+    "service_host":  "192.168.1.107",
+    "S_s":  11.05,
+    "rate_per_min":  2.7149,
+    "run_min":  11.05,
+    "response_timeout_s":  300.0,
+    "pause_min":  6.0,
+    "search_per_hour":  0,
+    "post_schedule":  "rate(2.7149/min) random_arrivals(11.05 min) pause(6 min)",
+    "search_schedule":  "pause(1 s)",
+    "started_local":  "2026-11-27T14:48:04.0019027+08:00",
+    "finished_local":  "2026-11-27T15:06:17.7823961+08:00",
+    "stats_before":  678,
+    "stats_after":  707,
+    "stats_delta":  29
+}
